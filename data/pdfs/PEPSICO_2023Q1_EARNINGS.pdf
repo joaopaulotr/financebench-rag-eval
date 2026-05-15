@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <link rel="icon" sizes="16x16" href="/investors/earnings/assets/img/favicon-16.png">
+  <link rel="icon" sizes="32x32" href="/investors/earnings/assets/img/favicon-32.png">
+  <link rel="icon" sizes="96x96" href="/investors/earnings/assets/img/favicon-96.png">
+  <link rel="icon" sizes="180x180" href="/investors/earnings/assets/img/favicon-180.png">
+  <link rel="icon" sizes="192x192" href="/investors/earnings/assets/img/favicon-192.png">
+  <link rel="icon" sizes="512x512" href="/investors/earnings/assets/img/favicon-512x512.png">
+  
+  <title>PepsiCo</title>
+
+  <meta name="description" content="PepsiCo">
+
+  <meta name="keywords" content="PepsiCo" />
+  <link rel="stylesheet" href="/investors/earnings/assets/css/quarterly.css" />
+  <!-- <link rel="stylesheet" href="/investors/earnings/assets/css/bootstrap.min.css" /> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/investors/earnings/assets/css/animate.min.css" />
+  <link rel="stylesheet" href="/investors/earnings/assets/css/zion.css" />
+  <link rel="stylesheet" href="/investors/earnings/assets/css/custom.css" />
+  <link rel="stylesheet" href="/investors/earnings/assets/css/zion-responsive.css" />
+  <!-- <link rel="stylesheet" href="/investors/earnings/assets/css/tailwind.css" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script type="text/javascript" src="/investors/earnings/assets/js/jquery.min.js"></script> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- 
+	<script type="text/javascript" src="/investors/earnings/assets/js/responsivemultimenu.js"></script>
+
+	<link rel="stylesheet" href="/investors/earnings/assets/css/responsivemultimenu.css" type="text/css"/> -->
+  <style>
+    .main-header,.mobile-header,#mobileMenuPanel, #mobileSubmenuPanel,
+    .custom-sticky-header,
+    .desktop-menu{
+      transition: opacity 0.35s ease !important;
+      -webkit-transition: opacity 0.35s ease !important;
+      opacity: 1 !important;
+      pointer-events:auto !important;
+    }
+
+.hide-on-footer{
+  opacity: 0 !important;
+  pointer-events:none !important;
+}
+
+  </style>
+</head> 
+ 
+<body>
+  <div class="page-wrapper">
+    <header class="main-header clearfix">
+      <div class="container-fluid px-6">
+        <!-- <div class="main-menu-wrapper"> -->
+
+
+        <!-- <div class="main-menu-wrapper__bottom"> -->
+        <nav class="main-menu px-4">
+          <div class="main-menu__inner">
+
+            <div class="main-header__logo">
+              <a href="https://www.pepsico.com/">
+                <img src="/investors/earnings/assets/img/logo.jpg" style="width: 120px;" class="img-fluid" alt="">
+              </a>
+            </div>
+
+            <button onclick="openPopup('popup1')" class="open-btn mobile-srch">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                class="xl:text-gray-300" data-icon="search" aria-hidden="true">
+                <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                <circle cx="11" cy="11" r="7" stroke="#6f7071" stroke-width="2"></circle>
+              </svg>
+            </button>
+
+            <a href="#" class="mobile-nav__toggler">
+              <!-- <i class="fa fa-bars"></i> -->
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                class="backbtn text-grey-500" data-icon="hamburger" aria-hidden="true">
+                <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="currentColor"></path>
+              </svg>
+            </a>
+            <ul class="main-menu__list">
+              <li class="dropdown mega">
+                <a href="#">About <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="text-blue-500 rotate-270 xl:rotate-0 xl:transition-[rotate] xl:duration-300 xl:ease-linear" data-icon="expand" aria-hidden="true"><path d="M6.57422 8.69092C6.54981 8.66651 6.50976 8.66651 6.48535 8.69092L6.2207 8.95557C6.19629 8.97998 6.19629 9.02002 6.2207 9.04443L11.9551 14.7788C11.9795 14.8032 12.0195 14.8032 12.0439 14.7788L17.7783 9.04443C17.8027 9.02002 17.8027 8.97998 17.7783 8.95557L17.5137 8.69092C17.4893 8.66652 17.4492 8.6665 17.4248 8.69092L12 14.1157L11.6455 13.7622L6.57422 8.69092Z" fill="currentColor" stroke="currentColor"></path></svg></a>
+
+
+
+                <ul>
+                  <div class="d-flex">
+
+                    <div class="add p-4">
+                      <div class="main-menu__heading">
+                        <i class="backbtn fas fa-chevron-left"></i>
+                        <h1>ABOUT US</h1>
+                      </div>
+                      <p>Discover how we use our global reach to spark joy & smiles.</p>
+                      <a href="https://www.pepsico.com/about" class="btn-pad">Learn more</a>
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li class="px-3">Who We Are</li>
+                      <li><a href="https://www.pepsico.com/about">About PepsiCo</a></li>
+                      <li><a href="https://www.pepsico.com/about/mission">Mission</a></li>
+                      <li><a href="https://www.pepsico.com/leadership">Leadership</a></li>
+                      <li><a href="https://www.pepsico.com/about/awards">Awards</a></li>
+                      <li><a href="https://www.pepsico.com/sustainability">Sustainability</a></li>
+                      <li><a href="https://www.pepsico.com/pepsico-positive">PepsiCo Positive</a></li>
+
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li class="px-3">Ethics & Community</li>
+                      <li><a href="https://www.pepsico.com/about/global-code-of-conduct">Global Code Of Conduct</a></li>
+                      <li><a href="https://www.pepsico.com/about/corporate-governance">Corporate Governance</a></li>
+                      <li><a href="https://www.pepsico.com/about/pepsico-foundation">PepsiCo Foundation</a></li>
+                      <li><a href="https://www.pepsico.com/about/pepsico-foundation/one-smile-at-a-time">One Smile at a Time</a></li>
+                      <li><a href="https://www.pepsico.com/sculpture-gardens">Visit PepsiCo Sculpture Gardens</a></li>
+                    </div>
+
+                  </div>
+
+                </ul>
+              </li>
+
+
+              <li class="dropdown mega">
+                <a href="#">Innovation <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="text-blue-500 rotate-270 xl:rotate-0 xl:transition-[rotate] xl:duration-300 xl:ease-linear" data-icon="expand" aria-hidden="true"><path d="M6.57422 8.69092C6.54981 8.66651 6.50976 8.66651 6.48535 8.69092L6.2207 8.95557C6.19629 8.97998 6.19629 9.02002 6.2207 9.04443L11.9551 14.7788C11.9795 14.8032 12.0195 14.8032 12.0439 14.7788L17.7783 9.04443C17.8027 9.02002 17.8027 8.97998 17.7783 8.95557L17.5137 8.69092C17.4893 8.66652 17.4492 8.6665 17.4248 8.69092L12 14.1157L11.6455 13.7622L6.57422 8.69092Z" fill="currentColor" stroke="currentColor"></path></svg></a>
+                <ul>
+                  <div class="d-flex">
+
+                    <div class="add p-4" style="background-color: #155798;">
+                      <div class="main-menu__heading">
+                        <i class="backbtn fas fa-chevron-left"></i>
+                        <h1>INNOVATION</h1>
+                      </div>
+                      <p>See how we reshape the future of food & drinks.</p>                      
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li><a href="https://externalinnovation.pepsico.com/">Submit Ideas to PepsiCo<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      <li><a href="https://design.pepsico.com/">PepsiCo Design<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      <li><a href="https://www.labs.pepsico.com/">PepsiCo Labs<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+
+                    </div>
+
+                  </div>
+
+                </ul>
+              </li>
+
+              <li class="dropdown mega">
+                <a href="#">Brands <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="text-blue-500 rotate-270 xl:rotate-0 xl:transition-[rotate] xl:duration-300 xl:ease-linear" data-icon="expand" aria-hidden="true"><path d="M6.57422 8.69092C6.54981 8.66651 6.50976 8.66651 6.48535 8.69092L6.2207 8.95557C6.19629 8.97998 6.19629 9.02002 6.2207 9.04443L11.9551 14.7788C11.9795 14.8032 12.0195 14.8032 12.0439 14.7788L17.7783 9.04443C17.8027 9.02002 17.8027 8.97998 17.7783 8.95557L17.5137 8.69092C17.4893 8.66652 17.4492 8.6665 17.4248 8.69092L12 14.1157L11.6455 13.7622L6.57422 8.69092Z" fill="currentColor" stroke="currentColor"></path></svg></a>
+
+
+
+                <ul>
+                  <div class="d-flex">
+
+                    <div class="add p-4" style="background-color: #155798;">
+                      <div class="main-menu__heading">
+                        <i class="backbtn fas fa-chevron-left"></i>
+                        <h1>BRANDS</h1>
+                      </div>
+                      <p>Meet the bold snacks,drinks & brands loved around the world</p>
+                      <a href="https://www.pepsico.com/brands" class="btn-pad">Explore our brands</a>
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li class="px-3">Our Brands</li>
+                      <li><a href="https://www.pepsico.com/brands">Brands</a></li>
+                      <li><a href="https://www.pepsico.com/product-locator">Product Locator</a></li>
+                      <li><a href="https://www.snacks.com/">Snacks.com<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      <li><a href="https://www.us-joy.com/homepage">Joy Rewards<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li class="px-3">Nutrition</li>
+                      <li><a href="https://www.pepsico.com/about/our-nutrition-journey">Our Nutrition Journey</a></li>
+                      <li><a href="https://www.pepsicohealthandnutritionsciences.com/">PepsiCo Health & Nutrition Sciences<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      <li><a href="https://pepsicosmartlabel.com/">PepsiCo Smart Label<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      <li><a href="https://www.pepsicoproductfacts.com/">PepsiCo Product Facts<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                    </div>
+
+                  </div>
+
+                </ul>
+              </li>
+
+              <li class="dropdown mega">
+                <a href="#">Partners <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="text-blue-500 rotate-270 xl:rotate-0 xl:transition-[rotate] xl:duration-300 ease-linear xl:hover:rotate-180" data-icon="expand" aria-hidden="true"><path d="M6.57422 8.69092C6.54981 8.66651 6.50976 8.66651 6.48535 8.69092L6.2207 8.95557C6.19629 8.97998 6.19629 9.02002 6.2207 9.04443L11.9551 14.7788C11.9795 14.8032 12.0195 14.8032 12.0439 14.7788L17.7783 9.04443C17.8027 9.02002 17.8027 8.97998 17.7783 8.95557L17.5137 8.69092C17.4893 8.66652 17.4492 8.6665 17.4248 8.69092L12 14.1157L11.6455 13.7622L6.57422 8.69092Z" fill="currentColor" stroke="currentColor"></path></svg></a>
+
+
+
+                <ul>
+                  <div class="d-flex">
+
+                    <div class="add p-4" style="background-color: #155798;">
+                      <div class="main-menu__heading">
+                        <i class="backbtn fas fa-chevron-left"></i>
+                        <h1>PARTNERS</h1>
+                      </div>
+                      <p>Explore how we work together to innovate, create value, & shape tomorrow.</p>
+                    </div>
+
+                    <div class="xl-pt-100 p-4">
+                      <li><a href="https://www.pepsico.com/national-geographic-collaboration">National Geographic Society</a></li>
+                      <li><a href="https://www.pepsico.com/suppliers">Suppliers</a></li>
+                      <li><a href="https://www.pepsicopartners.com/">PepsiCoPartners.com<svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="shrink-0" data-icon="northeast" aria-hidden="true"><path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z" fill="currentColor"></path></svg></a></li>
+                      
+                    </div>
+
+
+
+                  </div>
+
+                </ul>
+              </li>
+              <li><a href="https://www.pepsico.com/investors">Investors</a></li>
+              <li><a href="https://www.pepsico.com/en/newsroom">News & Media</a></li>
+
+            </ul>
+
+
+            <div class="main-menu__right">
+              <a href="https://www.pepsico.com/careers" class="px-2">Careers</a>
+              <a href="https://www.pepsico.com/contact" class="px-2">Contact</a>
+              <a href="https://www.pepsico.com/local-sites" class="px-2">
+                <!-- <i class="fas fa-globe"></i> -->
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class=""
+                  data-icon="globe" aria-hidden="true">
+                  <path d="M3 12H21" stroke="currentColor" stroke-width="2"></path>
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle>
+                  <ellipse cx="12" cy="12" rx="3" ry="9" stroke="#6f7071" stroke-width="2"></ellipse>
+                </svg>
+              </a>
+              <button onclick="openPopup('popup2')" class="open-btn p-0">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="xl:text-gray-300" data-icon="search" aria-hidden="true">
+                  <path d="M20 20L16 16" stroke="#6f7071" stroke-width="2" stroke-linecap="round"></path>
+                  <circle cx="11" cy="11" r="7" stroke="#6f7071" stroke-width="2"></circle>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </nav>
+
+
+        <!-- </div> -->
+
+
+
+
+        <!-- </div> -->
+      </div>
+    </header>
+    <!-- Investor Relations Sticky Header -->
+
+    <!-- MOBILE HEADER -->
+    <div class="mobile-header d-flex justify-content-between align-items-center px-3 py-2 border-bottom"
+        style="position: fixed; top:0; left:0; width:100%; background:white; z-index:3000;">
+
+        <!-- Title + Placeholder -->
+        <div class="header-title-container">
+            <span class="fw-bold">Investor Relations</span>
+            <span id="headerPlaceholder">Financials</span> <!-- ⭐ NEW PLACEHOLDER ADDED ⭐ -->
+        </div>
+
+        <i id="hamburgerBtn" class="bi bi-chevron-down"></i>
+    </div>
+
+
+    <!-- MOBILE MENU PANEL -->
+    <div id="mobileMenuPanel">
+        <!-- <h5 class="fw-bold mb-3">Overview</h5> -->
+        <div class="list-group">
+            <button class="list-group-item list-group-item-action" onclick="updatePlaceholder('Home')">Overview</button>
+
+            <button id="mobileProductsBtn" class="list-group-item list-group-item-action d-flex justify-between">
+                Financials 
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <button class="list-group-item list-group-item-action" onclick="updatePlaceholder('About')">Shareholders Services</button>
+
+            <button class="list-group-item list-group-item-action"
+                onclick="updatePlaceholder('Contact')">Events & Presentations</button>
+
+            <button class="list-group-item list-group-item-action"
+                onclick="updatePlaceholder('Contact')">Investor Contacts</button>
+        </div>
+    </div>
+
+
+    <!-- MOBILE SUBMENU PANEL -->
+    <div id="mobileSubmenuPanel">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button id="mobileBackBtn" class="btn btn-link p-0"><i class="fas fa-chevron-left"></i> Back</button>
+            <button id="mobileCloseBtn" class="btn btn-link p-0 hidden">
+                <i class="bi bi-x-lg" style="font-size:22px;"></i>
+            </button>
+        </div>
+
+        <h5 class="fw-bold mb-3">Financials</h5>
+
+        <div class="list-group">
+
+          <a class="dropdown-item" href="https://www.pepsico.com/investors/annual-reports-proxy-information">Annual Reports & Proxy Information</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/earnings">Earnings</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/dividend-information">Dividend Information</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/sec-filings">SEC filings</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/cash-tender-offers">Cash Tender offers</a>
+
+            <!-- <button class="list-group-item">Mobiles</button>
+            <button class="list-group-item">Laptops</button>
+            <button class="list-group-item">Accessories</button> -->
+        </div>
+    </div>
+
+
+
+    <!-- Investor Relations Sticky Header -->
+
+    <!-- Investor Relations Sticky Header -->
+    <div class="custom-sticky-header hidden1">
+      <div class="container-fluid px-6">
+
+        
+
+    <!-- DESKTOP MENU -->
+    <nav class="desktop-menu navbar navbar-expand-lg px-4">
+        <a class="navbar-brand text-black px-6" href="#">Investor Relations</a>
+
+        <ul class="navbar-nav ms-4">
+            <li class="nav-item me-3"><a class="nav-link" href="https://www.pepsico.com/investors">Overview</a></li>
+
+            <li class="nav-item me-3 position-relative has-submenu">
+                <a class="nav-link active" href="#">Financials
+                    <i class="fas fa-chevron-down px-2"></i></a>
+                <div class="submenu-desktop p-2">
+
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/annual-reports-proxy-information">Annual Reports & Proxy Information</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/earnings">Earnings</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/dividend-information">Dividend Information</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/sec-filings">SEC filings</a>
+                 <a class="dropdown-item" href="https://www.pepsico.com/investors/cash-tender-offers">Cash Tender offers</a>
+
+                </div>
+            </li>
+
+            <li class="nav-item me-3"><a class="nav-link" href="https://www.pepsico.com/investors/shareholders-services">Shareholders Services</a></li>
+            <li class="nav-item me-3"><a class="nav-link" href="https://www.pepsico.com/investors/events-presentations">Events & Presentations</a></li>
+            <li class="nav-item me-3"><a class="nav-link" href="https://www.pepsico.com/investors/investor-contacts">Investor Contacts</a></li>
+        </ul>
+    </nav>
+
+       
+      </div>
+
+      
+    </div>
+
+    <!-- Quarterly earnings section -->
+    <section class="quarterly-earnings">
+      <div class="container">
+        <h1>Earnings</h1>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner-sec1"></section>
+
+    <!-- Year List -->
+ <section class="py-2 px-2">
+  <div class="year-container">
+      <div class="mb-41 mt-41 px-2">
+      <nav class="year-nav" id="yearNav" aria-label="Year navigation">
+        <a class="year-btn active" href="#s2026" data-target="s2026">2026</a>
+        <a class="year-btn" href="#s2025" data-target="s2025">2025</a>
+        <a class="year-btn" href="#s2024" data-target="s2024">2024</a>
+        <a class="year-btn" href="#s2023" data-target="s2023">2023</a>
+        <a class="year-btn" href="#s2022" data-target="s2022">2022</a>
+        <a class="year-btn" href="#s2021" data-target="s2021">2021</a>
+        <a class="year-btn" href="#s2020" data-target="s2020">2020</a>
+        <a class="year-btn" href="#s2019" data-target="s2019">2019</a>
+      </nav>
+    </div>
+    </div>
+    
+    <!-- Year List -->
+
+    
+    <main id="content">
+      <!-- Example sections -->
+        <div class="container px-4" id="year-list">
+      <section class="panel" id="s2026" data-year="2026">
+        <h2 class="year-heading">2026</h2>
+         <div class="accordion" id="accordion2025"> 
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2026q1">
+                Q1 2026 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2026q1" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2026-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2026-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2026-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2026-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/fgn5nuso/" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>   
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2026-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>                   
+                </ul>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <section class="panel" id="s2025" data-year="2025">
+        <h2 class="year-heading">2025</h2>
+         <div class="accordion" id="accordion2025"> 
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2025q4">
+                Q4 2025 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2025q4" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/bk9s3ib8/" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>   
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2025-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>                  
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+                 
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2025q3">
+                Q3 2025 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2025q3" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2025-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2025-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2025-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2025-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/x43xtvfm/" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2025-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2025q2">
+                Q2 2025 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2025q2" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2025-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2025-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2025-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2025-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/g82fc56t" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2025-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2025q1">
+                Q1 2025 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2025q1" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2025-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2025-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2025-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2025-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/u5hzyuur/" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2025-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="s2024" data-year="2024">
+        <h2 class="year-heading">2024</h2>
+       <div class="accordion" id="accordion2024">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2024q4">
+                  Q4 2024 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2024q4" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                    <li><a href="https://www.pepsico.com/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-recast-segment-information.pdf" target="_blank">Recast Segment Information</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a rel="noopener noreferrer" href="https://edge.media-server.com/mmc/p/p7a98p9a/" target="_blank">Webcast - Investors Q&amp;A&nbsp;</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2024-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2024q3">
+                  Q3 2024 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2024q3" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2024-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2024-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2024-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2024-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2024-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2024q2">
+                  Q2 2024 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2024q2" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2024-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2024-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2024-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2024-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2024-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2024q1">
+                  Q1 2024 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2024q1" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2024-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2024-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2024-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2024-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2024-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="panel" id="s2023" data-year="2023">
+       <h2 class="year-heading">2023</h2>
+      <div class="accordion" id="accordion2023">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2023q4">
+                  Q4 2023 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2023q4" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2023-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2023-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2023-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2023-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2023-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2023q3">
+                  Q3 2023 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2023q3" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2023-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2023-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2023-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2023-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2023-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2023q2">
+                  Q2 2023 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2023q2" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2023-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2023-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2023-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2023-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2023-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2023q1">
+                  Q1 2023 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2023q1" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2023-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2023-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2023-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2023-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2023-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="panel" id="s2022" data-year="2022">
+        <h2 class="year-heading">2022</h2>
+          <div class="accordion" id="accordion2022">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2022q4">
+                  Q4 2022 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2022q4" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2022-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2022-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2022-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2022-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2022-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2022q3">
+                  Q3 2022 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2022q3" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2022-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2022-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2022-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2022-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2022-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2022q2">
+                  Q2 2022 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2022q2" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2022-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2022-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2022-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2022-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2022-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2022q1">
+                  Q1 2022 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2022q1" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2022-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2022-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2022-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2022-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2022-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="panel" id="s2021" data-year="2021">
+        <h2 class="year-heading">2021</h2>
+    <div class="accordion" id="accordion2021">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2021q4">
+                  Q4 2021 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2021q4" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2021-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2021-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2021-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2021-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2021-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2021q3">
+                  Q3 2021 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2021q3" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2021-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2021-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2021-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2021-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2021-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2021q2">
+                  Q2 2021 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2021q2" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2021-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2021-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2021-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2021-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2021-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#y2021q1">
+                  Q1 2021 PepsiCo Earnings
+                </button>
+              </h2>
+              <div id="y2021q1" class="accordion-collapse collapse ">
+                <div class="accordion-body">
+                  <ul>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2021-earnings-release.pdf" target="_blank">Press
+                        Release</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2021-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2021-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                        Reconciliation</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2021-prepared-management-remarks.pdf"
+                        target="_blank">Prepared Management Remarks</a></li>
+                    <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2021-pep_transcript.pdf" target="_blank">Transcript -
+                        Investors Q&amp;A</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="panel" id="s2020" data-year="2020">
+        <h2 class="year-heading">2020</h2>
+       <div class="accordion" id="accordion2020">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2020q4">
+                Q4 2020 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2020q4" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2020-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2020-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2020-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2020-prepared-management-remarks.pdf"
+                      target="_blank">Prepared Management Remarks</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2020-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2020q3">
+                Q3 2020 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2020q3" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2020-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2020-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2020-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2020-transcript-pre-recorded-management-discussion.pdf"
+                      target="_blank">Transcript – Pre-Recorded Management Discussion</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2020-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2020q2">
+                Q2 2020 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2020q2" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2020-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2020-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2020-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>                  
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2020-transcript-pre-recorded-management-discussion.pdf"
+                      target="_blank">Transcript – Pre-Recorded Management Discussion</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2020-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2020q1">
+                Q1 2020 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2020q1" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2020-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2020-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2020-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2020-transcript-pre-recorded-management-discussion.pdf"
+                      target="_blank">Transcript – Pre-Recorded Management Discussion</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2020-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" id="s2019" data-year="2019">
+        <h2 class="year-heading">2019</h2>
+    <div class="accordion" id="accordion2019">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2019q4">
+                Q4 2019 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2019q4" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2019-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2019-form-10k.pdf" target="_blank">Form 10-K</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2019-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q4-2019-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2019q3">
+                Q3 2019 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2019q3" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2019-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2019-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2019-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q3-2019-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2019q2">
+                Q2 2019 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2019q2" class="accordion-collapse collapse ">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2019-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2019-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2019-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q2-2019-pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item pb-4">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#y2019q1">
+                Q1 2019 PepsiCo Earnings
+              </button>
+            </h2>
+            <div id="y2019q1" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2019-earnings-release.pdf" target="_blank">Press
+                      Release</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2019-form-10q.pdf" target="_blank">Form 10-Q</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1-2019-gaap-nongaap.pdf" target="_blank">GAAP/Non-GAAP
+                      Reconciliation</a></li>
+                  <li><a href="/docs/pepsico-5v9wci20/media/Files/investors/q1_2019_pep_transcript.pdf" target="_blank">Transcript -
+                      Investors Q&amp;A</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </div>
+    </main>
+
+    </section>
+
+     <!-- slider  -->
+
+  <!-- tabs section  -->
+
+  <section class="tabs bg-blue hidden">
+    <div class="container">
+      <div class="tabs">
+        <input type="radio" id="tab1" name="tab" checked>
+        <input type="radio" id="tab2" name="tab">
+        <input type="radio" id="tab3" name="tab">
+
+        <div class="tab-row">
+
+          <label for="tab1">NEWS</label>
+          <label for="tab2">press releases</label>
+          <label for="tab3">stories</label>
+        </div>
+
+        <div class="panels">
+          <div class="tab-panel" id="panel1">
+
+            <div class="center slider">
+
+              <div>
+                <img src="/investors/earnings/assets/img/slick_img1.png">
+                <h2>Pepsico takes culinary creativity on the road</h2>
+              </div>
+              <div>
+                <img src="/investors/earnings/assets/img/slick_img1.png">
+                <h2>Pepsico takes culinary creativity on the road</h2>
+              </div>
+              <div>
+                <img src="/investors/earnings/assets/img/slick_img1.png">
+                <h2>Pepsico takes culinary creativity on the road</h2>
+              </div>
+              <div>
+                <img src="/investors/earnings/assets/img/slick_img1.png">
+                <h2>Pepsico takes culinary creativity on the road</h2>
+              </div>
+              <div>
+                <img src="/investors/earnings/assets/img/slick_img1.png">
+                <h2>Pepsico takes culinary creativity on the road</h2>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="tab-panel m-4" id="panel2">
+
+            <h2 class="text-white">Pepsico takes culinary creativity on the road</h2>
+
+
+
+
+          </div>
+
+          <div class="tab-panel m-4" id="panel3">
+
+            <h2 class="text-white">Pepsico takes culinary creativity on the road</h2>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- slider  -->
+
+  <!--Site Footer One Start-->
+
+
+  <footer class="site-footer hidden1">
+
+
+
+    <div class="site-footer__top hidden1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+
+            <div class="site-footer__top-text">
+              Learn more about PepsiCo and what's important to us
+            </div>
+
+          </div>
+          <div class="col-lg-4">
+            <a href="https://www.pepsico.com/about" class="site-footer-btn d-flex justify-between item-center">About PepsiCo <svg width="24"
+                height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ml-6 min-w-6"
+                data-icon="arrow" aria-hidden="true">
+                <path d="M12 4L20 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg></a>
+            <a href="https://www.pepsico.com/pepsico-positive" class="site-footer-btn d-flex justify-between item-center">PepsiCo Positive<svg width="24"
+                height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ml-6 min-w-6"
+                data-icon="arrow" aria-hidden="true">
+                <path d="M12 4L20 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg></a>
+            <a href="https://www.pepsico.com/about/corporate-governance" class="site-footer-btn d-flex justify-between item-center">Corporate Governance <svg width="24"
+                height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="ml-6 min-w-6"
+                data-icon="arrow" aria-hidden="true">
+                <path d="M12 4L20 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+                <path d="M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-footer__main px-6">
+      <div class="container-fluid px-4">
+        <div class="row">
+
+          <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+            <div class="footer-widget__column footer-widget__about" style="margin-left:0px;">
+
+              <a href="#" class="m-hidden1"><img src="/investors/earnings/assets/img/footer-logo.jpg" alt="" title="Pepsico"> </a>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp m-hidden" data-wow-delay="200ms">
+
+            <!-- <h3 class="footer-widget__title text-center">FPO</h3> -->
+
+
+          </div>
+
+
+          <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+            <div class="footer-links">
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <ul>
+                    <!-- <li><a href="#">Careers <svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="#">Media Gallery <svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li> -->
+                    <li><a href="https://www.pepsico.com/about">About PepsiCo</a></li>
+                    <li><a href="https://www.pepsico.com/media">Media Library</a></li>
+                    <li><a href="https://www.pepsico.com/investors">Investors</a></li>
+                    <li><a href="https://www.pepsico.com/brands">Brands</a></li>
+                    <li><a href="https://www.pepsico.com/sustainability">Sustainability</a></li>
+                    <li><a href="https://www.pepsico.com/contact">Contact Us</a></li>
+                    <li><a href="https://www.pepsico.com/careers">Careers</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul>
+                    <li><a href="https://www.snacks.com/">Snacks.com <svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="https://www.us-joy.com/homepage">Joy Rewards<svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="https://www.pepsicoproductfacts.com/">PepsiCo Product Facts<svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="https://externalinnovation.pepsico.com/">Submit ideas to PepsiCo<svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="https://www.pepsicopartners.com/">PepsiCo Partners<svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+                    <li><a href="https://www.pepsicojobs.com/">PepsiCo Jobs<svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg" class="text-grey-500" data-icon="northeast"
+                          aria-hidden="true">
+                          <path d="M9.5 4.5V6.5H16.09L4.5 18.09L5.91 19.5L17.5 7.91V14.5H19.5V4.5H9.5Z"
+                            fill="currentColor"></path>
+                        </svg></a></li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer-bottom px-6" style="z-index:40">
+      <div class="container-fluid px-4">
+        <div class="row hidden1 item-center m-reverse-flex">
+          <div class="col-xl-12">
+            <div class="site-footer__social d-flex">
+              <div class="mr-4">
+              <a href="https://www.facebook.com/PepsiCo/"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="Facebook"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="facebook-footer-desktop"
+                  aria-hidden="true">
+                  <path
+                    d="M4.25414 2.70397V4.39579H6.3464L6.0151 6.67477H4.25414V11.9254C3.90108 11.9744 3.53986 12 3.1732 12C2.74996 12 2.33434 11.9663 1.9296 11.901V6.67477H0V4.39579H1.9296V2.32578C1.9296 1.04154 2.97028 0 4.25469 0V0.00108815C4.2585 0.00108815 4.26176 0 4.26557 0H6.34694V1.97098H4.98692C4.58272 1.97098 4.25469 2.29911 4.25469 2.70343L4.25414 2.70397Z"
+                    fill="white"></path>
+                </svg><svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="facebook-footer-mobile" aria-hidden="true">
+                  <path
+                    d="M7.09024 4.50662V7.32632H10.5773L10.0252 11.1246H7.09024V19.8757C6.5018 19.9574 5.89977 20 5.28867 20C4.58327 20 3.89056 19.9438 3.21599 19.8349V11.1246H0V7.32632H3.21599V3.87629C3.21599 1.7359 4.95047 0 7.09115 0V0.00181359C7.09749 0.00181359 7.10293 0 7.10928 0H10.5782V3.28496H8.31154C7.63787 3.28496 7.09115 3.83185 7.09115 4.50571L7.09024 4.50662Z"
+                    fill="white"></path>
+                </svg></a><a href="https://www.facebook.com/PepsiCo/"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="X"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="x-footer-desktop"
+                  aria-hidden="true">
+                  <path
+                    d="M0.37751 0L5.32647 6.61861L0.34668 12H1.46776L5.82799 7.28875L9.35061 12H13.165L7.9378 5.00909L12.5732 0H11.4521L7.43703 4.33895L4.19262 0H0.37751ZM2.02566 0.825823H3.77757L11.5153 11.1742H9.7634L2.02566 0.825823Z"
+                    fill="white"></path>
+                </svg><svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="x-footer-mobile" aria-hidden="true">
+                  <path
+                    d="M0.629509 0L8.87778 11.031L0.578125 20H2.44659L9.71364 12.1479L15.5847 20H21.9419L13.23 8.34848L20.9557 0H19.0872L12.3954 7.23159L6.98802 0H0.629509ZM3.37642 1.37637H6.29628L19.1925 18.6236H16.2727L3.37642 1.37637Z"
+                    fill="white"></path>
+                </svg></a><a href="https://www.youtube.com/pepsico"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="Youtube"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="youtube-footer-desktop"
+                  aria-hidden="true">
+                  <g transform="translate(0, 1)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M13.2642 11.9999C13.6567 12.0009 14.0662 11.9933 14.4662 11.9499L14.4672 11.949C15.254 11.8631 16.0041 11.6385 16.5098 11.0552C17.0202 10.4673 17.1504 9.64807 17.2287 8.87324C17.4174 6.99421 17.4146 5.09537 17.2212 3.21634C17.1165 2.19613 16.8891 1.06834 16.0522 0.475656C15.404 0.0160441 14.5511 0 13.7567 0C12.9161 0.000943761 12.0752 0.00165165 11.2343 0.00235955C10.3934 0.00306744 9.55255 0.00377533 8.71191 0.00471909C7.90335 0.00566286 7.09478 0.00637075 6.28621 0.00707864C5.47765 0.00778653 4.66908 0.00849443 3.86052 0.00943819C3.77013 0.00956446 3.68008 0.00874458 3.5904 0.00792801C3.00978 0.00264158 2.44437 -0.00250645 1.9009 0.250097C1.36123 0.501137 0.93949 0.97868 0.686637 1.51002C0.334717 2.24993 0.260185 3.08704 0.217728 3.90434C0.140362 5.39265 0.147911 6.88474 0.24226 8.37211C0.31019 9.45743 0.484731 10.657 1.32349 11.3487C2.0679 11.9612 3.11705 11.9924 4.08034 11.9924C7.141 11.9943 10.2026 11.9971 13.2642 11.9999ZM6.94194 3.3664L11.5046 6.00138L6.94194 8.63636V3.3664Z"
+                      fill="white"></path>
+                  </g>
+                </svg><svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="youtube-footer-mobile" aria-hidden="true">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    fill="white"></path>
+                </svg></a><a href="https://www.linkedin.com/company/pepsico"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="Linkedin"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="linkedin-footer-desktop"
+                  aria-hidden="true">
+                  <path
+                    d="M3.0239 4.13115H0.564886V12H3.0239V4.13115ZM3.24521 1.42623C3.24651 1.24023 3.21116 1.05579 3.14117 0.883445C3.07118 0.711104 2.96794 0.554236 2.83733 0.421797C2.70671 0.289359 2.5513 0.183944 2.37994 0.111572C2.20859 0.0391995 2.02466 0.00128721 1.83866 0H1.79439C1.41613 7.97123e-09 1.05337 0.150263 0.785897 0.417733C0.518427 0.685203 0.368164 1.04797 0.368164 1.42623C0.368164 1.80449 0.518427 2.16726 0.785897 2.43473C1.05337 2.7022 1.41613 2.85246 1.79439 2.85246C1.98041 2.85703 2.16551 2.82491 2.33911 2.75793C2.51271 2.69095 2.67141 2.59041 2.80614 2.46208C2.94087 2.33374 3.04899 2.18011 3.12433 2.00997C3.19967 1.83983 3.24075 1.65651 3.24521 1.47049V1.42623ZM12.3682 7.21967C12.3682 4.8541 10.8632 3.93443 9.36816 3.93443C8.87864 3.90991 8.39125 4.01418 7.9546 4.23682C7.51795 4.45946 7.14731 4.79269 6.87964 5.20328H6.81079V4.13115H4.49931V12H6.95833V7.81475C6.92278 7.38611 7.0578 6.96076 7.33406 6.63109C7.61031 6.30143 8.00549 6.09408 8.43374 6.0541H8.52718C9.30915 6.0541 9.88947 6.5459 9.88947 7.78525V12H12.3485L12.3682 7.21967Z"
+                    fill="white"></path>
+                </svg><svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="linkedin-footer-mobile" aria-hidden="true">
+                  <path
+                    d="M5.04049 6.88525H0.942127V20H5.04049V6.88525ZM5.40934 2.37705C5.4115 2.06704 5.35258 1.75964 5.23593 1.47241C5.11929 1.18517 4.94722 0.923727 4.72953 0.702996C4.51184 0.482265 4.25281 0.306573 3.96722 0.185953C3.68164 0.0653326 3.37509 0.00214536 3.06508 0H2.99131C2.36087 1.32854e-08 1.75626 0.250439 1.31048 0.696222C0.864697 1.14201 0.614258 1.74662 0.614258 2.37705C0.614258 3.00748 0.864697 3.61209 1.31048 4.05788C1.75626 4.50366 2.36087 4.7541 2.99131 4.7541C3.30134 4.76173 3.60983 4.70819 3.89916 4.59655C4.18849 4.48491 4.45299 4.31736 4.67755 4.10346C4.9021 3.88956 5.08231 3.63352 5.20787 3.34995C5.33344 3.06638 5.4019 2.76085 5.40934 2.45082V2.37705ZM20.6143 12.0328C20.6143 8.09016 18.1061 6.55738 15.6143 6.55738C14.7984 6.51652 13.9861 6.6903 13.2583 7.06136C12.5306 7.43243 11.9128 7.98782 11.4667 8.67213H11.352V6.88525H7.4995V20H11.5979V13.0246C11.5386 12.3102 11.7637 11.6013 12.2241 11.0518C12.6845 10.5024 13.3431 10.1568 14.0569 10.0902H14.2126C15.5159 10.0902 16.4831 10.9098 16.4831 12.9754V20H20.5815L20.6143 12.0328Z"
+                    fill="white"></path>
+                </svg></a><a href="https://www.instagram.com/pepsico/?hl=en"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="Instagram"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="instagram-footer-desktop"
+                  aria-hidden="true">
+                  <g transform="translate(0, 1)">
+                    <path
+                      d="M9.76197 0H3.50368C1.77472 0 0.368164 1.40697 0.368164 3.13644V8.86356C0.368164 10.593 1.77472 12 3.50368 12H9.76197C11.4909 12 12.8975 10.593 12.8975 8.86356V3.13644C12.8975 1.40697 11.4909 0 9.76197 0ZM1.47428 3.13644C1.47428 2.01725 2.38482 1.10644 3.50368 1.10644H9.76197C10.8808 1.10644 11.7914 2.01725 11.7914 3.13644V8.86356C11.7914 9.98275 10.8808 10.8936 9.76197 10.8936H3.50368C2.38482 10.8936 1.47428 9.98275 1.47428 8.86356V3.13644Z"
+                      fill="white"></path>
+                    <path
+                      d="M6.63284 8.91672C8.24064 8.91672 9.54941 7.60827 9.54941 5.99929C9.54941 4.39031 8.24135 3.08187 6.63284 3.08187C5.02434 3.08187 3.71628 4.39031 3.71628 5.99929C3.71628 7.60827 5.02434 8.91672 6.63284 8.91672ZM6.63284 4.18901C7.63125 4.18901 8.4433 5.0013 8.4433 6C8.4433 6.9987 7.63125 7.81099 6.63284 7.81099C5.63444 7.81099 4.82239 6.9987 4.82239 6C4.82239 5.0013 5.63444 4.18901 6.63284 4.18901Z"
+                      fill="white"></path>
+                    <path
+                      d="M9.81938 3.55321C10.2523 3.55321 10.6052 3.20094 10.6052 2.76715C10.6052 2.33337 10.253 1.98109 9.81938 1.98109C9.38573 1.98109 9.03356 2.33337 9.03356 2.76715C9.03356 3.20094 9.38573 3.55321 9.81938 3.55321Z"
+                      fill="white"></path>
+                  </g>
+                </svg><svg width="16" height="16" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="instagram-footer-mobile" aria-hidden="true">
+                  <g transform="translate(0, 1.5)">
+                    <path
+                      d="M16.2706 0H5.84013C2.95852 0 0.614258 2.34495 0.614258 5.22741V14.7726C0.614258 17.6551 2.95852 20 5.84013 20H16.2706C19.1522 20 21.4965 17.6551 21.4965 14.7726V5.22741C21.4965 2.34495 19.1522 0 16.2706 0ZM2.45778 5.22741C2.45778 3.36208 3.97535 1.84406 5.84013 1.84406H16.2706C18.1354 1.84406 19.653 3.36208 19.653 5.22741V14.7726C19.653 16.6379 18.1354 18.1559 16.2706 18.1559H5.84013C3.97535 18.1559 2.45778 16.6379 2.45778 14.7726V5.22741Z"
+                      fill="white"></path>
+                    <path
+                      d="M11.0554 14.8612C13.7351 14.8612 15.9163 12.6805 15.9163 9.99882C15.9163 7.31719 13.7362 5.13645 11.0554 5.13645C8.37455 5.13645 6.19444 7.31719 6.19444 9.99882C6.19444 12.6805 8.37455 14.8612 11.0554 14.8612ZM11.0554 6.98169C12.7194 6.98169 14.0728 8.3355 14.0728 10C14.0728 11.6645 12.7194 13.0183 11.0554 13.0183C9.39138 13.0183 8.03797 11.6645 8.03797 10C8.03797 8.3355 9.39138 6.98169 11.0554 6.98169Z"
+                      fill="white"></path>
+                    <path
+                      d="M16.3663 5.92202C17.0879 5.92202 17.676 5.3349 17.676 4.61192C17.676 3.88894 17.0891 3.30182 16.3663 3.30182C15.6435 3.30182 15.0566 3.88894 15.0566 4.61192C15.0566 5.3349 15.6435 5.92202 16.3663 5.92202Z"
+                      fill="white"></path>
+                  </g>
+                </svg></a><a href="https://www.tiktok.com/@pepsico"
+                class="w-max relative focus-state before:!rounded-full before:-inset-2 before:z-20 md:w-[0.438rem] md:h-3 2xl:w-auto 2xl:h-auto"
+                aria-label="Tiktok"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" class="hidden md:block" data-icon="tiktok-footer-desktop"
+                  aria-hidden="true">
+                  <g clip-path="url(#clip0_20598_2695)">
+                    <path
+                      d="M11.2496 4.92101C10.2175 4.92348 9.21072 4.60161 8.37146 4.00086V8.19067C8.37118 8.96667 8.13399 9.72408 7.69162 10.3616C7.24925 10.9992 6.62278 11.4865 5.89597 11.7584C5.16917 12.0303 4.37668 12.0738 3.62447 11.8832C2.87225 11.6925 2.19617 11.2768 1.68663 10.6915C1.17709 10.1062 0.858366 9.37936 0.773085 8.60806C0.687805 7.83676 0.84003 7.05781 1.20941 6.37536C1.57878 5.69291 2.1477 5.1395 2.84009 4.78911C3.53248 4.43873 4.31534 4.30808 5.08399 4.41463V6.52196C4.73226 6.41133 4.35456 6.41466 4.00483 6.53149C3.6551 6.64831 3.35123 6.87266 3.13661 7.17249C2.92199 7.47232 2.8076 7.83229 2.80977 8.20101C2.81195 8.56973 2.93057 8.92833 3.1487 9.22561C3.36684 9.52289 3.67333 9.74364 4.02441 9.85634C4.37549 9.96904 4.7532 9.96793 5.10361 9.85315C5.45402 9.73838 5.7592 9.51582 5.97557 9.21726C6.19195 8.91869 6.30845 8.55939 6.30844 8.19067V0H8.37146C8.37003 0.174218 8.38463 0.348198 8.41507 0.519741C8.48676 0.902685 8.63581 1.26698 8.85312 1.59034C9.07043 1.9137 9.35142 2.18933 9.6789 2.40037C10.1448 2.70844 10.6911 2.87264 11.2496 2.87252V4.92101Z"
+                      fill="white"></path>
+                  </g>
+                </svg><svg width="18" height="18" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  class="md:hidden" data-icon="tiktok-footer-mobile" aria-hidden="true">
+                  <path
+                    d="M18.7494 8.20169C17.0292 8.2058 15.3512 7.66934 13.9524 6.6681V13.6511C13.952 14.9444 13.5567 16.2068 12.8194 17.2694C12.0821 18.332 11.038 19.1442 9.82662 19.5974C8.61528 20.0505 7.29447 20.1231 6.04078 19.8053C4.78709 19.4876 3.66029 18.7946 2.81105 17.8192C1.96181 16.8437 1.43061 15.6323 1.28848 14.3468C1.14634 13.0613 1.40005 11.763 2.01568 10.6256C2.6313 9.48819 3.5795 8.56583 4.73349 7.98185C5.88747 7.39788 7.19224 7.18013 8.47332 7.35772V10.8699C7.88709 10.6855 7.25759 10.6911 6.67471 10.8858C6.09183 11.0805 5.58538 11.4544 5.22769 11.9541C4.86999 12.4539 4.67934 13.0538 4.68296 13.6684C4.68658 14.2829 4.88428 14.8806 5.24784 15.376C5.6114 15.8715 6.12222 16.2394 6.70735 16.4272C7.29249 16.6151 7.92201 16.6132 8.50602 16.4219C9.09003 16.2306 9.59867 15.8597 9.95929 15.3621C10.3199 14.8645 10.5141 14.2657 10.5141 13.6511V0H13.9524C13.9501 0.290363 13.9744 0.580329 14.0251 0.866235C14.1446 1.50447 14.393 2.11163 14.7552 2.65057C15.1174 3.1895 15.5857 3.64889 16.1315 4.00062C16.908 4.51407 17.8184 4.78774 18.7494 4.78754V8.20169Z"
+                    fill="white"></path>
+                </svg></a>
+                </div>
+
+
+                <div class="d-flex item-center justify-between1 bottom-links m-no-aligns text-12">
+            <p class="m-0">@ PepsiCo 2026 </p>
+            <a href="https://www.pepsico.com/terms-of-use">Terms of Use</a>
+            <a href="https://www.pepsico.com/privacy">Privacy Policy</a>
+            <a href="https://www.pepsico.com/accessibility-statement">Accessibility Statement</a>
+            <a href="https://www.pepsico.com/about-our-ads">About Our Ads</a>
+            <a href="https://edge.sitecorecloud.io/pepsico-5v9wci20/media/Files/esg-topics/2024-pepsico-modern-slavery-and-human-trafficking-statement.pdf">Modern Slavery Statement</a>
+            <a href="https://www.pepsico.com/sitemap">Site Map</a>
+
+          </div>
+
+            </div>
+          </div>
+          
+        </div>
+
+
+
+      </div>
+    </div>
+  </footer>
+  <!--Site Footer One End-->
+
+
+
+
+  <!-- /.mobile-nav__wrapper -->
+  <div class="mobile-nav__wrapper">
+
+
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
+
+      <a href="https://www.pepsico.com/">
+        <img src="/investors/earnings/assets/img/logo.jpg" style="width: 120px;" class="img-fluid" alt="">
+      </a>
+
+      <span class="mobile-nav__close mobile-nav__toggler">
+
+
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+          class="text-grey-500" data-icon="close" aria-hidden="true">
+          <path
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+            fill="currentColor"></path>
+        </svg>
+      </span>
+      <!-- /.logo-box -->
+      <div class="mobile-nav__container"></div>
+      <!-- /.mobile-nav__container -->
+
+
+      <div class="mobi_last">
+        <li> <a href="https://www.pepsico.com/careers" class="px-2">Careers</a></li>
+        <li> <a href="https://www.pepsico.com/contact" class="px-2">Contact</a></li>
+        <li> <a href="https://www.pepsico.com/local-sites" class="px-2">
+            <!-- <i class="fas fa-globe"></i> -->
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class=""
+              data-icon="globe" aria-hidden="true">
+              <path d="M3 12H21" stroke="currentColor" stroke-width="2"></path>
+              <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"></circle>
+              <ellipse cx="12" cy="12" rx="3" ry="9" stroke="#6f7071" stroke-width="2"></ellipse>
+            </svg>
+            US </a></li>
+
+      </div>
+
+
+    </div>
+    <!-- /.mobile-nav__content -->
+  </div>
+  <!-- /.mobile-nav__wrapper -->
+
+
+   <!--search Popup Mobile-->
+  <div id="popup1" class="popup popup-mobile">
+    <div class="popup-content popup-content-mobile container-fluid px-6">
+      <!-- <span id="closePopup" class="close">&times;</span> -->
+      <div class="d-flex search-bar search-bar-mobile">
+        <button class="search-btn search-btn-mobile" type="button" aria-hidden="true" tabindex="-1">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        class="xl:text-gray-300" data-icon="search" aria-hidden="true">
+          <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          </path>
+          <circle cx="11" cy="11" r="7" stroke="#6f7071" stroke-width="2">
+          </circle>
+        </svg>
+      </button>
+      <!-- Search input -->
+      <input id="searchInput searchInputMobile" type="text" placeholder="Search PepsiCo" class="search-input search-input-mobile"
+      aria-label="Search input" />
+      <!-- Close button (now only clears input) -->
+<button class="search-btn search-btn-mobile hidden" id="popupClearBtn popupClearBtnMobile" type="button" aria-label="Clear text">
+  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+      fill="#0F1729" />
+  </svg>
+</button>
+      </div>
+    </div>
+  </div>
+  <!--search Popup Mobile-->
+        
+
+<script>
+(function () {
+  // Scope to mobile popup
+  const popup = document.querySelector('.popup-mobile');
+  if (!popup) return;
+
+  const content = popup.querySelector('.popup-content-mobile');
+  const searchBar = popup.querySelector('.search-bar-mobile');
+  const input = popup.querySelector('.search-input-mobile');
+
+  // Find the CLEAR button: it's the only .search-btn-mobile that starts with the 'hidden' class
+  let clearBtn = null;
+  const buttons = searchBar ? searchBar.querySelectorAll('.search-btn-mobile') : [];
+  buttons.forEach(btn => {
+    if (btn.classList.contains('hidden')) clearBtn = btn;
+  });
+
+  // Guard against missing elements
+  if (!content || !searchBar || !input || !clearBtn) return;
+
+  function toggleClearButton() {
+    const hasText = input.value.trim().length > 0;
+    // Only toggle the dedicated clear button — do NOT touch the search icon button
+    clearBtn.classList.toggle('hidden', !hasText);
+  }
+
+  function performSearch() {
+    const raw = input.value.trim();
+    if (!raw) {
+      input.focus();
+      return;
+    }
+    const query = encodeURIComponent(raw);
+    const url = `https://www.pepsico.com/search?q=${query}`;
+    window.location.href = url;
+  }
+
+  // Show/hide clear button as user types
+  input.addEventListener('input', toggleClearButton);
+
+  // Enter key triggers search
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      performSearch();
+    }
+  });
+
+  // Clear button clears text and refocuses input
+  clearBtn.addEventListener('click', function () {
+    input.value = '';
+    toggleClearButton();
+    input.focus();
+  });
+
+  // Close popup when clicking outside the mobile search bar
+  document.addEventListener('mousedown', function (event) {
+    // Only close if popup is visible and click is outside the search bar
+    const isVisible = popup.style.display !== 'none';
+    if (isVisible && !searchBar.contains(event.target)) {
+      popup.style.display = 'none';
+    }
+  });
+
+  // Initialize clear button state (keeps search icon untouched)
+  toggleClearButton();
+})();
+
+</script>
+
+
+  <!-- search Popup -->
+<div id="popup2" class="popup">
+  <div class="popup-content container-fluid px-6">
+    <div class="d-flex search-bar">
+      <!-- Decorative search icon (no click handler) -->
+      <button class="search-btn" type="button" aria-hidden="true" tabindex="-1">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+        class="xl:text-gray-300" data-icon="search" aria-hidden="true">
+          <path d="M20 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          </path>
+          <circle cx="11" cy="11" r="7" stroke="#6f7071" stroke-width="2">
+          </circle>
+        </svg>
+      </button>
+      <!-- Search input -->
+      <input id="searchInput" type="text" placeholder="Search PepsiCo" class="search-input"
+      aria-label="Search input" />
+      <!-- Close button (now only clears input) -->
+<button class="search-btn hidden" id="popupClearBtn" type="button" aria-label="Clear text">
+  <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+      fill="#0F1729" />
+  </svg>
+</button>
+    </div>
+  </div>
+</div>
+<!-- search Popup -->
+<script>
+(function () {
+  const input = document.getElementById('searchInput');
+  const clearBtn = document.getElementById('popupClearBtn');
+  const popup = document.getElementById('popup2');
+  const content = popup.querySelector('.popup-content');
+
+  function toggleClearButton() {
+    const hasText = input.value.trim().length > 0;
+    clearBtn.classList.toggle('hidden', !hasText);
+  }
+
+  function performSearch() {
+    const raw = input.value.trim();
+    if (!raw) {
+      input.focus();
+      return;
+    }
+    const query = encodeURIComponent(raw);
+    const url = `https://www.pepsico.com/search?q=${query}`;
+    window.location.href = url;
+  }
+
+  input.addEventListener('input', toggleClearButton);
+
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      performSearch();
+    }
+  });
+
+  clearBtn.addEventListener('click', function () {
+    input.value = '';
+    toggleClearButton();
+    input.focus();
+  });
+
+  document.addEventListener('mousedown', function (event) {
+  const popup = document.getElementById('popup2');
+  const searchBar = popup.querySelector('.search-bar');
+
+  // Close popup ONLY when user clicks outside the search-bar
+  if (popup.style.display !== 'none' && !searchBar.contains(event.target)) {
+    popup.style.display = 'none';
+  }
+});
+
+  toggleClearButton();
+})();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const selectors = [
+    ".main-header",
+    ".mobile-header",
+    "#mobileMenuPanel",
+    "#mobileSubmenuPanel",
+    ".custom-sticky-header",
+    ".desktop-menu"
+  ];
+ 
+  const headers = selectors.map(s => document.querySelector(s)).filter(Boolean);
+  const footerMain = document.querySelector(".site-footer");
+ 
+  // if (!footerMain) {
+  //   console.warn("footer is not found");
+  //   return;
+  // };
+ 
+  function checkFooterVisibility() {
+    const rect = footerMain.getBoundingClientRect();
+    const visible = rect.top < window.innerHeight && rect.bottom > 0;
+ 
+    headers.forEach(el => {
+      el.classList.toggle("hide-on-footer", visible);
+    });
+  }
+ 
+  checkFooterVisibility();
+  window.addEventListener("scroll", checkFooterVisibility, { passive: true });
+  window.addEventListener("resize", checkFooterVisibility);
+});
+</script>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- <script src="/investors/earnings/assets/js/jquery-3.5.1.min.js"></script> -->
+<script src="/investors/earnings/assets/js/zion.js"></script>
+<!-- <script src="/investors/earnings/assets/js/custom.js"></script> -->
+
+
+
+
+
+<!-- slider  -->
+<link rel="stylesheet" type="text/css" href="/investors/earnings/assets/css/slick.css">
+<link rel="stylesheet" type="text/css" href="/investors/earnings/assets/css/slick-theme.css">
+<!-- <script src="/investors/earnings/assets/js/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+<script src="/investors/earnings/assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+      (function () {
+        const nav = document.getElementById("yearNav");
+        const buttons = Array.from(nav.querySelectorAll(".year-btn"));
+        const sections = Array.from(document.querySelectorAll("section.panel"));
+
+        const btnById = new Map();
+        buttons.forEach((btn) => {
+          const id =
+            btn.getAttribute("data-target") ||
+            btn.getAttribute("href").replace("#", "");
+          btnById.set(id, btn);
+        });
+
+        function setActiveButton(activeBtn) {
+          buttons.forEach((b) => b.classList.toggle("active", b === activeBtn));
+
+          //ALWAYS bring the active button into view horizontally
+          activeBtn.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+            block: "nearest", // prevents vertical jumping
+          });
+        }
+
+        // Smooth scroll on click
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const id = btn.dataset.target;
+            const target = document.getElementById(id);
+            if (!target) return;
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            setActiveButton(btn);
+          });
+        });
+
+        // Build fine-grained thresholds
+        function buildThresholdList() {
+          const arr = [];
+          for (let i = 0; i <= 100; i++) arr.push(i / 100);
+          return arr;
+        }
+
+        const IO = new IntersectionObserver(
+          (entries) => {
+            const visible = new Map();
+
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                visible.set(entry.target.id, entry.intersectionRatio);
+              } else {
+                visible.delete(entry.target.id);
+              }
+            });
+
+            if (visible.size === 0) return;
+
+            // Pick the section MOST VISIBLE on screen
+            let bestId = null;
+            let bestRatio = 0;
+
+            visible.forEach((ratio, id) => {
+              if (ratio > bestRatio) {
+                bestRatio = ratio;
+                bestId = id;
+              }
+            });
+
+            if (!bestId) return;
+
+            const btn = btnById.get(bestId);
+            if (!btn) return;
+
+            if (!btn.classList.contains("active")) {
+              setActiveButton(btn);
+            }
+          },
+          {
+            root: null,
+            // rootMargin: "10% 0px 10% 0px",
+            threshold: buildThresholdList(),
+            rootMargin: "-80px 0px -70px 0px",
+            // threshold: 0.2,
+          }
+        );
+
+        // Observe sections
+        sections.forEach((sec) => IO.observe(sec));
+      })();
+    </script>
+
+<script type="text/javascript">
+  $(document).on('ready', function () {
+
+    $('.center').slick({
+      // centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 2,
+      dots: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            // arrows: false,
+            // centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            // arrows: false,
+            // centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+  });
+
+
+
+</script>
+
+
+
+<!-- slider  -->
+
+
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "flex";
+  }
+
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  // Optional: Close popup by clicking outside
+  window.addEventListener('click', function (e) {
+    document.querySelectorAll('.popup').forEach(popup => {
+      if (e.target === popup) popup.style.display = 'none';
+    });
+  });
+</script>
+
+
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+        const submenuTrigger = document.getElementById("submenuTrigger");
+        const mobileSubmenu = document.getElementById("mobileSubmenu");
+        const backBtn = document.getElementById("backBtn");
+
+        // Open / Close Main Menu in Mobile
+        hamburger.addEventListener("click", () => {
+            navMenu.style.left = "0";
+        });
+
+        // Submenu open in Mobile
+        submenuTrigger.addEventListener("click", () => {
+            if (window.innerWidth <= 768) {
+                navMenu.style.left = "-100%";
+                mobileSubmenu.style.right = "0";
+            }
+        });
+
+        // Back to main menu
+        backBtn.addEventListener("click", () => {
+            mobileSubmenu.style.right = "-100%";
+            navMenu.style.left = "0";
+        });
+    </script>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburgerBtn");
+        const mobileMenuPanel = document.getElementById("mobileMenuPanel");
+        const mobileSubmenuPanel = document.getElementById("mobileSubmenuPanel");
+
+        const mobileProductsBtn = document.getElementById("mobileProductsBtn");
+        const mobileBackBtn = document.getElementById("mobileBackBtn");
+        const mobileCloseBtn = document.getElementById("mobileCloseBtn");
+
+        const headerPlaceholder = document.getElementById("headerPlaceholder");
+
+        /* -------------------------------------------
+           ⭐ UPDATE PLACEHOLDER FUNCTION
+        -------------------------------------------- */
+        function updatePlaceholder(text) {
+            headerPlaceholder.textContent = text;
+        }
+
+        // Toggle Mobile Menu
+        hamburgerBtn.addEventListener("click", () => {
+            const isOpen = mobileMenuPanel.classList.contains("open");
+            
+            if (isOpen) {
+                mobileMenuPanel.classList.remove("open");
+                hamburgerBtn.classList.replace("bi-chevron-up", "bi-chevron-down");
+                updatePlaceholder("Financials");  // reset on full close
+                $('#headerPlaceholder').show();
+                mobileSubmenuPanel.classList.remove("open");
+                document.body.classList.remove("no-scroll");
+            updatePlaceholder("Financials"); 
+            } else {
+                mobileMenuPanel.classList.add("open");
+                hamburgerBtn.classList.replace("bi-chevron-down", "bi-chevron-up");
+                updatePlaceholder("Financials");
+                $('#headerPlaceholder').hide();
+                document.body.classList.add("no-scroll");
+            }
+        });
+
+        // Open Submenu
+        mobileProductsBtn.addEventListener("click", () => {
+            mobileSubmenuPanel.classList.add("open");
+            updatePlaceholder("Financials");  // highlight submenu title
+        });
+
+        // Back (return to main menu)
+        mobileBackBtn.addEventListener("click", () => {
+            mobileSubmenuPanel.classList.remove("open");
+            updatePlaceholder("Financials");   // reset
+        });
+
+        // Close (submenu only)
+        mobileCloseBtn.addEventListener("click", () => {
+            mobileSubmenuPanel.classList.remove("open");
+            updatePlaceholder("Financials");   // reset
+        });
+    </script>
+
+
+
+</body>
+
+</html>
