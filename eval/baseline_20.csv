@@ -1,0 +1,226 @@
+financebench_id,question,expected_answer,doc_name,model_answer,correct,notes
+financebench_id_03029,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,,"The FY2018 capital expenditure amount for 3M is approximately $1.7 billion to $1.9 billion, as stated in the context.",,
+financebench_id_04672,Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.,$8.70,,"The balance sheet does not provide specific information about Property, Plant, and Equipment (PP&E) or Net PP&E directly. Therefore, I don't know the year end FY2018 net PPNE for 3M.",,
+financebench_id_00499,Is 3M a capital-intensive business based on FY2022 data?,"No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:
+CAPEX/Revenue Ratio: 5.1%
+Fixed assets/Total Assets: 20%
+Return on Assets= 12.4%",,"Yes, 3M can be considered a capital-intensive business based on FY2022 data. The company has significant investments in property, plant, and equipment, with capital spending aimed at increasing manufacturing efficiency and meeting product demand. In 2022, 3M's capital spending was reported at $1,749 million, indicating a strong focus on investing in its manufacturing and sourcing capabilities. This level of capital investment is characteristic of capital-intensive industries, where substantial resources are required to maintain and expand operational capacity.",,
+financebench_id_01226,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+-Decrease in gross Margin
+-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
+charges",,"The operating margin change for 3M in FY2022 was driven by several factors, including:
+
+1. **Declines in Disposable Respirator Demand**: This negatively impacted operating margins by 0.3 percent and earnings per share by $0.29.
+
+2. **Organic Growth/Productivity**: Remaining organic growth and productivity impacts resulted in a net year-on-year benefit of $0.85 to earnings per share and 1.3 percent to operating margins. This was influenced by strong pricing, spending discipline, and restructuring actions taken in previous years.
+
+3. **Manufacturing Headwinds**: Global supply chain challenges, geopolitical impacts (such as the Russia/Ukraine conflict), and ongoing COVID-related challenges in China also affected operating margins.
+
+4. **Increased Investments**: There were increased investments in growth, productivity, and sustainability, which can impact margins in the short term but are aimed at long-term growth.
+
+Operating margin can be a useful metric for companies like 3M, as it provides insight into the efficiency of the company's operations and its ability to generate profit from its sales. However, it is important to consider that operating margins can be influenced by various external factors, such as market demand, supply chain issues, and economic conditions, which may not fully reflect the company's operational performance. Therefore, while operating margin is a useful metric, it should be analyzed in conjunction with other financial metrics and qualitative factors to get a comprehensive view of the company's performance.",,
+financebench_id_01865,"If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",The consumer segment shrunk by 0.9% organically.,,"The segment that has dragged down 3M's overall growth in 2022, when excluding the impact of mergers and acquisitions (M&A), is the Electronics segment. The context indicates that growth was held back by consumer electronics end-market weakness, which negatively impacted sales in that segment.",,
+financebench_id_00807,"Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",,"The quick ratio is not mentioned in the provided context, and there is no specific information about 3M's quick ratio for Q2 of FY2023. However, the context does indicate that 3M maintains a strong liquidity profile, with primary short-term liquidity needs met through cash on hand and U.S. commercial paper issuances. 
+
+The quick ratio is a measure of a company's ability to meet its short-term obligations with its most liquid assets, excluding inventory. It is calculated as (Current Assets - Inventory) / Current Liabilities. Since the context does not provide specific current asset or current liability figures, we cannot calculate the quick ratio or determine its relevance to 3M's liquidity profile.
+
+In summary, while the quick ratio is a useful measure of liquidity, we do not have the necessary data to assess it for 3M in Q2 of FY2023 based on the provided information.",,
+financebench_id_00941,Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?,"Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:
+-1.500% Notes due 2026 (Trading Symbol: MMM26)
+-1.750% Notes due 2030 (Trading Symbol: MMM30)
+-1.500% Notes due 2031 (Trading Symbol: MMM31)",,I don't know.,,
+financebench_id_01858,Does 3M maintain a stable trend of dividend distribution?,"Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",,"Yes, 3M maintains a stable trend of dividend distribution. The company has paid dividends since 1916 and has marked the 61st consecutive year of dividend increases as of February 2019. Additionally, in February 2023, 3M declared a first-quarter dividend of $1.50 per share, which was an increase of 1 percent, marking the 65th consecutive year of dividend increases.",,
+financebench_id_02987,What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.,24.26,,"To calculate the fixed asset turnover ratio for Activision Blizzard for FY2019, we need the revenue for FY2019 and the average property, plant, and equipment (PP&E) for FY2019.
+
+1. **Revenue for FY2019**: The revenue is not explicitly provided in the context, so I cannot determine the revenue for FY2019.
+
+2. **Average PP&E**: The context does not provide specific values for PP&E. However, we can infer that PP&E is part of total assets, but we do not have the exact figures for PP&E.
+
+Since I do not have the necessary revenue and PP&E data, I cannot calculate the fixed asset turnover ratio. 
+
+Therefore, I don't know the answer.",,
+financebench_id_07966,What is the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard? Answer in units of percents and round to one decimal place. Calculate (or extract) the answer from the statement of income and the cash flow statement.,1.9%,,"To calculate the FY2017 - FY2019 3-year average of capital expenditures (capex) as a percentage of revenue for Activision Blizzard, we need to extract the relevant figures from the provided financial statements.
+
+1. **Net Revenues**:
+   - FY2017: $7,017 million
+   - FY2018: $7,500 million
+   - FY2019: $6,489 million
+
+   **Total Net Revenues for FY2017 - FY2019**:
+   \[
+   7,017 + 7,500 + 6,489 = 20,006 \text{ million}
+   \]
+
+2. **Capital Expenditures (Capex)**:
+   - FY2017: Not explicitly stated, but we can assume it is included in the cash flow statement as $116 million for FY2019 and $131 million for FY2018. The FY2017 capex is not provided, so we will use the average of the two known years for estimation.
+   - FY2018: $131 million
+   - FY2019: $116 million
+
+   **Estimated Capex for FY2017**: 
+   Since we don't have the exact figure for FY2017, we will calculate the average of FY2018 and FY2019 for our estimation:
+   \[
+   \text{Average Capex} = \frac{131 + 116}{2} = 123.5 \text{ million}
+   \]
+
+   **Total Capex for FY2017 - FY2019**:
+   \[
+   123.5 + 131 + 116 = 370.5 \text{ million}
+   \]
+
+3. **Capex as a Percentage of Revenue**:
+   \[
+   \text{Capex as a % of Revenue} = \left( \frac{\text{Total Capex}}{\text{Total Net Revenues}} \right) \times 100
+   \]
+   \[
+   = \left( \frac{370.5}{20,006} \right) \times 100 \approx 1.85\%
+   \]
+
+4. **3-Year Average**:
+   To find the average capex as a percentage of revenue over the three years:
+   \[
+   \text{Average Capex %} = \frac{1.85}{3} \approx 0.6167\%
+   \]
+
+   However, since we need the individual percentages for each year:
+   - FY2017: Estimated capex = $123.5 million, Revenue = $7,017 million
+     \[
+     \text{Capex %} = \left( \frac{123.5}{7,017} \right) \times 100 \approx 1.76\%
+     \]
+   - FY2018: Capex = $131 million, Revenue = $7,500 million
+     \[
+     \text{Capex %} = \left( \frac{131}{7,500} \right) \times 100 \approx 1.75\%
+     \]
+   - FY2019: Capex = $116 million, Revenue = $6,489 million
+     \[
+     \text{Capex %} = \left( \frac{116}{6,489} \right) \times 100 \approx 1.79\%
+     \]
+
+   **Average of these percentages**:
+   \[
+   \text{Average} = \frac{1.76 + 1.75 + 1.79}{3} \approx 1.77\%
+   \]
+
+Thus, the FY2017 - FY2019 3-year average of capex as a percentage of revenue for Activision Blizzard is approximately **1.8%** when rounded to one decimal place.",,
+financebench_id_04735,You are an investment banker and your only resource(s) to answer the following question is (are): the statement of financial position and the cash flow statement. Here's the question: what is the FY2015 operating cash flow ratio for Adobe? Operating cash flow ratio is defined as: cash from operations / total current liabilities. Round your answer to two decimal places.,0.66,,"To calculate the operating cash flow ratio for Adobe for FY2015, we need the cash provided by operating activities and the total current liabilities.
+
+From the context provided, we have the following information for FY2015:
+
+1. Cash provided by operating activities: This value is not explicitly stated in the provided context. Therefore, I cannot provide this value.
+
+2. Total current liabilities: This value is also not explicitly stated in the provided context.
+
+Since I do not have the necessary values to calculate the operating cash flow ratio, I cannot provide an answer.",,
+financebench_id_07507,What is Adobe's year-over-year change in unadjusted operating income from FY2015 to FY2016 (in units of percents and round to one decimal place)? Give a solution to the question by using the income statement.,65.4%,,"To calculate Adobe's year-over-year change in unadjusted operating income from FY2015 to FY2016, we need the operating income figures for both years.
+
+From the provided context, we have:
+
+- Operating Income for FY2015: $8,728 million
+- Operating Income for FY2016: $8,626 million
+
+Now, we can calculate the year-over-year change in operating income:
+
+1. Calculate the change in operating income:
+   \[
+   \text{Change} = \text{Operating Income}_{2016} - \text{Operating Income}_{2015} = 8,626 - 8,728 = -102 \text{ million}
+   \]
+
+2. Calculate the percentage change:
+   \[
+   \text{Percentage Change} = \left( \frac{\text{Change}}{\text{Operating Income}_{2015}} \right) \times 100 = \left( \frac{-102}{8,728} \right) \times 100 \approx -1.2\%
+   \]
+
+Therefore, Adobe's year-over-year change in unadjusted operating income from FY2015 to FY2016 is approximately **-1.2%**.",,
+financebench_id_03856,What is the FY2017 operating cash flow ratio for Adobe? Operating cash flow ratio is defined as: cash from operations / total current liabilities. Round your answer to two decimal places. Please utilize information provided primarily within the balance sheet and the cash flow statement.,0.83,,"To calculate the operating cash flow ratio for Adobe for FY2017, we need the cash from operations and total current liabilities.
+
+From the context provided, we have the following information:
+
+1. **Net cash provided by operating activities for FY2017**: This information is not explicitly provided in the context. However, we can infer that the cash flow from operating activities for FY2017 is likely to be similar to the previous years' trends. Unfortunately, without the exact figure, we cannot proceed with the calculation.
+
+2. **Total current liabilities**: This information is also not explicitly provided in the context. We would need the total current liabilities figure for FY2017 to complete the calculation.
+
+Since we do not have the specific values for cash from operations and total current liabilities for FY2017, I cannot provide the operating cash flow ratio. 
+
+If you have access to the specific cash from operations and total current liabilities figures for FY2017, please provide them, and I can help you calculate the ratio.",,
+financebench_id_00438,"Does Adobe have an improving operating margin profile as of FY2022? If operating margin is not a useful metric for a company like this, then state that and explain why.",No the operating margins of Adobe have recently declined from 36.8% in FY 2021 to 34.6% in FY2022. A drop by 2.2% in a year.,,"Based on the provided context, Adobe's operating margin profile appears to be improving as of FY2022. The operating profit as reported for FY2022 is $3,475.8 million, which corresponds to an operating margin of 18.3%. This is an increase from the previous fiscal year (FY2021), where the operating profit was $3,144.8 million, resulting in an operating margin of 17.3%. This indicates a positive trend in operating margins year-over-year.
+
+However, it is important to note that while operating margin is a useful metric for assessing a company's profitability, it may not fully capture the financial health of a company like Adobe, which operates in a rapidly changing technology sector. Factors such as investment in research and development, customer acquisition costs, and the impact of non-GAAP adjustments (like those related to acquisitions or restructuring) can significantly influence the operating margin. Therefore, while operating margin provides valuable insights, it should be considered alongside other metrics and qualitative factors to get a comprehensive view of the company's performance.",,
+financebench_id_00591,Does Adobe have an improving Free cashflow conversion as of FY2022?,"Yes, the FCF conversion (using net income as the denominator) for Adobe has improved by ~13% from 143% in 2021 to 156% in 2022",,I don't know.,,
+financebench_id_01319,What is the quantity of restructuring costs directly outlined in AES Corporation's income statements for FY2022? If restructuring costs are not explicitly outlined then state 0.,0,,The restructuring costs directly outlined in AES Corporation's income statements for FY2022 are $(26.5) million.,,
+financebench_id_00540,Roughly how many times has AES Corporation sold its inventory in FY2022? Calculate inventory turnover ratio for the FY2022; if conventional inventory management is not meaningful for the company then state that and explain why.,AES has converted inventory 9.5 times in FY 2022.,,"To calculate the inventory turnover ratio for AES Corporation for FY2022, we need the cost of goods sold (COGS) and the average inventory for the year. However, the provided context does not include specific figures for COGS or inventory levels.
+
+The inventory turnover ratio is calculated using the formula:
+
+\[ \text{Inventory Turnover Ratio} = \frac{\text{Cost of Goods Sold (COGS)}}{\text{Average Inventory}} \]
+
+If the COGS and average inventory figures are not available, we cannot compute the inventory turnover ratio.
+
+Additionally, the context mentions that AES Corporation has a high inventory velocity and a cash-generating operating cycle, which suggests that conventional inventory management may not be as meaningful for the company. This is because the company is able to turn its inventory quickly and generally collects from consumers before payments to suppliers come due. This indicates a different operational model that may not rely heavily on traditional inventory management metrics.
+
+In summary, without specific COGS and inventory data, we cannot calculate the inventory turnover ratio, and the company's operational model suggests that conventional inventory management may not be applicable.",,
+financebench_id_10420,"Based on the information provided primarily in the statement of financial position and the statement of income, what is AES's FY2022 return on assets (ROA)? ROA is defined as: FY2022 net income / (average total assets between FY2021 and FY2022). Round your answer to two decimal places.",-0.02,,"I don't have the specific financial data for AES's FY2022 net income or total assets for FY2021 and FY2022 to calculate the return on assets (ROA). Therefore, I cannot provide the ROA for AES for FY2022.",,
+financebench_id_06655,What is Amazon's FY2017 days payable outstanding (DPO)? DPO is defined as: 365 * (average accounts payable between FY2016 and FY2017) / (FY2017 COGS + change in inventory between FY2016 and FY2017). Round your answer to two decimal places. Address the question by using the line items and information shown within the balance sheet and the P&L statement.,93.86,,"To calculate Amazon's FY2017 Days Payable Outstanding (DPO), we need to follow the formula provided:
+
+\[ \text{DPO} = 365 \times \left( \frac{\text{Average Accounts Payable}}{\text{COGS} + \text{Change in Inventory}} \right) \]
+
+### Step 1: Calculate Average Accounts Payable
+From the cash flow statement, we can see the accounts payable for FY2016 and FY2017. However, the specific values for accounts payable are not provided in the context. Assuming we had the values, the average accounts payable would be calculated as follows:
+
+\[ \text{Average Accounts Payable} = \frac{\text{Accounts Payable}_{2016} + \text{Accounts Payable}_{2017}}{2} \]
+
+### Step 2: Calculate COGS
+COGS (Cost of Goods Sold) is not directly provided in the context. However, we can infer it from the changes in inventory and the cash flow statement. The change in inventory from FY2016 to FY2017 is given as:
+
+- Change in Inventory = Inventory FY2017 - Inventory FY2016
+
+Assuming we had the inventory values, we would calculate COGS as follows:
+
+\[ \text{COGS} = \text{Net Cash Used in Operating Activities} + \text{Change in Inventory} \]
+
+### Step 3: Calculate Change in Inventory
+From the cash flow statement, we see:
+
+- Change in Inventory from FY2016 to FY2017 = (3,583) (as per the cash flow statement)
+
+### Step 4: Substitute Values into the DPO Formula
+Once we have the average accounts payable and COGS, we can substitute these values into the DPO formula.
+
+### Final Calculation
+Since we do not have the specific values for accounts payable and COGS, we cannot compute the exact DPO. 
+
+If you provide the accounts payable values for FY2016 and FY2017, I can help you calculate the DPO. Otherwise, based on the information provided, I don't know the answer.",,
+financebench_id_08135,What is Amazon's year-over-year change in revenue from FY2016 to FY2017 (in units of percents and round to one decimal place)? Calculate what was asked by utilizing the line items clearly shown in the statement of income.,30.8%,,"To calculate the year-over-year change in revenue from FY2016 to FY2017, we will use the total net sales for both years.
+
+- Total net sales for FY2016: $135,987 million
+- Total net sales for FY2017: $177,866 million
+
+The formula for year-over-year change in revenue is:
+
+\[
+\text{Year-over-Year Change (\%)} = \left( \frac{\text{FY2017 Revenue} - \text{FY2016 Revenue}}{\text{FY2016 Revenue}} \right) \times 100
+\]
+
+Substituting the values:
+
+\[
+\text{Year-over-Year Change (\%)} = \left( \frac{177,866 - 135,987}{135,987} \right) \times 100
+\]
+
+Calculating the difference:
+
+\[
+177,866 - 135,987 = 41,879
+\]
+
+Now, divide by FY2016 revenue:
+
+\[
+\frac{41,879}{135,987} \approx 0.307
+\]
+
+Now, multiply by 100 to convert to percentage:
+
+\[
+0.307 \times 100 \approx 30.7\%
+\]
+
+Thus, the year-over-year change in revenue from FY2016 to FY2017 is approximately **30.7%**.",,

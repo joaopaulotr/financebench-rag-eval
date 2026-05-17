@@ -14,6 +14,7 @@ dependencies = [
     "langchain-qdrant>=1.1.0",
     "langchain-text-splitters>=1.1.2",
     "langchainhub>=0.1.21",
+    "openpyxl>=3.1.5",
     "pymupdf>=1.27.2.3",
     "pypdf>=6.11.0",
     "python-dotenv>=1.2.2",
