@@ -3,8 +3,8 @@ import os
 from dotenv                                         import load_dotenv
 from datasets                                       import load_dataset
 from langchain_community.document_loaders           import DirectoryLoader, PyPDFLoader # Carregar PDFs
-from langchain_community.vectorstores               import Qdrant
 from langchain_openai                               import OpenAIEmbeddings, ChatOpenAI
+from langchain_qdrant                               import QdrantVectorStore
 from langchain_text_splitters                       import TokenTextSplitter
 from qdrant_client                                  import QdrantClient
 
@@ -44,19 +44,18 @@ if __name__ == '__main__':
 
     if collection_name in existing:
         print("Collection já existe, pulando ingestão.")
-        vectorstore = Qdrant(
-            client=qdrant_client,
+        vectorstore = QdrantVectorStore.from_existing_collection(
+            embedding=embeddings,
+            url="http://localhost:6333",
             collection_name=collection_name,
-            embeddings=embeddings,
-    )
+        )
     else:
         try:
-            vectorstore = Qdrant.from_documents(
+            vectorstore = QdrantVectorStore.from_documents(
                 documents=text,
                 embedding=embeddings,
-                client=qdrant_client,
+                url="http://localhost:6333",
                 collection_name=collection_name,
-                force_recreate=True,
             )
         except Exception as exc:
             print(f"Erro na ingestao: {exc}")
