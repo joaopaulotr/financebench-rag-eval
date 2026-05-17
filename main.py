@@ -2,6 +2,9 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_qdrant import QdrantVectorStore
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from operator import itemgetter
 
 load_dotenv()
 
@@ -26,13 +29,18 @@ prompt_template = ChatPromptTemplate.from_messages([
 def format_docs(docs):
     return "\n\n".join(doc.page_content for doc in docs)
 
+def create_retrieval_chain_with_lcel(): # Chain de recuperação usando LCEL (LangChain Embeddings + LLM)
+    retrieval_chain = (
+        RunnablePassthrough.assign(
+            context=itemgetter("question") | retriever | format_docs
+        ) | prompt_template | llm | StrOutputParser()
+    )
+    return retrieval_chain
+
 if __name__ == "__main__":
     query = "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions."
 
-    docs = retriever.invoke(query)
-    context = format_docs(docs)
+    chain = create_retrieval_chain_with_lcel()
+    result = chain.invoke({"question": query})
 
-    prompt = prompt_template.format_messages(context=context, question=query)
-    response = llm.invoke(prompt)
-
-    print(f"Resposta: {response.content}")
+    print(f"Resposta: {result}")
