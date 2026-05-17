@@ -3,7 +3,7 @@ import os
 from dotenv                                         import load_dotenv
 from datasets                                       import load_dataset
 from langchain_community.document_loaders           import DirectoryLoader, PyMuPDFLoader
-from langchain_openai                               import OpenAIEmbeddings, ChatOpenAI
+from langchain_openai                               import OpenAIEmbeddings
 from langchain_qdrant                               import QdrantVectorStore
 from langchain_text_splitters                       import TokenTextSplitter
 from qdrant_client                                  import QdrantClient
@@ -62,25 +62,3 @@ if __name__ == '__main__':
             raise
     print("Ingestão concluída no Qdrant.")
     print(qdrant_client.get_collections())
-
-    # Faz busca por similaridade e retorna os k chunks mais proximos
-    results = vectorstore.similarity_search(
-        "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions.",
-        k=3,
-    )
-
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
-    context = "\n\n".join(result.page_content for result in results)
-    prompt = [
-        (
-            "system",
-            f"You are a helpful assistant for answering questions about financial documents. Use the following context to answer the question. If you don't know the answer, say you don't know.\n\nContext:\n{context}",
-        ),
-        (
-            "human",
-            "What is the year end FY2019 total amount of inventories for Best Buy? Answer in USD millions.",
-        ),
-    ]
-
-    model_response = llm.invoke(prompt)
-    print(f"Resposta do modelo: {model_response}")
