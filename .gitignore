@@ -201,3 +201,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Qdrant local storage
+qdrant_storage/
+
+# Dataset PDFs
+data/pdfs/
