@@ -2,7 +2,7 @@ import os
 
 from dotenv                                         import load_dotenv
 from datasets                                       import load_dataset
-from langchain_community.document_loaders           import DirectoryLoader, PyPDFLoader # Carregar PDFs
+from langchain_community.document_loaders           import DirectoryLoader, PyMuPDFLoader
 from langchain_openai                               import OpenAIEmbeddings, ChatOpenAI
 from langchain_qdrant                               import QdrantVectorStore
 from langchain_text_splitters                       import TokenTextSplitter
@@ -14,7 +14,7 @@ load_dotenv()
 loader = DirectoryLoader(
     "data/pdfs",
     glob="*.pdf",
-    loader_cls=PyPDFLoader,
+    loader_cls=PyMuPDFLoader,
     silent_errors=True,
     show_progress=True,
 )# Carregando diretório de PDFs, usando o PyPDFLoader para ler os arquivos PDF
