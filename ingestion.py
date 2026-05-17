@@ -31,7 +31,7 @@ if __name__ == '__main__':
     text = text_splitter.split_documents(docs) # Gerar embeddings para os textos divididos
     print(f"Gerados {len(text)} chunks de texto.")
 
-    embeddings = OpenAIEmbeddings() # Gerar embeddings usando OpenAI
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
     print("ingesting...")
     print(f"Chunks para ingestao: {len(text)}")
 

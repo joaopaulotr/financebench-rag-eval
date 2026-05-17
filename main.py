@@ -14,7 +14,9 @@ vectorstore = QdrantVectorStore.from_existing_collection(
     collection_name="FinanceBench",
 )
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+#Testei com 3 e acabou em alguns casos não achando pela vastidão de documentos, aumentando para 6 e achei que ficou mais robusto, mesmo que com um pouco mais de ruído
+# retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
+retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
 
 prompt_template = ChatPromptTemplate.from_messages([
     ("system", "You are a helpful assistant for answering questions about financial documents. Use the following context to answer the question. If you don't know the answer, say you don't know.\n\nContext:\n{context}"),
