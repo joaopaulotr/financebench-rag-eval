@@ -64,8 +64,10 @@ if __name__ == '__main__':
             return False
         return True
 
-    if collection_name in existing:
-        logging.warning(f"Collection '{collection_name}' já existe — pulando ingestão.")
+    points_count = qdrant_client.count(collection_name).count if collection_name in existing else 0
+
+    if collection_name in existing and points_count > 0:
+        logging.warning(f"Collection '{collection_name}' já existe com {points_count} pontos — pulando ingestão.")
         vectorstore = QdrantVectorStore.from_existing_collection(
             embedding=embeddings,
             url="http://localhost:6333",
@@ -74,11 +76,14 @@ if __name__ == '__main__':
     else:
         try:
             # Cria collection vazia e insere em batches para evitar timeout
-            qdrant_client.create_collection(
-                collection_name=collection_name,
-                vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
-            )
-            logging.info(f"Collection '{collection_name}' criada.")
+            if collection_name not in existing:
+                qdrant_client.create_collection(
+                    collection_name=collection_name,
+                    vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
+                )
+                logging.info(f"Collection '{collection_name}' criada.")
+            else:
+                logging.warning(f"Collection '{collection_name}' existe mas vazia — reingerindo.")
             vectorstore = QdrantVectorStore(
                 client=qdrant_client,
                 collection_name=collection_name,
