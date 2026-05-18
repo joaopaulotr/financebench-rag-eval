@@ -1,6 +1,6 @@
 # FinanceBench RAG Eval
 
-A production-grade Retrieval-Augmented Generation system evaluated against the [FinanceBench](https://github.com/patronus-ai/financebench) benchmark (Patronus AI). Built with rigorous multi-tier eval, end-to-end observability, and full public documentation of the iteration process.
+A production-grade Retrieval-Augmented Generation system evaluated against the [FinanceBench](https://github.com/patronus-ai/financebench) benchmark (Patronus AI). Built with rigorous multi-tier eval, end-to-end observability, and full public documentation of the iteration process — including what failed and why.
 
 ![Python](https://img.shields.io/badge/python-3.11+-blue?style=flat-square)
 ![LangChain](https://img.shields.io/badge/orchestration-LangChain-orange?style=flat-square)
@@ -26,7 +26,7 @@ Query
   ↓
 Retrieval (text-embedding-3-small + Qdrant, top-k=6)
   ↓
-Generation (Claude Sonnet)
+Generation (GPT-4o-mini)
   ↓
 Response + Source Citations
 ```
@@ -39,8 +39,7 @@ All steps traced end-to-end via Arize Phoenix *(Phase 2)*.
 
 | Component       | Tool                        | Reason                                          |
 |-----------------|-----------------------------|-------------------------------------------------|
-| LLM (main)      | Claude Sonnet               | Best quality for complex financial Q&A          |
-| LLM (tests)     | GPT-4o-mini                 | Fast, cheap iteration                           |
+| LLM             | GPT-4o-mini                 | Fast, cheap, good enough for iteration          |
 | Embeddings      | text-embedding-3-small      | Simple, cheap, good enough                      |
 | Vector DB       | Qdrant (local via Docker)   | Open source, production-ready                   |
 | Orchestration   | LangChain → LangGraph       | LangGraph wired in Phase 4                      |
@@ -74,29 +73,34 @@ Judge calibration: every LLM judge validated against 30+ human-labeled examples.
 
 ## Results
 
-> Results updated at the end of each phase. Baseline numbers will appear after Phase 1.
+| Phase      | Accuracy (manual) | Recall@k | Faithfulness | Answer Relevance | Cost/query |
+|------------|--------------------|----------|--------------|------------------|------------|
+| Baseline   | 2/20 (10%)         | —        | —            | —                | —          |
+| +Fix 1     |                    |          |              |                  |            |
+| +Fix 2     |                    |          |              |                  |            |
+| Final      |                    |          |              |                  |            |
 
-| Phase      | Recall@5 | Faithfulness | Answer Relevance | Cost/query |
-|------------|----------|--------------|------------------|------------|
-| Baseline   |          |              |                  |            |
-| +Fix 1     |          |              |                  |            |
-| +Fix 2     |          |              |                  |            |
-| Final      |          |              |                  |            |
+### Baseline failure analysis
+
+Primary failure mode: **cross-company retrieval**. With 25,094 chunks from 84 companies in a single collection, semantic search retrieves chunks from the wrong company. Financial language across SEC filings is too similar — a query about 3M's revenue pulls chunks from Coca-Cola and Nike.
+
+Confirmed that metadata filtering by source document resolves retrieval accuracy. Automatic metadata filtering (LLM extracts company → filters Qdrant) is the planned fix for Phase 3.
 
 ---
 
 ## Roadmap
 
 - [x] Phase 1 — Functional baseline (weeks 1–3)
-  - [x] Dataset selection and ingestion (FinanceBench, 75 PDFs)
-  - [x] Fixed chunking (512 tokens, overlap 50) + Qdrant
+  - [x] Dataset selection and ingestion (FinanceBench, 84 PDFs)
+  - [x] Fixed chunking (512 tokens, overlap 50) + Qdrant (25,094 chunks)
   - [x] PDF loading with PyMuPDFLoader (robust to malformed files)
   - [x] Embeddings with text-embedding-3-small
   - [x] Retrieval top-k=6 + generation with GPT-4o-mini
+  - [x] Baseline eval: 20 queries, 2/20 correct (10%)
+  - [x] Failure mode identified: cross-company retrieval
   - [x] Public repo with this README
-  - [ ] Manual test of 20–30 queries, annotate failures
 - [ ] Phase 2 — Eval infrastructure (weeks 4–6)
-  - [ ] 80–100 example eval set with ground truth
+  - [ ] 100 example eval set with ground truth
   - [ ] Tier 1 and Tier 2 metrics implemented
   - [ ] LLM-as-judge calibrated against human labels
   - [ ] Arize Phoenix traces wired end-to-end
@@ -120,7 +124,7 @@ Judge calibration: every LLM judge validated against 30+ human-labeled examples.
 
 - Python 3.11+
 - Docker
-- API keys: `OPENAI_API_KEY` (and `ANTHROPIC_API_KEY` for Phase 3+)
+- API key: `OPENAI_API_KEY`
 
 ### Install
 
@@ -143,12 +147,6 @@ cp .env.example .env
 docker compose up -d
 ```
 
-### Download documents
-
-```bash
-uv run python baixarDataSet.py
-```
-
 ### Ingest documents
 
 ```bash
@@ -161,6 +159,12 @@ uv run python ingestion.py
 uv run python main.py
 ```
 
+### Run baseline eval
+
+```bash
+uv run python eval/run_baseline.py
+```
+
 ---
 
 ## Dataset
@@ -171,9 +175,9 @@ uv run python main.py
 
 ## References
 
-- [FinanceBench paper](https://github.com/patronus-ai/financebench) — Patronus AI
+- [FinanceBench paper](https://arxiv.org/abs/2311.11944) — Patronus AI
 - [6 RAG Evals](https://jxnl.co) — Jason Liu
-- [LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/) — Hamel Husain (required reading before Phase 2)
+- [LLM Evals FAQ](https://hamel.dev/blog/posts/evals-faq/) — Hamel Husain
 - [Arize Phoenix docs](https://docs.arize.com/phoenix)
 - [LangGraph docs](https://langchain-ai.github.io/langgraph/)
 
