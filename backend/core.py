@@ -19,13 +19,13 @@ vectorstore = QdrantVectorStore.from_existing_collection(
     collection_name="FinanceBench",
 )
 
-model = init_chat_model("gpt-3.5-turbo", model_provider="openai")
+model = init_chat_model("gpt-4o-mini", model_provider="openai")
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
     """Retrieve relevant financial documents to help answer the query."""
-    # Retrieve top 4 most similar documents
-    retrieved_docs = vectorstore.as_retriever().invoke(query, k=4)
+    # Retrieve top 6 most similar documents
+    retrieved_docs = vectorstore.as_retriever().invoke(query, k=6)
 
     # Serialize documents for the model
     serialized = "\n\n".join(
