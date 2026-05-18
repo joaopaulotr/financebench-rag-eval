@@ -1,4 +1,6 @@
 import os
+import logging
+import time
 
 from dotenv                                         import load_dotenv
 from langchain_community.document_loaders           import DirectoryLoader, PyMuPDFLoader
@@ -9,6 +11,12 @@ from qdrant_client                                  import QdrantClient
 from qdrant_client.models                           import Distance, VectorParams
 
 load_dotenv()
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    datefmt="%H:%M:%S",
+)
 
 # Carrega PDFs do diretorio e extrai texto/paginas
 loader = DirectoryLoader(
@@ -22,38 +30,42 @@ loader = DirectoryLoader(
 #loader = PyPDFLoader("data/pdfs/" + "JPMORGAN_2021Q1_10Q.pdf") # Carregando um arquivo PDF específico, usando o PyPDFLoader para ler o arquivo PDF
 
 if __name__ == '__main__':
-    docs = loader.load()
-    print(f"Páginas totais: {len(docs)}")
-    print(f"Metadata primeiro doc: {docs[0].metadata}")
-    print(f"Prévia conteúdo: {docs[0].page_content[:300]}")
+    t0 = time.time()
 
+    logging.info("Carregando PDFs de data/pdfs/...")
+    docs = loader.load()
+    logging.info(f"PDFs carregados: {len(docs)} páginas em {time.time() - t0:.1f}s")
+    logging.info(f"Metadata primeiro doc: {docs[0].metadata}")
+    logging.info(f"Prévia conteúdo: {docs[0].page_content[:300]}")
+
+    t1 = time.time()
     text_splitter = TokenTextSplitter(chunk_size=512, chunk_overlap=50) # Dividir os textos em pedaços menores para melhor processamento
     text = text_splitter.split_documents(docs) # Gerar embeddings para os textos divididos
-    print(f"Gerados {len(text)} chunks de texto.")
+    logging.info(f"Chunking concluído: {len(text)} chunks em {time.time() - t1:.1f}s")
 
     embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-    print("ingesting...")
-    print(f"Chunks para ingestao: {len(text)}")
 
     # Conecta no Qdrant e cria/insere vetores na collection
     collection_name = "FinanceBench"
     qdrant_client = QdrantClient(url="http://localhost:6333")
+    logging.info(f"Conectado ao Qdrant em http://localhost:6333")
 
     existing = [c.name for c in qdrant_client.get_collections().collections]
 
     BATCH_SIZE = 500
 
-    def add_batch(vectorstore: QdrantVectorStore, batch: list, batch_number: int):
+    def add_batch(vectorstore: QdrantVectorStore, batch: list, batch_number: int, total: int):
+        t = time.time()
         try:
             vectorstore.add_documents(batch)
-            print(f"Batch {batch_number} adicionado com sucesso.")
+            logging.info(f"  Batch {batch_number + 1}/{total} — {len(batch)} chunks em {time.time() - t:.1f}s")
         except Exception as exc:
-            print(f"Erro na ingestao do batch {batch_number}: {exc}")
+            logging.error(f"  Batch {batch_number + 1}/{total} falhou: {exc}")
             return False
         return True
 
     if collection_name in existing:
-        print("Collection já existe, pulando ingestão.")
+        logging.warning(f"Collection '{collection_name}' já existe — pulando ingestão.")
         vectorstore = QdrantVectorStore.from_existing_collection(
             embedding=embeddings,
             url="http://localhost:6333",
@@ -66,19 +78,22 @@ if __name__ == '__main__':
                 collection_name=collection_name,
                 vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
             )
+            logging.info(f"Collection '{collection_name}' criada.")
             vectorstore = QdrantVectorStore(
                 client=qdrant_client,
                 collection_name=collection_name,
                 embedding=embeddings,
             )
             batches = [text[i:i + BATCH_SIZE] for i in range(0, len(text), BATCH_SIZE)]
-            successful_batches = sum(
-                add_batch(vectorstore, batch, idx) for idx, batch in enumerate(batches)
+            logging.info(f"Iniciando ingestão: {len(text)} chunks em {len(batches)} batches de {BATCH_SIZE}...")
+            t2 = time.time()
+            successful = sum(
+                add_batch(vectorstore, batch, idx, len(batches)) for idx, batch in enumerate(batches)
             )
-            print(f"{successful_batches} batches adicionados com sucesso de {len(batches)}.")
+            logging.info(f"Ingestão concluída: {successful}/{len(batches)} batches em {time.time() - t2:.1f}s")
         except Exception as exc:
-            print(f"Erro na ingestao: {exc}")
+            logging.error(f"Erro na ingestao: {exc}")
             raise
 
-    print("Ingestão concluída no Qdrant.")
-    print(qdrant_client.get_collections())
+    logging.info(f"Pipeline total: {time.time() - t0:.1f}s")
+    logging.info(f"Collections no Qdrant: {[c.name for c in qdrant_client.get_collections().collections]}")
