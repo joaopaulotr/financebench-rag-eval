@@ -53,7 +53,7 @@ if __name__ == '__main__':
     existing = [c.name for c in qdrant_client.get_collections().collections]
 
     BATCH_SIZE = 500
-
+    #Batch indexing para evitar timeout e facilitar reingestão em caso de falha
     def add_batch(vectorstore: QdrantVectorStore, batch: list, batch_number: int, total: int):
         t = time.time()
         try:

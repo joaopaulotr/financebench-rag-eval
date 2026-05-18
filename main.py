@@ -8,7 +8,7 @@ from operator import itemgetter
 
 load_dotenv()
 
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 vectorstore = QdrantVectorStore.from_existing_collection(
