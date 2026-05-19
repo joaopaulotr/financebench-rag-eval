@@ -36,12 +36,13 @@ def retrieve_context(query: str):
     # Return both serialized content and raw documents
     return serialized, retrieved_docs
 
-def run_llm(query: str) -> Dict[str, Any]:
+def run_llm(query: str, system_prompt: str = None) -> Dict[str, Any]:
 
-    system_prompt = (
-        "You are a financial analyst assistant. Use the retrieved documents to answer the user's query. "
-        "If the documents don't contain the answer, say you don't know. Always cite sources from the retrieved documents."
-    )  
+    if system_prompt is None:
+        system_prompt = (
+            "You are a financial analyst assistant. Use the retrieved documents to answer the user's query. "
+            "If the documents don't contain the answer, say you don't know. Always cite sources from the retrieved documents."
+        )  
 
     agent = create_agent(model, tools=[retrieve_context], system_prompt=system_prompt)
 

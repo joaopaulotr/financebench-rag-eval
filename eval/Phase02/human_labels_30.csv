@@ -1,0 +1,333 @@
+financebench_id,question,expected_answer,model_answer,human_correct
+financebench_id_03029,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The FY2018 capital expenditure amount for 3M was not explicitly detailed in the retrieved documents. However, they do mention that 3M invests significantly in property, plant, and equipment, which is indicative of their capital expenditures. 
+
+For specific amounts related to FY2018, further details or the complete cash flow statement for that year would be necessary. Unfortunately, the provided documents do not specify the exact dollar figure for capital expenditures in 2018. Thus, I don't know the exact FY2018 capital expenditure amount in USD millions for 3M.",0
+financebench_id_01226,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+-Decrease in gross Margin
+-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
+charges","In FY2022, 3M's operating margin experienced changes primarily due to several factors:
+
+1. **Declines in Disposable Respirator Demand**: The decrease in demand for disposable respirators had a negative impact on operating margins, reducing it by 0.3 percentage points.
+
+2. **Organic Growth and Productivity Impacts**: Overall, other organic growth and productivity measures contributed positively, adding a net benefit of 1.3 percentage points to operating margins. This was supported by:
+   - Strong pricing
+   - Spending discipline
+   - Restructuring actions taken in 2021
+
+3. **Manufacturing Headwinds**: The company faced challenges, such as global supply chain disruptions and geopolitical impacts due to the Russia/Ukraine conflict, along with ongoing COVID-related challenges in China, which affected costs and operational efficiency.
+
+4. **Increased Investments**: There were higher investments in growth productivity and sustainability initiatives, which are likely to have both immediate costs and long-term benefits.
+
+Inflationary pressures also continued to impact raw material costs, which had a broader effect on operating expenses and margins (Source: 3M 2022 10-K).
+
+Overall, while operating margins can be a useful metric for assessing a company's profitability and operational efficiency, it is important to consider the context and specific challenges that may influence it, such as significant external pressures and strategic investments. Thus, while operating margin is a relevant metric for 3M, it should be interpreted with an understanding of these unique factors and external influences affecting the company.",0
+financebench_id_01865,"If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",The consumer segment shrunk by 0.9% organically.,"In 2022, the segment that dragged down 3M's overall growth, excluding the impact of mergers and acquisitions (M&A), was the Health Care segment. It reported a total sales decline of 2.0% in U.S. dollars, with organic sales growth impacted primarily by COVID-related trends that affected elective procedure volumes and ongoing inflationary pressures. Although there were increases in specific areas like separation and purification, health information systems, and food safety, the overall performance was negatively affected by these factors, including a notable decrease in operating income margins due to increased costs and the impact of divestitures from the split-off of the Food Safety Division (source: 3M 2022 10-K).",0
+financebench_id_07507,What is Adobe's year-over-year change in unadjusted operating income from FY2015 to FY2016 (in units of percents and round to one decimal place)? Give a solution to the question by using the income statement.,65.4%,"I could not find specific unadjusted operating income values for Adobe for the fiscal years 2015 and 2016. Consequently, I can't calculate the year-over-year change in unadjusted operating income for that period.
+
+If you have other inquiries or need assistance with different data, feel free to ask!",0
+financebench_id_00438,"Does Adobe have an improving operating margin profile as of FY2022? If operating margin is not a useful metric for a company like this, then state that and explain why.",No the operating margins of Adobe have recently declined from 36.8% in FY 2021 to 34.6% in FY2022. A drop by 2.2% in a year.,"The retrieved documents do not contain specific details regarding Adobe's operating margin performance or its trend for FY2022. Consequently, I cannot determine whether Adobe has an improving operating margin profile as of FY2022.
+
+It's worth noting that for companies heavily reliant on software-as-a-service (SaaS) models, like Adobe, operating margins can vary significantly based on various factors such as customer acquisition costs, product development expenses, and recurring revenue stability. In such cases, metrics like free cash flow, earnings before interest, taxes, depreciation, and amortization (EBITDA), or gross margins may offer better insights into operational efficiency and profitability than operating margins alone. These metrics can reflect the unique characteristics of subscription-based business models, which may have different cost structures compared to traditional businesses. However, without specific data on Adobe, I cannot provide a conclusive answer regarding its operating margin profile.",0
+financebench_id_00591,Does Adobe have an improving Free cashflow conversion as of FY2022?,"Yes, the FCF conversion (using net income as the denominator) for Adobe has improved by ~13% from 143% in 2021 to 156% in 2022","I couldn't find specific information about Adobe's Free Cash Flow conversion for FY2022 in the retrieved documents. Therefore, I am unable to confirm whether Adobe's Free Cash Flow conversion is improving as of FY2022. If you have further details or another question, please let me know!",0
+financebench_id_10420,"Based on the information provided primarily in the statement of financial position and the statement of income, what is AES's FY2022 return on assets (ROA)? ROA is defined as: FY2022 net income / (average total assets between FY2021 and FY2022). Round your answer to two decimal places.",-0.02,"To calculate AES's FY2022 Return on Assets (ROA), we will use the following formula:
+
+\[ \text{ROA} = \frac{\text{Net Income}}{\text{Average Total Assets}} \]
+
+1. **Net Income for FY2022**: From the financial statement, the net income attributable to The AES Corporation in FY2022 is \(-546\) million dollars (a loss) [source: AES 2022 Annual Report].
+
+2. **Total Assets**:
+   - **FY2021 Total Assets**: Since the document does not provide the total assets for AES, I can't find the exact number for FY2021 or FY2022 from the retrieved information.
+   - As there is no mention of total assets for these years in the provided documents, I am unable to calculate the average total assets.
+
+Without the FY2021 and FY2022 total asset values, I cannot compute the average total assets, and thus, I cannot finalize the calculation of the Return on Assets (ROA). 
+
+Therefore, I don't know the ROA value for AES for FY2022.",0
+financebench_id_01148,What industry does AMCOR primarily operate in?,Amcor is a global leader in packaging production for various use cases.,"Amcor primarily operates in the packaging industry. The company is a global leader in developing and producing responsible packaging solutions for various sectors, including food, beverage, pharmaceutical, medical, home and personal care, and other products. Amcor focuses on creating flexible and rigid packaging, specialty cartons, closures, and services aimed at enhancing product protection, brand differentiation, and supply chain improvements (source: AMCOR 2023 Q4 Earnings Report).",1
+financebench_id_01936,What is the nature & purpose of AMCOR's restructuring liability as oF Q2 of FY2023 close?,87% of the total restructuring liability is related Employee liabilities.,"The retrieved documents do not provide specific details about AMCOR's restructuring liability as of Q2 of FY2023 or its nature and purpose. They mainly include financial overviews, balance sheet information, and general corporate announcements, without delving into specifics related to restructuring liabilities. Therefore, I don't know the exact nature and purpose of AMCOR's restructuring liability as of that date.",0
+financebench_id_01928,What Was AMCOR's Adjusted Non GAAP EBITDA for FY 2023,"AMCOR's Adj. EBITDA was $2,018mn in FY 2023","For the fiscal year 2023, Amcor's adjusted non-GAAP EBITDA was reported to be **$1,608 million**. This figure represents the company's performance after adjustments for various factors as outlined in their financial documents (source: Amcor 2023 Q4 Earnings Report).",0
+financebench_id_01930,"How much was the Real change in Sales for AMCOR in FY 2023 vs FY 2022, if we exclude the impact of FX movement, passthrough costs and one-off items?",The Real Growth was flat in FY 2023 vs FY 2022.,"In fiscal year 2023, Amcor's net sales increased by $150 million, or 1%, compared to fiscal year 2022. When excluding the pass-through of raw material costs of $776 million, negative currency impacts of $426 million, and the negative impact of disposed and ceased operations of $207 million, the remaining variation in net sales was an increase of $7 million, or 0%. This reflects price/mix benefits of approximately 3% and unfavorable volumes down about 3% (Source: AMCOR 2023 10K).
+
+Therefore, the real change in sales for Amcor in FY 2023 vs FY 2022, excluding the mentioned impacts, was essentially flat, with a nominal change of $7 million, translating to a 0% change in net sales (Source: AMCOR 2023 10K).",0
+financebench_id_00222,"Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","Yes. The quick ratio is 1.57, calculated as (cash and cash equivalents+Short term investments+Accounts receivable, net+receivables from related parties)/ (current liabilities).","The documents retrieved do not contain the specific quick ratio for AMD (Advanced Micro Devices) for FY22. Therefore, I cannot assess whether AMD has a reasonably healthy liquidity profile based on its quick ratio for that year.
+
+In general, the quick ratio is a measure of a company's ability to meet its short-term liabilities with its most liquid assets (excluding inventories). A quick ratio above 1 indicates that a company can cover its short-term obligations, while a ratio below 1 suggests potential liquidity issues. 
+
+Without the specific quick ratio for AMD in FY22, I cannot evaluate its liquidity profile. If you need further information about AMD's financial health or liquidity measures, please let me know.",0
+financebench_id_01279,"Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for AMD in FY22?","In 2022, AMD brought in the most cashflow from Operations","In FY22, AMD's cash flows from its various activities were as follows:
+
+1. **Operating Activities**: AMD generated cash flow from operating activities amounting to **$3,565 million**.
+2. **Investing Activities**: Cash used in investing activities was **$3,117 million**, which includes significant investments primarily in property and equipment and short-term investments.
+3. **Financing Activities**: Cash used in financing activities was **$582 million**, driven by payments related to debt and stock issuance for acquisitions.
+
+Based on these figures, operating activities brought in the most cash flow for AMD in FY22. Therefore, for AMD in FY22, operating activities had the highest positive cash flow among the three categories, while investing activities resulted in the largest cash outflow. 
+
+Sources:
+- Cash flows from operating activities: **$3,565 million**
+- Cash used in investing activities: **$3,117 million**
+- Cash used in financing activities: **$582 million** (Source: AMD's consolidated statements of cash flows for 2022).",1
+financebench_id_00288,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. The data indicates that Cash and Cash Equivalents at the end of FY 2023 was $775 million, while at the end of Q2 FY 2024, it had decreased to $689 million. This represents a decline of $86 million. 
+
+(Source: data\pdfs\AMCOR_2023_10K.pdf, data\pdfs\AMCOR_2023Q4_EARNINGS.pdf)",0
+financebench_id_00460,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2024 and Q2 of FY2023, there was a decrease in the number of Best Buy stores. 
+
+- In Q2 FY2024, Best Buy had a total of 907 stores at the end of the second quarter, after closing 1 store.
+- In Q2 FY2023, the total was 930 stores at the end of the second quarter, after closing 2 stores.
+
+Therefore, the decrease in the number of stores from Q2 FY2023 to Q2 FY2024 was 23 stores (from 930 to 907) (source: data\pdfs\BESTBUY_2024Q2_10Q.pdf).",0
+financebench_id_03838,What is the FY2019 - FY2020 total revenue growth rate for Block (formerly known as Square)? Answer in units of percents and round to one decimal place. Approach the question asked by assuming the standpoint of an investment banking analyst who only has access to the statement of income.,101.5%,"To calculate the total revenue growth rate for Block (formerly Square) between FY2019 and FY2020, we will use the total net revenue figures from their consolidated statements of operations.
+
+- Total net revenue for FY2019: $4,713,500,000
+- Total net revenue for FY2020: $9,497,578,000
+
+The formula for calculating the growth rate is:
+
+\[
+\text{Growth Rate} = \left( \frac{\text{Revenue}_{\text{FY2020}} - \text{Revenue}_{\text{FY2019}}}{\text{Revenue}_{\text{FY2019}}} \right) \times 100
+\]
+
+Plugging in the numbers:
+
+\[
+\text{Growth Rate} = \left( \frac{9,497,578 - 4,713,500}{4,713,500} \right) \times 100 = \left( \frac{4,784,078}{4,713,500} \right) \times 100 \approx 101.5\%
+\]
+
+Thus, the total revenue growth rate for Block from FY2019 to FY2020 is approximately **101.5%**.",1
+financebench_id_00464,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company operates in both the commercial aviation and defense sectors, both of which have been historically affected by economic cycles. For instance, demand for commercial aircraft tends to fluctuate based on global economic conditions, travel demand, and government spending on defense. 
+
+The documents highlight that domestic and international travel, which directly impacts the demand for new aircraft, is recovering from the effects of the COVID-19 pandemic but remains sensitive to various factors, including geopolitical events and government restrictions (Source: BOEING_2022_10K.pdf). Additionally, prices and availability of financing for Boeing's products can also be influenced by broader economic conditions and cycles in the airline industry (Source: BOEING_2018_10K.pdf). 
+
+Moreover, changes in U.S. government defense spending, which forms a significant part of Boeing's revenue, are difficult to predict and may be influenced by shifts in political environments and priorities, adding another layer of cyclicality to its business (Source: BOEING_2022_10K.pdf). 
+
+Overall, Boeing faces cyclical challenges that impact its operations and financial performance, both in commercial plans and defense sectors.",1
+financebench_id_06272,What is Coca Cola's FY2022 dividend payout ratio (using total cash dividends paid and net income attributable to shareholders)? Round answer to two decimal places. Answer the question asked by assuming you only have access to information clearly displayed in the cash flow statement and the income statement.,0.8,"To calculate Coca-Cola's FY2022 dividend payout ratio, we use the formula:
+
+\[
+\text{Dividend Payout Ratio} = \frac{\text{Total Cash Dividends Paid}}{\text{Net Income Attributable to Shareholders}}
+\]
+
+From the retrieved documents, we find:
+
+- **Net Income Attributable to Shareowners** for FY2022: $9,542 million
+- **Total Cash Dividends Paid** for FY2022 (calculated from the dividends per share and shares outstanding):
+  - Dividends per share: $1.76
+  - Average shares outstanding: 4,328 million
+  - Total Cash Dividends Paid = $1.76 * 4,328 million = $7,617 million
+
+Now, substituting the values into the formula:
+
+\[
+\text{Dividend Payout Ratio} = \frac{7,617}{9,542} \approx 0.797
+\]
+
+Rounding to two decimal places gives us:
+
+\[
+\text{Dividend Payout Ratio} \approx 0.80
+\]
+
+Thus, Coca-Cola's FY2022 dividend payout ratio is **0.80** (or **80%**).",1
+financebench_id_02981,"Taking into account the information outlined in the income statement, what is the FY2019 - FY2021 3 year average unadjusted operating income % margin for Corning? Answer in units of percents and round to one decimal place.",10.3%,"To calculate the FY2019 - FY2021 3-year average unadjusted operating income % margin for Corning, we first need the operating income and net sales for the years 2019, 2020, and 2021.
+
+Here are the provided figures from the income statements:
+
+- **For 2019**:
+  - Operating Income: $1,306 million
+  - Net Sales: $11,503 million
+
+- **For 2020**:
+  - Operating Income: $509 million
+  - Net Sales: $11,303 million
+
+- **For 2021**:
+  - Operating Income: $2,112 million
+  - Net Sales: $14,082 million
+
+Now, we calculate the operating income % margin for each year:
+
+1. **2019**: 
+   \[
+   \text{Operating Income % Margin} = \left( \frac{1,306}{11,503} \right) \times 100 \approx 11.4\%
+   \]
+
+2. **2020**: 
+   \[
+   \text{Operating Income % Margin} = \left( \frac{509}{11,303} \right) \times 100 \approx 4.5\%
+   \]
+
+3. **2021**: 
+   \[
+   \text{Operating Income % Margin} = \left( \frac{2,112}{14,082} \right) \times 100 \approx 15.0\%
+   \]
+
+Next, we calculate the average of these margins:
+
+\[
+\text{Average Operating Income % Margin} = \frac{11.4 + 4.5 + 15.0}{3} \approx \frac{30.9}{3} \approx 10.3\%
+\]
+
+Thus, the FY2019 - FY2021 3-year average unadjusted operating income % margin for Corning is approximately **10.3%**.",1
+financebench_id_05915,What is the FY2018 fixed asset turnover ratio for CVS Health? Fixed asset turnover ratio is defined as: FY2018 revenue / (average PP&E between FY2017 and FY2018). Round your answer to two decimal places. Calculate what was asked by utilizing the line items clearly shown in the P&L statement and the balance sheet.,17.98,"To calculate the Fixed Asset Turnover Ratio for CVS Health for FY2018, we will use the following formula:
+
+\[
+\text{Fixed Asset Turnover Ratio} = \frac{\text{FY2018 Revenue}}{\text{Average PP&E}}
+\]
+
+### Step 1: Gather Revenue Data
+From the documents, the total revenue for CVS Health in FY2018 is:
+
+- **Revenue (FY2018)**: $243,398 million (or $243.398 billion) (source: CVS Health FY2018 10-K).
+
+### Step 2: Gather Property, Plant, and Equipment (PP&E) Data
+The property and equipment (PP&E) values for FY2018 and FY2017 are:
+
+- **PP&E (FY2018)**: $11,349 million (source: CVS Health FY2018 10-K).
+- **PP&E (FY2017)**: $10,292 million (source: CVS Health FY2018 10-K).
+
+### Step 3: Calculate Average PP&E
+The average PP&E between FY2017 and FY2018 is calculated as:
+
+\[
+\text{Average PP&E} = \frac{\text{PP&E (FY2018)} + \text{PP&E (FY2017)}}{2} = \frac{11,349 + 10,292}{2} = \frac{21,641}{2} = 10,820.5 \text{ million}
+\]
+
+### Step 4: Calculate Fixed Asset Turnover Ratio
+Now, substituting the values into the Fixed Asset Turnover Ratio formula:
+
+\[
+\text{Fixed Asset Turnover Ratio} = \frac{243,398}{10,820.5} \approx 22.49
+\]
+
+### Conclusion
+The Fixed Asset Turnover Ratio for CVS Health for FY2018 is approximately **22.49** when rounded to two decimal places.",0
+financebench_id_01107,"Has CVS Health reported any materially important ongoing legal battles from 2022, 2021 and 2020?","Yes, CVS Health has been involved in multiple ongoing legal battles. Some notable legal dispute areas for CVS are: (1) usual and customary pricing litigation: where it's claimed that CVSâs retail pharmacies overcharged for prescription drugs; (2) PBM litigation and investigations: where it's claimed that that rebate agreements between the drug manufacturers and PBMs caused inflated prices for certain drug products; and (3) controlled substances litigation: legal matters around opioids for which CVS has agreed to pay up to $4.3 billion to claimants in remediation and $625 million to attorneys and fees","CVS Health has been involved in several significant ongoing legal battles over the years 2020, 2021, and 2022. Here are some of the notable cases:
+
+1. **Opioid Litigation**: CVS Health has been a defendant in multiple lawsuits related to opioid claims. In August 2022, a court issued a judgment against CVS Health and other pharmacies for $651 million based on their role in the opioid crisis, which CVS is appealing. Additionally, CVS settled with the State of Florida for $484 million related to opioid claims in March 2022, and entered agreements with the State of New Mexico in August 2022 to settle similar claims.
+
+2. **ERISA Class Actions**: In 2020, two class actions under the Employee Retirement Income Security Act (ERISA) were filed against CVS Health concerning breaches of fiduciary duties related to the Aetna 401(k) Plan. The district court dismissed the consolidated action in October 2021, but the plaintiffs appealed the decision, and in October 2022, the court dismissed the amended complaint with prejudice.
+
+3. **Securities Litigation**: CVS has faced multiple class action and derivative lawsuits related to securities fraud claims arising from allegations of mismanagement related to the Company’s long-term care business. Some cases were dismissed, and an appeal was affirmed by the First Circuit Court in August 2022.
+
+4. **Government Investigations**: CVS is cooperating with various government investigations concerning its practices related to prescription opioids and has received Civil Investigative Demands (CIDs) from the Department of Justice (DOJ). This includes a CID related to their patient chart review processes for Medicare submissions.
+
+5. **Prescription Processing Litigation**: CVS has also faced allegations concerning its prescription processing practices, including lawsuits filed for potentially violating the federal False Claims Act associated with improper prescription filling and submitting incorrect claims to Medicare.
+
+These legal matters continue to evolve, and CVS Health is actively defending itself in various proceedings, which could have material effects on its financial condition and business operations (source: CVS Health 2022 10-K report).",1
+financebench_id_04103,What is the FY2019 cash conversion cycle (CCC) for General Mills? CCC is defined as: DIO + DSO - DPO. DIO is defined as: 365 * (average inventory between FY2018 and FY2019) / (FY2019 COGS). DSO is defined as: 365 * (average accounts receivable between FY2018 and FY2019) / (FY2019 Revenue). DPO is defined as: 365 * (average accounts payable between FY2018 and FY2019) / (FY2019 COGS + change in inventory between FY2018 and FY2019). Round your answer to two decimal places. Address the question by using the line items and information shown within the income statement and the balance sheet.,-3.7,"To calculate the Cash Conversion Cycle (CCC) for General Mills for fiscal year 2019, we will need to derive each component of the CCC formula: Days Inventory Outstanding (DIO), Days Sales Outstanding (DSO), and Days Payable Outstanding (DPO).
+
+### Step 1: Gather Necessary Financial Data
+
+From the provided documents, we can find the following relevant financial data for FY2019:
+
+1. **FY2019 COGS:** $11,108.4 million (derived from revenues and gross margin)
+2. **Net Sales (Revenue) for FY2019:** $16,865.2 million 
+3. **Average Inventory between FY2018 and FY2019:** 
+   - FY2018 Inventory: $2,490.5 million 
+   - FY2019 Inventory: $2,507.0 million 
+   - Average Inventory = (2490.5 + 2507.0) / 2 = $2,498.75 million 
+
+4. **Average Accounts Receivable (AR):** 
+   - FY2018 AR: $1,575.4 million 
+   - FY2019 AR: $1,721.5 million 
+   - Average AR = (1575.4 + 1721.5) / 2 = $1,648.45 million 
+
+5. **Average Accounts Payable (AP):**
+   - FY2018 AP: $2,064.1 million 
+   - FY2019 AP: $2,357.2 million 
+   - Average AP = (2064.1 + 2357.2) / 2 = $2,210.65 million 
+
+### Step 2: Calculating DIO, DSO, and DPO
+
+**1. Calculate DIO:**
+\[
+DIO = \frac{365 \times \text{Average Inventory}}{\text{COGS}} = \frac{365 \times 2498.75}{11108.4} \approx 81.66
+\]
+
+**2. Calculate DSO:**
+\[
+DSO = \frac{365 \times \text{Average AR}}{\text{Revenue}} = \frac{365 \times 1648.45}{16865.2} \approx 35.44
+\]
+
+**3. Calculate DPO:**
+\[
+\text{Change in Inventory} = 2507.0 - 2490.5 = 16.5
+\]
+\[
+DPO = \frac{365 \times \text{Average AP}}{\text{COGS} + \text{Change in Inventory}} = \frac{365 \times 2210.65}{11108.4 + 16.5} \approx 72.63
+\]
+
+### Step 3: Calculate CCC
+\[
+CCC = DIO + DSO - DPO = 81.66 + 35.44 - 72.63 \approx 44.47
+\]
+
+### Final Answer
+The FY2019 Cash Conversion Cycle (CCC) for General Mills is approximately **44.47 days** (rounded to two decimal places).",0
+financebench_id_10136,We want to calculate a financial metric. Please help us compute it by basing your answers off of the cash flow statement and the income statement. Here's the question: what is the FY2022 retention ratio (using total cash dividends paid and net income attributable to shareholders) for General Mills? Round answer to two decimal places.,0.54,"To calculate the FY2022 retention ratio for General Mills, we need the net income attributable to shareholders and the total cash dividends paid.
+
+From the retrieved documents:
+
+- **Net income attributable to General Mills for FY2022:** $2,707.3 million (source: *Consolidated Statements of Earnings*).
+- **Dividends per share for FY2022:** $2.04. Assuming 605 million shares outstanding (based on prior years), the total cash dividends paid would be $2.04 * 605 million = $1,236.2 million (source: *Consolidated Statements of Earnings*).
+
+Now, we can compute the retention ratio:
+
+\[
+\text{Retention Ratio} = \frac{\text{Net Income} - \text{Dividends Paid}}{\text{Net Income}} = \frac{2,707.3 - 1,236.2}{2,707.3}
+\]
+
+Calculating this gives:
+
+\[
+\text{Retention Ratio} = \frac{1,471.1}{2,707.3} \approx 0.544
+\]
+
+Rounding this to two decimal places, the FY2022 retention ratio for General Mills is **0.54**.",1
+financebench_id_00669,"What drove gross margin change as of FY2022 for JnJ? If gross margin is not a useful metric for a company like this, then please state that and explain why.","For FY22, JnJ had changes in gross margin due to: One-time COVID-19 vaccine manufacturing exit related costs, Currency impacts in the Pharmaceutical segment, Commodity inflation in the MedTech and Consumer Health segments, partially offset by Supply chain benefits in the Consumer Health segment.","The documents retrieved do not contain specific information regarding the change in gross margin for Johnson & Johnson (JnJ) as of FY2022. Therefore, I do not know the exact drivers for any changes in gross margin during that fiscal year.
+
+Additionally, it's worth noting that gross margin may not always be the most useful metric for certain companies, especially for those in sectors like healthcare and consumer products, such as Johnson & Johnson. This is due to various factors:
+
+1. **Diverse Revenue Streams**: Companies like JnJ operate across multiple segments (pharmaceuticals, medical devices, consumer health products), and gross margins may vary widely between these segments, potentially masking overall profitability.
+
+2. **R&D and Regulatory Costs**: In the pharmaceutical industry, high research and development (R&D) costs and regulatory compliance burdens can significantly affect net profitability but may not be reflected in gross margin calculations.
+
+3. **Global Operations**: Factors such as currency exchange rates and global pricing strategies can impact revenues and costs in ways that aren't captured solely by gross margin metrics.
+
+4. **Focus on EBITDA or Net Income**: Many investors may prefer to evaluate performance based on EBITDA or net income, which consider operating expenses, taxes, and interest, providing a more comprehensive view of financial performance.
+
+If you have any other aspects of JnJ's financial performance you'd like to explore, feel free to ask!",0
+financebench_id_00651,Is growth in JnJ's adjusted EPS expected to accelerate in FY2023?,"No, rate of growth in adjusted EPS is expected to decelerate slightly from 3.6% in FY2022 to 3.5% in FY2023.","The growth in Johnson & Johnson's adjusted diluted earnings per share (EPS) for fiscal year 2023 is expected to be relatively modest. It is forecasted to range between flat and up 3 percent compared to the adjusted diluted EPS of $3.94 reported in fiscal 2022. This growth projection includes consideration for a net headwind from divestitures and acquisitions that occurred in 2022 (Source: GENERALMILLS_2022_10K.pdf).
+
+In summary, while JnJ's adjusted EPS is expected to grow, the pace of that growth does not indicate an acceleration; it suggests stability rather than significant acceleration in growth for FY2023.",0
+financebench_id_01484,How did JnJ's US sales growth compare to international sales growth in FY2022?,US sales increased 3.0% vs international sales decline of 0.6%.,I don't have information on Johnson & Johnson's sales growth for FY2022 specifically comparing U.S. sales growth to international sales growth. Please check their financial reports or official statements for detailed insights regarding their performance in that period.,0
+financebench_id_01487,Did JnJ's net earnings as a percent of sales increase in Q2 of FY2023 compared to Q2 of FY2022?,"Yes, net earnings as a percent of sales increased from 20% in Q2 of FY2022 to 20.1% in Q2 of FY2023.",I don't know. The retrieved documents do not contain specific information about Johnson & Johnson's net earnings as a percent of sales for Q2 FY2023 compared to Q2 FY2022.,0
+financebench_id_00299,Which of JPM's business segments had the lowest net revenue in 2021 Q1?,Corporate. Its net revenue was -$473 million.,"In the first quarter of 2021 (Q1 2021), the business segment of JPMorgan Chase that had the lowest net revenue was **Commercial Banking**, which generated $1,377 million. The other segments had the following net revenues during the same period:
+
+- Consumer & Community Banking: $12,193 million
+- Corporate & Investment Bank: $12,506 million
+- Asset & Wealth Management: $3,217 million
+
+Thus, among these segments, **Commercial Banking** had the lowest revenue in Q1 2021 (Source: JPMorgan 2021 Q1 10-Q).",0
+financebench_id_02119,"If JPM went bankrupted by the end by 2021 Q1 and liquidated all of its assets to pay its shareholders, how much could each shareholder get?",They could receive $66.56 per share.,"To determine how much each shareholder could potentially get if JPMorgan Chase (JPM) went bankrupt and liquidated all its assets, we need to look at its total assets and the number of shares outstanding.
+
+As of March 31, 2021, JPMorgan Chase reported total assets of approximately $3.7 trillion (sum of key assets: cash and due from banks, loans, securities, etc., found in the balance sheet) but let's focus on the important liquid assets.
+
+The total net income for the first quarter of 2021 was reported as $14.3 billion, and the earnings per share (EPS) were $4.51 with basic shares outstanding at approximately 3.07 billion.
+
+In a hypothetical bankruptcy scenario, if all assets were liquidated, the distribution would be based on the total value of these liquidated assets divided by the total shares.
+
+1. **Total Assets**: $3.7 trillion (this figure reflects total liquidity available for distribution).
+2. **Total Shares Outstanding**: Approximately 3.07 billion.
+
+Using these numbers:
+- If we assume all assets could be liquidated at full value without any other liabilities (for simplification), each shareholder would receive:
+
+\[
+\text{Per Share Payout} = \frac{\text{Total Assets}}{\text{Total Shares}} = \frac{3,700,000,000,000}{3,070,000,000} \approx 1,205,226.69
+\]
+
+This calculation indicates that if JPM were to liquidate all its assets and distribute the proceeds entirely to shareholders (ignoring liabilities and other factors for simplicity), each share would fetch approximately $1,205,226.69. 
+
+However, this is a theoretical scenario and doesn't account for the reality of outstanding debts, liabilities, and other financial considerations in a bankruptcy situation. In practice, the payout would likely be much smaller.",0
+financebench_id_00394,"In 2022 Q2, which of JPM's business segments had the highest net income?",Corporate & Investment Bank. Its net income was $3725 million.,"In the second quarter of 2022, JPMorgan Chase reported a total net income of $8.649 billion. The business segments and their respective net income contributions were not detailed in the retrieved documents. Therefore, I cannot specify which segment had the highest net income in that quarter. 
+
+If you need more detailed financial insights about individual segments, that specific information may not be included in the current documents.",0
