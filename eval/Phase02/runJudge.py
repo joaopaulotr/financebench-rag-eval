@@ -13,6 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2]))  # project root →
 sys.path.insert(0, str(Path(__file__).resolve().parent))      # eval/Phase02 → judge
 
 from judge import (
+    judge_answer_correctness,
     judge_answer_faithfulness,
     judge_answer_relevance,
     judge_context_relevance,
@@ -34,6 +35,7 @@ JUDGE_FIELDS = [
     "cq_score", "cq_reason",
     "ac_score", "ac_reason",
     "aq_score", "aq_reason",
+    "gt_score", "gt_reason",
 ]
 
 with open(CSV_IN, encoding="utf-8") as f:
@@ -61,6 +63,7 @@ for i, row in enumerate(rows):
     cq = judge_context_relevance(row["question"], context)
     ac = judge_answer_faithfulness(context, row["model_answer"])
     aq = judge_answer_relevance(row["question"], row["model_answer"])
+    gt = judge_answer_correctness(row["question"], row["expected_answer"], row["model_answer"])
 
     results.append({
         **row,
@@ -70,9 +73,11 @@ for i, row in enumerate(rows):
         "ac_reason": ac["reasoning"],
         "aq_score":  aq["score"],
         "aq_reason": aq["reasoning"],
+        "gt_score":  gt["score"],
+        "gt_reason": gt["reasoning"],
     })
 
-    print(f"  C|Q={cq['score']}  A|C={ac['score']}  A|Q={aq['score']}  ({time.time()-t0:.1f}s)")
+    print(f"  C|Q={cq['score']}  A|C={ac['score']}  A|Q={aq['score']}  GT={gt['score']}  ({time.time()-t0:.1f}s)")
 
     if (i + 1) % CHECKPOINT_EVERY == 0:
         with open(CSV_OUT, "w", newline="", encoding="utf-8") as f:

@@ -2,7 +2,8 @@ import csv
 
 LABELS_CSV = "eval/Phase02/human_labels_30.csv"
 JUDGE_CSV = "eval/Phase02/results_with_judge.csv"
-SCORE_THRESHOLD = 4  # aq_score >= 4 → judge says "correct"
+SCORE_THRESHOLD = 4  # gt_score >= 4 → judge says "correct"
+SCORE_FIELD = "gt_score"
 
 
 def load_labels(path: str) -> dict[str, int]:
@@ -17,7 +18,7 @@ def load_labels(path: str) -> dict[str, int]:
 def load_judge_scores(path: str, ids: set) -> dict[str, int]:
     with open(path, encoding="utf-8") as f:
         rows = [r for r in csv.DictReader(f) if r["financebench_id"] in ids]
-    return {r["financebench_id"]: int(r["aq_score"]) for r in rows}
+    return {r["financebench_id"]: int(r[SCORE_FIELD]) for r in rows}
 
 
 def calibrate():
@@ -50,7 +51,7 @@ def calibrate():
     tnr = tn / (tn + fp) if (tn + fp) > 0 else 0.0
     acc = (tp + tn) / n
 
-    print(f"\nCalibration — {n} examples, threshold aq_score >= {SCORE_THRESHOLD}")
+    print(f"\nCalibration — {n} examples, threshold {SCORE_FIELD} >= {SCORE_THRESHOLD}")
     print(f"  TPR (sensitivity): {tpr:.2f}  ({tp} TP / {tp+fn} positives)")
     print(f"  TNR (specificity): {tnr:.2f}  ({tn} TN / {tn+fp} negatives)")
     print(f"  Accuracy:          {acc:.2f}")

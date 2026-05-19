@@ -123,27 +123,38 @@ def judge_answer_relevance(question: str, answer: str) -> dict:
     return _call(_AQ_PROMPT.format(question=question, answer=answer))
 
 
-# ---------------------------------------------------------------------------
-#  test
-# ---------------------------------------------------------------------------
+_GT_PROMPT = """\
+You are evaluating a retrieval-augmented generation system for financial documents (SEC filings).
 
-if __name__ == "__main__":
-    q = "What is the FY2018 capital expenditure amount (in USD millions) for 3M?"
-    ctx = "3M Company 2018 Annual Report. Capital expenditures were $1,577 million in 2018."
-    ans_good = "3M's FY2018 capital expenditure was $1,577 million."
-    ans_bad = "3M had significant capital expenditures in 2018 related to its diversified operations."
+QUESTION:
+{question}
 
-    print("=== C|Q ===")
-    print(judge_context_relevance(q, ctx))
+EXPECTED ANSWER (ground truth):
+{expected}
 
-    print("\n=== A|C (good answer) ===")
-    print(judge_answer_faithfulness(ctx, ans_good))
+MODEL ANSWER:
+{answer}
 
-    print("\n=== A|C (vague answer) ===")
-    print(judge_answer_faithfulness(ctx, ans_bad))
+Task: Does the model answer convey the same information as the expected answer?
 
-    print("\n=== A|Q (good answer) ===")
-    print(judge_answer_relevance(q, ans_good))
+Guidelines:
+- For numerical answers: allow minor rounding differences (e.g. $1,577M vs $1,577.00M is correct). Wrong number = score 1-2.
+- For yes/no answers: direction must match. "Yes" vs "No" = score 1.
+- For qualitative answers: key facts must match. Partial match = score 3.
+- "I don't know" or refusal always scores 1, even if the question is hard.
+- Ignore formatting differences — focus on substance.
 
-    print("\n=== A|Q (vague answer) ===")
-    print(judge_answer_relevance(q, ans_bad))
+Score on a scale of 1 to 5:
+1 = Wrong or refused to answer
+2 = Right direction but significantly off (wrong number, missing key entity)
+3 = Partially correct (some key facts match, others missing or wrong)
+4 = Mostly correct with minor imprecision
+5 = Correct — matches expected answer in all key facts
+
+Respond with valid JSON only:
+{{"score": <1-5>, "reasoning": "<one sentence>"}}"""
+
+
+def judge_answer_correctness(question: str, expected: str, answer: str) -> dict:
+    """A|GT — does the answer match the ground truth expected answer?"""
+    return _call(_GT_PROMPT.format(question=question, expected=expected, answer=answer))
