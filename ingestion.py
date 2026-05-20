@@ -8,8 +8,7 @@ from langchain_openai                               import OpenAIEmbeddings
 from langchain_qdrant                               import QdrantVectorStore, FastEmbedSparse
 from langchain_text_splitters                       import TokenTextSplitter
 from qdrant_client                                  import QdrantClient
-from qdrant_client.models                           import Distance, VectorParams
-
+from qdrant_client.models                           import Distance, VectorParams, SparseVectorParams
 load_dotenv()
 
 logging.basicConfig(
@@ -84,6 +83,9 @@ if __name__ == '__main__':
                 qdrant_client.create_collection(
                     collection_name=collection_name,
                     vectors_config=VectorParams(size=1536, distance=Distance.COSINE),
+                    sparse_vectors_config={
+                        "langchain-sparse": SparseVectorParams()
+                    }
                 )
                 logging.info(f"Collection '{collection_name}' criada.")
             else:
