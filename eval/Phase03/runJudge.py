@@ -4,13 +4,11 @@ import time
 from pathlib import Path
 
 from dotenv import load_dotenv
-from langchain_openai import OpenAIEmbeddings
-from langchain_qdrant import QdrantVectorStore
 
 load_dotenv()
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "Phase02"))
 
 from judge import (
     judge_answer_correctness,
@@ -19,17 +17,9 @@ from judge import (
     judge_context_relevance,
 )
 
-CSV_IN = "eval/Phase02/results_100.csv"
-CSV_OUT = "eval/Phase02/results_with_judge.csv"
+CSV_IN = "eval/Phase03/results_phase3.csv"
+CSV_OUT = "eval/Phase03/results_phase3_with_judge.csv"
 CHECKPOINT_EVERY = 10
-
-embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-vectorstore = QdrantVectorStore.from_existing_collection(
-    embedding=embeddings,
-    url="http://localhost:6333",
-    collection_name="FinanceBench",
-)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
 
 JUDGE_FIELDS = [
     "cq_score", "cq_reason",
@@ -53,11 +43,7 @@ for i, row in enumerate(rows):
     print(f"[{i+1:03d}/{len(rows)}] {row['question'][:70]}...")
     t0 = time.time()
 
-    docs = retriever.invoke(row["question"])
-    context = "\n\n".join(
-        f"Source: {Path(doc.metadata.get('source', '')).name}\n{doc.page_content}"
-        for doc in docs
-    )
+    context = row.get("retrieved_context", "")
 
     cq = judge_context_relevance(row["question"], context)
     ac = judge_answer_faithfulness(context, row["model_answer"])

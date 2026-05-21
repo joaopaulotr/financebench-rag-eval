@@ -5,19 +5,21 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+Path("eval/Phase03").mkdir(exist_ok=True)
 
 from backend.core import run_llm
 
 CSV_IN = "eval/Phase02/baseline_100.csv"
-CSV_OUT = "eval/Phase02/results_100.csv"
+CSV_OUT = "eval/Phase03/results_phase3.csv"
 CHECKPOINT_EVERY = 10
 
 with open(CSV_IN, encoding="utf-8") as f:
     rows = list(csv.DictReader(f))
 
 fieldnames = list(rows[0].keys())
-if "retrieved_sources" not in fieldnames:
-    fieldnames.append("retrieved_sources")
+for col in ("model_answer", "retrieved_sources", "retrieved_context"):
+    if col not in fieldnames:
+        fieldnames.append(col)
 
 results = []
 t_start = time.time()
@@ -34,6 +36,7 @@ for i, row in enumerate(rows):
         **row,
         "model_answer": answer,
         "retrieved_sources": json.dumps(sources),
+        "retrieved_context": result.get("context_text", ""),
     })
 
     print(f"  sources: {sources}")
