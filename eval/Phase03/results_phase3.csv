@@ -1,0 +1,2171 @@
+financebench_id,question,expected_answer,doc_name,question_type,model_answer,correct,notes,retrieved_sources,retrieved_context
+financebench_id_03029,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,3M_2018_10K,metrics-generated,"In FY2018, the capital expenditure amount for 3M was $1,749 million (or $1.749 billion), as indicated by the purchases of property, plant, and equipment reported in their cash flow statement (source: 3M's 2018 10-K report).",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2022_10K.pdf
+
+Content:  provided by (used in) operating activities
+$
+5,591
+$
+7,454
+Net cash provided by (used in) investing activities
+(1,046)
+(1,317)
+Net cash provided by (used in) financing activities
+(5,350)
+(6,145)
+Free Cash Flow (non-GAAP measure)
+Net cash provided by (used in) operating activities
+$
+5,591
+$
+7,454
+Purchases of property, plant and equipment
+(1,749)
+(1,603)
+Free cash flow
+3,842
+5,851
+Net income attributable to 3M
+$
+5,777
+$
+5,921
+Free cash flow conversion
+66 
+%
+99 
+%
+Material Cash Requirements from Known Contractual and Other Obligations:
+3M’s material cash requirements from known contractual and other obligations primarily relate to following, for which information on both a short-term and long-term basis is
+provided in the indicated notes to the consolidated financial statements:
+•
+Tax obligations—Refer to Note 10.
+•
+Debt—Refer to Note 12. Future cash payments for interest on long-term debt is approximately $6 billion.
+•
+Commitments and contingencies—Refer to Note 16.
+•
+Operating and finance leases—Refer to Note 17.
+3M purchases the majority of its materials and services as needed, with no unconditional commitments. In limited circumstances, in the normal course of business, 3M enters
+into unconditional purchase obligations with various vendors that may take the form of, for example, take or pay contracts in which 3M guarantees payment to ensure
+availability to 3M of certain materials or services or to ensure ongoing efforts on capital projects. The Company expects to receive underlying materials or services for these
+purchase obligations. To the extent the limited amount of these purchase obligations fluctuates, it largely trends with normal-course changes in regular operating activities.
+Additionally, contractual capital commitments represent a small part of the Company’s expected capital spending.
+41
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+Investments in property, plant and equipment enable growth across many diverse markets, helping to meet product demand and increasing manufacturing
+efficiency. The Company expects 2019 capital spending to be approximately $1.7 billion to $1.9 billion as 3M continues to invest in its businesses.
+ 
+3M invests in renewal and maintenance programs, which pertain to cost reduction, cycle time, maintaining and renewing current capacity, eliminating
+pollution, and compliance. Costs related to maintenance, ordinary repairs, and certain other items are expensed. 3M also invests in growth, which adds to
+capacity, driven by new products, both through expansion of current facilities and new facilities. Finally, 3M also invests in other initiatives, such as
+information technology (IT) and laboratory facilities.
+ 
+Refer to Note 3 for information on acquisitions and divestitures. The Company is actively considering additional acquisitions, investments and strategic
+alliances, and from time to time may also divest certain businesses. Proceeds from sale of businesses in 2018 primarily relate to the sale of 3M’s
+Communication Markets Division and the sale of certain personal safety product offerings primarily focused on noise, environmental, and heat stress
+monitoring within the Safety and Graphics business segment.
+ 
+Purchases of marketable securities and investments and proceeds from maturities and sale of marketable securities and investments are primarily
+attributable to asset-backed securities, certificates of deposit/time deposits, commercial paper, and other securities, which are classified as available-for-sale.
+Refer to Note 11 for more details about 3M’s diversified marketable securities portfolio. Purchases of investments include additional survivor benefit
+insurance, plus investments in equity securities.
+ 
+Cash Flows from Financing Activities:
+ 
+Years ended December 31
+        
+ 
+        
+ 
+        
+ 
+ 
+(Millions)
+ 
+2018
+ 
+2017
+ 
+2016
+ 
+Change in short-term debt — net
+ 
+$
+(284) 
+$
+578  
+$
+(797) 
+Repayment of debt (maturities greater than 90 days)
+ 
+ 
+(1,034) 
+ 
+(962) 
+ 
+(992) 
+Proceeds from debt (m
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+FINANCIAL CONDITION AND LIQUIDITY
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, provide financial flexibility to deploy
+capital in accordance with the Company's stated priorities and meet needs associated with contractual commitments and other obligations. Investing in 3M’s business to drive
+organic growth and deliver strong returns on invested capital remains the first priority for capital deployment. This includes research and development, capital expenditures, and
+commercialization capability. The Company also continues to actively manage its portfolio through acquisitions and divestitures to maximize value for shareholders. 3M
+expects to continue returning cash to shareholders through dividends and share repurchases. To fund cash needs in the United States, the Company relies on ongoing cash flow
+from U.S. operations, access to capital markets and repatriation of the earnings of its foreign affiliates that are not considered to be permanently reinvested. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S. operations. See Note 10
+for further information on earnings considered to be reinvested indefinitely.
+3M maintains a strong liquidity profile. The Company’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it
+will have continuous access to the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a
+maximum maturity of 397 days from date of issuance. The Company had no commercial paper outstanding at December 31, 2022 and December 31, 2021.
+Total debt:
+The strength of 3M’s credit profile and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s debt maturity profile is
+staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. As of December 2022, 3M has a credit rating of A1, stable
+outlook from Moody's Investors Service, and a credit rating of A+, CreditWatch negative from S&P Global Ratings.
+The Company’s total debt was lower at December 31, 2022 when compared to December 31, 2021. Decreases in debt were largely due to the repayments of 500 million euros
+and $600 million aggregate principal amounts of fixed-rate medium-term notes in February
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  billion in 2022 related to steps toward resolving Combat
+Arms Earplugs litigation (both discussed in Note 14) largely impacted the net income component above, with offsets in the other-net and deferred tax elements in each of those
+periods.
+Cash Flows from Investing Activities:
+Six months ended June 30,
+(Millions)
+2023
+2022
+Purchases of property, plant and equipment (PP&E)
+$
+(852)
+$
+(808)
+Proceeds from sale of PP&E and other assets
+23 
+56 
+Acquisitions, net of cash acquired
+— 
+— 
+Purchases and proceeds from maturities and sale of marketable securities and investments, net
+170 
+(62)
+Proceeds from sale of businesses, net of cash sold
+3 
+13 
+Other — net
+37 
+(13)
+Net cash provided by (used in) investing activities
+$
+(619)
+$
+(814)
+Investments in property, plant and equipment enable growth across many diverse markets, helping to meet product demand and increasing manufacturing efficiency. The
+Company expects 2023 capital spending to be approximately $1.5 billion to $1.8 billion as 3M continues to invest in growth, productivity and sustainability.
+3M records capital-related government grants earned as reductions to the cost of property, plant and equipment; and associated unpaid liabilities and grant proceeds receivable
+are considered non-cash changes in such balances for purposes of preparation of statement of cash flows.
+3M invests in renewal and maintenance programs, which pertain to cost reduction, cycle time, maintaining and renewing current capacity, eliminating pollution, and
+compliance. Costs related to maintenance, ordinary repairs, and certain other items are expensed. 3M also invests in growth, which adds to capacity, driven by new products,
+both through expansion of current facilities and new facilities. Finally, 3M also invests in other initiatives, such as information technology (IT), laboratory facilities, and a
+continued focus on investments in sustainability.
+72
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: 
+ 
+$
+36,500  $
+37,987  $
+32,906  $
+32,883  $
+31,374  
+Long-term debt (excluding portion due within one year) and long-term
+capital lease obligations
+ 
+ 
+13,486  
+ 
+12,156  
+ 
+10,723  
+ 
+8,799  
+ 
+6,764  
+* The Company adopted ASU No. 2014-09 and related standards (collectively, Accounting Standards Codification (ASC) 606, Revenue from Contracts with
+Customers), as described in Note 1, on January 1, 2018 using the modified retrospective method of adoption, the impact of which was not material to the
+Company’s consolidated results of operations and financial condition. Prior periods have not been restated.
+ 
+Cash dividends declared and paid totaled $1.36 and $1.175 per share for each quarter in 2018 and 2017, respectively. 3M typically declares and pays
+dividends in the same quarter. In December 2014, 3M declared dividends that were paid in the following first quarter.
+14
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  largely
+reflected in “Proceeds from debt (maturities greater than 90 days)” in the preceding table. 3M’s primary short-term liquidity needs are met through cash on hand and U.S.
+commercial paper issuances. 2022 issuances, maturities, and extinguishments of short-and long-term debt are described in Note 10 to the Consolidated Financial Statements in
+3M’s 2022 Annual Report on Form 10-K.
+Repurchases of common stock are made to support the Company’s stock-based employee compensation plans and for other corporate purposes. In the first six months of 2023,
+the Company purchased $29 million of its own stock. For more information, refer to the table titled “Issuer Purchases of Equity Securities” in Part II, Item 2. The Company
+does not utilize derivative instruments linked to the Company’s stock.
+3M has paid dividends since 1916. In February 2023, 3M’s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent. This is
+equivalent to an annual dividend of $6.00 per share and marked the 65th consecutive year of dividend increases. In May 2023, 3M's Board of Directors declared a second-
+quarter 2023 dividend of $1.50 per share.
+Other cash flows from financing activities may include various other items, such as cash paid associated with certain derivative instruments, distributions to or sales of
+noncontrolling interests, changes in overdraft balances, and principal payments for finance leases.
+Free Cash Flow (non-GAAP measure):
+Free cash flow and free cash flow conversion are not defined under U.S. generally accepted accounting principles (GAAP). Therefore, they should not be considered a
+substitute for income (loss) or cash flow data prepared in accordance with U.S. GAAP and may not be comparable to similarly titled measures used by other companies. The
+Company defines free cash flow as net cash provided by operating activities less purchases of property, plant and equipment. It should not be inferred that the entire free cash
+flow amount is available for discretionary expenditures. The Company defines free cash flow conversion as free cash flow divided by net income (loss) attributable to 3M. The
+Company believes free cash flow and free cash flow conversion are meaningful to investors as they are useful measures of performance and"
+financebench_id_04672,Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.,$8.70,3M_2018_10K,metrics-generated,"The net property, plant, and equipment (PPNE) for 3M at the end of fiscal year 2018 can be found in their balance sheet data. However, the retrieved documents do not explicitly state the figure for net PPNE. Therefore, I cannot provide the exact amount.
+
+I don't know.",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2018_10K.pdf
+
+Content: , and September 30, 2018, was significantly in excess of its shareholders’ equity of approximately $10 billion.
+ 
+As discussed in Note 3, 3M sold its Communication Markets division in 2018, which comprised substantially all of the $272 million reduction in goodwill
+associated with divestitures during 2018.
+ 
+In 2018, 3M determined fair values using either an industry price-earnings ratio approach or a discounted cash flows analysis. Where applicable, 3M used a
+weighted-average discounted cash flow analysis for certain divisions, using projected cash flows that were
+41
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+Other than 3M’s funding commitment of approximately $1.0 billion relative to Combat Arms earplugs for its Aearo subsidiaries’ chapter 11 proceedings as described above
+and associated expenses, no liability has been recorded for the Combat Arms earplugs litigation because the Company believes any such liability is not probable and
+reasonably estimable and the Company is not able to estimate a possible loss or range of possible loss at this time. The accrued liability for the approximate $1.0 billion
+commitment is reflected within contingent liability claims and other (within other liabilities) on 3M’s consolidated balance sheet. Additionally, as a result of
+reconsolidation in the second quarter of 2023 of the former deconsolidated Aearo Entities, the following balances on 3M’s consolidated balance sheet as of December 31,
+2022 do not appear on the comparative consolidated balance sheet as of June 30, 2023:
+•
+$0.7 billion asset balance in equity and other investments (within other assets), reflecting 3M's equity investment interest in the entities.
+•
+$0.6 billion net liability for former intercompany amounts due from 3M to the deconsolidated entities. The gross balances were reflected in other liabilities
+($0.9 billion) and other assets ($0.3 billion).
+As of June 30, 2023, the Company was a named defendant in approximately 5,493 lawsuits in the United States and one Canadian putative class action with a single named
+plaintiff, alleging that the Bair Hugger™ patient warming system caused a surgical site infections in various joint arthroplasty, cardiovascular, and other surgeries.
+The plaintiffs seek damages and other relief based on theories of strict liability, negligence, breach of express and implied warranties, failure to warn, design and manufacturing
+defect, fraudulent and/or negligent misrepresentation/concealment, unjust enrichment, and violations of various state consumer fraud, deceptive or unlawful trade practices
+and/or false advertising acts.
+The JPML consolidated all cases pending in federal courts to the U.S. District Court for the District of Minnesota to be managed in an MDL proceeding. In July 2019, the court
+excluded several of the plaintiffs’ causation experts, and granted summary judgment for 3M in all cases pending at that time in the MDL. Plaintiffs appealed that decision to the
+U.
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+Cash, Cash Equivalents and Marketable Securities:
+ 
+At December 31, 2018, 3M had $3.3 billion of cash, cash equivalents and marketable securities, of which approximately $3.1 billion was held by the
+Company’s foreign subsidiaries and approximately $160 million was held by the United States. These balances are invested in bank instruments and other
+high-quality fixed income securities. At December 31, 2017, cash, cash equivalents and marketable securities held by the Company’s foreign subsidiaries
+and by the United States totaled approximately $3.975 billion and $180 million, respectively. Specifics concerning marketable securities investments are
+provided in Note 11.
+ 
+Net Debt (non-GAAP measure):
+ 
+Net debt is not defined under U.S. GAAP and may not be computed the same as similarly titled measures used by other companies. The Company defines
+net debt as total debt less the total of cash, cash equivalents and current and long-term marketable securities. 3M believes net debt is meaningful to
+investors as 3M considers net debt and its components to be important indicators of liquidity and financial position. The following table provides net debt
+as of December 31, 2018 and 2017.
+ 
+ 
+    
+December 31,
+  
+2018 versus
+ 
+(Millions)
+ 
+2018
+ 
+2017
+ 
+2017
+ 
+Total debt
+ 
+$
+14,622  $
+13,949  $
+673  
+Less: Cash, cash equivalents and marketable securities
+ 
+ 
+3,270   
+4,156   
+(886) 
+Net debt (non-GAAP measure)
+ 
+$
+11,352  $
+9,793  $
+1,559  
+ 
+Refer to the preceding “Total Debt” and “Cash, Cash Equivalents and Marketable Securities” sections for additional details. 
+ 
+Balance Sheet:
+ 
+3M’s strong balance sheet and liquidity provide the Company with significant flexibility to fund its numerous opportunities going forward. The Company
+will continue to invest in its operations to drive growth, including continual review of acquisition opportunities.
+ 
+The Company uses working capital measures that place emphasis and focus on certain working capital assets, such as accounts receivable and inventory
+activity.
+ 
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: 
+$
+5,349  
+$
+4,858  
+$
+5,050  
+Free cash flow conversion
+ 
+ 
+91 %   
+100 %  
+104 %
+ 
+Off-Balance Sheet Arrangements and Contractual Obligations:
+ 
+As of December 31, 2018, the Company has not utilized special purpose entities to facilitate off-balance sheet financing arrangements. Refer to the section
+entitled “Warranties/Guarantees” in Note 16 for discussion of accrued product warranty liabilities and guarantees.
+ 
+In addition to guarantees, 3M, in the normal course of business, periodically enters into agreements that require the Company to indemnify either major
+customers or suppliers for specific risks, such as claims for injury or property damage arising out of the use of 3M products or the negligence of 3M
+personnel, or claims alleging that 3M products infringe third-party patents or other intellectual property. While 3M’s maximum exposure under these
+indemnification provisions cannot be estimated, these indemnifications are not expected to have a material impact on the Company’s consolidated results of
+operations or financial condition.
+49
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+FINANCIAL CONDITION AND LIQUIDI TY
+ 
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, positions the Company
+to be able to add further leverage to its capital structure. Investing in 3M’s businesses to drive organic growth remains the first priority for capital
+deployment, including research and development, capital expenditures, and commercialization capability. Investment in organic growth will be
+supplemented by complementary acquisitions. 3M will also continue to return cash to shareholders through dividends and share repurchases. Sources for
+cash availability in the United States, such as ongoing cash flow from operations and access to capital markets, have historically been sufficient to fund
+dividend payments to shareholders, as well as funding U.S. acquisitions and other items as needed. The TCJA creates additional repatriation opportunities
+for 3M to access international cash positions on a continual and on-going basis and will help support U.S. capital deployments needs. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S.
+operations. See Note 10 for further information on earnings considered to be reinvested indefinitely.
+ 
+3M’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it will have continuous access to
+the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a maximum
+maturity of 397 days from date of issuance. At December 31, 2018, there was approximately $435 million in commercial paper issued and outstanding.
+ 
+Total Debt:
+ 
+The strength of 3M’s capital structure and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s
+maturity profile is staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. 3M currently has an AA-
+credit rating with a stable outlook from Standard & Poor’s and has an A1 credit rating with a stable outlook from Moody’s Investors Service.
+ 
+The Company’s total debt was $0.7 billion higher at December 31, 2018 when compared to December 31, 2017. Increases in debt related to September
+2018
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: anties/Guarantees:
+3M’s accrued product warranty liabilities, recorded on the Consolidated Balance Sheet as part of current and long-term liabilities, are estimated at approximately $48 million at
+December 31, 2022, and $48 million at December 31, 2021. Further information on product warranties is not disclosed, as the Company considers the balance immaterial to its
+consolidated results of operations and financial condition. 3M guarantees of loans with third parties and other guarantee arrangements are not material.
+94"
+financebench_id_00499,Is 3M a capital-intensive business based on FY2022 data?,"No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:
+CAPEX/Revenue Ratio: 5.1%
+Fixed assets/Total Assets: 20%
+Return on Assets= 12.4%",3M_2022_10K,domain-relevant,"Yes, 3M is considered a capital-intensive business based on FY2022 data. The company invested significantly in property, plant, and equipment (PP&E) as part of its strategy to enable growth across various markets and to increase manufacturing efficiency. In 2022, 3M reported capital spending between $1.5 billion and $1.8 billion, highlighting its focus on growth and productivity initiatives (source: 3M 2022 10-K and 2023 Q2 10-Q).
+
+Additionally, the investments in manufacturing and sourcing capability are indicative of the capital required to maintain and expand their operations. The capital expenditures relate to cost reduction, cycle time improvements, and compliance with environmental standards (source: 3M 2022 10-K).
+
+Overall, the substantial capital investments and the ongoing commitment to enhancing capacity and capabilities in their operations affirm that 3M is indeed a capital-intensive business.",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+Impairment testing for goodwill is done at a reporting unit level, with all goodwill assigned to a reporting unit. Reporting units are one level below the business segment level,
+but are required to be combined when reporting units within the same segment have similar economic characteristics. At 3M, reporting units correspond to a division. 3M did
+not combine any of its reporting units for impairment testing. An impairment loss would be recognized when the carrying amount of the reporting unit’s net assets exceeds the
+estimated fair value of the reporting unit, and the loss would equal that difference. The estimated fair value of a reporting unit is determined based on a market approach using
+comparable company information such as EBITDA (earnings before interest, taxes, depreciation and amortization) multiples. 3M also performs a discounted cash flow analysis
+for certain reporting units where the market approach indicates additional review is warranted. A discounted cash flow analysis involves key assumptions including projected
+sales, EBITDA margins, capital expenditures, and discount rates. Changes in reporting unit earnings, comparable company information, and expected future cash flows, as well
+as underlying market and overall economic conditions, among other factors, make these estimates subject to uncertainty.
+Based on the annual test in the fourth quarter of 2022 completed as of October 1, 2022, no goodwill impairment was indicated for any of the reporting units. As of October 1,
+2022, 3M had 21 primary reporting units, with ten reporting units accounting for approximately 94 percent of the goodwill. These ten reporting units were comprised of the
+following divisions: Advanced Materials, Display Materials and Systems, Electronics Materials Solutions, Health Information Systems, Industrial Adhesives and
+Tapes, Medical Solutions, Oral Care, Personal Safety, Separation and Purification Sciences, and Transportation Safety.
+3M is a highly integrated enterprise, where businesses share technology and leverage common fundamental strengths and capabilities, thus many of 3M’s businesses could not
+easily be sold on a stand-alone basis. 3M’s focus on research and development has resulted in a portion of 3M’s value being comprised of internally developed businesses.
+Following the annual impairment test, as a result of 3M's December 2022 announced commitment to a plan to exit per- and polyfluoroalkyl substance (PFAS) manufacturing as
+described in Notes 4 and 15, 3M tested the Advanced Materials and Electronics Materials Solutions reporting units (within the Transportation and Electronics business)
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  billion in 2022 related to steps toward resolving Combat
+Arms Earplugs litigation (both discussed in Note 14) largely impacted the net income component above, with offsets in the other-net and deferred tax elements in each of those
+periods.
+Cash Flows from Investing Activities:
+Six months ended June 30,
+(Millions)
+2023
+2022
+Purchases of property, plant and equipment (PP&E)
+$
+(852)
+$
+(808)
+Proceeds from sale of PP&E and other assets
+23 
+56 
+Acquisitions, net of cash acquired
+— 
+— 
+Purchases and proceeds from maturities and sale of marketable securities and investments, net
+170 
+(62)
+Proceeds from sale of businesses, net of cash sold
+3 
+13 
+Other — net
+37 
+(13)
+Net cash provided by (used in) investing activities
+$
+(619)
+$
+(814)
+Investments in property, plant and equipment enable growth across many diverse markets, helping to meet product demand and increasing manufacturing efficiency. The
+Company expects 2023 capital spending to be approximately $1.5 billion to $1.8 billion as 3M continues to invest in growth, productivity and sustainability.
+3M records capital-related government grants earned as reductions to the cost of property, plant and equipment; and associated unpaid liabilities and grant proceeds receivable
+are considered non-cash changes in such balances for purposes of preparation of statement of cash flows.
+3M invests in renewal and maintenance programs, which pertain to cost reduction, cycle time, maintaining and renewing current capacity, eliminating pollution, and
+compliance. Costs related to maintenance, ordinary repairs, and certain other items are expensed. 3M also invests in growth, which adds to capacity, driven by new products,
+both through expansion of current facilities and new facilities. Finally, 3M also invests in other initiatives, such as information technology (IT), laboratory facilities, and a
+continued focus on investments in sustainability.
+72
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: : Safety and Industrial; Transportation and Electronics; Health Care; and Consumer. From a geographic
+perspective, any references to EMEA refer to Europe, Middle East and Africa on a combined basis. References are made to organic sales change (which include both organic
+volume impacts and selling price impacts), which is defined as the change in net sales, absent the separate impacts on sales from foreign currency translation and acquisitions,
+net of divestitures. Acquisition and divestiture sales change impacts, if any, are measured separately for the first twelve months post-transaction. 3M believes this information is
+useful to investors and management in understanding ongoing operations and in analysis of ongoing operating trends.
+3M is impacted by the global pandemic and related effects associated with the coronavirus (COVID-19). Risk factors with respect to COVID-19 can be found in Item 1A “Risk
+Factors” in this document. Given the diversity of 3M’s businesses, some of the factors relative to COVID-19 increase the demand for 3M products, while others decrease
+demand or make it more difficult for 3M to serve customers. Certain resulting impacts are referenced in various discussions within this Item 7. Overall, the impact of the
+COVID-19 pandemic on 3M’s consolidated results of operations was primarily driven by factors related to changes in demand for products and disruption in global supply
+chains. 3M is not able to predict the extent to which the COVID-19 pandemic may have a material effect on its consolidated results of operations or financial condition.
+In 2022, 3M's costs for significant litigation (see Certain amounts adjusted for special items - (non-GAAP measures section below) totaled approximately $2.3 billion pre-tax
+and included, among things, pre-tax charges associated with steps toward resolving Combat Arms Earplugs litigation and associated with additional commitments to address
+PFAS-related matters at its Zwijndrecht, Belgium site (approximately $1.3 billion and $355 million, respectively, in 2022). These matters are further discussed in Note 16. In
+2022, 3M also completed the split-off of its Food Safety Division business resulting in a pre-tax gain of $2.7 billion and committed to a plan to exit PFAS manufacturing by the
+end of 2025 resulting in a 2022 pre-tax charge of $0.8 billion related to impairment as discussed in Note 15. See
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content:  to result from the use of the asset and its eventual disposition. The amount of the impairment loss recorded
+is calculated by the excess of the asset’s carrying value over its fair value. Fair value is generally determined using a discounted cash flow analysis. 3M records capital-related
+government grants earned as reductions to the cost of property, plant and equipment; and associated unpaid liabilities and grant proceeds receivable are considered non-cash
+changes in such balances for purposes of preparation of statement of cash flows.
+Conditional asset retirement obligations: A liability is initially recorded at fair value for an asset retirement obligation associated with the retirement of tangible long-lived
+assets in the period in which it is incurred if a reasonable estimate of fair value can be made. Conditional asset retirement obligations exist for certain long-term assets of the
+Company. The obligation is initially measured at fair value using expected present value techniques. Over time the liabilities are accreted for the change in their present value
+and the initial capitalized costs are depreciated over the remaining useful lives of the related assets. The asset retirement obligation liability was $177 million and $176 millions
+at December 31, 2022 and 2021, respectively.
+Goodwill: Goodwill is the excess of cost of an acquired entity over the amounts assigned to assets acquired and liabilities assumed in a business combination. Goodwill is not
+amortized. Goodwill is tested for impairment annually in the fourth quarter of each year, and is tested for impairment between annual tests if an event occurs or circumstances
+change that would indicate the carrying amount may be impaired. Impairment testing for goodwill is done at a reporting unit level, with all goodwill assigned to a reporting
+unit. Reporting units are one level below the business segment level, but are required to be combined when reporting units within the same segment have similar economic
+characteristics. 3M did not combine any of its reporting units for impairment testing. The impairment loss is measured as the amount by which the carrying value of the
+reporting unit’s net assets exceeds its estimated fair value, not to exceed the carrying value of the reporting unit’s goodwill. The estimated fair value of a reporting unit is
+determined based on a market approach using comparable company information such as EBITDA (earnings before interest, taxes, depreciation and amortization) multiples or, in
+some cases, based on a discounted cash flow analysis. Companies have the option to first assess qualitative factors to determine whether the fair value of a reporting unit
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content:  demand and increasing manufacturing
+efficiency. In 2018, 63% of 3M’s capital spending was within the United States, followed by Europe, Middle East and Africa; Asia Pacific; and Latin
+America/Canada. 3M is increasing its investment in manufacturing and sourcing capability in order to more closely align its product capability with its sales
+in major geographic areas in order to best serve its customers throughout the world with proprietary, automated, efficient, safe and sustainable processes.
+Capital spending is discussed in more detail later in MD&A in the section entitled “Cash Flows from Investing Activities.”
+ 
+ 
+ CRITICAL ACCOUNTING ESTIMA TES
+ 
+Information regarding significant accounting policies is included in Note 1 of the consolidated financial statements. As stated in Note 1, the preparation of
+financial statements requires management to make estimates and assumptions that affect the reported amounts of assets, liabilities, revenue and expenses,
+and related disclosure of contingent assets and liabilities. Management bases its estimates on historical experience and on various assumptions that are
+believed to be reasonable under the circumstances, the results of which form the basis for making judgments about the carrying values of assets and
+liabilities that are not readily apparent from other sources. Actual results may differ from these estimates.
+ 
+The Company believes its most critical accounting estimates relate to legal proceedings, the Company’s pension and postretirement obligations, asset
+impairments and income taxes. Senior management has discussed the development, selection and disclosure of its critical accounting estimates with the
+Audit Committee of 3M’s Board of Directors.
+ 
+Legal Proceedings:
+ 
+The categories of claims for which the Company has a probable and estimable liability, the amount of its liability accruals, and the estimates of its related
+insurance receivables are critical accounting estimates related to legal proceedings. Please refer to the section entitled “Process for Disclosure and
+Recording of Liabilities and Insurance Receivables Related to Legal Proceedings” (contained in “Legal Proceedings” in Note 16) for additional information
+about such estimates.
+ 
+ Pension and Postretirement Obligations:
+ 
+ 3M has various company-sponsored retirement plans covering substantially all U.S. employees and many employees outside the United States. The
+primary U.S. defined-benefit pension plan was closed to new participants effective January 1, 2009. The Company accounts for its defined benefit pension
+and postretirement health
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+FINANCIAL CONDITION AND LIQUIDI TY
+ 
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, positions the Company
+to be able to add further leverage to its capital structure. Investing in 3M’s businesses to drive organic growth remains the first priority for capital
+deployment, including research and development, capital expenditures, and commercialization capability. Investment in organic growth will be
+supplemented by complementary acquisitions. 3M will also continue to return cash to shareholders through dividends and share repurchases. Sources for
+cash availability in the United States, such as ongoing cash flow from operations and access to capital markets, have historically been sufficient to fund
+dividend payments to shareholders, as well as funding U.S. acquisitions and other items as needed. The TCJA creates additional repatriation opportunities
+for 3M to access international cash positions on a continual and on-going basis and will help support U.S. capital deployments needs. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S.
+operations. See Note 10 for further information on earnings considered to be reinvested indefinitely.
+ 
+3M’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it will have continuous access to
+the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a maximum
+maturity of 397 days from date of issuance. At December 31, 2018, there was approximately $435 million in commercial paper issued and outstanding.
+ 
+Total Debt:
+ 
+The strength of 3M’s capital structure and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s
+maturity profile is staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. 3M currently has an AA-
+credit rating with a stable outlook from Standard & Poor’s and has an A1 credit rating with a stable outlook from Moody’s Investors Service.
+ 
+The Company’s total debt was $0.7 billion higher at December 31, 2018 when compared to December 31, 2017. Increases in debt related to September
+2018"
+financebench_id_01226,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+-Decrease in gross Margin
+-mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
+charges",3M_2022_10K,domain-relevant,"In FY2022, 3M's operating margin changed primarily due to several factors competing for influence. Here are the key drivers:
+
+1. **Disposable Respirator Demand**: There was a year-on-year decline in disposable respirator demand, which negatively impacted operating margins by 0.3 percent and earnings per share by $0.29.
+
+2. **Organic Growth and Productivity**: There were net year-on-year benefits from remaining organic growth and productivity, contributing 1.3 percent to operating margins and $0.85 to earnings per share. This was supported by strong pricing, disciplined spending, and positive impacts from restructuring actions taken in previous years.
+
+3. **Manufacturing Headwinds**: Despite the benefits mentioned, 3M faced challenges from global supply chain disruptions, geopolitical issues (notably the Russia/Ukraine conflict), and ongoing COVID-related challenges in China. These factors added stress to manufacturing operations and overall operating efficiency.
+
+4. **Increased Investments**: The company also increased investments in growth, productivity, and sustainability initiatives, which can put pressure on short-term margins but is seen as essential for long-term strategic positioning.
+
+Overall, the operating margin was influenced by a combination of operational challenges and strategic investments, showcasing both the difficulties in navigating the external economic environment and the commitment to enhancing future capabilities (source: 3M 2022 10-K report). 
+
+Operating margin can be a useful metric for companies like 3M, despite the variability caused by external factors, as it reflects operational efficiency and profitability at a fundamental level. However, it's essential to contextualize it with respect to specific industry conditions and the presence of significant special items or cyclical demand patterns.",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+Organic growth/productivity and other:
+•
+In 2022, the following components impacted operating margins and earnings per diluted share year-on-year:
+•
+Declines in disposable respirator demand year-on-year negatively impacted operating margins by 0.3 percent and earnings per share by $0.29.
+•
+Remaining organic growth/productivity and other impacts resulted in a net year-on-year benefit $0.85 to earnings per share and 1.3 percent to operating margins
+which was impacted by the following:
+◦
+Benefits from strong pricing, spending discipline and 2021 restructuring actions
+◦
+Manufacturing headwinds from global supply chain challenges; geopolitical impacts due to the Russia/Ukraine conflict as well as ongoing COVID-
+related challenges in China
+◦
+Second quarter of 2021 benefit of $91 million pre-tax ($0.12 per share after tax) from the impact of the favorable decision of the Brazilian Supreme
+Court regarding the calculation of past social taxes
+◦
+Increased investments in growth, productivity and sustainability
+•
+In 2021, organic volume growth and ongoing cost management increased operating income margins and earnings per diluted share year-on-year offset by manufacturing
+headwinds from global supply chain challenges and increased compensation/benefit costs. The following also impacted results or provide additional information:
+•
+2021 benefit of $91 million pre-tax ($0.12 per share after tax) from a favorable Brazilian Supreme Court decision that concluded on the impact of state value-
+added tax when determining Brazil’s federal sales-based social tax—essentially lowering the social tax that 3M should have paid in prior periods.
+•
+3M continued prioritization of investments in growth and sustainability.
+•
+2021 benefit from higher selling prices, restructuring actions taken in 2020 and positive/negative impact of year-over-year change in non-divestiture-related
+restructuring charges, net of adjustments, for respective periods. Note 5 provides additional information relative to restructuring actions.
+•
+Lower year-on-year net gains related to certain property sales.
+•
+COVID-impacts recognized on certain assets in 2020.
+•
+In 2021, higher defined benefit pension and postretirement service cost increased expense year-on-year.
+Raw material impact:
+•
+In 2022, 3M continued to experience inflationary pressures with year-on-year increases in raw material
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+Certain amounts adjusted for special items - (non-GAAP measures):
+In addition to reporting financial results in accordance with U.S. GAAP, 3M also provides certain non-GAAP measures. These measures are not in accordance with, nor are
+they a substitute for GAAP measures, and may not be comparable to similarly titled measures used by other companies.
+Certain measures adjust for the impacts of special items. Special items for the periods presented include the items described below. Because 3M provides certain information
+with respect to business segments, it is noteworthy that special items impacting operating income (loss) are reflected in Corporate and Unallocated, except as described below
+with respect to net costs for significant litigation and manufactured PFAS products items.
+In 2023, 3M changed certain of its non-GAAP measures by adjusting for the results of manufactured PFAS products in arriving at results, adjusted for special items. In the
+fourth quarter of 2022, 3M recorded a charge for PFAS manufacturing exit costs and included it as an adjustment in arriving at results, adjusted for special items. The 2023 non-
+GAAP measure change involved expanding the extent of adjustment to include the sales and estimates of income (including exit costs) and associated activity regarding
+manufactured PFAS products that 3M plans to exit by the end of 2025. The information herein reflects the impacts of these changes for all periods presented.
+This document contains measures for which 3M provides the reported GAAP measure and a non-GAAP measure adjusted for special items. These measures and reasons 3M
+believes they are useful to investors (and, as applicable, used by 3M) include:
+GAAP amounts for which a measure adjusted for special items is also
+provided:
+Reasons 3M believes the measure is useful
+•
+Net sales (and sales change)
+Considered, in addition to segment operating performance, in evaluating and managing
+operations; useful in understanding underlying business performance, provides additional
+transparency to special items
+•
+Operating income (loss), segment operating income (loss) and
+operating income (loss) margin
+•
+Income (loss) before taxes
+•
+Provision for income taxes and effective tax rate
+•
+Net income (loss)
+•
+Earnings (loss) per share
+Special items for the periods presented include:
+Net costs for significant litigation:
+•
+These relate to 3M's respirator mask/asbestos
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+Financial condition:
+Refer to the section entitled Financial Condition and Liquidity later in MD&A for a discussion of items impacting cash flows.
+In November 2018, 3M’s Board of Directors replaced the Company’s February 2016 repurchase program with a new repurchase program. This new program authorizes the
+repurchase of up to $10 billion of 3M’s outstanding common stock, with no pre-established end date. In the first six months of 2023, the Company purchased $29 million of its
+own stock, compared to $773 million of stock purchases in the first six months of 2022. As of June 30, 2023, approximately $4.2 billion remained available under the
+authorization. In February 2023, 3M’s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent. This marked the 65th consecutive
+year of dividend increases for 3M. In May 2023, 3M's Board of Directors declared a second-quarter 2023 dividend of $1.50 per share.
+RESULTS OF OPERATIONS
+Net Sales:
+Refer to the preceding Overview section and the Performance by Business Segment section later in MD&A for additional discussion of sales change.
+Operating Expenses:
+Three months ended
+June 30,
+Six months ended
+June 30,
+(Percent of net sales)
+2023
+2022
+Change
+2023
+2022
+Change
+Cost of sales
+55.3 %
+58.5 %
+(3.2)%
+56.4 %
+56.6 %
+(0.2)%
+Selling, general and administrative expenses (SG&A)
+146.6 
+34.7 
+111.9 
+85.0 
+27.9 
+57.1 
+Research, development and related expenses (R&D)
+5.7 
+5.5 
+0.2 
+5.8 
+5.5 
+0.3 
+Operating income (loss) margin
+(107.6)%
+1.3 %
+(108.9)%
+(47.2)%
+10.0 %
+(57.2)%
+Stock compensation expense was $41 million and $47 million for the second quarter of 2023 and 2022,
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: ions such as tariffs, and retaliatory counter measures, government deficit reduction and other austerity measures in specific countries or regions, or in
+the various industries in which the Company operates; social, political or labor conditions in specific countries or regions; natural and other disasters or
+climate change affecting the operations of the Company or its customers and suppliers; or adverse changes in the availability and cost of capital, interest
+rates, tax rates, tax laws, or exchange control, ability to expatriate earnings and other regulations in the jurisdictions in which the Company operates.
+ 
+* Change in the Company’s credit ratings could increase cost of funding. The Company’s credit ratings are important to 3M’s cost of capital. The major
+rating agencies routinely evaluate the Company’s credit profile and assign debt ratings to 3M. This evaluation is based on a number of factors, which
+include financial strength, business and financial risk, as well as transparency with rating agencies and timeliness of financial reporting. 3M currently has
+an AA- credit rating with a stable outlook from Standard & Poor’s and has an A1 credit rating with a stable outlook from Moody’s Investors Service. The
+Company’s credit ratings have served to lower 3M’s borrowing costs and facilitate access to a variety of lenders. The addition of further leverage to the
+Company’s capital structure could impact 3M’s credit ratings in the future. Failure to maintain strong investment grade ratings would adversely affect the
+Company’s cost of funding and could adversely affect liquidity and access to capital markets.
+ 
+* The Company’s results are affected by competitive conditions and customer preferences. Demand for the Company’s products, which impacts revenue
+and profit margins, is affected by (i) the development and timing of the introduction of competitive products; (ii) the Company’s response to downward
+pricing to stay competitive; (iii) changes in customer order patterns, such as changes in the levels of inventory maintained by customers and the timing of
+customer purchases which may be affected by announced price changes, changes in the Company’s incentive programs, or the customer’s ability to achieve
+incentive goals; (iv) changes in customers’ preferences for our products, including the success of products offered by our competitors, and changes in
+customer designs for their products that can affect the demand for some of the Company’s products;
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+Operating Income (Loss)
+(Dollars in millions, except per share
+amounts)
+Safety and
+Industrial
+Safety and
+Industrial
+Margin
+Transportation
+and Electronics
+Transportation
+and Electronics
+Margin
+Total
+Company
+Total
+Company
+Margin
+Income
+Before Taxes
+Provision for
+Income
+Taxes
+Effective
+Tax Rate
+Net Income
+Attributable
+to 3M
+Earnings
+per Diluted
+Share
+Earnings per
+diluted share
+percent
+change
+Year ended December 31, 2020
+GAAP
+$
+2,588
+23.6% $
+1,701
+20.2% $
+7,161
+22.3 %
+$
+6,795
+$
+1,337
+19.7 %
+$
+5,449
+$
+9.36 
+Adjustments for special items:
+Net costs for significant
+litigation
+205 
+— 
+353 
+353 
+136 
+217 
+0.37 
+Gain on business divestitures
+—
+—
+(389)
+(389)
+(86)
+(303)
+(0.52)
+Divestiture-related restructuring
+actions
+—
+—
+55
+55
+9
+46
+0.08 
+Total special items
+205
+—
+19
+19
+59
+(40)
+(0.07)
+Year ended December 31, 2020
+adjusted amounts (non-GAAP
+measures)
+$
+2,793
+25.5% $
+1,701
+20.2% $
+7,180
+22.3 %
+$
+6,814
+$
+1,396
+20.5 %
+$
+5,409
+$
+9.29 
+Year ended December 31, 2021
+GAAP
+$
+2,466
+20.6% $
+1,880
+20.3% $
+7,369
+20.8 %
+$
+7,204
+$
+1,285
+17.8 %
+$
+5,921
+$
+10.12
+8 %
+Adjustments for special items:
+Net costs for significant
+litigation
+249 
+— 
+463 
+463 
+104 
+359 
+0.61 
+Total special items
+249 
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content:  sale of
+less than $15 million in the second quarter of 2018. Also, 3M reflected an immaterial gain from an earnout on a previous divestiture in the fourth quarter of
+2018.
+ 
+In June 2018, 3M completed the sale of substantially all of its Communication Markets Division to Corning Incorporated. This business, with annual sales
+of approximately $400 million, consists of optical fiber and copper passive connectivity solutions for the telecommunications industry including 3M’s
+xDSL, FTTx, and structured cabling solutions and, in certain countries, telecommunications system integration services. This divestiture resulted in a gain
+on sale of $494 million. In December 2018, the Company completed the sale of the remaining telecommunications system integration services portion of
+the business based in Germany, resulting in a pre-tax gain of $15 million. Both the June 2018 and December 2018 divestiture impacts were reported within
+the Company’s Electronics and Energy business.
+ 
+Refer to Note 3 for additional detail on these divestitures. 3M also divested certain businesses in 2017 and 2016, resulting in gains of $586 million and $111
+million, respectively. Refer to Note 3 for additional detail on these divestitures.
+ 
+Operating Income Margin:
+ 
+3M uses operating income as one of its primary business segment performance measurement tools. Refer to the table below for a reconciliation of operating
+income margins for 2018 and 2017.
+28"
+financebench_id_01865,"If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",The consumer segment shrunk by 0.9% organically.,3M_2022_10K,novel-generated,"In 2022, the segment that dragged down 3M's overall growth, excluding the impact of mergers and acquisitions (M&A), was primarily the **Health Care** segment. This was attributed to various factors including declines in certain product categories, particularly in the separation and purification and health information systems areas, which faced challenges due to post-COVID demand normalization and hospital budget constraints. Additionally, the overall operational challenges coupled with litigation costs also impacted earnings, with significant charges related to ongoing legal matters and other impairments being reported ([3M 2022 10-K](data/pdf/3M_2022_10K.pdf)). 
+
+The Consumer segment, while affected by broader economic factors, did not seem to have as significant of a negative impact on overall growth as the Health Care segment did when considering organic growth metrics and excluding M&A ([3M 2022 10-K](data/pdf/3M_2022_10K.pdf)).",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2022_10K.pdf
+
+Content:  enterprise characterized by substantial intersegment cooperation, cost allocations and inventory transfers. Therefore, management does not represent
+that these segments, if operated independently, would report the operating income information shown.
+3M discloses business segment operating income as its measure of segment profit/loss, reconciled to both total 3M operating income and income before taxes. Business segment
+operating income excludes certain expenses and income that are not allocated to business segments (as described below in “Corporate and Unallocated”).
+Effective in the first quarter of 2022, the measure of segment operating performance used by 3M’s chief operating decision maker (CODM) changed and, as a result, 3M’s
+disclosed measure of segment profit/loss (business segment operating income (loss) ) was updated. The change to business segment operating income aligns with the update to
+how the CODM assesses performance and allocates resources for the Company’s business segments. The changes included the items described below. The financial information
+presented herein reflects the impact of these business segment reporting changes for all periods presented.
+Effective in the first quarter of 2022:
+Eliminating inclusion of dual credit in measure of segment operating performance
+3M business segment operating performance measures were updated to no longer include dual credit to business segments for certain sales and related operating income.
+Management previously evaluated its business segments based on net sales and operating income performance, including dual credit reporting. 3M reflected additional
+(“dual”) credit to another business segment when the customer account activity (“sales district”) with respect to the particular product sold to the external customer was
+provided by a different business segment. For example, privacy screen protection products are primarily sold by the Display Materials and Systems Division within the
+Transportation and Electronics business segment; however, certain sales districts within the Consumer business segment provide the customer account activity for sales of the
+product to particular customers. In this example, the non-primary selling segment (Consumer) previously would also have received credit for the associated net sales initiated
+through its sales district and the related approximate operating income. The offset to the dual credit business segment reporting was reflected as a reconciling item entitled
+“Elimination of Dual Credit,” such that sales and operating income in total were unchanged.
+121
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+obligations, was reflected in Corporate and Unallocated. In addition, 3M’s defined benefit pension and postretirement service-cost expense allocation to
+Corporate and Unallocated increased year-on-year.
+ 
+Corporate and Unallocated operating expenses increased by $74 million in 2017 when compared to 2016. In both the first and second quarters of 2017, a
+portion of the severance actions were reflected in Corporate and Unallocated. In the fourth quarter, an incremental $58 million was reflected within
+Corporate and Unallocated related to the Company’s actuarial adjustments to its respirator mask/asbestos liability accrual. In addition, 3M’s defined benefit
+pension and postretirement service cost expense allocation to Corporate and Unallocated increased by approximately $30 million in 2017. 
+ 
+Operating Business Segments:
+ 
+Information related to 3M’s business segments is presented in the tables that follow. Organic local-currency sales include both organic volume impacts plus
+selling price impacts. Acquisition and divestiture impacts, if any, are measured separately for the first twelve months post-transaction. Foreign currency
+translation impacts and total sales change are also provided for each business segment. Any references to EMEA relate to Europe, Middle East and Africa
+on a combined basis. 
+ 
+The following discusses total year results for 2018 compared to 2017 and 2017 compared to 2016, for each business segment. Refer to the preceding year
+2018 and 2017 sales results by geographic area/business segment sections for additional sales change information.
+ 
+Industrial Business (37.4% of consolidated sales):
+ 
+ 
+    
+2018
+    
+2017
+    
+2016
+ 
+Sales (millions)
+ 
+$
+12,267  
+$
+11,866  
+$
+11,217  
+Sales change analysis:
+ 
+ 
+  
+ 
+  
+ 
+  
+Organic local-currency
+ 
+ 
+3.2 %   
+5.8 %   
+  
+Divestitures
+ 
+ 
+(0.1)  
+ 
+(0.5)  
+ 
+  
+Translation
+ 
+ 
+0.3  
+ 
+0.5
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: : Safety and Industrial; Transportation and Electronics; Health Care; and Consumer. From a geographic
+perspective, any references to EMEA refer to Europe, Middle East and Africa on a combined basis. References are made to organic sales change (which include both organic
+volume impacts and selling price impacts), which is defined as the change in net sales, absent the separate impacts on sales from foreign currency translation and acquisitions,
+net of divestitures. Acquisition and divestiture sales change impacts, if any, are measured separately for the first twelve months post-transaction. 3M believes this information is
+useful to investors and management in understanding ongoing operations and in analysis of ongoing operating trends.
+3M is impacted by the global pandemic and related effects associated with the coronavirus (COVID-19). Risk factors with respect to COVID-19 can be found in Item 1A “Risk
+Factors” in this document. Given the diversity of 3M’s businesses, some of the factors relative to COVID-19 increase the demand for 3M products, while others decrease
+demand or make it more difficult for 3M to serve customers. Certain resulting impacts are referenced in various discussions within this Item 7. Overall, the impact of the
+COVID-19 pandemic on 3M’s consolidated results of operations was primarily driven by factors related to changes in demand for products and disruption in global supply
+chains. 3M is not able to predict the extent to which the COVID-19 pandemic may have a material effect on its consolidated results of operations or financial condition.
+In 2022, 3M's costs for significant litigation (see Certain amounts adjusted for special items - (non-GAAP measures section below) totaled approximately $2.3 billion pre-tax
+and included, among things, pre-tax charges associated with steps toward resolving Combat Arms Earplugs litigation and associated with additional commitments to address
+PFAS-related matters at its Zwijndrecht, Belgium site (approximately $1.3 billion and $355 million, respectively, in 2022). These matters are further discussed in Note 16. In
+2022, 3M also completed the split-off of its Food Safety Division business resulting in a pre-tax gain of $2.7 billion and committed to a plan to exit PFAS manufacturing by the
+end of 2025 resulting in a 2022 pre-tax charge of $0.8 billion related to impairment as discussed in Note 15. See
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  Electronics; Health Care; and Consumer. 3M’s four business segments bring together common or related
+3M technologies, enhancing the development of innovative products and services and providing for efficient sharing of business resources. In July 2022, 3M announced its
+intention to spin off the Health Care business as a separate public company (see Note 3 for additional information). 3M is an integrated enterprise characterized by substantial
+intersegment cooperation, cost allocations and inventory transfers. Therefore, management does not represent that these segments, if operated independently, would report the
+operating income information shown.
+3M discloses business segment operating income (loss) as its measure of segment profit/loss, reconciled to both total 3M operating income (loss) and income before taxes.
+Business segment operating income (loss) excludes certain expenses and income that are not allocated to business segments (as described below in “Corporate and
+Unallocated”).
+Effective in the first quarter of 2023, the measure of segment operating performance and segment composition used by 3M’s chief operating decision maker (CODM) changed
+and, as a result, 3M’s disclosed measure of segment profit/loss (business segment operating income (loss)) was updated. The change to business segment operating income
+(loss) aligns with the update to how the CODM assesses performance and allocates resources for the Company’s business segments. The changes included the items described
+below. The financial information presented herein reflects the impact of these business segment reporting changes for all periods presented.
+Reflecting gains/losses from sale of property, plant and equipment (PPE) and other assets within Corporate and Unallocated Change
+3M updated its business segment operating performance measure to reflect all gains/losses from sales of PPE and other assets within Corporate and Unallocated.
+Previously, certain of these gains/losses were included in 3M’s business segments’ operating performance.
+Movement of certain businesses between segments
+The businesses associated with two groups of products (each with approximately $25 million in sales) were realigned with one moving from the Consumer business
+segment to the Health Care business segment and the other moving from the Health Care business segment to the Consumer business segment.
+Also effective in the first quarter of 2023, the Consumer business segment re-aligned from four divisions to the following three divisions: Home, Health and Auto Care;
+Construction and
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+Organic growth/productivity and other:
+•
+In 2022, the following components impacted operating margins and earnings per diluted share year-on-year:
+•
+Declines in disposable respirator demand year-on-year negatively impacted operating margins by 0.3 percent and earnings per share by $0.29.
+•
+Remaining organic growth/productivity and other impacts resulted in a net year-on-year benefit $0.85 to earnings per share and 1.3 percent to operating margins
+which was impacted by the following:
+◦
+Benefits from strong pricing, spending discipline and 2021 restructuring actions
+◦
+Manufacturing headwinds from global supply chain challenges; geopolitical impacts due to the Russia/Ukraine conflict as well as ongoing COVID-
+related challenges in China
+◦
+Second quarter of 2021 benefit of $91 million pre-tax ($0.12 per share after tax) from the impact of the favorable decision of the Brazilian Supreme
+Court regarding the calculation of past social taxes
+◦
+Increased investments in growth, productivity and sustainability
+•
+In 2021, organic volume growth and ongoing cost management increased operating income margins and earnings per diluted share year-on-year offset by manufacturing
+headwinds from global supply chain challenges and increased compensation/benefit costs. The following also impacted results or provide additional information:
+•
+2021 benefit of $91 million pre-tax ($0.12 per share after tax) from a favorable Brazilian Supreme Court decision that concluded on the impact of state value-
+added tax when determining Brazil’s federal sales-based social tax—essentially lowering the social tax that 3M should have paid in prior periods.
+•
+3M continued prioritization of investments in growth and sustainability.
+•
+2021 benefit from higher selling prices, restructuring actions taken in 2020 and positive/negative impact of year-over-year change in non-divestiture-related
+restructuring charges, net of adjustments, for respective periods. Note 5 provides additional information relative to restructuring actions.
+•
+Lower year-on-year net gains related to certain property sales.
+•
+COVID-impacts recognized on certain assets in 2020.
+•
+In 2021, higher defined benefit pension and postretirement service cost increased expense year-on-year.
+Raw material impact:
+•
+In 2022, 3M continued to experience inflationary pressures with year-on-year increases in raw material
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: 
+Net Income (Loss) Attributable to Noncontrolling Interest:
+(Millions)
+2022
+2021
+Net income (loss) attributable to noncontrolling interest
+$
+14 $
+8 
+Net income (loss) attributable to noncontrolling interest represents the elimination of the income or loss attributable to non-3M ownership interests in 3M consolidated entities.
+The primary noncontrolling interest relates to 3M India Limited, of which 3M’s effective ownership is 75 percent.
+PERFORMANCE BY BUSINESS SEGMENT
+Item 1, Business Segments, provides an overview of 3M’s business segments. In addition, disclosures relating to 3M’s business segments are provided in Note 19. Effective in
+the first quarter of 2022, the measure of segment operating performance used by 3M’s chief operating decision maker (CODM) changed and, as a result, 3M’s disclosed
+measure of segment profit/loss (business segment operating income) was updated for all comparative periods presented. The change to business segment operating income
+aligns with the update to how the CODM assesses performance and allocates resources for the Company’s business segments (see Note 19 for additional details).
+Information provided herein reflects the impact of these changes for all periods presented. 3M manages its operations in four business segments. The reportable segments are
+Safety and Industrial; Transportation and Electronics; Health Care; and Consumer.
+28
+
+---
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content:  enterprise characterized by substantial intersegment cooperation, cost allocations and inventory transfers. Therefore, management does not represent
+that these segments, if operated independently, would report the operating income information shown.
+3M discloses business segment operating income as its measure of segment profit/loss, reconciled to both total 3M operating income and income before taxes. Business segment
+operating income excludes certain expenses and income that are not allocated to business segments (as described below in “Corporate and Unallocated”).
+Effective in the first quarter of 2022, the measure of segment operating performance used by 3M’s chief operating decision maker (CODM) changed and, as a result, 3M’s
+disclosed measure of segment profit/loss (business segment operating income (loss) ) was updated. The change to business segment operating income aligns with the update to
+how the CODM assesses performance and allocates resources for the Company’s business segments. The changes included the items described below. The financial information
+presented herein reflects the impact of these business segment reporting changes for all periods presented.
+Effective in the first quarter of 2022:
+Eliminating inclusion of dual credit in measure of segment operating performance
+3M business segment operating performance measures were updated to no longer include dual credit to business segments for certain sales and related operating income.
+Management previously evaluated its business segments based on net sales and operating income performance, including dual credit reporting. 3M reflected additional
+(“dual”) credit to another business segment when the customer account activity (“sales district”) with respect to the particular product sold to the external customer was
+provided by a different business segment. For example, privacy screen protection products are primarily sold by the Display Materials and Systems Division within the
+Transportation and Electronics business segment; however, certain sales districts within the Consumer business segment provide the customer account activity for sales of the
+product to particular customers. In this example, the non-primary selling segment (Consumer) previously would also have received credit for the associated net sales initiated
+through its sales district and the related approximate operating income. The offset to the dual credit business segment reporting was reflected as a reconciling item entitled
+“Elimination of Dual Credit,” such that sales and operating income in total were unchanged.
+121
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: : Safety and Industrial; Transportation and Electronics; Health Care; and Consumer. From a geographic
+perspective, any references to EMEA refer to Europe, Middle East and Africa on a combined basis. References are made to organic sales change (which include both organic
+volume impacts and selling price impacts), which is defined as the change in net sales, absent the separate impacts on sales from foreign currency translation and acquisitions,
+net of divestitures. Acquisition and divestiture sales change impacts, if any, are measured separately for the first twelve months post-transaction. 3M believes this information is
+useful to investors and management in understanding ongoing operations and in analysis of ongoing operating trends.
+3M is impacted by the global pandemic and related effects associated with the coronavirus (COVID-19). Risk factors with respect to COVID-19 can be found in Item 1A “Risk
+Factors” in this document. Given the diversity of 3M’s businesses, some of the factors relative to COVID-19 increase the demand for 3M products, while others decrease
+demand or make it more difficult for 3M to serve customers. Certain resulting impacts are referenced in various discussions within this Item 7. Overall, the impact of the
+COVID-19 pandemic on 3M’s consolidated results of operations was primarily driven by factors related to changes in demand for products and disruption in global supply
+chains. 3M is not able to predict the extent to which the COVID-19 pandemic may have a material effect on its consolidated results of operations or financial condition.
+In 2022, 3M's costs for significant litigation (see Certain amounts adjusted for special items - (non-GAAP measures section below) totaled approximately $2.3 billion pre-tax
+and included, among things, pre-tax charges associated with steps toward resolving Combat Arms Earplugs litigation and associated with additional commitments to address
+PFAS-related matters at its Zwijndrecht, Belgium site (approximately $1.3 billion and $355 million, respectively, in 2022). These matters are further discussed in Note 16. In
+2022, 3M also completed the split-off of its Food Safety Division business resulting in a pre-tax gain of $2.7 billion and committed to a plan to exit PFAS manufacturing by the
+end of 2025 resulting in a 2022 pre-tax charge of $0.8 billion related to impairment as discussed in Note 15. See
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+obligations, was reflected in Corporate and Unallocated. In addition, 3M’s defined benefit pension and postretirement service-cost expense allocation to
+Corporate and Unallocated increased year-on-year.
+ 
+Corporate and Unallocated operating expenses increased by $74 million in 2017 when compared to 2016. In both the first and second quarters of 2017, a
+portion of the severance actions were reflected in Corporate and Unallocated. In the fourth quarter, an incremental $58 million was reflected within
+Corporate and Unallocated related to the Company’s actuarial adjustments to its respirator mask/asbestos liability accrual. In addition, 3M’s defined benefit
+pension and postretirement service cost expense allocation to Corporate and Unallocated increased by approximately $30 million in 2017. 
+ 
+Operating Business Segments:
+ 
+Information related to 3M’s business segments is presented in the tables that follow. Organic local-currency sales include both organic volume impacts plus
+selling price impacts. Acquisition and divestiture impacts, if any, are measured separately for the first twelve months post-transaction. Foreign currency
+translation impacts and total sales change are also provided for each business segment. Any references to EMEA relate to Europe, Middle East and Africa
+on a combined basis. 
+ 
+The following discusses total year results for 2018 compared to 2017 and 2017 compared to 2016, for each business segment. Refer to the preceding year
+2018 and 2017 sales results by geographic area/business segment sections for additional sales change information.
+ 
+Industrial Business (37.4% of consolidated sales):
+ 
+ 
+    
+2018
+    
+2017
+    
+2016
+ 
+Sales (millions)
+ 
+$
+12,267  
+$
+11,866  
+$
+11,217  
+Sales change analysis:
+ 
+ 
+  
+ 
+  
+ 
+  
+Organic local-currency
+ 
+ 
+3.2 %   
+5.8 %   
+  
+Divestitures
+ 
+ 
+(0.1)  
+ 
+(0.5)  
+ 
+  
+Translation
+ 
+ 
+0.3  
+ 
+0.5
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  Electronics; Health Care; and Consumer. 3M’s four business segments bring together common or related
+3M technologies, enhancing the development of innovative products and services and providing for efficient sharing of business resources. In July 2022, 3M announced its
+intention to spin off the Health Care business as a separate public company (see Note 3 for additional information). 3M is an integrated enterprise characterized by substantial
+intersegment cooperation, cost allocations and inventory transfers. Therefore, management does not represent that these segments, if operated independently, would report the
+operating income information shown.
+3M discloses business segment operating income (loss) as its measure of segment profit/loss, reconciled to both total 3M operating income (loss) and income before taxes.
+Business segment operating income (loss) excludes certain expenses and income that are not allocated to business segments (as described below in “Corporate and
+Unallocated”).
+Effective in the first quarter of 2023, the measure of segment operating performance and segment composition used by 3M’s chief operating decision maker (CODM) changed
+and, as a result, 3M’s disclosed measure of segment profit/loss (business segment operating income (loss)) was updated. The change to business segment operating income
+(loss) aligns with the update to how the CODM assesses performance and allocates resources for the Company’s business segments. The changes included the items described
+below. The financial information presented herein reflects the impact of these business segment reporting changes for all periods presented.
+Reflecting gains/losses from sale of property, plant and equipment (PPE) and other assets within Corporate and Unallocated Change
+3M updated its business segment operating performance measure to reflect all gains/losses from sales of PPE and other assets within Corporate and Unallocated.
+Previously, certain of these gains/losses were included in 3M’s business segments’ operating performance.
+Movement of certain businesses between segments
+The businesses associated with two groups of products (each with approximately $25 million in sales) were realigned with one moving from the Consumer business
+segment to the Health Care business segment and the other moving from the Health Care business segment to the Consumer business segment.
+Also effective in the first quarter of 2023, the Consumer business segment re-aligned from four divisions to the following three divisions: Home, Health and Auto Care;
+Construction and
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: 
+Net Income (Loss) Attributable to Noncontrolling Interest:
+(Millions)
+2022
+2021
+Net income (loss) attributable to noncontrolling interest
+$
+14 $
+8 
+Net income (loss) attributable to noncontrolling interest represents the elimination of the income or loss attributable to non-3M ownership interests in 3M consolidated entities.
+The primary noncontrolling interest relates to 3M India Limited, of which 3M’s effective ownership is 75 percent.
+PERFORMANCE BY BUSINESS SEGMENT
+Item 1, Business Segments, provides an overview of 3M’s business segments. In addition, disclosures relating to 3M’s business segments are provided in Note 19. Effective in
+the first quarter of 2022, the measure of segment operating performance used by 3M’s chief operating decision maker (CODM) changed and, as a result, 3M’s disclosed
+measure of segment profit/loss (business segment operating income) was updated for all comparative periods presented. The change to business segment operating income
+aligns with the update to how the CODM assesses performance and allocates resources for the Company’s business segments (see Note 19 for additional details).
+Information provided herein reflects the impact of these changes for all periods presented. 3M manages its operations in four business segments. The reportable segments are
+Safety and Industrial; Transportation and Electronics; Health Care; and Consumer.
+28
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  In addition, as discussed in Note 3, in the second quarter of 2023, 3M entered into agreements to sell the assets
+associated with its dental local anesthetic business That transaction is expected to close in the third quarter of 2023.
+First six months 2023 results:
+Sales in Health Care were down 5.2 percent in U.S. dollars.
+On an organic sales basis:
+•
+Sales increased in medical solutions and oral care and decreased in separation and purification and health information systems.
+•
+Growth was held back by declines in separation and purification due to the normalization of post-COVID-related biopharma demand, declines in health information
+systems from ongoing stress on hospital budgets along with overall headwinds from the exit of Russia.
+Divestitures:
+•
+Divestiture impact relates to the lost sales year-on-year from the divestiture from the Food Safety Division split-off transaction and combination with Neogen
+completed in the third quarter of 2022.
+Business segment operating income margins decreased year-on-year due to due to manufacturing and supply chain headwinds, inflation impacts, investments in the business
+and restructuring costs partially offset by benefits from aggressive spending discipline, pricing and productivity actions.
+68"
+financebench_id_00807,"Does 3M have a reasonably healthy liquidity profile based on its quick ratio for Q2 of FY2023? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","No. The quick ratio for 3M was 0.96 by Jun'23 close, which needs a bit of an improvement to touch the 1x mark",3M_2023Q2_10Q,domain-relevant,"The quick ratio for 3M for Q2 FY2023 is not explicitly provided in the documents retrieved. However, the company maintains a strong liquidity profile, and its ability to meet short-term obligations is bolstered by cash on hand and access to commercial paper markets. 
+
+3M’s liquidity is highlighted by its commercial paper program, which allows for maximum outstanding amounts of $5 billion and indicates accessibility to funds when needed. As of June 30, 2023, the company had $1.8 billion in commercial paper outstanding and emphasized ongoing strong cash flows from operations, suggesting solid liquidity management (source: 3M Q2 FY2023 report). 
+
+While the quick ratio is commonly used to assess a company's short-term liquidity—by measuring liquid assets against current liabilities—its relevance can depend on the specific context and operational strategies of the firm. In 3M's case, their liquidity is supported by a combination of cash, a robust access to credit markets, and a significant operating cash flow, which may render the specific quick ratio less critical for assessing immediate liquidity needs (source: 3M financial condition report). 
+
+In summary, while the quick ratio itself is not presented, the overall liquidity profile suggests that 3M is managing its short-term obligations effectively through various mechanisms.",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2018_10K.pdf
+
+Content: 
+3M, reporting units correspond to a division. 3M did not combine any of its reporting units for impairment testing.
+ 
+An impairment loss would be recognized when the carrying amount of the reporting unit’s net assets exceeds the estimated fair value of the reporting unit,
+and the loss would equal that difference. The estimated fair value of a reporting unit is determined using earnings for the reporting unit multiplied by a
+price/earnings ratio for comparable industry groups, or by using a discounted cash flow analysis. 3M typically uses the price/earnings ratio approach for
+stable and growing businesses that have a long history and track record of generating positive operating income and cash flows. 3M uses the discounted
+cash flow approach for start-up, loss position and declining businesses, in addition to using for businesses where the price/earnings ratio valuation method
+indicates additional review is warranted. 3M also uses discounted cash flow as an additional tool for businesses that may be growing at a slower rate than
+planned due to economic or other conditions.
+ 
+As described in Note 18, effective in the first quarter of 2018, 3M made business segment reporting changes. For any product moves that resulted in
+reporting unit changes, the Company applied the relative fair value method to determine the impact on goodwill of the associated reporting units. During the
+first quarter of 2018, the Company completed its assessment of any potential goodwill impairment for reporting units impacted by this new structure and
+determined that no impairment existed. The discussion that follows relates to the separate fourth quarter 2018 annual impairment test and is in the context of
+the reporting unit structure that existed at that time.
+ 
+As of October 1, 2018, 3M had 24 primary reporting units, with ten reporting units accounting for approximately 89 percent of the goodwill. These ten
+reporting units were comprised of the following divisions: Advanced Materials, Display Materials and Systems, Electronics Materials Solutions, Health
+Information Systems, Industrial Adhesives and Tapes, Infection Prevention, Oral Care Solutions, Personal Safety, Separation and Purification, and
+Transportation Safety. The estimated fair value for all reporting units was in excess of carrying value by approximately 79 percent or more. 3M’s market
+value at both December 31, 2018, and September 30, 2018, was significantly in excess of its shareholders’ equity of approximately $10 billion.
+ 
+As discussed in Note 3, 3M sold its Communication Markets division in 2018, which comprised substantially all of the $272
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: .
+ 
+NOTE 20.  Quarterly Data (Unaudited) 
+ 
+(Millions, except per-share amounts)
+    
+First
+    
+Second
+    
+Third
+    
+Fourth
+    
+Year
+ 
+2018
+ 
+Quarter
+ 
+Quarter
+ 
+Quarter
+ 
+Quarter
+ 
+2018
+ 
+Net sales
+ 
+$
+8,278  
+$
+8,390  
+$
+8,152  
+$
+7,945  
+$
+32,765  
+Cost of sales
+ 
+ 
+4,236  
+ 
+4,227  
+ 
+4,159  
+ 
+4,060  
+ 
+16,682  
+Net income including noncontrolling interest
+ 
+ 
+606  
+ 
+1,862  
+ 
+1,546  
+ 
+1,349  
+ 
+5,363  
+Net income attributable to 3M
+ 
+ 
+602  
+ 
+1,857  
+ 
+1,543  
+ 
+1,347  
+ 
+5,349  
+Earnings per share attributable to 3M common shareholders - basic
+ 
+ 
+1.01  
+ 
+3.14  
+ 
+2.64  
+ 
+2.32  
+ 
+9.09  
+Earnings per share attributable to 3M common shareholders - diluted
+ 
+ 
+0.98  
+ 
+3.07  
+ 
+2.58  
+ 
+2.27  
+ 
+8.89  
+ 
+(Millions, except per-share amounts)
+    
+First
+    
+Second
+    
+Third
+    
+Fourth
+    
+Year
+ 
+2017
+ 
+Quarter
+ 
+Quarter
+ 
+Quarter
+ 
+Quarter
+ 
+2017
+ 
+Net sales
+ 
+$
+7,685  
+$
+7,810  
+$
+8,172  
+$
+7,990  
+$
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+Financial condition:
+Refer to the section entitled Financial Condition and Liquidity later in MD&A for a discussion of items impacting cash flows.
+In November 2018, 3M’s Board of Directors replaced the Company’s February 2016 repurchase program with a new repurchase program. This new program authorizes the
+repurchase of up to $10 billion of 3M’s outstanding common stock, with no pre-established end date. In the first six months of 2023, the Company purchased $29 million of its
+own stock, compared to $773 million of stock purchases in the first six months of 2022. As of June 30, 2023, approximately $4.2 billion remained available under the
+authorization. In February 2023, 3M’s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent. This marked the 65th consecutive
+year of dividend increases for 3M. In May 2023, 3M's Board of Directors declared a second-quarter 2023 dividend of $1.50 per share.
+RESULTS OF OPERATIONS
+Net Sales:
+Refer to the preceding Overview section and the Performance by Business Segment section later in MD&A for additional discussion of sales change.
+Operating Expenses:
+Three months ended
+June 30,
+Six months ended
+June 30,
+(Percent of net sales)
+2023
+2022
+Change
+2023
+2022
+Change
+Cost of sales
+55.3 %
+58.5 %
+(3.2)%
+56.4 %
+56.6 %
+(0.2)%
+Selling, general and administrative expenses (SG&A)
+146.6 
+34.7 
+111.9 
+85.0 
+27.9 
+57.1 
+Research, development and related expenses (R&D)
+5.7 
+5.5 
+0.2 
+5.8 
+5.5 
+0.3 
+Operating income (loss) margin
+(107.6)%
+1.3 %
+(108.9)%
+(47.2)%
+10.0 %
+(57.2)%
+Stock compensation expense was $41 million and $47 million for the second quarter of 2023 and 2022,
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+NOTE 10. Long-Term Debt and Short-Term Borrowings
+In February 2023, 3M repaid $500 million aggregate principal amount of fixed-rate registered notes that matured. In March 2023, 3M repaid $650 million aggregate principal
+amount of fixed-rate medium-term notes that matured. In May 2023, 3M repaid 600 million euros aggregate principal amount of fixed-rate medium-term notes that matured.
+2022 issuances, maturities, and extinguishments of short- and long-term debt are described in Note 12 to the Consolidated Financial Statements in 3M's 2022 Annual Report on
+Form 10-K.
+The Company had $1.8 billion in commercial paper outstanding at June 30, 2023, compared to no commercial paper outstanding as of December 31, 2022.
+In May 2023, 3M entered into a $4.25 billion five-year revolving credit facility expiring in 2028; the facility was amended in July 2023. The revolving credit agreement
+includes a provision under which 3M may request an increase of up to $1.0 billion (at lender’s discretion), bringing the total facility up to $5.25 billion. The agreement replaced
+the amended and restated $3.0 billion, five-year revolving credit agreement and the $1.25 billion 364-day credit facility that would have expired in November 2024 and
+November 2023, respectively. The credit facility was undrawn at June 30, 2023. Under the $4.25 billion credit facility, the Company is required to maintain its EBITDA to
+Interest Ratio as of the end of each fiscal quarter at not less than 3.0 to 1. This is calculated (based on amounts defined in the amended agreement) as the ratio of consolidated
+total EBITDA for the four consecutive quarters then ended to total interest expense on all funded debt for the same period. At June 30, 2023, this ratio, reflecting the July 2023
+amendment, was approximately 17 to 1. Debt covenants do not restrict the payment of dividends.
+Future Maturities of Long-term Debt
+Maturities of long-term debt in the table below reflect the impact of put provisions associated with certain debt instruments and are net of the unamortized debt issue costs such
+that total maturities equal the carrying value of long-term debt as of June
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: 0 billion five year revolving credit facility expiring in November 2024. The revolving credit agreement includes a provision under which
+3M may request an increase of up to $1.0 billion (at lender’s discretion), bringing the total facility up to $4.0 billion. In addition, 3M entered into a $1.25 billion 364-day credit
+facility, which was renewed in November 2022 with an expiration date of November 2023. The 364-day credit agreement includes a provision under which 3M may convert any
+advances outstanding on the maturity date into term loans having a maturity date one year later. These credit facilities were undrawn at December 31, 2022. Under both the $3.0
+billion and $1.25 billion credit agreements, the Company is required to maintain its EBITDA to Interest Ratio as of the end of each fiscal quarter at not less than 3.0 to 1. This is
+calculated (as defined in the agreement) as the ratio of consolidated total EBITDA for the four consecutive quarters then ended to total interest expense on all funded debt for the
+same period. At December 31, 2022, this ratio was approximately 19 to 1. Debt covenants do not restrict the payment of dividends.
+In December 2021 and June 2022, 3M entered into debt financing facilities providing commitments for term loans and potential bridge financing aggregating $1.0 billion
+related to the Food Safety Division split-off transaction and combination with Neogen (discussed in Note 3). The debt commitments also included a $150 million revolving
+credit facility for the Food Safety business. Coincident with completion of the September 2022 split-off, the Food Safety business term loan borrowings funded the cash
+payment to 3M discussed in Note 3. The bridge financing component of these facilities was terminated early and not utilized. Obligations under the commitments (including the
+$150 million revolving credit facility) transferred with the Food Safety business and became those of Neogen.
+Other Credit Facilities
+The Company also had an additional $318 million in stand-alone letters of credit and bank guarantees issued and outstanding at December 31, 2022. These instruments are
+utilized in connection with normal business activities.
+76
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+3M COMPANY
+FORM 10-Q
+For the Quarterly Period Ended June 30, 2023
+PART I. Financial Information
+Item 1. Financial Statements.
+3M Company and Subsidiaries
+Consolidated Statement of Income (Loss)
+(Unaudited)
+Three months ended
+June 30,
+Six months ended
+June 30,
+(Millions, except per share amounts)
+2023
+2022
+2023
+2022
+Net sales
+$
+8,325 
+$
+8,702 
+$
+16,356 
+$
+17,531 
+Operating expenses
+Cost of sales
+4,606 
+5,093 
+9,219 
+9,919 
+Selling, general and administrative expenses
+12,204 
+3,023 
+13,909 
+4,905 
+Research, development and related expenses
+473 
+476 
+945 
+956 
+Total operating expenses
+17,283 
+8,592 
+24,073 
+15,780 
+Operating income (loss)
+(8,958)
+110 
+(7,717)
+1,751 
+Other expense (income), net
+65 
+50 
+117 
+88 
+Income (loss) before income taxes
+(9,023)
+60 
+(7,834)
+1,663 
+Provision (benefit) for income taxes
+(2,184)
+(23)
+(1,974)
+279 
+Income (loss) of consolidated group
+(6,839)
+83 
+(5,860)
+1,384 
+Income (loss) from unconsolidated subsidiaries, net of taxes
+3 
+(1)
+5 
+1 
+Net income (loss) including noncontrolling interest
+(6,836)
+82 
+(5,855)
+1,385 
+Less: Net income (loss) attributable to noncontrolling interest
+5 
+4 
+10 
+8 
+Net income (loss) attributable to 3M
+$
+(6,841)
+$
+78 
+$
+(5,865)
+$
+1,377 
+Weighted average 3M common shares outstanding — basic
+
+
+---
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+FINANCIAL CONDITION AND LIQUIDITY
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, provide financial flexibility to deploy
+capital in accordance with the Company's stated priorities and meet needs associated with contractual commitments and other obligations. Investing in 3M’s business to drive
+organic growth and deliver strong returns on invested capital remains the first priority for capital deployment. This includes research and development, capital expenditures, and
+commercialization capability. The Company also continues to actively manage its portfolio through acquisitions and divestitures to maximize value for shareholders. 3M
+expects to continue returning cash to shareholders through dividends and share repurchases. To fund cash needs in the United States, the Company relies on ongoing cash flow
+from U.S. operations, access to capital markets and repatriation of the earnings of its foreign affiliates that are not considered to be permanently reinvested. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S. operations. See Note 10
+for further information on earnings considered to be reinvested indefinitely.
+3M maintains a strong liquidity profile. The Company’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it
+will have continuous access to the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a
+maximum maturity of 397 days from date of issuance. The Company had no commercial paper outstanding at December 31, 2022 and December 31, 2021.
+Total debt:
+The strength of 3M’s credit profile and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s debt maturity profile is
+staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. As of December 2022, 3M has a credit rating of A1, stable
+outlook from Moody's Investors Service, and a credit rating of A+, CreditWatch negative from S&P Global Ratings.
+The Company’s total debt was lower at December 31, 2022 when compared to December 31, 2021. Decreases in debt were largely due to the repayments of 500 million euros
+and $600 million aggregate principal amounts of fixed-rate medium-term notes in February
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+FINANCIAL CONDITION AND LIQUIDITY
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, provide financial flexibility to deploy
+capital in accordance with the Company's stated priorities and meet needs associated with contractual commitments and other obligations. Investing in 3M’s business to drive
+organic growth and deliver strong returns on invested capital remains the first priority for capital deployment. This includes research and development, capital expenditures,
+and commercialization capability. The Company also continues to actively manage its portfolio through acquisitions and divestitures to maximize value for shareholders. 3M
+expects to continue returning cash to shareholders through dividends and share repurchases. To fund cash needs in the United States, the Company relies on ongoing cash flow
+from U.S. operations, access to capital markets and repatriation of the earnings of its foreign affiliates that are not considered to be permanently reinvested. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S. operations. See Note 10
+in 3M's 2022 Annual Report on Form 10-K for further information on earnings considered to be reinvested indefinitely.
+3M maintains a strong liquidity profile. The Company’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it
+will have continuous access to the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a
+maximum maturity of 397 days from date of issuance. The Company had $1.8 billion in commercial paper outstanding at June 30, 2023, compared to no commercial paper
+outstanding as of December 31, 2022.
+Total debt:
+The strength of 3M’s credit profile and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s debt maturity profile is
+staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. As of June 2023, 3M has a credit rating of A2, negative outlook
+from Moody's Investors Service, and a credit rating of A-, CreditWatch negative from S&P Global Ratings.
+The Company’s total debt at June 30, 2023 was consistent when compared to December 31, 2022 as
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Table of Contents 
+FINANCIAL CONDITION AND LIQUIDI TY
+ 
+The strength and stability of 3M’s business model and strong free cash flow capability, together with proven capital markets access, positions the Company
+to be able to add further leverage to its capital structure. Investing in 3M’s businesses to drive organic growth remains the first priority for capital
+deployment, including research and development, capital expenditures, and commercialization capability. Investment in organic growth will be
+supplemented by complementary acquisitions. 3M will also continue to return cash to shareholders through dividends and share repurchases. Sources for
+cash availability in the United States, such as ongoing cash flow from operations and access to capital markets, have historically been sufficient to fund
+dividend payments to shareholders, as well as funding U.S. acquisitions and other items as needed. The TCJA creates additional repatriation opportunities
+for 3M to access international cash positions on a continual and on-going basis and will help support U.S. capital deployments needs. For those
+international earnings still considered to be reinvested indefinitely, the Company currently has no plans or intentions to repatriate these funds for U.S.
+operations. See Note 10 for further information on earnings considered to be reinvested indefinitely.
+ 
+3M’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper issuances. 3M believes it will have continuous access to
+the commercial paper market. 3M’s commercial paper program permits the Company to have a maximum of $5 billion outstanding with a maximum
+maturity of 397 days from date of issuance. At December 31, 2018, there was approximately $435 million in commercial paper issued and outstanding.
+ 
+Total Debt:
+ 
+The strength of 3M’s capital structure and significant ongoing cash flows provide 3M proven access to capital markets. Additionally, the Company’s
+maturity profile is staggered to help ensure refinancing needs in any given year are reasonable in proportion to the total portfolio. 3M currently has an AA-
+credit rating with a stable outlook from Standard & Poor’s and has an A1 credit rating with a stable outlook from Moody’s Investors Service.
+ 
+The Company’s total debt was $0.7 billion higher at December 31, 2018 when compared to December 31, 2017. Increases in debt related to September
+2018
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: � in the preceding table. 3M’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper
+issuances.
+ 
+Proceeds from debt for 2018 primarily relate to the September 2018, issuance of $400 million aggregate principal amount of 3-year fixed rate medium-term
+notes due 2021 with a coupon rate of 3.00%, $300 million aggregate principal amount of 5.5-year fixed rate medium-term notes due 2024 with a coupon
+rate of 3.25%, $300 million aggregate principal amount of 5.5-year floating rate medium-term notes due 2024 with a rate based on a floating three-month
+LIBOR index, $600 million aggregate principal amount of 10-year fixed rate medium-term notes due 2028 with a coupon rate of 3.625%, and $650 million
+aggregate principal amount of 30-year fixed rate medium-term notes due 2048 with a coupon rate of 4.00%. Refer to Note 12 for more detail of these debt
+issuances.
+ 
+ 
+47
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: ions such as tariffs, and retaliatory counter measures, government deficit reduction and other austerity measures in specific countries or regions, or in
+the various industries in which the Company operates; social, political or labor conditions in specific countries or regions; natural and other disasters or
+climate change affecting the operations of the Company or its customers and suppliers; or adverse changes in the availability and cost of capital, interest
+rates, tax rates, tax laws, or exchange control, ability to expatriate earnings and other regulations in the jurisdictions in which the Company operates.
+ 
+* Change in the Company’s credit ratings could increase cost of funding. The Company’s credit ratings are important to 3M’s cost of capital. The major
+rating agencies routinely evaluate the Company’s credit profile and assign debt ratings to 3M. This evaluation is based on a number of factors, which
+include financial strength, business and financial risk, as well as transparency with rating agencies and timeliness of financial reporting. 3M currently has
+an AA- credit rating with a stable outlook from Standard & Poor’s and has an A1 credit rating with a stable outlook from Moody’s Investors Service. The
+Company’s credit ratings have served to lower 3M’s borrowing costs and facilitate access to a variety of lenders. The addition of further leverage to the
+Company’s capital structure could impact 3M’s credit ratings in the future. Failure to maintain strong investment grade ratings would adversely affect the
+Company’s cost of funding and could adversely affect liquidity and access to capital markets.
+ 
+* The Company’s results are affected by competitive conditions and customer preferences. Demand for the Company’s products, which impacts revenue
+and profit margins, is affected by (i) the development and timing of the introduction of competitive products; (ii) the Company’s response to downward
+pricing to stay competitive; (iii) changes in customer order patterns, such as changes in the levels of inventory maintained by customers and the timing of
+customer purchases which may be affected by announced price changes, changes in the Company’s incentive programs, or the customer’s ability to achieve
+incentive goals; (iv) changes in customers’ preferences for our products, including the success of products offered by our competitors, and changes in
+customer designs for their products that can affect the demand for some of the Company’s products;
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+Refer to Note 3 for information on acquisitions and divestitures. The Company is actively considering additional acquisitions, investments and strategic alliances, and from
+time to time may also divest certain businesses.
+Purchases of marketable securities and investments and proceeds from maturities and sale of marketable securities and investments are primarily attributable to certificates of
+deposit/time deposits, commercial paper, and other securities, which are classified as available-for-sale. Refer to Note 9 for more details about 3M’s diversified marketable
+securities portfolio. Purchases of investments include additional survivor benefit insurance, plus investments in equity securities.
+Cash Flows from Financing Activities:
+ 
+Six months ended June 30,
+(Millions)
+2023
+2022
+Change in short-term debt — net
+$
+651 
+$
+344 
+Repayment of debt (maturities greater than 90 days)
+(1,802)
+(1,179)
+Proceeds from debt (maturities greater than 90 days)
+1,107 
+1 
+Total cash change in debt
+(44)
+(834)
+Purchases of treasury stock
+(29)
+(773)
+Proceeds from issuances of treasury stock pursuant to stock option and benefit plans
+218 
+227 
+Dividends paid to shareholders
+(1,655)
+(1,700)
+Other — net
+(9)
+(22)
+Net cash provided by (used in) financing activities
+$
+(1,519)
+$
+(3,102)
+Total debt was approximately $16.0 billion at June 30, 2023 and $15.9 billion at December 31, 2022. During the first six months of 2023, maturities of $1.8 billion of fixed-rate
+notes were offset by issuances of commercial paper of $1.8 billion. The Company had $1.8 billion in commercial paper outstanding at June 30, 2023, compared to no
+commercial paper outstanding as of December 31, 2022. Net commercial paper issuances in addition to repayments and borrowings by international subsidiaries are largely
+reflected in “Proceeds from debt (maturities greater than 90 days)” in the preceding table. 3M’s primary short-term liquidity needs are met through cash on hand and U.S."
+financebench_id_00941,Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?,"Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:
+-1.500% Notes due 2026 (Trading Symbol: MMM26)
+-1.750% Notes due 2030 (Trading Symbol: MMM30)
+-1.500% Notes due 2031 (Trading Symbol: MMM31)",3M_2023Q2_10Q,domain-relevant,"As of Q2 2023, the debt securities registered to trade on a national securities exchange under 3M's name include:
+
+1. **1.500% Notes due 2026** (Trading Symbol: MMM26) - New York Stock Exchange
+2. **1.750% Notes due 2030** (Trading Symbol: MMM30) - New York Stock Exchange
+3. **1.500% Notes due 2031** (Trading Symbol: MMM31) - New York Stock Exchange
+4. **0.950% Notes due 2023** (Trading Symbol: MMM23) - New York Stock Exchange
+
+These securities reflect 3M's actively traded debt instruments listed on the exchange (source: 3M Q2 2023 10-Q report).",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: 
+from Moody's Investors Service, and a credit rating of A-, CreditWatch negative from S&P Global Ratings.
+The Company’s total debt at June 30, 2023 was consistent when compared to December 31, 2022 as maturities of $1.8 billion of fixed-rate notes were offset by issuances of
+commercial paper of $1.8 billion. For discussion of repayments of and proceeds from debt refer to the following Cash Flows from Financing Activities section.
+In July 2017, the United Kingdom’s Financial Conduct Authority announced that it would no longer require banks to submit rates for the London InterBank Offered Rate
+(“LIBOR”) after 2021. In November 2020, the ICE Benchmark Administration (IBA), LIBOR’s administrator, proposed extending the publication of USD LIBOR through June
+2023. Subsequently, in March of 2021, IBA ceased publication of certain LIBOR rates after December 31, 2021. USD LIBOR rates that did not cease on December 31, 2021
+will continue to be published through June 30, 2023, and certain USD LIBOR rates subject to a synthetic methodology will continue to be published until September 2024. The
+Company anticipates its debt securities, bank facilities, and derivative instruments that previously utilized LIBOR as the reference rate will transition to the Secured Overnight
+Financing Rate, or SOFR, as a reference rate as necessary.
+Effective February 8, 2023, the Company updated its “well-known seasoned issuer” (WKSI) shelf registration statement, which registers an indeterminate amount of debt or
+equity securities for future issuance and sale. This replaced 3M’s previous shelf registration dated February 10, 2020. In May 2016, 3M entered into an amended and restated
+distribution agreement relating to the future issuance and sale (from time to time) of the Company’s medium-term notes program (Series F), up to the aggregate principal
+amount of $18 billion, which was an increase from the previous aggregate principal amount up to $9 billion of the same Series. As of June 30, 2023, the total amount of debt
+issued as part of the medium-term notes program (Series F), inclusive of debt issued in February 2019 and prior years is approximately $17.6 billion (utilizing the foreign
+exchange rates applicable at the time of issuance for the euro denominated debt). Information
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content:  total debt was lower at December 31, 2022 when compared to December 31, 2021. Decreases in debt were largely due to the repayments of 500 million euros
+and $600 million aggregate principal amounts of fixed-rate medium-term notes in February 2022 and June 2022, respectively. For discussion of repayments of and proceeds
+from debt refer to the following “Cash Flows from Financing Activities” section.
+In July 2017, the United Kingdom’s Financial Conduct Authority announced that it would no longer require banks to submit rates for the London InterBank Offered Rate
+(“LIBOR”) after 2021. In November 2020, the ICE Benchmark Administration (IBA), LIBOR’s administrator, proposed extending the publication of USD LIBOR through
+June 2023. Subsequently, in March of 2021, IBA ceased publication of certain LIBOR rates after December 31, 2021. USD LIBOR rates that did not cease on December 31,
+2021 will continue to be published through June 30, 2023. The Company has reviewed its debt securities, bank facilities, derivative instruments, and commercial contracts that
+may utilize LIBOR as the reference rate. Contracts will be modified to apply a new reference rate where applicable.
+Effective February 10, 2020, the Company updated its “well-known seasoned issuer” (WKSI) shelf registration statement, which registers an indeterminate amount of debt or
+equity securities for future issuance and sale. This replaced 3M’s previous shelf registration dated February 24, 2017. In May 2016, in connection with the WKSI shelf, 3M
+entered into an amended and restated distribution agreement relating to the future issuance and sale (from time to time) of the Company’s medium-term notes program (Series
+F), up to the aggregate principal amount of $18 billion, which was an increase from the previous aggregate principal amount up to $9 billion of the same Series. As of
+December 31, 2022, the total amount of debt issued as part of the medium-term notes program (Series F), inclusive of debt issued in February 2019 and prior years is
+approximately $17.6 billion (utilizing the foreign exchange rates applicable at the time of issuance for the euro denominated debt). Information with respect to long-term debt
+issuances and maturities for the periods presented is included in Note 12.
+As disclosed in Note 12, 3M had debt financing facilities providing commitments
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+FORM 10-K
+  ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the fiscal year ended December 31, 2022
+or
+o TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from __________ to __________
+Commission file number 1-3285
+3M COMPANY
+State of Incorporation: Delaware
+I.R.S. Employer Identification No. 41-0417775
+Principal executive offices: 3M Center, St. Paul, Minnesota 55144
+Telephone number: (651) 733-1110
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class
+Trading Symbol(s)
+Name of each exchange on which registered
+Common Stock, Par Value $.01 Per Share
+MMM
+New York Stock Exchange
+MMM
+Chicago Stock Exchange, Inc.
+0.950% Notes due 2023
+MMM23
+New York Stock Exchange
+1.500% Notes due 2026
+MMM26
+New York Stock Exchange
+1.750% Notes due 2030
+MMM30
+New York Stock Exchange
+1.500% Notes due 2031
+MMM31
+New York Stock Exchange
+Note: The common stock of the registrant is also traded on the SIX Swiss Exchange.
+Securities registered pursuant to section 12(g) of the Act: None
+Indicate by check mark if the registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act. Yes  x    No  o
+Indicate by check mark if the registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act. Yes  o    No  x
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or for such shorter
+period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes  x    No  o
+Ind
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content: Table of Contents
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+WASHINGTON, D.C. 20549
+FORM 10-Q
+☒ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the quarterly period ended June 30, 2023
+or
+o TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934
+For the transition period from __________ to __________
+Commission file number: 1-3285
+3M COMPANY
+(Exact name of registrant as specified in its charter)
+Delaware
+41-0417775
+(State or other jurisdiction of incorporation)
+(IRS Employer Identification No.)
+3M Center, St. Paul, Minnesota
+55144-1000
+(Address of Principal Executive Offices)
+(Zip Code)
+(Registrant’s Telephone Number, Including Area Code) (651) 733-1110
+Not Applicable
+(Former Name or Former Address, if Changed Since Last Report)
+Securities registered pursuant to Section 12(b) of the Act:
+Title of each class
+Trading Symbol(s)
+Name of each exchange on which registered
+Common Stock, Par Value $.01 Per Share
+MMM
+New York Stock Exchange
+MMM
+Chicago Stock Exchange, Inc.
+1.500% Notes due 2026
+MMM26
+New York Stock Exchange
+1.750% Notes due 2030
+MMM30
+New York Stock Exchange
+1.500% Notes due 2031
+MMM31
+New York Stock Exchange
+Note: The common stock of the Registrant is also traded on the SIX Swiss Exchange.
+Indicate by check mark whether the registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the preceding 12 months (or
+for such shorter period that the registrant was required to file such reports), and (2) has been subject to such filing requirements for the past 90 days. Yes ☒ No ☐
+Indicate by check mark whether the registrant has submitted electronically every Interactive Data File required to be submitted pursuant to Rule 405 of Regulation S-T (§232.405 of this
+chapter) during the preceding 12 months (or for such shorter period
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: � in the preceding table. 3M’s primary short-term liquidity needs are met through cash on hand and U.S. commercial paper
+issuances.
+ 
+Proceeds from debt for 2018 primarily relate to the September 2018, issuance of $400 million aggregate principal amount of 3-year fixed rate medium-term
+notes due 2021 with a coupon rate of 3.00%, $300 million aggregate principal amount of 5.5-year fixed rate medium-term notes due 2024 with a coupon
+rate of 3.25%, $300 million aggregate principal amount of 5.5-year floating rate medium-term notes due 2024 with a rate based on a floating three-month
+LIBOR index, $600 million aggregate principal amount of 10-year fixed rate medium-term notes due 2028 with a coupon rate of 3.625%, and $650 million
+aggregate principal amount of 30-year fixed rate medium-term notes due 2048 with a coupon rate of 4.00%. Refer to Note 12 for more detail of these debt
+issuances.
+ 
+ 
+47
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: low
+ 
+UNITED STATES
+SECURITIES AND EXCHANGE COMMISSION
+Washington, D.C. 20549
+ 
+FORM 10-K
+ 
+☒   ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE
+SECURITIES EXCHANGE ACT OF 1934
+For the fiscal year ended December 31, 2018
+ 
+Commission file number 1-3285
+ 
+3M COMPANY
+State of Incorporation: Delaware
+ 
+I.R.S. Employer Identification No. 41-0417775
+Principal executive offices: 3M Center, St. Paul, Minnesota 55144
+Telephone number: (651) 733-1110
+ 
+SECURITIES REGISTERED PURSUANT TO SECTION 12(b) OF THE ACT:
+Title of each class
+ 
+Name of each exchange
+on which registered
+Common Stock, Par Value $.01 Per Share
+ 
+1.500% Notes due 2026
+Floating Rate Notes due 2020
+0.375% Notes due 2022
+0.950% Notes due 2023
+1.750% Notes due 2030
+1.500% Notes due 2031
+ 
+New York Stock Exchange, Inc.
+Chicago Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+New York Stock Exchange, Inc.
+ 
+Note: The common stock of the Registrant is also traded on the SWX Swiss Exchange.
+Securities registered pursuant to section 12(g) of the Act: None
+ 
+Indicate by check mark if the Registrant is a well-known seasoned issuer, as defined in Rule 405 of the Securities Act.  Yes  ☒    No  ☐
+ 
+Indicate by check mark if the Registrant is not required to file reports pursuant to Section 13 or Section 15(d) of the Act.  Yes  ☐    No  ☒
+ 
+Indicate by check mark whether the Registrant (1) has filed all reports required to be filed by Section 13 or 15(d) of the Securities Exchange Act of 1934 during the
+preceding 12 months (or for such shorter period that the Registrant was required to file such reports), and (2) has been subject to such"
+financebench_id_01858,Does 3M maintain a stable trend of dividend distribution?,"Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years",3M_2023Q2_10Q,novel-generated,"Yes, 3M maintains a stable trend of dividend distribution. The company has a long history of paying dividends, having done so since 1916. Notably, 3M's Board of Directors declared a first-quarter dividend of $1.50 per share in February 2023, marking a 1% increase from the previous year and equating to an annual dividend of $6.00 per share. This also represented the 65th consecutive year of dividend increases for the company (Source: 3M 2022 10-K).
+
+Additionally, in previous years, 3M paid $5.44 per share in dividends in 2018, $4.70 per share in 2017, and $4.44 per share in 2016, showing a consistent upward trend in dividend payouts (Source: 3M 2018 10-K).",,,"[""3M_2022_10K"", ""3M_2018_10K"", ""3M_2023Q2_10Q""]","Source: data\pdfs\3M_2018_10K.pdf
+
+Content: �s DSUs and any related Dividend Equivalents will be paid in Shares in a single lump sum in
+the first year following Participant’s Separation from Service (as such term is defined for purposes of the 3M Compensation Plan for
+Nonemployee Directors).
+(b)
+ Notwithstanding anything to the contrary in Section 1.2(a), if Participant completed and timely submitted to
+the Company an election to defer receipt (the “Payment  Election”) of all or any of the Shares underlying the DSUs in a form acceptable
+to the Company, then the Shares underlying the DSUs shall be distributable to Participant in accordance with the terms of the Payment
+Election.
+(c)
+ Notwithstanding anything to the contrary in this Agreement or the Plan, no DSUs or Dividend Equivalents
+shall be distributed to Participant pursuant to this Section 1.2 during the six-month period following Participant’s separation from service
+if the Company determines that distributing such DSUs and Dividend Equivalents at the time or times indicated in this Agreement would
+be a prohibited distribution under Section 409A(a)(2)(B)(i) of the Code.  If the distribution of all or any of Participant’s DSUs and
+Dividend Equivalents is delayed as a result of the previous sentence, then such portion of the DSUs and Dividend Equivalents shall be
+paid to Participant during the thirty (30)-day period beginning on the first business day following the end of such six-month period (or
+such earlier date upon which such DSUs and Dividend Equivalents can be distributed under Section 409A without resulting in a
+prohibited distribution, including as a result of Participant’s death).
+(d)
+ Notwithstanding any provisions of this Agreement or the Plan to the contrary, the time of distribution of the
+DSUs and the Dividend Equivalents under this Agreement may not be changed except as may be permitted by the Administrator in
+accordance with Section 409A and the applicable Treasury Regulations promulgated thereunder.
+Article II.  
+TAXATION AND TAX WITHHOLDING
+2.1
+ Responsibility for Taxes.
+ 
+(a)
+  Participant acknowledges that, regardless of any action taken by the Company, the ultimate liability for all
+income tax, social insurance, payroll tax, fringe benefit tax, payment on account or other tax
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: Issuer Purchases of Equity Securities” in Part II, Item 5. The
+Company does not utilize derivative instruments linked to the Company’s stock.
+ 
+Dividends Paid to Shareholders:
+ 
+Cash dividends paid to shareholders totaled $3.193 billion ($5.44 per share) in 2018, $2.803 billion ($4.70 per share) in 2017, and $2.678 billion ($4.44 per
+share) in 2016. 3M has paid dividends since 1916. In February 2019, 3M’s Board of Directors declared a first-quarter 2019 dividend of $1.44 per share, an
+increase of 6 percent. This is equivalent to an annual dividend of $5.76 per share and marked the 61st consecutive year of dividend increases.
+ 
+48
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: Table of Contents
+Dividends Paid to Shareholders:
+3M has paid dividends since 1916. In February 2023, 3M’s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent. This is
+equivalent to an annual dividend of $6.00 per share and marked the 65th consecutive year of dividend increases.
+Other cash flows from financing activities may include various other items, such as cash paid associated with certain derivative instruments, distributions to or sales of
+noncontrolling interests, changes in overdraft balances, and principal payments for finance leases.
+Free Cash Flow (non-GAAP measure):
+Free cash flow and free cash flow conversion are not defined under U.S. generally accepted accounting principles (GAAP). Therefore, they should not be considered a
+substitute for income or cash flow data prepared in accordance with U.S. GAAP and may not be comparable to similarly titled measures used by other companies. The
+Company defines free cash flow as net cash provided by operating activities less purchases of property, plant and equipment. It should not be inferred that the entire free cash
+flow amount is available for discretionary expenditures. The Company defines free cash flow conversion as free cash flow divided by net income attributable to 3M. The
+Company believes free cash flow and free cash flow conversion are meaningful to investors as they are useful measures of performance and the Company uses these measures
+as an indication of the strength of the company and its ability to generate cash. Free cash flow and free cash flow conversion vary across quarters throughout the year. Below
+find a recap of free cash flow and free cash flow conversion.
+Refer to the preceding “Cash Flows from Operating Activities” and “Cash Flows from Investing Activities” sections for discussion of items that impacted the operating cash
+flow and purchases of PP&E components of the calculation of free cash flow. Refer to the preceding “Results of Operations” section for discussion of items that impacted the net
+income attributable to 3M component of the calculation of free cash flow conversion.
+Year ended December 31, (Millions)
+2022
+2021
+Major GAAP Cash Flow Categories
+Net cash provided by (used in) operating activities
+$
+5,591
+$
+7,454
+Net cash provided by (used in) investing activities
+(1,046)
+(1,317)
+Net cash provided by (used
+
+Source: data\pdfs\3M_2018_10K.pdf
+
+Content: 
+ 
+$
+36,500  $
+37,987  $
+32,906  $
+32,883  $
+31,374  
+Long-term debt (excluding portion due within one year) and long-term
+capital lease obligations
+ 
+ 
+13,486  
+ 
+12,156  
+ 
+10,723  
+ 
+8,799  
+ 
+6,764  
+* The Company adopted ASU No. 2014-09 and related standards (collectively, Accounting Standards Codification (ASC) 606, Revenue from Contracts with
+Customers), as described in Note 1, on January 1, 2018 using the modified retrospective method of adoption, the impact of which was not material to the
+Company’s consolidated results of operations and financial condition. Prior periods have not been restated.
+ 
+Cash dividends declared and paid totaled $1.36 and $1.175 per share for each quarter in 2018 and 2017, respectively. 3M typically declares and pays
+dividends in the same quarter. In December 2014, 3M declared dividends that were paid in the following first quarter.
+14
+
+Source: data\pdfs\3M_2022_10K.pdf
+
+Content: -it® products
+Representative market trends or
+opportunities
+• Personal safety
+• Connected bodyshop
+• Grid modernization
+• Robotics and automation
+• Automotive/mobility
+• Electronic materials
+• Semiconductor
+• Graphic and architectural films
+• Wound care
+• Healthcare IT
+• Biopharma filtration
+• Home improvement
+• Consumer safety & well-being
+• Package protection & shipping
+• Appearance auto care
+Distribution
+3M products are sold through numerous distribution channels, including directly to users and through numerous e-commerce and traditional wholesalers, retailers, jobbers,
+distributors and dealers in a wide variety of trades in many countries around the world. Management believes the confidence of wholesalers, retailers, jobbers, distributors and
+dealers in 3M and its products — a confidence developed through long association with skilled marketing and sales representatives — has contributed significantly to 3M’s
+position in the marketplace and to its growth.
+5
+
+Source: data\pdfs\3M_2023Q2_10Q.pdf
+
+Content:  largely
+reflected in “Proceeds from debt (maturities greater than 90 days)” in the preceding table. 3M’s primary short-term liquidity needs are met through cash on hand and U.S.
+commercial paper issuances. 2022 issuances, maturities, and extinguishments of short-and long-term debt are described in Note 10 to the Consolidated Financial Statements in
+3M’s 2022 Annual Report on Form 10-K.
+Repurchases of common stock are made to support the Company’s stock-based employee compensation plans and for other corporate purposes. In the first six months of 2023,
+the Company purchased $29 million of its own stock. For more information, refer to the table titled “Issuer Purchases of Equity Securities” in Part II, Item 2. The Company
+does not utilize derivative instruments linked to the Company’s stock.
+3M has paid dividends since 1916. In February 2023, 3M’s Board of Directors declared a first-quarter 2023 dividend of $1.50 per share, an increase of 1 percent. This is
+equivalent to an annual dividend of $6.00 per share and marked the 65th consecutive year of dividend increases. In May 2023, 3M's Board of Directors declared a second-
+quarter 2023 dividend of $1.50 per share.
+Other cash flows from financing activities may include various other items, such as cash paid associated with certain derivative instruments, distributions to or sales of
+noncontrolling interests, changes in overdraft balances, and principal payments for finance leases.
+Free Cash Flow (non-GAAP measure):
+Free cash flow and free cash flow conversion are not defined under U.S. generally accepted accounting principles (GAAP). Therefore, they should not be considered a
+substitute for income (loss) or cash flow data prepared in accordance with U.S. GAAP and may not be comparable to similarly titled measures used by other companies. The
+Company defines free cash flow as net cash provided by operating activities less purchases of property, plant and equipment. It should not be inferred that the entire free cash
+flow amount is available for discretionary expenditures. The Company defines free cash flow conversion as free cash flow divided by net income (loss) attributable to 3M. The
+Company believes free cash flow and free cash flow conversion are meaningful to investors as they are useful measures of performance and"
+financebench_id_02987,What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.,24.26,ACTIVISIONBLIZZARD_2019_10K,metrics-generated,Aviso: O agente atingiu o limite maximo de iteracoes.,,,[],
+financebench_id_07966,What is the FY2017 - FY2019 3 year average of capex as a % of revenue for Activision Blizzard? Answer in units of percents and round to one decimal place. Calculate (or extract) the answer from the statement of income and the cash flow statement.,1.9%,ACTIVISIONBLIZZARD_2019_10K,metrics-generated,I don't know.,,,[],

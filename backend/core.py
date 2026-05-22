@@ -24,8 +24,6 @@ vectorstore = QdrantVectorStore.from_existing_collection(
 )
 
 model = init_chat_model("gpt-4o-mini", model_provider="openai")
-MAX_ITERATIONS = 3
-
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
@@ -53,6 +51,9 @@ def retrieve_context(query: str):
 
     retrieved_docs = vectorstore.as_retriever(search_kwargs=search_kwargs).invoke(query)
 
+    if not retrieved_docs and company != "NONE":
+        retrieved_docs = vectorstore.as_retriever(search_kwargs={"k": 6}).invoke(query)
+
     serialized = "\n\n".join(
         f"Source: {doc.metadata.get('source', 'Unknown')}\n\nContent: {doc.page_content}"
         for doc in retrieved_docs
@@ -79,7 +80,7 @@ def run_llm(query: str, system_prompt: str = None) -> Dict[str, Any]:
     try:
         response = agent.invoke(
             {"messages": [{"role": "user", "content": query}]},
-            config={"recursion_limit": MAX_ITERATIONS * 2 + 1},
+            config={"recursion_limit": 10},
         )
         final_answer = response["messages"][-1].content
     except Exception:
