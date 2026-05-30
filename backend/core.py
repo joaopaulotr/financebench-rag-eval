@@ -32,26 +32,28 @@ def retrieve_context(query: str):
         {
             "role": "system",
             "content": (
-                "Extract the company name from the financial question. "
-                "Return ONLY the company name as it appears in SEC filing filenames "
-                "(e.g. JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR). "
+                "Extract the company name and fiscal year from the financial question. "
+                "Return ONLY a filter token in this format: COMPANY_YEAR (e.g. ADOBE_2022, AMD_2015, JOHNSON_JOHNSON_2022). "
+                "Use the company name exactly as it appears in SEC filing filenames "
+                "(e.g. JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR, ACTIVISIONBLIZZARD, KRAFTHEINZ, MGMRESORTS). "
+                "If the year is not mentioned or is ambiguous, return only the company name (e.g. ADOBE). "
                 "If no specific company is mentioned, return: NONE."
             ),
         },
-        {"role": "user", "content": f"Query: '{query}'. Extract company name for filtering."},
+        {"role": "user", "content": f"Query: '{query}'. Extract company and year for document filtering."},
     ])
 
-    company = response_filter.content.strip().upper()
+    filter_token = response_filter.content.strip().upper()
 
     search_kwargs: dict = {"k": 6}
-    if company != "NONE":
+    if filter_token != "NONE":
         search_kwargs["filter"] = Filter(must=[
-            FieldCondition(key="metadata.source", match=MatchText(text=company))
+            FieldCondition(key="metadata.source", match=MatchText(text=filter_token))
         ])
 
     retrieved_docs = vectorstore.as_retriever(search_kwargs=search_kwargs).invoke(query)
 
-    if not retrieved_docs and company != "NONE":
+    if not retrieved_docs and filter_token != "NONE":
         retrieved_docs = vectorstore.as_retriever(search_kwargs={"k": 6}).invoke(query)
 
     serialized = "\n\n".join(

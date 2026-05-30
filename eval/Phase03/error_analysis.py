@@ -4,9 +4,9 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-RESULTS_CSV = "eval/Phase02/results_100.csv"
-JUDGE_CSV = "eval/Phase02/results_with_judge.csv"
-OUT_CSV = "eval/Phase03/error_analysis.csv"
+RESULTS_CSV = "eval/Phase03/results_phase3.csv"
+JUDGE_CSV = "eval/Phase03/results_phase3_with_judge.csv"
+OUT_CSV = "eval/Phase03/error_analysis_phase3.csv"
 GT_THRESHOLD = 4  # gt_score >= 4 = correct
 
 
@@ -57,6 +57,8 @@ def classify(row: dict, j: dict) -> str:
 
 
 def load_judge(path: str) -> dict:
+    if not Path(path).exists():
+        return {}
     return {r["financebench_id"]: r for r in load(path)}
 
 

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python -c \"from qdrant_client import QdrantClient; c = QdrantClient\\('http://localhost:6333'\\); info = c.get_collection\\('FinanceBench'\\); print\\('vectors_count:', info.vectors_count, 'points_count:', info.points_count\\)\")",
+      "Bash(python -c \"from qdrant_client import QdrantClient; c = QdrantClient\\('http://localhost:6333'\\); info = c.get_collection\\('FinanceBench'\\); print\\(info\\)\")",
+      "Bash(.venv\\\\Scripts\\\\python.exe eval/Phase03/ingest_missing.py)",
+      "PowerShell(cd \"c:\\\\Users\\\\joaop\\\\OneDrive\\\\Desktop\\\\financebench-rag-eval\"; $docs = @\\('ADOBE_2022_10K','ACTIVISIONBLIZZARD_2019_10K','AMD_2015_10K','JOHNSON_JOHNSON_2022_10K','KRAFTHEINZ_2019_10K'\\); foreach \\($d in $docs\\) { $p = \"data\\\\pdfs\\\\$d.pdf\"; if \\(Test-Path $p\\) { $s = \\(Get-Item $p\\).Length; Write-Host \"EXISTS $d \\($\\([int]\\($s/1KB\\)\\) KB\\)\" } else { Write-Host \"MISSING $d\" } })"
+    ]
+  }
+}
