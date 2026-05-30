@@ -207,3 +207,5 @@ qdrant_storage/
 
 # Dataset PDFs
 data/pdfs/
+# Temporary HTML downloads from EDGAR
+data/_tmp_htm/
