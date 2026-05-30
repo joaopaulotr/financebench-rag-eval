@@ -7,7 +7,8 @@
       "Bash(.venv\\\\Scripts\\\\python.exe eval/Phase03/ingest_missing.py)",
       "PowerShell(cd \"c:\\\\Users\\\\joaop\\\\OneDrive\\\\Desktop\\\\financebench-rag-eval\"; $docs = @\\('ADOBE_2022_10K','ACTIVISIONBLIZZARD_2019_10K','AMD_2015_10K','JOHNSON_JOHNSON_2022_10K','KRAFTHEINZ_2019_10K'\\); foreach \\($d in $docs\\) { $p = \"data\\\\pdfs\\\\$d.pdf\"; if \\(Test-Path $p\\) { $s = \\(Get-Item $p\\).Length; Write-Host \"EXISTS $d \\($\\([int]\\($s/1KB\\)\\) KB\\)\" } else { Write-Host \"MISSING $d\" } })",
       "Bash(.venv/Scripts/python.exe eval/Phase03/label_30.py)",
-      "Bash(python eval/Phase03/label_30.py)"
+      "Bash(python eval/Phase03/label_30.py)",
+      "Bash(git rm *)"
     ]
   }
 }
