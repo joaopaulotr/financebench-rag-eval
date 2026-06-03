@@ -1,78 +1,70 @@
-from dotenv import load_dotenv
-from typing import Any, Dict
+from langgraph.graph import StateGraph, END
 
-from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
-from langgraph.graph import MessagesState, StateGraph, END
-from langsmith import traceable
-
-from nodes import run_agent_reasoning, tool_node
-
-load_dotenv()
-
-AGENT_REASON = "agent_reason"
-ACT = "retrieve_context"
-LAST = -1
-
-
-def should_continue(state: MessagesState) -> str:
-    if not state["messages"][LAST].tool_calls:
-        return END
-    return ACT
-
-
-flow = StateGraph(MessagesState)
-flow.add_node(AGENT_REASON, run_agent_reasoning)
-flow.set_entry_point(AGENT_REASON)
-flow.add_node(ACT, tool_node)
-flow.add_conditional_edges(AGENT_REASON, should_continue, {END: END, ACT: ACT})
-flow.add_edge(ACT, AGENT_REASON)
-
-app = flow.compile()
-app.get_graph().draw_mermaid_png(output_file_path="flow.png")
-
-DEFAULT_SYSTEM_PROMPT = (
-    "You are a financial analyst assistant. Use the retrieved documents to answer the user's query. "
-    "If the documents don't contain the answer, say you don't know. Always cite sources."
+from nodes import (
+    RAGState,
+    query_analysis,
+    retrieve,
+    grade_documents,
+    relax_filter,
+    generate,
+    should_retry,
+    rerank,
 )
 
 
-@traceable(name="Loopable Retrieval-Augmented Generation")
-def run_llm(query: str, system_prompt: str = None) -> Dict[str, Any]:
-    sys_prompt = system_prompt or DEFAULT_SYSTEM_PROMPT
-    messages = [SystemMessage(content=sys_prompt), HumanMessage(content=query)]
+def build_graph():
+    graph = StateGraph(RAGState)
 
-    try:
-        response = app.invoke(
-            {"messages": messages},
-            config={"recursion_limit": 10},
-        )
-        final_answer = response["messages"][LAST].content
-    except Exception:
-        final_answer = "Aviso: O agente atingiu o limite maximo de iteracoes."
-        response = {"messages": []}
+    graph.add_node("query_analysis", query_analysis)
+    graph.add_node("retrieve", retrieve)
+    graph.add_node("grade_documents", grade_documents)
+    graph.add_node("relax_filter", relax_filter)
+    graph.add_node("generate", generate)
+    graph.add_node("rerank", rerank)
 
-    context_docs = []
-    context_text_parts = []
-    for msg in response["messages"]:
-        if isinstance(msg, ToolMessage) and msg.name == "retrieve_context":
-            if msg.artifact and isinstance(msg.artifact, dict):
-                context_docs.extend(msg.artifact.get("sources", []))
-            if msg.content:
-                context_text_parts.append(msg.content)
+    graph.set_entry_point("query_analysis")
+    graph.add_edge("query_analysis", "retrieve")
+    graph.add_edge("retrieve", "rerank")
+    graph.add_edge("rerank", "grade_documents")
 
-    context_docs = list(set(context_docs))
-    context_text = "\n\n---\n\n".join(context_text_parts)
+    graph.add_conditional_edges("grade_documents", should_retry, {
+        "generate": "generate",
+        "retry_retrieve": "relax_filter",
+    })
+    graph.add_edge("relax_filter", "retrieve")
+    graph.add_edge("generate", END)
+    
+    return graph.compile()
 
+
+app = build_graph()
+
+#Graph visualization
+app.get_graph().draw_mermaid_png(output_file_path="flowv3.png")
+
+def run(query: str) -> dict:
+    result = app.invoke({
+        "query": query,
+        "filter_token": "",
+        "context": "",
+        "sources": [],
+        "grade": "",
+        "answer": "",
+        "retry_count": 0,
+    })
     return {
-        "answer": final_answer,
-        "context_docs": context_docs,
-        "context_text": context_text,
+        "answer": result["answer"],
+        "sources": result["sources"],
+        "context": result["context"],
     }
 
 
 if __name__ == "__main__":
-    result = run_llm("What was JPMorgan's net income in Q1 2021?")
-    print("Resposta:\n", result["answer"])
-    print("\nFontes:")
-    for s in result["context_docs"]:
-        print(f"  - {s}")
+    query = (
+        "What is the FY2018 capital expenditure amount (in USD millions) for 3M? "
+        "Give a response to the question by relying on the details shown in the cash flow statement."
+    )
+    # Expected Answer: "$1577.00M"
+    result = run(query)
+    print(f"\nAnswer: {result['answer']}")
+    print(f"\nSources: {result['sources']}")
