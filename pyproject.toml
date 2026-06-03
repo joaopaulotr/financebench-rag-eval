@@ -23,4 +23,5 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "qdrant-client>=1.18.0",
     "requests>=2.34.2",
+    "sentence-transformers>=5.5.1",
 ]
