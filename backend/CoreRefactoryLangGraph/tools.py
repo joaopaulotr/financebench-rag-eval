@@ -1,10 +1,9 @@
 from dotenv import load_dotenv
-from typing import Any, Dict
 
+from langchain.chat_models import init_chat_model
 from langchain_core.tools import tool
 from langchain_qdrant import QdrantVectorStore, FastEmbedSparse
 from langchain_openai import OpenAIEmbeddings
-from langsmith import traceable
 from qdrant_client.models import Filter, FieldCondition, MatchText
 
 load_dotenv()
@@ -19,6 +18,9 @@ vectorstore = QdrantVectorStore.from_existing_collection(
     collection_name="FinanceBench",
     retrieval_mode="hybrid",
 )
+
+model = init_chat_model("gpt-4o-mini", model_provider="openai")
+
 
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
