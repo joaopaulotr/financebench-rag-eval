@@ -21,16 +21,30 @@ A production-grade Retrieval-Augmented Generation system evaluated against the [
 
 ## Architecture
 
+### Phase 4 — CRAG Pipeline (current)
+
 ```
 Query
   ↓
-Metadata Filter (LLM extracts company + year → Qdrant pre-filter)
+query_analysis  — LLM extracts company + year → filter token (e.g. 3M_2018)
   ↓
-Hybrid Retrieval (text-embedding-3-small dense + BM25 sparse, top-k=6, RRF fusion)
+retrieve        — Hybrid retrieval (dense + BM25, top-k=15) with Qdrant pre-filter
   ↓
-LangGraph Agent (GPT-4o-mini, agentic loop, recursion_limit=10)
+rerank          — CrossEncoder (BAAI/bge-reranker-base), top-10
   ↓
-Response + Source Citations
+grade_documents — LLM grades retrieved context: RELEVANT | IRRELEVANT
+  ↓ (if IRRELEVANT and retry_count=0)
+relax_filter    — drops company/year filter, retries with full corpus
+  ↓ (if RELEVANT or retry_count≥1)
+generate        — GPT-4o-mini answers from graded context
+  ↓
+Answer + Sources
+```
+
+### Phase 1–3 — Simple Agent (deprecated)
+
+```
+Query → Metadata Filter → Hybrid Retrieval → LangGraph Agent (tool use loop) → Response
 ```
 
 All LLM calls traced end-to-end via LangSmith.
@@ -45,7 +59,8 @@ All LLM calls traced end-to-end via LangSmith.
 | Embeddings      | text-embedding-3-small            | Simple, cheap, strong baseline                  |
 | Sparse          | BM25 (FastEmbedSparse)            | Exact number matching, hybrid fusion via RRF    |
 | Vector DB       | Qdrant (local via Docker)         | Open source, production-ready, hybrid search    |
-| Orchestration   | LangGraph (`create_agent`)        | Agentic loop with tool use                      |
+| Orchestration   | LangGraph (`StateGraph`)          | CRAG pipeline: grade → relax filter → generate  |
+| Reranker        | BAAI/bge-reranker-base (CrossEncoder) | Reranks top-15 → top-10 before grading      |
 | Observability   | LangSmith                         | Traces, cost tracking                           |
 | Eval            | Custom multi-tier                 | Full control, calibrated against human labels   |
 
@@ -154,12 +169,21 @@ All LLM calls traced end-to-end via LangSmith.
   - [x] Phase 03b: Recall@6=0.940, 6 retrieval misses remaining
   - [x] Judge v2: strict numerical tolerance, TNR 0.75 → 0.94
   - [x] Human recalibration: real accuracy ~47/100 vs 63/100 nominal
-- [ ] **Phase 4** — Polish + final writeup (weeks 10–12)
-  - [ ] Post 2 published on dev.to
-  - [ ] Remaining 6 retrieval misses: reranker or doc-type filter
-  - [ ] Final comparative eval table
-  - [ ] Post 3 published on dev.to
-  - [ ] Live demo deployed
+- [ ] **Phase 4** — CRAG pipeline + contextual retrieval (weeks 10–12)
+  - [x] CRAG pipeline: query_analysis → retrieve → rerank → grade → relax_filter → generate
+  - [x] Reranker: BAAI/bge-reranker-base (CrossEncoder) replacing ms-marco (wrong domain)
+  - [x] Contextual retrieval prefix: `Company: X | Document: Y | Year: Z` prepended to every chunk
+  - [x] FinanceBench_v2 collection: 84 docs, 27k+ chunks, full corpus coverage
+  - [x] HTM support in ingestion (J&J and KraftHeinz filings from SEC EDGAR)
+  - [x] Codebase refactored: nodes/, chains/, prompts/, state.py, graph.py
+  - [ ] **4.1** Eval completo pipeline novo — 100 queries, compare Phase03b vs Phase04
+  - [ ] **4.2** Dense vs hybrid — desliga BM25, roda 100 queries, decide qual manter
+  - [ ] **4.3** Recalibra judge — 30 human labels novas no pipeline final, número real
+  - [ ] **4.4** Eval final comparativo — tabela: Baseline → Phase03 → Phase03b → Phase04
+  - [ ] **4.5** Custo por query — tokens, latência média, USD total
+  - [ ] **4.6** Demo — Streamlit ou HF Spaces
+  - [ ] **4.7** README final — diagrama arquitetura, resultados, como reproduzir
+  - [ ] **4.8** Post 3 + LinkedIn — "From X% to Y% Accuracy on FinanceBench"
 
 ---
 
@@ -198,7 +222,14 @@ docker compose up -d
 uv run python ingestion.py
 ```
 
-### Run a query
+### Run a query (Phase 4 — CRAG pipeline)
+
+```bash
+cd backend/CoreRefactoryLangGraph
+uv run python main.py
+```
+
+### Run a query (Phase 1–3 — legacy)
 
 ```bash
 uv run python backend/core.py
@@ -212,6 +243,38 @@ uv run python eval/Phase03/runJudge_b_v2.py     # strict numerical judge scoring
 uv run python eval/Phase03/report_b.py          # comparative report
 uv run python eval/Phase03/calibrate_v2.py      # v1 vs v2 judge calibration
 ```
+
+---
+
+## Codebase Structure (Phase 4)
+
+```
+backend/CoreRefactoryLangGraph/
+  state.py              # RAGState TypedDict (query, filter_token, context, sources, grade, answer, retry_count)
+  graph.py              # StateGraph definition — nodes, edges, compile()
+  main.py               # Entry point — run(query) → {answer, sources, context}
+  tools.py              # Infrastructure — model, vectorstore (Qdrant), reranker (CrossEncoder)
+  nodes/
+    query_analysis.py   # LLM extracts company+year → filter_token
+    retrieve.py         # Hybrid retrieval with Qdrant pre-filter + fallback
+    rerank.py           # CrossEncoder reranking, top-10
+    grade.py            # Calls grade_chain, returns RELEVANT|IRRELEVANT
+    generate.py         # Final answer generation with graded context
+    router.py           # should_retry() + relax_filter()
+  chains/
+    grade.py            # grade_chain = GRADE_PROMPT | model.with_structured_output(DocumentGrade)
+  prompts/
+    analyst.py          # ANALYST_SYSTEM_PROMPT
+    filter.py           # QUERY_FILTER_SYSTEM
+    grader.py           # GRADE_PROMPT (ChatPromptTemplate)
+```
+
+### Qdrant Collections
+
+| Collection | Chunks | Docs | Notes |
+|---|---|---|---|
+| `FinanceBench` | 27,462 | 79 | Original — no contextual prefix, missing 5 HTM docs |
+| `FinanceBench_v2` | ~27,200 | 84 | Contextual prefix + full corpus (all 84 docs) |
 
 ---
 
