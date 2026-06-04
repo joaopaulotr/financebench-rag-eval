@@ -17,7 +17,7 @@ vectorstore = QdrantVectorStore.from_existing_collection(
     embedding=embeddings,
     sparse_embedding=sparse_embeddings,
     url="http://localhost:6333",
-    collection_name="FinanceBench",
+    collection_name="FinanceBench_v2",
     retrieval_mode="hybrid",
 )
 
