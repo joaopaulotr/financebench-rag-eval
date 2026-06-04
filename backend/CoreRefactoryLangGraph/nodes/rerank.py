@@ -15,7 +15,7 @@ def rerank(state: RAGState) -> dict:
     pairs = [[query, chunk] for chunk in chunks]
     scores = reranker.predict(pairs)
 
-    ranked = sorted(zip(scores, chunks), reverse=True)[:10]
+    ranked = sorted(zip(scores, chunks), reverse=True)[:5]
 
     context = "\n\n---\n\n".join(chunk for _, chunk in ranked)
     return {"context": context}
