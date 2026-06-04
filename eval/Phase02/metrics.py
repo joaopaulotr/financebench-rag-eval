@@ -22,7 +22,9 @@ def compute_tier1(results_csv: str = RESULTS_CSV, k: int = K) -> dict:
         recalls.append(1.0 if gt in sources else 0.0)
 
         # Precision@k: fraction of retrieved chunks from correct doc
-        precisions.append(sum(s == gt for s in sources) / len(sources) if sources else 0.0)
+        precisions.append(
+            sum(s == gt for s in sources) / len(sources) if sources else 0.0
+        )
 
         # MRR: reciprocal rank of first correct chunk
         rr = 0.0
@@ -49,6 +51,7 @@ def compute_tier1(results_csv: str = RESULTS_CSV, k: int = K) -> dict:
     failures = [r["doc_name"] for r, hit in zip(rows, recalls) if hit == 0.0]
     if failures:
         from collections import Counter
+
         print(f"\n  Retrieval misses by doc ({len(failures)} total):")
         for doc, count in Counter(failures).most_common(10):
             print(f"    {doc}: {count}x")

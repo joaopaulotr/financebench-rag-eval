@@ -40,7 +40,7 @@ Using these figures, we can calculate the quick ratio:
 
 This quick ratio of approximately 1.76 indicates that AMD has a solid liquidity position. A quick ratio above 1 generally suggests that the company can cover its current liabilities with its most liquid assets, indicating a healthy liquidity profile.
 
-Thus, based on the quick ratio, AMD does indeed have a reasonably healthy liquidity profile for FY22. This ratio suggests that AMD can meet its short-term obligations without needing to sell its inventory, which could take longer to convert into cash compared to other current assets. 
+Thus, based on the quick ratio, AMD does indeed have a reasonably healthy liquidity profile for FY22. This ratio suggests that AMD can meet its short-term obligations without needing to sell its inventory, which could take longer to convert into cash compared to other current assets.
 
 Sources:
 - Advanced Micro Devices, Inc. Consolidated Balance Sheets for FY22 (data\pdfs\AMD_2022_10K.pdf).
@@ -93,7 +93,7 @@ We want to calculate a financial metric. Please help us compute it by basing you
 0.54
 
 **Model Answer:**
-To calculate the FY2022 retention ratio for General Mills, we need the net income attributable to shareholders and total cash dividends paid. 
+To calculate the FY2022 retention ratio for General Mills, we need the net income attributable to shareholders and total cash dividends paid.
 
 ### From the documents retrieved:
 1. **Net Income Attributable to General Mills for FY2022**: $2,735.0 million (or $2.735 billion) [Source: document excerpt].
@@ -102,8 +102,8 @@ To calculate the FY2022 retention ratio for General Mills, we need the net incom
 ### Retention Ratio Calculation:
 The retention ratio formula is:
 
-\[ 
-\text{Retention Ratio} = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}} 
+\[
+\text{Retention Ratio} = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}}
 \]
 
 Given that:
@@ -113,7 +113,7 @@ Given that:
 
 Calculated Dividends:
 \[
-\text{Dividends Paid} = 607 \text{ million shares} \times 1.96 \text{ dollars per share} = 1,191.72 \text{ million} 
+\text{Dividends Paid} = 607 \text{ million shares} \times 1.96 \text{ dollars per share} = 1,191.72 \text{ million}
 \]
 
 Now substituting the values back into the retention ratio:
@@ -168,4 +168,3 @@ Thus, J&J's net earnings as a percent of sales did indeed increase in Q2 of FY20
 The model answer correctly identifies that J&J's net earnings as a percent of sales increased, but the calculated percentages differ from the expected answer.
 
 ---
-

@@ -1,4 +1,5 @@
 """Judge v2: stricter A|GT with numerical extraction + tolerance rules."""
+
 import json
 import sys
 from pathlib import Path
@@ -75,4 +76,6 @@ Respond with valid JSON only:
 
 def judge_answer_correctness_v2(question: str, expected: str, answer: str) -> dict:
     """A|GT v2 — strict numerical comparison before qualitative evaluation."""
-    return _call(_GT_PROMPT_V2.format(question=question, expected=expected, answer=answer))
+    return _call(
+        _GT_PROMPT_V2.format(question=question, expected=expected, answer=answer)
+    )

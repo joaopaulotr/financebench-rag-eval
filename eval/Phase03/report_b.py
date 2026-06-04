@@ -6,12 +6,12 @@ from pathlib import Path
 K = 6
 JUDGE_THRESHOLD = 4
 
-RESULTS_P3  = "eval/Phase03/results_phase3.csv"
-JUDGE_P3    = "eval/Phase03/results_phase3_with_judge.csv"
+RESULTS_P3 = "eval/Phase03/results_phase3.csv"
+JUDGE_P3 = "eval/Phase03/results_phase3_with_judge.csv"
 RESULTS_P3B = "eval/Phase03/results_phase3b.csv"
-JUDGE_P3B   = "eval/Phase03/results_phase3b_with_judge.csv"
-LABELS_CSV  = "eval/Phase02/human_labels_30.csv"
-OUT_MD      = "docs/phase03b_report.md"
+JUDGE_P3B = "eval/Phase03/results_phase3b_with_judge.csv"
+LABELS_CSV = "eval/Phase02/human_labels_30.csv"
+OUT_MD = "docs/phase03b_report.md"
 
 
 def load(path):
@@ -26,7 +26,9 @@ def tier1(results):
         sources = json.loads(row.get("retrieved_sources", "[]"))
         hit = gt in sources
         recalls.append(1.0 if hit else 0.0)
-        precisions.append(sum(s == gt for s in sources) / len(sources) if sources else 0.0)
+        precisions.append(
+            sum(s == gt for s in sources) / len(sources) if sources else 0.0
+        )
         rr = 0.0
         for rank, s in enumerate(sources, 1):
             if s == gt:
@@ -78,28 +80,32 @@ def calibrate(judge_correct, labels):
         if fid not in judge_correct:
             continue
         jc = judge_correct[fid]
-        if human == 1 and jc == 1:   tp += 1
-        elif human == 0 and jc == 0: tn += 1
-        elif human == 1 and jc == 0: fn += 1
-        else:                         fp += 1
+        if human == 1 and jc == 1:
+            tp += 1
+        elif human == 0 and jc == 0:
+            tn += 1
+        elif human == 1 and jc == 0:
+            fn += 1
+        else:
+            fp += 1
     tpr = tp / (tp + fn) if (tp + fn) > 0 else 0.0
     tnr = tn / (tn + fp) if (tn + fp) > 0 else 0.0
     return tpr, tnr
 
 
-r3  = load(RESULTS_P3)
+r3 = load(RESULTS_P3)
 r3b = load(RESULTS_P3B)
 labels = {r["financebench_id"]: int(r["human_correct"]) for r in load(LABELS_CSV)}
 
-j3_rows  = load(JUDGE_P3)  if Path(JUDGE_P3).exists()  else []
+j3_rows = load(JUDGE_P3) if Path(JUDGE_P3).exists() else []
 j3b_rows = load(JUDGE_P3B) if Path(JUDGE_P3B).exists() else []
 
-t1_p3  = tier1(r3)
+t1_p3 = tier1(r3)
 t1_p3b = tier1(r3b)
-t2_p3  = tier2(r3,  j3_rows)  if j3_rows  else None
+t2_p3 = tier2(r3, j3_rows) if j3_rows else None
 t2_p3b = tier2(r3b, j3b_rows) if j3b_rows else None
 
-miss3  = Counter(t1_p3["misses"])
+miss3 = Counter(t1_p3["misses"])
 miss3b = Counter(t1_p3b["misses"])
 resolved = sorted(set(miss3) - set(miss3b))
 new_miss = sorted(set(miss3b) - set(miss3))
@@ -115,9 +121,9 @@ print(SEP)
 print(f"  {'Metric':<20} {'Phase03':>10} {'Phase03b':>10} {'Delta':>10}")
 print(f"  {'-'*50}")
 for label, v3, v3b in [
-    (f"Recall@{K}",    t1_p3["recall"],    t1_p3b["recall"]),
+    (f"Recall@{K}", t1_p3["recall"], t1_p3b["recall"]),
     (f"Precision@{K}", t1_p3["precision"], t1_p3b["precision"]),
-    ("MRR",            t1_p3["mrr"],       t1_p3b["mrr"]),
+    ("MRR", t1_p3["mrr"], t1_p3b["mrr"]),
 ]:
     d = v3b - v3
     sign = "+" if d >= 0 else ""
@@ -136,9 +142,9 @@ if t2_p3 and t2_p3b:
     print(f"  {'-'*55}")
     for label, v3, v3b in [
         ("C|Q Context Relevance", t2_p3["cq"], t2_p3b["cq"]),
-        ("A|C Faithfulness",      t2_p3["ac"], t2_p3b["ac"]),
-        ("A|Q Answer Relevance",  t2_p3["aq"], t2_p3b["aq"]),
-        ("A|GT Correctness",      t2_p3["gt"], t2_p3b["gt"]),
+        ("A|C Faithfulness", t2_p3["ac"], t2_p3b["ac"]),
+        ("A|Q Answer Relevance", t2_p3["aq"], t2_p3b["aq"]),
+        ("A|GT Correctness", t2_p3["gt"], t2_p3b["gt"]),
     ]:
         d = v3b - v3
         sign = "+" if d >= 0 else ""
@@ -148,7 +154,7 @@ if t2_p3 and t2_p3b:
     print(f"    Phase03:  {t2_p3['correct_count']}/{t2_p3['n']}")
     print(f"    Phase03b: {t2_p3b['correct_count']}/{t2_p3b['n']}")
 
-    tpr3,  tnr3  = calibrate(t2_p3["judge_correct"],  labels)
+    tpr3, tnr3 = calibrate(t2_p3["judge_correct"], labels)
     tpr3b, tnr3b = calibrate(t2_p3b["judge_correct"], labels)
     print(f"\n{'Judge Calibration (30 human labels)':^64}")
     print(SEP)

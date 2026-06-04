@@ -1,4 +1,5 @@
 """Phase 04 baseline — CRAG pipeline (LangGraph + rerank + contextual retrieval v2)."""
+
 import csv
 import json
 import sys
@@ -6,13 +7,15 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "backend" / "CoreRefactoryLangGraph"))
+sys.path.insert(
+    0, str(Path(__file__).resolve().parents[2] / "backend" / "CoreRefactoryLangGraph")
+)
 
 Path("eval/Phase04").mkdir(exist_ok=True)
 
 from main import run
 
-CSV_IN  = "eval/Phase02/baseline_100.csv"
+CSV_IN = "eval/Phase02/baseline_100.csv"
 CSV_OUT = "eval/Phase04/results_phase4.csv"
 CHECKPOINT_EVERY = 10
 
@@ -33,20 +36,22 @@ for i, row in enumerate(rows):
 
     try:
         result = run(row["question"])
-        answer  = result["answer"]
+        answer = result["answer"]
         sources = [Path(s).stem for s in result["sources"]]
         context = result.get("context", "")
     except Exception as exc:
-        answer  = f"ERROR: {exc}"
+        answer = f"ERROR: {exc}"
         sources = []
         context = ""
 
-    results.append({
-        **row,
-        "model_answer":      answer,
-        "retrieved_sources": json.dumps(sources),
-        "retrieved_context": context,
-    })
+    results.append(
+        {
+            **row,
+            "model_answer": answer,
+            "retrieved_sources": json.dumps(sources),
+            "retrieved_context": context,
+        }
+    )
 
     print(f"  sources: {sources}")
     print(f"  answer:  {answer[:100]}")
@@ -64,4 +69,6 @@ with open(CSV_OUT, "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(results)
 
-print(f"\nDone. {len(results)} results -> {CSV_OUT} ({time.time() - t_start:.0f}s total)")
+print(
+    f"\nDone. {len(results)} results -> {CSV_OUT} ({time.time() - t_start:.0f}s total)"
+)

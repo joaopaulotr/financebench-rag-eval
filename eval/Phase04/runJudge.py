@@ -1,10 +1,12 @@
 """Phase 04 judge — reuses judge_v2 from Phase03."""
+
 import csv
 import sys
 import time
 from pathlib import Path
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
@@ -12,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "Phase03"))
 
 from judge_v2 import judge_answer_correctness_v2
 
-CSV_IN  = "eval/Phase04/results_phase4.csv"
+CSV_IN = "eval/Phase04/results_phase4.csv"
 CSV_OUT = "eval/Phase04/results_phase4_with_judge.csv"
 CHECKPOINT_EVERY = 10
 
@@ -37,14 +39,16 @@ for i, row in enumerate(rows):
         row.get("model_answer", ""),
     )
 
-    results.append({
-        **row,
-        "cq_score": "",
-        "ac_score": "",
-        "aq_score": "",
-        "gt_score":  gt["score"],
-        "gt_reason": gt["reasoning"],
-    })
+    results.append(
+        {
+            **row,
+            "cq_score": "",
+            "ac_score": "",
+            "aq_score": "",
+            "gt_score": gt["score"],
+            "gt_reason": gt["reasoning"],
+        }
+    )
 
     print(f"  gt={gt['score']}  ({time.time()-t0:.1f}s)")
 

@@ -1,0 +1,11 @@
+.venv
+.git
+qdrant_storage
+data
+frontend/node_modules
+frontend/dist
+**/__pycache__
+*.pyc
+.env
+eval
+docs

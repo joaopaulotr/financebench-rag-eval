@@ -23,6 +23,8 @@ A production-grade Retrieval-Augmented Generation system evaluated against the [
 
 ### Phase 4 — CRAG Pipeline (current)
 
+![CRAG Pipeline Architecture](backend/CoreRefactoryLangGraph/images/flowv3.png)
+
 ```
 Query
   ↓
@@ -36,10 +38,12 @@ grade_documents — LLM grades retrieved context: RELEVANT | IRRELEVANT
   ↓ (if IRRELEVANT and retry_count=0)
 relax_filter    — drops company/year filter, retries with full corpus
   ↓ (if RELEVANT or retry_count≥1)
-generate        — GPT-4o-mini answers from graded context
+generate        — GPT-4o answers from graded context
   ↓
 Answer + Sources
 ```
+
+> **Note:** GPT-4o used for final eval after GPT-4o-mini proved to be the generation bottleneck (~47% → ~57% accuracy).
 
 ### Phase 1–3 — Simple Agent (deprecated)
 
@@ -55,7 +59,7 @@ All LLM calls traced end-to-end via LangSmith.
 
 | Component       | Tool                              | Reason                                          |
 |-----------------|-----------------------------------|-------------------------------------------------|
-| LLM             | GPT-4o-mini                       | Fast, cheap, sufficient for iteration           |
+| LLM             | GPT-4o                            | GPT-4o-mini was generation bottleneck; 4o improved accuracy +10pp |
 | Embeddings      | text-embedding-3-small            | Simple, cheap, strong baseline                  |
 | Sparse          | BM25 (FastEmbedSparse)            | Exact number matching, hybrid fusion via RRF    |
 | Vector DB       | Qdrant (local via Docker)         | Open source, production-ready, hybrid search    |
@@ -100,6 +104,7 @@ All LLM calls traced end-to-end via LangSmith.
 | Phase 02 | Dense only, no filter | 0.830 | 0.422 | 0.646 | 17 |
 | Phase 03 | Hybrid + company filter | 0.840 | 0.405 | 0.594 | 16 |
 | Phase 03b | Hybrid + company+year filter + full corpus | **0.940** | **0.406** | **0.630** | **6** |
+| Phase 04 | CRAG + rerank + contextual prefix + GPT-4o | 0.950 | 0.427 | 0.578 | 5 |
 
 ### Tier 2 — Generation
 
@@ -108,6 +113,7 @@ All LLM calls traced end-to-end via LangSmith.
 | Phase 02 | — | 3.30 | 4.29 | 3.19 | 53/100 | ~47/100 |
 | Phase 03 | — | 4.08 | — | 3.39 | 58/100 | — |
 | Phase 03b | 3.87 | **4.49** | **4.43** | **3.61** | 63/100 (v1) / 51/100 (v2) | **~47/100** |
+| Phase 04 | — | — | — | 3.02 | 47/100 (v2) | ~57/100 |
 
 ### Judge Calibration (30 human labels)
 
@@ -116,6 +122,7 @@ All LLM calls traced end-to-end via LangSmith.
 | v1 (Phase 02) | 1.00 | 0.86 | 3/30 | Used in Phase 02 baseline |
 | v1 (Phase 03b) | 0.93 | 0.75 | 4/30 | Fluency bias: approves wrong numbers |
 | **v2 (Phase 03b)** | 0.71 | **0.94** | **1/30** | Strict numerical tolerance enforced |
+| v2 (Phase 04, GPT-4o) | 0.82 | 0.92 | — | Final calibration with GPT-4o generation |
 
 **Key finding:** Judge v1 inflated "correct" count by +16/100 (63 nominal vs 47 human-calibrated). v2 reduces inflation to +4 — but trades off some TPR.
 
@@ -132,6 +139,22 @@ All LLM calls traced end-to-end via LangSmith.
 4. **LLM-as-Judge has strong fluency bias without calibration.** Judge v1 gave 5/5 to an answer with quick ratio 1.76 when ground truth was 1.57. Prompt engineering (v2) with explicit numerical extraction cuts false positives from 4 → 1 in 30 samples.
 
 5. **Real accuracy (~47%) is lower than nominal judge score (63%).** Always calibrate against human labels. The gap is the fluency bias: well-explained wrong numbers look correct to a judge without strict numerical rules.
+
+6. **Generation model is the real bottleneck.** Retrieval improved from 83% to 95% recall with no accuracy gain (~47%). Switching generation from GPT-4o-mini to GPT-4o raised human-calibrated accuracy from ~47% to ~57%. The model matters more than the retrieval pipeline for numerical precision.
+
+---
+
+## Cost per Query (Phase 04)
+
+Measured from LangSmith traces over the 100-query eval run (GPT-4o generation).
+
+| Metric | Value |
+|--------|-------|
+| Avg cost | $0.017/query |
+| Total cost (100 queries) | ~$1.74 |
+| Avg latency | 40.7s |
+| Latency range | 9s – 88s |
+| Avg tokens | ~6,900/query |
 
 ---
 
@@ -176,11 +199,11 @@ All LLM calls traced end-to-end via LangSmith.
   - [x] FinanceBench_v2 collection: 84 docs, 27k+ chunks, full corpus coverage
   - [x] HTM support in ingestion (J&J and KraftHeinz filings from SEC EDGAR)
   - [x] Codebase refactored: nodes/, chains/, prompts/, state.py, graph.py
-  - [ ] **4.1** Eval completo pipeline novo — 100 queries, compare Phase03b vs Phase04
+  - [x] **4.1** Eval completo pipeline novo — 100 queries, compare Phase03b vs Phase04
   - [ ] **4.2** Dense vs hybrid — desliga BM25, roda 100 queries, decide qual manter
-  - [ ] **4.3** Recalibra judge — 30 human labels novas no pipeline final, número real
-  - [ ] **4.4** Eval final comparativo — tabela: Baseline → Phase03 → Phase03b → Phase04
-  - [ ] **4.5** Custo por query — tokens, latência média, USD total
+  - [x] **4.3** Recalibra judge — 30 human labels, TPR=0.82, TNR=0.92, accuracy ~57%
+  - [x] **4.4** Eval final comparativo — tabela: Baseline → Phase03 → Phase03b → Phase04
+  - [x] **4.5** Custo por query — $0.017/query, ~$1.74 total, 40.7s latência média, ~6,900 tokens/query
   - [ ] **4.6** Demo — Streamlit ou HF Spaces
   - [ ] **4.7** README final — diagrama arquitetura, resultados, como reproduzir
   - [ ] **4.8** Post 3 + LinkedIn — "From X% to Y% Accuracy on FinanceBench"
@@ -198,7 +221,7 @@ All LLM calls traced end-to-end via LangSmith.
 ### Install
 
 ```bash
-git clone https://github.com/<your-username>/financebench-rag-eval
+git clone https://github.com/joaopaulotr/financebench-rag-eval
 cd financebench-rag-eval
 uv sync
 ```
@@ -243,6 +266,49 @@ uv run python eval/Phase03/runJudge_b_v2.py     # strict numerical judge scoring
 uv run python eval/Phase03/report_b.py          # comparative report
 uv run python eval/Phase03/calibrate_v2.py      # v1 vs v2 judge calibration
 ```
+
+---
+
+## Run with Docker (full stack)
+
+Brings up Qdrant (always-on), the FastAPI streaming API, and the web UI in one command:
+
+```bash
+docker compose up -d --build
+# qdrant → :6333  ·  api → :8000  ·  web (chat UI) → :5173
+```
+
+- The `api` container waits for Qdrant before starting (no boot race) and persists downloaded models in a `model_cache` volume.
+- Set `OPENAI_API_KEY` in `.env` at the repo root before `up` — it is passed to the API container.
+
+**Ingest the corpus once** (populates the `FinanceBench_v2` Qdrant collection — required before any query returns results). The `qdrant_data` volume persists it across restarts, so this is a one-time step:
+
+```bash
+docker compose up -d qdrant      # Qdrant alone is enough for ingestion
+uv run python ingestion.py       # connects to localhost:6333
+```
+
+**Frontend dev (hot reload):** the `web` container serves a production build (for demo/deploy). For local development with hot reload, run Vite directly instead:
+
+```bash
+cd frontend && npm install && npm run dev   # http://localhost:5173 → API at :8000
+```
+
+---
+
+## Deploy (Railway)
+
+Railway runs one container per service (no `docker-compose`), so deploy three services in the same project:
+
+| Service | Source | Notes |
+|---------|--------|-------|
+| `qdrant` | Docker image `qdrant/qdrant` | Attach a volume at `/qdrant/storage` to persist the collection |
+| `api` | `Dockerfile.backend` | Env: `OPENAI_API_KEY`, `QDRANT_URL=http://<qdrant-private-host>:6333`. Attach a volume at `/root/.cache` for model weights |
+| `web` | `frontend/Dockerfile` | Build-time env `VITE_API_URL=https://<api-public-url>` — baked into the bundle, so set it **before** the build |
+
+Steps: create the project → add the three services → set env vars (use Railway private networking for `QDRANT_URL`) → run `ingestion.py` once against the deployed Qdrant to populate `FinanceBench_v2`.
+
+> **Note:** `VITE_API_URL` is read in the browser, so it must be the API's **public** URL, not the private one.
 
 ---
 

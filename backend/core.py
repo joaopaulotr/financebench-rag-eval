@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
@@ -25,31 +25,41 @@ vectorstore = QdrantVectorStore.from_existing_collection(
 
 model = init_chat_model("gpt-4o-mini", model_provider="openai")
 
+
 @tool(response_format="content_and_artifact")
 def retrieve_context(query: str):
     """Retrieve relevant financial documents to help answer the query."""
-    response_filter = model.invoke([
-        {
-            "role": "system",
-            "content": (
-                "Extract the company name and fiscal year from the financial question. "
-                "Return ONLY a filter token in this format: COMPANY_YEAR (e.g. ADOBE_2022, AMD_2015, JOHNSON_JOHNSON_2022). "
-                "Use the company name exactly as it appears in SEC filing filenames "
-                "(e.g. JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR, ACTIVISIONBLIZZARD, KRAFTHEINZ, MGMRESORTS). "
-                "If the year is not mentioned or is ambiguous, return only the company name (e.g. ADOBE). "
-                "If no specific company is mentioned, return: NONE."
-            ),
-        },
-        {"role": "user", "content": f"Query: '{query}'. Extract company and year for document filtering."},
-    ])
+    response_filter = model.invoke(
+        [
+            {
+                "role": "system",
+                "content": (
+                    "Extract the company name and fiscal year from the financial question. "
+                    "Return ONLY a filter token in this format: COMPANY_YEAR (e.g. ADOBE_2022, AMD_2015, JOHNSON_JOHNSON_2022). "
+                    "Use the company name exactly as it appears in SEC filing filenames "
+                    "(e.g. JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR, ACTIVISIONBLIZZARD, KRAFTHEINZ, MGMRESORTS). "
+                    "If the year is not mentioned or is ambiguous, return only the company name (e.g. ADOBE). "
+                    "If no specific company is mentioned, return: NONE."
+                ),
+            },
+            {
+                "role": "user",
+                "content": f"Query: '{query}'. Extract company and year for document filtering.",
+            },
+        ]
+    )
 
     filter_token = response_filter.content.strip().upper()
 
     search_kwargs: dict = {"k": 6}
     if filter_token != "NONE":
-        search_kwargs["filter"] = Filter(must=[
-            FieldCondition(key="metadata.source", match=MatchText(text=filter_token))
-        ])
+        search_kwargs["filter"] = Filter(
+            must=[
+                FieldCondition(
+                    key="metadata.source", match=MatchText(text=filter_token)
+                )
+            ]
+        )
 
     retrieved_docs = vectorstore.as_retriever(search_kwargs=search_kwargs).invoke(query)
 
@@ -66,7 +76,7 @@ def retrieve_context(query: str):
 
 
 @traceable(name="Loopable Retrieval-Augmented Generation")
-def run_llm(query: str, system_prompt: str = None) -> Dict[str, Any]:
+def run_llm(query: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
     if system_prompt is None:
         system_prompt = (
             "You are a financial analyst assistant. Use the retrieved documents to answer the user's query. "

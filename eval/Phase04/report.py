@@ -1,4 +1,5 @@
 """Phase 04 report — compares Phase03b vs Phase04 (CRAG + rerank + contextual retrieval)."""
+
 import csv
 import json
 from pathlib import Path
@@ -7,11 +8,11 @@ K = 6
 JUDGE_THRESHOLD = 4
 
 P3B_RESULTS = "eval/Phase03/results_phase3b.csv"
-P3B_JUDGE   = "eval/Phase03/results_phase3b_with_judge_v2.csv"
-P4_RESULTS  = "eval/Phase04/results_phase4.csv"
-P4_JUDGE    = "eval/Phase04/results_phase4_with_judge.csv"
-LABELS_CSV  = "eval/Phase02/human_labels_30.csv"
-OUT_MD      = "docs/phase04_report.md"
+P3B_JUDGE = "eval/Phase03/results_phase3b_with_judge_v2.csv"
+P4_RESULTS = "eval/Phase04/results_phase4.csv"
+P4_JUDGE = "eval/Phase04/results_phase4_with_judge.csv"
+LABELS_CSV = "eval/Phase04/label_phase4.csv"
+OUT_MD = "docs/phase04_report.md"
 
 
 def load(path):
@@ -26,7 +27,9 @@ def tier1(results):
         sources = json.loads(row.get("retrieved_sources", "[]"))
         hit = gt in sources
         recalls.append(1.0 if hit else 0.0)
-        precisions.append(sum(s == gt for s in sources) / len(sources) if sources else 0.0)
+        precisions.append(
+            sum(s == gt for s in sources) / len(sources) if sources else 0.0
+        )
         rr = 0.0
         for rank, s in enumerate(sources, 1):
             if s == gt:
@@ -71,29 +74,33 @@ def calibrate(judge_correct, labels):
         if fid not in judge_correct:
             continue
         jc = judge_correct[fid]
-        if human == 1 and jc == 1:   tp += 1
-        elif human == 0 and jc == 0: tn += 1
-        elif human == 1 and jc == 0: fn += 1
-        else:                         fp += 1
+        if human == 1 and jc == 1:
+            tp += 1
+        elif human == 0 and jc == 0:
+            tn += 1
+        elif human == 1 and jc == 0:
+            fn += 1
+        else:
+            fp += 1
     tpr = tp / (tp + fn) if (tp + fn) > 0 else 0.0
     tnr = tn / (tn + fp) if (tn + fp) > 0 else 0.0
     return tpr, tnr
 
 
-r3b    = load(P3B_RESULTS)
-r4     = load(P4_RESULTS)
+r3b = load(P3B_RESULTS)
+r4 = load(P4_RESULTS)
 labels = {r["financebench_id"]: int(r["human_correct"]) for r in load(LABELS_CSV)}
 
 j3b = load(P3B_JUDGE) if Path(P3B_JUDGE).exists() else []
-j4  = load(P4_JUDGE)  if Path(P4_JUDGE).exists()  else []
+j4 = load(P4_JUDGE) if Path(P4_JUDGE).exists() else []
 
 t1_3b = tier1(r3b)
-t1_4  = tier1(r4)
+t1_4 = tier1(r4)
 t2_3b = tier2(r3b, j3b, gt_field="gt_score_v2") if j3b else None
-t2_4  = tier2(r4,  j4,  gt_field="gt_score")    if j4  else None
+t2_4 = tier2(r4, j4, gt_field="gt_score") if j4 else None
 
 resolved = sorted(set(t1_3b["misses"]) - set(t1_4["misses"]))
-new_miss = sorted(set(t1_4["misses"])  - set(t1_3b["misses"]))
+new_miss = sorted(set(t1_4["misses"]) - set(t1_3b["misses"]))
 
 SEP = "-" * 64
 print(f"\n{'='*64}")
@@ -105,9 +112,9 @@ print(SEP)
 print(f"  {'Metric':<20} {'Phase03b':>10} {'Phase04':>10} {'Delta':>10}")
 print(f"  {'-'*50}")
 for label, v3b, v4 in [
-    (f"Recall@{K}",    t1_3b["recall"],    t1_4["recall"]),
+    (f"Recall@{K}", t1_3b["recall"], t1_4["recall"]),
     (f"Precision@{K}", t1_3b["precision"], t1_4["precision"]),
-    ("MRR",            t1_3b["mrr"],       t1_4["mrr"]),
+    ("MRR", t1_3b["mrr"], t1_4["mrr"]),
 ]:
     d = v4 - v3b
     sign = "+" if d >= 0 else ""
@@ -134,7 +141,7 @@ if t2_3b and t2_4:
     print(f"    Phase04:  {t2_4['correct_count']}/{t2_4['n']}")
 
     tpr3b, tnr3b = calibrate(t2_3b["judge_correct"], labels)
-    tpr4,  tnr4  = calibrate(t2_4["judge_correct"],  labels)
+    tpr4, tnr4 = calibrate(t2_4["judge_correct"], labels)
     print(f"\n  Calibration (30 human labels):")
     print(f"    TPR: Phase03b={tpr3b:.2f}  Phase04={tpr4:.2f}")
     print(f"    TNR: Phase03b={tnr3b:.2f}  Phase04={tnr4:.2f}")

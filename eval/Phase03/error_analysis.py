@@ -71,20 +71,22 @@ for row in results:
     j = judge.get(fid, {})
     mode = classify(row, j)
     sources = json.loads(row.get("retrieved_sources", "[]"))
-    classified.append({
-        "financebench_id": fid,
-        "failure_mode": mode,
-        "retrieval_ok": row["doc_name"] in sources,
-        "gt_score": j.get("gt_score", ""),
-        "ac_score": j.get("ac_score", ""),
-        "aq_score": j.get("aq_score", ""),
-        "cq_score": j.get("cq_score", ""),
-        "doc_name": row["doc_name"],
-        "question": row["question"],
-        "expected_answer": row.get("expected_answer", ""),
-        "model_answer": row.get("model_answer", ""),
-        "gt_reason": j.get("gt_reason", ""),
-    })
+    classified.append(
+        {
+            "financebench_id": fid,
+            "failure_mode": mode,
+            "retrieval_ok": row["doc_name"] in sources,
+            "gt_score": j.get("gt_score", ""),
+            "ac_score": j.get("ac_score", ""),
+            "aq_score": j.get("aq_score", ""),
+            "cq_score": j.get("cq_score", ""),
+            "doc_name": row["doc_name"],
+            "question": row["question"],
+            "expected_answer": row.get("expected_answer", ""),
+            "model_answer": row.get("model_answer", ""),
+            "gt_reason": j.get("gt_reason", ""),
+        }
+    )
 
 mode_counts = Counter(r["failure_mode"] for r in classified)
 total = len(classified)
@@ -108,11 +110,11 @@ for mode, count in sorted(mode_counts.items(), key=lambda x: -x[1]):
 print(f"\n{'Top Failure Modes -- Fix Priority':^64}")
 print(SEP)
 fix_map = {
-    "wrong_doc":        "Metadata filtering (extract company from query -> Qdrant filter)",
-    "retrieval_miss":   "Hybrid retrieval dense+BM25 or better chunking",
-    "numerical_error":  "Hybrid retrieval (BM25 matches exact numbers)",
-    "hallucination":    "Faithfulness prompt + temperature=0 check",
-    "incomplete":       "Multi-step retrieval / query decomposition",
+    "wrong_doc": "Metadata filtering (extract company from query -> Qdrant filter)",
+    "retrieval_miss": "Hybrid retrieval dense+BM25 or better chunking",
+    "numerical_error": "Hybrid retrieval (BM25 matches exact numbers)",
+    "hallucination": "Faithfulness prompt + temperature=0 check",
+    "incomplete": "Multi-step retrieval / query decomposition",
     "generation_error": "Prompt engineering",
 }
 for i, (mode, count) in enumerate(failures[:5], 1):

@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace  # Remove espaços em branco no final das linhas
+      - id: end-of-file-fixer    # Garante que os arquivos terminem com uma nova linha
+      - id: check-yaml           # Valida a sintaxe dos arquivos YAML
+
+  - repo: https://github.com/psf/black
+    rev: 24.10.0
+    hooks:
+      - id: black                # Formatador de código Python
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy                 # Checagem de tipagem estática
+        exclude: ^eval/          # scripts de pesquisa; nomes de módulo colidem entre fases
+        additional_dependencies: [types-requests]

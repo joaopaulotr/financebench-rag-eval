@@ -98,6 +98,7 @@ Respond with valid JSON only:
 # Judge functions
 # ---------------------------------------------------------------------------
 
+
 def _call(prompt: str) -> dict:
     response = llm.invoke(prompt)
     text = response.content.strip()

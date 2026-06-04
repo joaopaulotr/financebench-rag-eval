@@ -1,8 +1,8 @@
 financebench_id,question,expected_answer,model_answer,human_correct
-financebench_id_03029,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The FY2018 capital expenditure amount for 3M was not explicitly detailed in the retrieved documents. However, they do mention that 3M invests significantly in property, plant, and equipment, which is indicative of their capital expenditures. 
+financebench_id_03029,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The FY2018 capital expenditure amount for 3M was not explicitly detailed in the retrieved documents. However, they do mention that 3M invests significantly in property, plant, and equipment, which is indicative of their capital expenditures.
 
 For specific amounts related to FY2018, further details or the complete cash flow statement for that year would be necessary. Unfortunately, the provided documents do not specify the exact dollar figure for capital expenditures in 2018. Thus, I don't know the exact FY2018 capital expenditure amount in USD millions for 3M.",0
-financebench_id_01226,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+financebench_id_01226,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to:
 -Decrease in gross Margin
 -mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
 charges","In FY2022, 3M's operating margin experienced changes primarily due to several factors:
@@ -39,7 +39,7 @@ financebench_id_10420,"Based on the information provided primarily in the statem
    - **FY2021 Total Assets**: Since the document does not provide the total assets for AES, I can't find the exact number for FY2021 or FY2022 from the retrieved information.
    - As there is no mention of total assets for these years in the provided documents, I am unable to calculate the average total assets.
 
-Without the FY2021 and FY2022 total asset values, I cannot compute the average total assets, and thus, I cannot finalize the calculation of the Return on Assets (ROA). 
+Without the FY2021 and FY2022 total asset values, I cannot compute the average total assets, and thus, I cannot finalize the calculation of the Return on Assets (ROA).
 
 Therefore, I don't know the ROA value for AES for FY2022.",0
 financebench_id_01148,What industry does AMCOR primarily operate in?,Amcor is a global leader in packaging production for various use cases.,"Amcor primarily operates in the packaging industry. The company is a global leader in developing and producing responsible packaging solutions for various sectors, including food, beverage, pharmaceutical, medical, home and personal care, and other products. Amcor focuses on creating flexible and rigid packaging, specialty cartons, closures, and services aimed at enhancing product protection, brand differentiation, and supply chain improvements (source: AMCOR 2023 Q4 Earnings Report).",1
@@ -50,7 +50,7 @@ financebench_id_01930,"How much was the Real change in Sales for AMCOR in FY 202
 Therefore, the real change in sales for Amcor in FY 2023 vs FY 2022, excluding the mentioned impacts, was essentially flat, with a nominal change of $7 million, translating to a 0% change in net sales (Source: AMCOR 2023 10K).",0
 financebench_id_00222,"Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","Yes. The quick ratio is 1.57, calculated as (cash and cash equivalents+Short term investments+Accounts receivable, net+receivables from related parties)/ (current liabilities).","The documents retrieved do not contain the specific quick ratio for AMD (Advanced Micro Devices) for FY22. Therefore, I cannot assess whether AMD has a reasonably healthy liquidity profile based on its quick ratio for that year.
 
-In general, the quick ratio is a measure of a company's ability to meet its short-term liabilities with its most liquid assets (excluding inventories). A quick ratio above 1 indicates that a company can cover its short-term obligations, while a ratio below 1 suggests potential liquidity issues. 
+In general, the quick ratio is a measure of a company's ability to meet its short-term liabilities with its most liquid assets (excluding inventories). A quick ratio above 1 indicates that a company can cover its short-term obligations, while a ratio below 1 suggests potential liquidity issues.
 
 Without the specific quick ratio for AMD in FY22, I cannot evaluate its liquidity profile. If you need further information about AMD's financial health or liquidity measures, please let me know.",0
 financebench_id_01279,"Among operations, investing, and financing activities, which brought in the most (or lost the least) cash flow for AMD in FY22?","In 2022, AMD brought in the most cashflow from Operations","In FY22, AMD's cash flows from its various activities were as follows:
@@ -59,16 +59,16 @@ financebench_id_01279,"Among operations, investing, and financing activities, wh
 2. **Investing Activities**: Cash used in investing activities was **$3,117 million**, which includes significant investments primarily in property and equipment and short-term investments.
 3. **Financing Activities**: Cash used in financing activities was **$582 million**, driven by payments related to debt and stock issuance for acquisitions.
 
-Based on these figures, operating activities brought in the most cash flow for AMD in FY22. Therefore, for AMD in FY22, operating activities had the highest positive cash flow among the three categories, while investing activities resulted in the largest cash outflow. 
+Based on these figures, operating activities brought in the most cash flow for AMD in FY22. Therefore, for AMD in FY22, operating activities had the highest positive cash flow among the three categories, while investing activities resulted in the largest cash outflow.
 
 Sources:
 - Cash flows from operating activities: **$3,565 million**
 - Cash used in investing activities: **$3,117 million**
 - Cash used in financing activities: **$582 million** (Source: AMD's consolidated statements of cash flows for 2022).",1
-financebench_id_00288,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. The data indicates that Cash and Cash Equivalents at the end of FY 2023 was $775 million, while at the end of Q2 FY 2024, it had decreased to $689 million. This represents a decline of $86 million. 
+financebench_id_00288,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. The data indicates that Cash and Cash Equivalents at the end of FY 2023 was $775 million, while at the end of Q2 FY 2024, it had decreased to $689 million. This represents a decline of $86 million.
 
 (Source: data\pdfs\AMCOR_2023_10K.pdf, data\pdfs\AMCOR_2023Q4_EARNINGS.pdf)",0
-financebench_id_00460,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2024 and Q2 of FY2023, there was a decrease in the number of Best Buy stores. 
+financebench_id_00460,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2024 and Q2 of FY2023, there was a decrease in the number of Best Buy stores.
 
 - In Q2 FY2024, Best Buy had a total of 907 stores at the end of the second quarter, after closing 1 store.
 - In Q2 FY2023, the total was 930 stores at the end of the second quarter, after closing 2 stores.
@@ -92,11 +92,11 @@ Plugging in the numbers:
 \]
 
 Thus, the total revenue growth rate for Block from FY2019 to FY2020 is approximately **101.5%**.",1
-financebench_id_00464,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company operates in both the commercial aviation and defense sectors, both of which have been historically affected by economic cycles. For instance, demand for commercial aircraft tends to fluctuate based on global economic conditions, travel demand, and government spending on defense. 
+financebench_id_00464,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company operates in both the commercial aviation and defense sectors, both of which have been historically affected by economic cycles. For instance, demand for commercial aircraft tends to fluctuate based on global economic conditions, travel demand, and government spending on defense.
 
-The documents highlight that domestic and international travel, which directly impacts the demand for new aircraft, is recovering from the effects of the COVID-19 pandemic but remains sensitive to various factors, including geopolitical events and government restrictions (Source: BOEING_2022_10K.pdf). Additionally, prices and availability of financing for Boeing's products can also be influenced by broader economic conditions and cycles in the airline industry (Source: BOEING_2018_10K.pdf). 
+The documents highlight that domestic and international travel, which directly impacts the demand for new aircraft, is recovering from the effects of the COVID-19 pandemic but remains sensitive to various factors, including geopolitical events and government restrictions (Source: BOEING_2022_10K.pdf). Additionally, prices and availability of financing for Boeing's products can also be influenced by broader economic conditions and cycles in the airline industry (Source: BOEING_2018_10K.pdf).
 
-Moreover, changes in U.S. government defense spending, which forms a significant part of Boeing's revenue, are difficult to predict and may be influenced by shifts in political environments and priorities, adding another layer of cyclicality to its business (Source: BOEING_2022_10K.pdf). 
+Moreover, changes in U.S. government defense spending, which forms a significant part of Boeing's revenue, are difficult to predict and may be influenced by shifts in political environments and priorities, adding another layer of cyclicality to its business (Source: BOEING_2022_10K.pdf).
 
 Overall, Boeing faces cyclical challenges that impact its operations and financial performance, both in commercial plans and defense sectors.",1
 financebench_id_06272,What is Coca Cola's FY2022 dividend payout ratio (using total cash dividends paid and net income attributable to shareholders)? Round answer to two decimal places. Answer the question asked by assuming you only have access to information clearly displayed in the cash flow statement and the income statement.,0.8,"To calculate Coca-Cola's FY2022 dividend payout ratio, we use the formula:
@@ -144,17 +144,17 @@ Here are the provided figures from the income statements:
 
 Now, we calculate the operating income % margin for each year:
 
-1. **2019**: 
+1. **2019**:
    \[
    \text{Operating Income % Margin} = \left( \frac{1,306}{11,503} \right) \times 100 \approx 11.4\%
    \]
 
-2. **2020**: 
+2. **2020**:
    \[
    \text{Operating Income % Margin} = \left( \frac{509}{11,303} \right) \times 100 \approx 4.5\%
    \]
 
-3. **2021**: 
+3. **2021**:
    \[
    \text{Operating Income % Margin} = \left( \frac{2,112}{14,082} \right) \times 100 \approx 15.0\%
    \]
@@ -219,21 +219,21 @@ financebench_id_04103,What is the FY2019 cash conversion cycle (CCC) for General
 From the provided documents, we can find the following relevant financial data for FY2019:
 
 1. **FY2019 COGS:** $11,108.4 million (derived from revenues and gross margin)
-2. **Net Sales (Revenue) for FY2019:** $16,865.2 million 
-3. **Average Inventory between FY2018 and FY2019:** 
-   - FY2018 Inventory: $2,490.5 million 
-   - FY2019 Inventory: $2,507.0 million 
-   - Average Inventory = (2490.5 + 2507.0) / 2 = $2,498.75 million 
+2. **Net Sales (Revenue) for FY2019:** $16,865.2 million
+3. **Average Inventory between FY2018 and FY2019:**
+   - FY2018 Inventory: $2,490.5 million
+   - FY2019 Inventory: $2,507.0 million
+   - Average Inventory = (2490.5 + 2507.0) / 2 = $2,498.75 million
 
-4. **Average Accounts Receivable (AR):** 
-   - FY2018 AR: $1,575.4 million 
-   - FY2019 AR: $1,721.5 million 
-   - Average AR = (1575.4 + 1721.5) / 2 = $1,648.45 million 
+4. **Average Accounts Receivable (AR):**
+   - FY2018 AR: $1,575.4 million
+   - FY2019 AR: $1,721.5 million
+   - Average AR = (1575.4 + 1721.5) / 2 = $1,648.45 million
 
 5. **Average Accounts Payable (AP):**
-   - FY2018 AP: $2,064.1 million 
-   - FY2019 AP: $2,357.2 million 
-   - Average AP = (2064.1 + 2357.2) / 2 = $2,210.65 million 
+   - FY2018 AP: $2,064.1 million
+   - FY2019 AP: $2,357.2 million
+   - Average AP = (2064.1 + 2357.2) / 2 = $2,210.65 million
 
 ### Step 2: Calculating DIO, DSO, and DPO
 
@@ -325,9 +325,9 @@ Using these numbers:
 \text{Per Share Payout} = \frac{\text{Total Assets}}{\text{Total Shares}} = \frac{3,700,000,000,000}{3,070,000,000} \approx 1,205,226.69
 \]
 
-This calculation indicates that if JPM were to liquidate all its assets and distribute the proceeds entirely to shareholders (ignoring liabilities and other factors for simplicity), each share would fetch approximately $1,205,226.69. 
+This calculation indicates that if JPM were to liquidate all its assets and distribute the proceeds entirely to shareholders (ignoring liabilities and other factors for simplicity), each share would fetch approximately $1,205,226.69.
 
 However, this is a theoretical scenario and doesn't account for the reality of outstanding debts, liabilities, and other financial considerations in a bankruptcy situation. In practice, the payout would likely be much smaller.",0
-financebench_id_00394,"In 2022 Q2, which of JPM's business segments had the highest net income?",Corporate & Investment Bank. Its net income was $3725 million.,"In the second quarter of 2022, JPMorgan Chase reported a total net income of $8.649 billion. The business segments and their respective net income contributions were not detailed in the retrieved documents. Therefore, I cannot specify which segment had the highest net income in that quarter. 
+financebench_id_00394,"In 2022 Q2, which of JPM's business segments had the highest net income?",Corporate & Investment Bank. Its net income was $3725 million.,"In the second quarter of 2022, JPMorgan Chase reported a total net income of $8.649 billion. The business segments and their respective net income contributions were not detailed in the retrieved documents. Therefore, I cannot specify which segment had the highest net income in that quarter.
 
 If you need more detailed financial insights about individual segments, that specific information may not be included in the current documents.",0

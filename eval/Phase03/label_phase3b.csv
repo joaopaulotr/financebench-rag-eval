@@ -1,6 +1,6 @@
 financebench_id,human_correct,question,expected_answer,model_answer
 financebench_id_03029,0,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The capital expenditure amount for 3M in FY2018, specifically for purchases of property, plant, and equipment, amounted to **$1,749 million** (or **$1.749 billion**) according to the cash flow statement referenced in their financial documents (source: 3M 2022 10-K)."
-financebench_id_01226,1,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+financebench_id_01226,1,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to:
 -Decrease in gross Margin
 -mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
 charges","The change in 3M's operating margin for FY2022 was influenced by several factors:
@@ -48,9 +48,9 @@ Calculating this step-by-step:
 3. **Convert to percentage**:
    - \(0.6531 \times 100 \approx 65.3\%\)
 
-Therefore, the year-over-year change in unadjusted operating income from FY2015 to FY2016 is approximately **65.3%**. 
+Therefore, the year-over-year change in unadjusted operating income from FY2015 to FY2016 is approximately **65.3%**.
 
-Sources: 
+Sources:
 - Adobe FY2015 10-K report (operating income data)
 - Adobe FY2016 10-K report (operating income data)"
 financebench_id_00438,0,"Does Adobe have an improving operating margin profile as of FY2022? If operating margin is not a useful metric for a company like this, then state that and explain why.",No the operating margins of Adobe have recently declined from 36.8% in FY 2021 to 34.6% in FY2022. A drop by 2.2% in a year.,"I couldn't find any specific details regarding Adobe's operating margin profile for FY2022 in the retrieved documents. The documents provide various financial metrics and insights about Adobe but do not explicitly state the operating margin or any specific trends associated with it for that fiscal year.
@@ -70,17 +70,17 @@ ROA = Net Income / Average Total Assets
 2. **Total Assets**:
    - Total Assets as of December 31, 2022: **$38,363 million**
    - Total Assets as of December 31, 2021: **$32,963 million**
-   
-   Average Total Assets = (Total Assets 2022 + Total Assets 2021) / 2  
-                       = ($38,363 million + $32,963 million) / 2  
+
+   Average Total Assets = (Total Assets 2022 + Total Assets 2021) / 2
+                       = ($38,363 million + $32,963 million) / 2
                        = **$35,663 million**
 
 3. **Calculating ROA**:
-   ROA = Net Income / Average Total Assets  
-       = ($546 million) / ($35,663 million)  
+   ROA = Net Income / Average Total Assets
+       = ($546 million) / ($35,663 million)
        ≈ -0.0153 (or -1.53%)
 
-Thus, rounding to two decimal places, AES's FY2022 Return on Assets (ROA) is **-1.53%**. 
+Thus, rounding to two decimal places, AES's FY2022 Return on Assets (ROA) is **-1.53%**.
 
 **Sources:**
 - AES financial statements extracted from their 10-K report for FY2022."
@@ -94,14 +94,14 @@ financebench_id_01936,1,What is the nature & purpose of AMCOR's restructuring li
 The company anticipates that the majority of this liability will be settled within the next twelve months. The restructuring activities have mainly been recorded under other current liabilities and other non-current liabilities on the balance sheet (source: AMCOR_2023_10K.pdf).
 
 The purpose of these restructuring costs typically involves consolidating operations, integrating acquisitions, or responding to market conditions, such as those influenced by the Russia-Ukraine conflict which impacted their recent restructuring activities (source: AMCOR_2023Q2_10Q.pdf)."
-financebench_id_01928,0,What Was AMCOR's Adjusted Non GAAP EBITDA for FY 2023,"AMCOR's Adj. EBITDA was $2,018mn in FY 2023","The adjusted Non-GAAP EBITDA for Amcor for the fiscal year 2023 has not been explicitly stated in the retrieved documents. However, it does mention that the adjusted free cash flow for fiscal 2023 was $848 million, which can be related to their overall financial performance. Additionally, leverage was mentioned as net debt divided by adjusted trailing twelve-month EBITDA being 3.0 times, but specific EBITDA figures were not provided. 
+financebench_id_01928,0,What Was AMCOR's Adjusted Non GAAP EBITDA for FY 2023,"AMCOR's Adj. EBITDA was $2,018mn in FY 2023","The adjusted Non-GAAP EBITDA for Amcor for the fiscal year 2023 has not been explicitly stated in the retrieved documents. However, it does mention that the adjusted free cash flow for fiscal 2023 was $848 million, which can be related to their overall financial performance. Additionally, leverage was mentioned as net debt divided by adjusted trailing twelve-month EBITDA being 3.0 times, but specific EBITDA figures were not provided.
 
 If you would like more detailed information or a specific calculation, I would recommend checking Amcor's full financial reports or seek information directly provided in those documents.
 
-Sources: 
+Sources:
 - Amcor 2023 Form 10-K
 - Amcor Q4 2023 Earnings Report"
-financebench_id_01930,1,"How much was the Real change in Sales for AMCOR in FY 2023 vs FY 2022, if we exclude the impact of FX movement, passthrough costs and one-off items?",The Real Growth was flat in FY 2023 vs FY 2022.,"In fiscal year 2023, Amcor's net sales increased by $150 million, or 1%, compared to fiscal year 2022. When excluding the pass-through of raw material costs ($776 million), the negative currency impacts ($426 million), and the negative impact of disposed and ceased operations ($207 million), the net change in sales was effectively an increase of just $7 million, or 0%. This change was attributed to a price/mix benefit of approximately 3%, which was offset by a 3% decline in volumes (source: AMCOR 2023 Q4 Earnings Report). 
+financebench_id_01930,1,"How much was the Real change in Sales for AMCOR in FY 2023 vs FY 2022, if we exclude the impact of FX movement, passthrough costs and one-off items?",The Real Growth was flat in FY 2023 vs FY 2022.,"In fiscal year 2023, Amcor's net sales increased by $150 million, or 1%, compared to fiscal year 2022. When excluding the pass-through of raw material costs ($776 million), the negative currency impacts ($426 million), and the negative impact of disposed and ceased operations ($207 million), the net change in sales was effectively an increase of just $7 million, or 0%. This change was attributed to a price/mix benefit of approximately 3%, which was offset by a 3% decline in volumes (source: AMCOR 2023 Q4 Earnings Report).
 
 Therefore, the real change in sales for Amcor, adjusting for those excluded factors, was 0% from FY 2022 to FY 2023."
 financebench_id_00222,0,"Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","Yes. The quick ratio is 1.57, calculated as (cash and cash equivalents+Short term investments+Accounts receivable, net+receivables from related parties)/ (current liabilities).","To assess AMD's liquidity profile for FY22, we need to look at the quick ratio, which is calculated as follows:
@@ -130,7 +130,7 @@ Using these figures, we can calculate the quick ratio:
 
 This quick ratio of approximately 1.76 indicates that AMD has a solid liquidity position. A quick ratio above 1 generally suggests that the company can cover its current liabilities with its most liquid assets, indicating a healthy liquidity profile.
 
-Thus, based on the quick ratio, AMD does indeed have a reasonably healthy liquidity profile for FY22. This ratio suggests that AMD can meet its short-term obligations without needing to sell its inventory, which could take longer to convert into cash compared to other current assets. 
+Thus, based on the quick ratio, AMD does indeed have a reasonably healthy liquidity profile for FY22. This ratio suggests that AMD can meet its short-term obligations without needing to sell its inventory, which could take longer to convert into cash compared to other current assets.
 
 Sources:
 - Advanced Micro Devices, Inc. Consolidated Balance Sheets for FY22 (data\pdfs\AMD_2022_10K.pdf)."
@@ -141,10 +141,10 @@ financebench_id_01279,1,"Among operations, investing, and financing activities, 
 3. **Financing Activities**: Net cash used was **($3.264 billion)**.
 
 In summary, the highest cash flow came from **operating activities** with **$3.565 billion**, followed by **investing activities** with **$2 billion**. **Financing activities** resulted in a cash outflow, making it the category that lost the most cash. Therefore, the operating activities brought in the most cash flow for AMD in FY22 (Source: AMD 2022 10-K Report)."
-financebench_id_00288,1,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. 
+financebench_id_00288,1,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024.
 
 As of January 28, 2023, the Cash and Cash Equivalents were reported at $1,874 million. By July 29, 2023, this amount decreased to $1,093 million. This shows a decline of $781 million in Cash and Cash Equivalents over that period (BESTBUY_2024Q2_10Q.pdf)."
-financebench_id_00460,0,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2023 and Q2 of FY2024, there was a change in the number of Best Buy stores. 
+financebench_id_00460,0,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2023 and Q2 of FY2024, there was a change in the number of Best Buy stores.
 
 - **Q2 FY2023**: Best Buy had 930 stores at the end of the second quarter.
 - **Q2 FY2024**: Best Buy had 907 stores at the end of the second quarter.
@@ -171,7 +171,7 @@ Substituting the values:
 \]
 
 Rounded to one decimal place, the total revenue growth rate for Block from FY2019 to FY2020 is **101.5%** (source: BLOCK 2020 10-K Report)."
-financebench_id_00464,1,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company's operations, particularly in the commercial aviation sector, are significantly influenced by the economic cycle. Boeing's Commercial Airplanes (BCA) division is heavily reliant on demand for new aircraft, which can fluctuate based on economic conditions, airline profitability, travel demand, and broader economic trends. 
+financebench_id_00464,1,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company's operations, particularly in the commercial aviation sector, are significantly influenced by the economic cycle. Boeing's Commercial Airplanes (BCA) division is heavily reliant on demand for new aircraft, which can fluctuate based on economic conditions, airline profitability, travel demand, and broader economic trends.
 
 For instance, the recovery of domestic travel from the effects of events such as the COVID-19 pandemic plays a critical role in the cyclical nature of their business. The pace of commercial market recovery has been affected by external factors like government restrictions, with recent recoveries noted particularly in North and South America and the Middle East (Source: Boeing 2022 10-K).
 
@@ -289,20 +289,20 @@ financebench_id_04103,0,What is the FY2019 cash conversion cycle (CCC) for Gener
 DIO = \( \frac{365 \times \text{Average Inventory}}{\text{FY2019 COGS}} \)
 
 From the document:
-- **FY2019 Net Sales**: $16,865.2 million  
+- **FY2019 Net Sales**: $16,865.2 million
 - **FY2019 COGS** (Cost of Goods Sold) needs to be calculated as Net Sales minus Gross Margin:
   - **Gross Margin FY2019**: $5,756.8 million
   - **COGS** = Net Sales - Gross Margin = $16,865.2 million - $5,756.8 million = $11,108.4 million
 
 Next, we need average inventory:
 - **Average Inventory**: This is typically taken from the balance sheets of FY2018 and FY2019. However, average inventory values were not specifically provided in the documents.
-  
+
 Assuming the average inventory is provided elsewhere in the full 10-K report or an assumed value, we would need that to proceed.
 
 #### b. Days Sales Outstanding (DSO)
 DSO = \( \frac{365 \times \text{Average Accounts Receivable}}{\text{FY2019 Revenue}} \)
 
-Avg. Accounts Receivable is similarly needed from balance sheets of FY2018 and FY2019. 
+Avg. Accounts Receivable is similarly needed from balance sheets of FY2018 and FY2019.
 - **FY2019 Revenue**: $16,865.2 million (same as Net Sales)
 
 We need average accounts receivable, which is also not explicitly provided.
@@ -316,7 +316,7 @@ For this, we need the same average accounts payable and the change in inventory,
 Unfortunately, I don’t have specific values for Average Inventory, Average Accounts Receivable, and Average Accounts Payable from the retrieved documents. In order to calculate the Cash Conversion Cycle accurately, you would need these values from General Mills' complete financial statements or notes that typically accompany the 10-K filing.
 
 If you have access to these values or can provide more specific numbers, I can help you compute the CCC. Otherwise, unfortunately, I don’t know."
-financebench_id_10136,0,We want to calculate a financial metric. Please help us compute it by basing your answers off of the cash flow statement and the income statement. Here's the question: what is the FY2022 retention ratio (using total cash dividends paid and net income attributable to shareholders) for General Mills? Round answer to two decimal places.,0.54,"To calculate the FY2022 retention ratio for General Mills, we need the net income attributable to shareholders and total cash dividends paid. 
+financebench_id_10136,0,We want to calculate a financial metric. Please help us compute it by basing your answers off of the cash flow statement and the income statement. Here's the question: what is the FY2022 retention ratio (using total cash dividends paid and net income attributable to shareholders) for General Mills? Round answer to two decimal places.,0.54,"To calculate the FY2022 retention ratio for General Mills, we need the net income attributable to shareholders and total cash dividends paid.
 
 ### From the documents retrieved:
 1. **Net Income Attributable to General Mills for FY2022**: $2,735.0 million (or $2.735 billion) [Source: document excerpt].
@@ -325,8 +325,8 @@ financebench_id_10136,0,We want to calculate a financial metric. Please help us 
 ### Retention Ratio Calculation:
 The retention ratio formula is:
 
-\[ 
-\text{Retention Ratio} = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}} 
+\[
+\text{Retention Ratio} = \frac{\text{Net Income} - \text{Dividends}}{\text{Net Income}}
 \]
 
 Given that:
@@ -336,7 +336,7 @@ Given that:
 
 Calculated Dividends:
 \[
-\text{Dividends Paid} = 607 \text{ million shares} \times 1.96 \text{ dollars per share} = 1,191.72 \text{ million} 
+\text{Dividends Paid} = 607 \text{ million shares} \times 1.96 \text{ dollars per share} = 1,191.72 \text{ million}
 \]
 
 Now substituting the values back into the retention ratio:

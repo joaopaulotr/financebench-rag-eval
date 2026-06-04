@@ -20,7 +20,9 @@ def compute_tier1(results_csv: str, label: str, k: int = K) -> dict:
         sources: list[str] = json.loads(row["retrieved_sources"])
 
         recalls.append(1.0 if gt in sources else 0.0)
-        precisions.append(sum(s == gt for s in sources) / len(sources) if sources else 0.0)
+        precisions.append(
+            sum(s == gt for s in sources) / len(sources) if sources else 0.0
+        )
 
         rr = 0.0
         for rank, s in enumerate(sources, 1):
@@ -63,7 +65,9 @@ if __name__ == "__main__":
 
     miss2 = Counter(p2["misses"])
     miss3 = Counter(p3["misses"])
-    print(f"\n  Retrieval misses: Phase02={len(p2['misses'])}  Phase03={len(p3['misses'])}")
+    print(
+        f"\n  Retrieval misses: Phase02={len(p2['misses'])}  Phase03={len(p3['misses'])}"
+    )
 
     resolved = set(miss2) - set(miss3)
     new_misses = set(miss3) - set(miss2)

@@ -1,5 +1,5 @@
 financebench_id,failure_mode,retrieval_ok,gt_score,ac_score,aq_score,cq_score,doc_name,question,expected_answer,model_answer,gt_reason
-financebench_id_03029,numerical_error,True,1,4,1,2,3M_2018_10K,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The FY2018 capital expenditure amount for 3M was not explicitly detailed in the retrieved documents. However, they do mention that 3M invests significantly in property, plant, and equipment, which is indicative of their capital expenditures. 
+financebench_id_03029,numerical_error,True,1,4,1,2,3M_2018_10K,What is the FY2018 capital expenditure amount (in USD millions) for 3M? Give a response to the question by relying on the details shown in the cash flow statement.,$1577.00,"The FY2018 capital expenditure amount for 3M was not explicitly detailed in the retrieved documents. However, they do mention that 3M invests significantly in property, plant, and equipment, which is indicative of their capital expenditures.
 
 For specific amounts related to FY2018, further details or the complete cash flow statement for that year would be necessary. Unfortunately, the provided documents do not specify the exact dollar figure for capital expenditures in 2018. Thus, I don't know the exact FY2018 capital expenditure amount in USD millions for 3M.","The model answer does not provide the correct FY2018 capital expenditure amount for 3M, stating that it does not know the exact figure, which is incorrect."
 financebench_id_04672,numerical_error,True,1,5,1,2,3M_2018_10K,Assume that you are a public equities analyst. Answer the following question by primarily using information that is shown in the balance sheet: what is the year end FY2018 net PPNE for 3M? Answer in USD billions.,$8.70,"The year-end net Property, Plant, and Equipment (PPNE) for 3M for FY2018 is not explicitly provided in the retrieved documents. Therefore, I don't know the specific value of net PPNE in USD billions for 3M as of December 31, 2018.","The model answer does not provide the correct value of net PPNE for 3M as of FY2018 and states 'I don't know', which is a refusal to answer."
@@ -9,7 +9,7 @@ Fixed assets/Total Assets: 20%
 Return on Assets= 12.4%","Based on the available FY2022 data, 3M does appear to be a capital-intensive business. In 2022, the company reported purchases of property, plant, and equipment (PP&E) totaling approximately $808 million, indicating significant investment in physical assets necessary for production and operational efficiency. Additionally, 3M projected capital spending of approximately $1.5 billion to $1.8 billion for 2023, which reflects a priority on investing in growth, productivity, and sustainability (Source: 3M 2023 Q2 10-Q).
 
 Furthermore, 3M's business model relies on substantial investments in various areas, including facility expansions, new product development, and maintenance programs, which all require considerable capital (Source: 3M 2022 10-K). This level of ongoing investment suggests that 3M operates in a capital-intensive industry.","The model answer incorrectly concludes that 3M is a capital-intensive business, contradicting the expected answer that states it is not."
-financebench_id_01226,incomplete,True,3,5,5,5,3M_2022_10K,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to: 
+financebench_id_01226,incomplete,True,3,5,5,5,3M_2022_10K,"What drove operating margin change as of FY2022 for 3M? If operating margin is not a useful metric for a company like this, then please state that and explain why.","Operating Margin for 3M in FY2022 has decreased by 1.7% primarily due to:
 -Decrease in gross Margin
 -mostly one-off charges including Combat Arms Earplugs litigation, impairment related to exiting PFAS manufacturing, costs related to exiting Russia and divestiture-related restructuring
 charges","In FY2022, 3M's operating margin experienced changes primarily due to several factors:
@@ -43,10 +43,10 @@ financebench_id_00941,numerical_error,True,2,5,4,2,3M_2023Q2_10Q,Which debt secu
 financebench_id_01858,correct,True,5,5,5,5,3M_2023Q2_10Q,Does 3M maintain a stable trend of dividend distribution?,"Yes, not only they distribute the dividends on a routine basis, 3M has also been increasing the per share dividend for consecutive 65 years","Yes, 3M maintains a stable trend of dividend distribution. The company has paid dividends consistently since 1916 and has a long history of increasing its dividends. As of February 2023, 3M's Board of Directors declared a first-quarter dividend of $1.50 per share, marking a 1% increase and the 65th consecutive year of dividend increases. The trend in dividend payments has shown consistent growth, with cash dividends paid to shareholders totaling $3.193 billion ($5.44 per share) in 2018, and a gradual increase in the dividend per share over the years, such as $1.44 per share declared in early 2019, representing a 6% increase at that time (Source: 3M 2022 10K and 2023 Q2 10Q reports).","The model answer accurately conveys that 3M maintains a stable trend of dividend distribution, including the key fact of 65 consecutive years of dividend increases and specific dividend amounts."
 financebench_id_02987,correct,True,4,2,5,3,ACTIVISIONBLIZZARD_2019_10K,What is the FY2019 fixed asset turnover ratio for Activision Blizzard? Fixed asset turnover ratio is defined as: FY2019 revenue / (average PP&E between FY2018 and FY2019). Round your answer to two decimal places. Base your judgments on the information provided primarily in the statement of income and the statement of financial position.,24.26,"To calculate the fixed asset turnover ratio for Activision Blizzard for FY2019, we first need to gather the necessary figures:
 
-1. **FY2019 Revenue**: 
+1. **FY2019 Revenue**:
    - For the year ended December 31, 2019, Activision Blizzard reported total revenues of **$6,969 million** (i.e., 6.969 billion).
 
-2. **Average PP&E**: 
+2. **Average PP&E**:
    - Property and equipment, net for December 31, 2019: **$253 million**.
    - Property and equipment, net for December 31, 2018: **$282 million**.
    - Average PP&E = (PP&E at end of FY2018 + PP&E at end of FY2019) / 2 = (253 + 282) / 2 = **$267.5 million**.
@@ -84,17 +84,17 @@ From the retrieved documents, we have:
 
 ### Calculation of Capex as a Percentage of Revenue for Each Year
 
-1. **FY2017**: 
+1. **FY2017**:
    \[
    \text{Capex %} = \left(\frac{131}{7017}\right) \times 100 \approx 1.87\%
    \]
 
-2. **FY2018**: 
+2. **FY2018**:
    \[
    \text{Capex %} = \left(\frac{116}{7500}\right) \times 100 \approx 1.55\%
    \]
 
-3. **FY2019**: 
+3. **FY2019**:
    \[
    \text{Capex %} = \left(\frac{116}{6489}\right) \times 100 \approx 1.79\%
    \]
@@ -163,7 +163,7 @@ financebench_id_10420,hallucination,True,1,1,1,1,AES_2022_10K,"Based on the info
    - **FY2021 Total Assets**: Since the document does not provide the total assets for AES, I can't find the exact number for FY2021 or FY2022 from the retrieved information.
    - As there is no mention of total assets for these years in the provided documents, I am unable to calculate the average total assets.
 
-Without the FY2021 and FY2022 total asset values, I cannot compute the average total assets, and thus, I cannot finalize the calculation of the Return on Assets (ROA). 
+Without the FY2021 and FY2022 total asset values, I cannot compute the average total assets, and thus, I cannot finalize the calculation of the Return on Assets (ROA).
 
 Therefore, I don't know the ROA value for AES for FY2022.","The model answer does not provide a numerical ROA value and ultimately states it cannot calculate the ROA, which is incorrect as the expected answer is -0.02."
 financebench_id_06655,correct,True,4,1,5,2,AMAZON_2017_10K,What is Amazon's FY2017 days payable outstanding (DPO)? DPO is defined as: 365 * (average accounts payable between FY2016 and FY2017) / (FY2017 COGS + change in inventory between FY2016 and FY2017). Round your answer to two decimal places. Address the question by using the line items and information shown within the balance sheet and the P&L statement.,93.86,"To calculate Amazon's Days Payable Outstanding (DPO) for FY2017, we need the following components:
@@ -278,7 +278,7 @@ packaging machines.","Here are the major acquisitions that Amcor has made in the
 2. **Flexible Packaging Manufacturer**: On August 10, 2023, Amcor signed an agreement to acquire a small manufacturer of flexible packaging for food, home care, and personal care applications in India. This acquisition aims to complement Amcor’s existing flexible packaging footprint in India and improve local production of sustainable packaging solutions. [Source: Amcor 2023Q2 10Q, Amcor 2023Q4 Earnings]
 
 ### FY2022
-- No specific acquisitions were detailed for FY2022 in the retrieved documents. However, Amcor mentioned ongoing efforts to pursue value-creating mergers and acquisitions as a part of their long-term growth strategy. 
+- No specific acquisitions were detailed for FY2022 in the retrieved documents. However, Amcor mentioned ongoing efforts to pursue value-creating mergers and acquisitions as a part of their long-term growth strategy.
 
 ### FY2021
 - The retrieved documents did not provide specific information regarding acquisitions made by Amcor in FY2021.
@@ -298,7 +298,7 @@ financebench_id_03069,wrong_doc,False,1,4,3,2,AMD_2015_10K,"Answer the following
 Unfortunately, the net revenue for FY2015 is also not directly provided in the documents retrieved. Therefore, I do not have enough information to calculate the depreciation and amortization percentage margin for AMD in FY2015.","The model answer fails to provide the correct depreciation and amortization percentage margin for AMD in FY2015, which is explicitly stated as 4.2% in the expected answer."
 financebench_id_00222,hallucination,True,2,1,2,1,AMD_2022_10K,"Does AMD have a reasonably healthy liquidity profile based on its quick ratio for FY22? If the quick ratio is not relevant to measure liquidity, please state that and explain why.","Yes. The quick ratio is 1.57, calculated as (cash and cash equivalents+Short term investments+Accounts receivable, net+receivables from related parties)/ (current liabilities).","The documents retrieved do not contain the specific quick ratio for AMD (Advanced Micro Devices) for FY22. Therefore, I cannot assess whether AMD has a reasonably healthy liquidity profile based on its quick ratio for that year.
 
-In general, the quick ratio is a measure of a company's ability to meet its short-term liabilities with its most liquid assets (excluding inventories). A quick ratio above 1 indicates that a company can cover its short-term obligations, while a ratio below 1 suggests potential liquidity issues. 
+In general, the quick ratio is a measure of a company's ability to meet its short-term liabilities with its most liquid assets (excluding inventories). A quick ratio above 1 indicates that a company can cover its short-term obligations, while a ratio below 1 suggests potential liquidity issues.
 
 Without the specific quick ratio for AMD in FY22, I cannot evaluate its liquidity profile. If you need further information about AMD's financial health or liquidity measures, please let me know.","The model answer correctly explains the quick ratio's significance but fails to provide the specific quick ratio value for AMD in FY22, which is essential for a complete assessment."
 financebench_id_00995,correct,True,5,5,5,5,AMD_2022_10K,What are the major products and services that AMD sells as of FY22?,"AMD sells server microprocessors (CPUs) and graphics processing units (GPUs), data processing units (DPUs), Field Programmable Gate Arrays (FPGAs), and Adaptive System-on-Chip (SoC) products for data centers; CPUs, accelerated processing units (APUs) that integrate CPUs and GPUs, and chipsets for desktop and notebook personal computers; discrete GPUs, and semi-custom SoC products and development services; and embedded CPUs, GPUs, APUs, FPGAs, and Adaptive SoC products.","As of Fiscal Year 2022 (FY22), AMD sells a wide range of products and services primarily in the semiconductor industry. Their major offerings include:
@@ -322,7 +322,7 @@ financebench_id_00995,correct,True,5,5,5,5,AMD_2022_10K,What are the major produ
 5. **Custom Solutions**: Semi-custom SoCs and Adaptive SoCs designed for specific customer needs and applications across various sectors.
 
 Overall, AMD's strategy emphasizes high-performance and adaptive computing technologies crossing multiple sectors, including gaming, data centers, and embedded solutions, marking it as a significant player in high-performance computing markets (source: AMD 2022 10-K).","The model answer accurately conveys all major products and services that AMD sells as of FY22, matching the expected answer in key facts and details."
-financebench_id_01198,incomplete,True,3,5,5,3,AMD_2022_10K,What drove revenue change as of the FY22 for AMD?,"In 2022, AMD reported Higher sales of their EPYC server processors, higher semi-custom product sales, and the inclusion of Xilinx embedded product sales","As of fiscal year 2022, AMD's revenue change was primarily influenced by several key factors. The total net revenue for AMD's Client segment was $6.2 billion, which represented a decrease of 10% from $6.9 billion in 2021. The decline was driven mainly by a 24% decrease in unit shipments due to challenging conditions in the PC market and significant inventory corrections throughout the PC supply chain during the latter half of 2022. However, this decline was partially offset by a 19% increase in the average selling price, largely attributed to a higher sales mix of Ryzen mobile processors (Source: AMD 2022 10-K Report). 
+financebench_id_01198,incomplete,True,3,5,5,3,AMD_2022_10K,What drove revenue change as of the FY22 for AMD?,"In 2022, AMD reported Higher sales of their EPYC server processors, higher semi-custom product sales, and the inclusion of Xilinx embedded product sales","As of fiscal year 2022, AMD's revenue change was primarily influenced by several key factors. The total net revenue for AMD's Client segment was $6.2 billion, which represented a decrease of 10% from $6.9 billion in 2021. The decline was driven mainly by a 24% decrease in unit shipments due to challenging conditions in the PC market and significant inventory corrections throughout the PC supply chain during the latter half of 2022. However, this decline was partially offset by a 19% increase in the average selling price, largely attributed to a higher sales mix of Ryzen mobile processors (Source: AMD 2022 10-K Report).
 
 Additionally, the operating income for the Client segment also fell to $1.2 billion in 2022 from $2.1 billion in 2021, mainly due to lower revenue coupled with higher operating expenses (Source: AMD 2022 10-K Report).","The model answer provides detailed information about revenue changes in AMD's Client segment but does not mention the higher sales of EPYC server processors, semi-custom products, or Xilinx embedded products, which are key factors in the expected answer."
 financebench_id_00917,hallucination,True,3,2,5,2,AMD_2022_10K,"What drove operating margin change as of the FY22 for AMD? If operating margin is not a useful metric for a company like this, then please state that and explain why.",The decrease in AMD's operating income was primarily driven by amortization of intangible assets associated with the Xilinx acquisition,"The change in operating margin for AMD in FY22 was primarily influenced by higher revenue and increased operating expenses. Specifically, there was a notable decrease in client net revenue, which fell to $6.2 billion in 2022 from $6.9 billion in 2021, driven by a 24% decrease in unit shipments due to challenging market conditions. However, this was partially offset by a 19% increase in average selling prices due to a richer mix of Ryzen mobile processor sales. Consequently, client operating income dropped from $2.1 billion in 2021 to $1.2 billion in 2022, indicating that while revenues were still significant, the operating expenses related to production and selling had risen, negatively impacting the operating margin (Source: AMD 2022 10-K).
@@ -334,7 +334,7 @@ financebench_id_01279,correct,True,5,2,5,5,AMD_2022_10K,"Among operations, inves
 2. **Investing Activities**: Cash used in investing activities was **$3,117 million**, which includes significant investments primarily in property and equipment and short-term investments.
 3. **Financing Activities**: Cash used in financing activities was **$582 million**, driven by payments related to debt and stock issuance for acquisitions.
 
-Based on these figures, operating activities brought in the most cash flow for AMD in FY22. Therefore, for AMD in FY22, operating activities had the highest positive cash flow among the three categories, while investing activities resulted in the largest cash outflow. 
+Based on these figures, operating activities brought in the most cash flow for AMD in FY22. Therefore, for AMD in FY22, operating activities had the highest positive cash flow among the three categories, while investing activities resulted in the largest cash outflow.
 
 Sources:
 - Cash flows from operating activities: **$3,565 million**
@@ -383,7 +383,7 @@ financebench_id_01028,hallucination,True,2,2,5,5,AMERICANEXPRESS_2022_10K,What a
 American Express manages a diverse range of subsidiaries across these regions, enabling it to provide various services including card issuing, merchant acquiring, and payment processing (source from the retrieved document).","The model answer includes many specific countries but does not accurately summarize the primary geographies as specified in the expected answer, which are broader regions."
 financebench_id_00723,correct,True,4,4,3,2,AMERICANEXPRESS_2022_10K,"Does AMEX have an improving operating margin profile as of 2022? If operating margin is not a useful metric for a company like this, then state that and explain why.",Performance is not measured through operating margin,"The retrieved documents do not provide clear information about American Express's (AMEX) operating margin profile specifically for 2022. They do mention that operating expenses increased significantly due to various factors, including higher compensation costs and losses from equity investments, which suggests a potential strain on operating margins. However, without specific operating margin figures or trends for 2022, I cannot definitively state whether AMEX has an improving operating margin profile.
 
-Additionally, operating margin may not always be the most useful metric for a company like American Express, which is heavily focused on service-oriented offerings rather than tangible products. Instead, metrics such as Return on Equity (ROE) or return on risk-adjusted equity may provide better insights into the company's performance and capital efficiency, as these metrics account for the unique operational aspects and regulatory environment of financial services firms. 
+Additionally, operating margin may not always be the most useful metric for a company like American Express, which is heavily focused on service-oriented offerings rather than tangible products. Instead, metrics such as Return on Equity (ROE) or return on risk-adjusted equity may provide better insights into the company's performance and capital efficiency, as these metrics account for the unique operational aspects and regulatory environment of financial services firms.
 
 In summary, the documents suggest challenges related to operating margins but do not provide the necessary details to conclude whether the profile is improving as of 2022.","The model answer correctly identifies that operating margin may not be the most useful metric for AMEX and discusses relevant alternative metrics, but it does not explicitly state that performance is not measured through operating margin as the expected answer does."
 financebench_id_00720,correct,True,4,5,4,3,AMERICANEXPRESS_2022_10K,"What drove gross margin change as of the FY2022 for American Express? If gross margin is not a useful metric for a company like this, then please state that and explain why.",Performance is not measured through gross margin,"In the fiscal year 2022, American Express experienced several drivers affecting its performance metrics, rather than traditional gross margins typically used in manufacturing companies. The increase in expenses lined up with growth initiatives, including:
@@ -491,19 +491,19 @@ financebench_id_01275,correct,True,4,4,4,2,BESTBUY_2023_10K,"Among operations, i
 2. **Investing Activities**: Incurred a net cash outflow. Best Buy's total capital expenditures were $930 million for FY2023, with significant amounts allocated to e-commerce, information technology, and store-related projects.
 3. **Financing Activities**: The details regarding cash flow from financing activities weren't explicitly provided, but typically include cash flows from debt and equity financing as well as dividends.
 
-Overall, operating activities produced the most cash flow, while investing activities resulted in a cash outflow due to capital expenditures. However, specific dollar amounts for each category of cash flow (operating, investing, and financing) were not fully detailed in the available documents. For more precise figures, the actual cash flow statement from Best Buy's financial reports would be needed (National Securities and Exchange Commission filings, for instance). 
+Overall, operating activities produced the most cash flow, while investing activities resulted in a cash outflow due to capital expenditures. However, specific dollar amounts for each category of cash flow (operating, investing, and financing) were not fully detailed in the available documents. For more precise figures, the actual cash flow statement from Best Buy's financial reports would be needed (National Securities and Exchange Commission filings, for instance).
 
 To summarize, operating activities brought in the most cash flow for Best Buy in FY2023 relative to investing and financing activities, which either resulted in outflows or less inflow.","The model answer correctly identifies that operating activities generated the most cash flow for Best Buy in FY2023, but it fails to provide the specific cash flow amount of $1.8 billion as stated in the expected answer."
-financebench_id_00288,correct,True,5,1,5,2,BESTBUY_2024Q2_10Q,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. The data indicates that Cash and Cash Equivalents at the end of FY 2023 was $775 million, while at the end of Q2 FY 2024, it had decreased to $689 million. This represents a decline of $86 million. 
+financebench_id_00288,correct,True,5,1,5,2,BESTBUY_2024Q2_10Q,Was there any drop in Cash & Cash equivalents between FY 2023 and Q2 of FY2024?,"Yes, there was a decline of ~42% between FY2023 and Q2 of FY 2024.","Yes, there was a drop in Cash and Cash Equivalents between FY 2023 and Q2 of FY 2024. The data indicates that Cash and Cash Equivalents at the end of FY 2023 was $775 million, while at the end of Q2 FY 2024, it had decreased to $689 million. This represents a decline of $86 million.
 
 (Source: data\pdfs\AMCOR_2023_10K.pdf, data\pdfs\AMCOR_2023Q4_EARNINGS.pdf)","The model answer correctly identifies the decline in Cash and Cash Equivalents, provides accurate figures, and matches the expected answer in all key facts."
-financebench_id_00460,incomplete,True,3,5,5,5,BESTBUY_2024Q2_10Q,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2024 and Q2 of FY2023, there was a decrease in the number of Best Buy stores. 
+financebench_id_00460,incomplete,True,3,5,5,5,BESTBUY_2024Q2_10Q,Was there any change in the number of Best Buy stores between Q2 of FY2024 and FY2023?,"Yes, there is decline in number stores by 1.32% from 982 stores in Q2 FY 2023 to 969 by the end of Q2 FY2024.","Between Q2 of FY2024 and Q2 of FY2023, there was a decrease in the number of Best Buy stores.
 
 - In Q2 FY2024, Best Buy had a total of 907 stores at the end of the second quarter, after closing 1 store.
 - In Q2 FY2023, the total was 930 stores at the end of the second quarter, after closing 2 stores.
 
 Therefore, the decrease in the number of stores from Q2 FY2023 to Q2 FY2024 was 23 stores (from 930 to 907) (source: data\pdfs\BESTBUY_2024Q2_10Q.pdf).",The model answer correctly identifies a decrease in the number of stores but provides incorrect figures for the store counts and the percentage decline.
-financebench_id_01902,correct,True,5,5,5,4,BESTBUY_2024Q2_10Q,Which Best Buy product category performed the best (by top line) in the domestic (USA) Market during Q2 of FY2024?,"The entertainment segment experienced the highest growth of 9% during Q2 FY2024, primarily from gaming division.","During Q2 of FY2024, the Best Buy product category that performed the best in the domestic (USA) market was **Entertainment**, which saw a **9.0% comparable sales growth** driven primarily by gaming. This was the only product category reported that showed positive growth, while all others experienced declines. Specifically, other key categories reported significant declines: 
+financebench_id_01902,correct,True,5,5,5,4,BESTBUY_2024Q2_10Q,Which Best Buy product category performed the best (by top line) in the domestic (USA) Market during Q2 of FY2024?,"The entertainment segment experienced the highest growth of 9% during Q2 FY2024, primarily from gaming division.","During Q2 of FY2024, the Best Buy product category that performed the best in the domestic (USA) market was **Entertainment**, which saw a **9.0% comparable sales growth** driven primarily by gaming. This was the only product category reported that showed positive growth, while all others experienced declines. Specifically, other key categories reported significant declines:
 
 - Computing and Mobile Phones: **6.4% decline**
 - Consumer Electronics: **5.7% decline**
@@ -565,7 +565,7 @@ From the revenue breakdown:
 - **Defense, Space & Security** represents approximately 34.7% of total revenue.
 - **Global Services** represents approximately 26.4% of total revenue.
 
-Thus, all three categories—Commercial Airplanes, Defense, Space & Security, and Global Services—represent more than 20% of Boeing's revenue for FY2022. 
+Thus, all three categories—Commercial Airplanes, Defense, Space & Security, and Global Services—represent more than 20% of Boeing's revenue for FY2022.
 
 (Source: Boeing's 2022 10-K filing)","The model answer accurately conveys that Boeing has product and service categories representing more than 20% of revenue for FY2022, providing specific percentages that match the expected answer."
 financebench_id_01091,correct,True,5,5,5,5,BOEING_2022_10K,Has Boeing reported any materially important ongoing legal battles from FY2022?,Yes. Multiple lawsuits have been filed against Boeing resulting from a 2018 Lion Air crash and a 2019 Ethiopian Airlines crash.,"Yes, Boeing has reported ongoing legal battles from FY2022. Key points include:
@@ -589,11 +589,11 @@ financebench_id_01290,correct,True,4,5,5,2,BOEING_2022_10K,Who are the primary c
 3. **Government Entities**: Boeing also contracts with government organizations for space, missile defense, and other defense-related services (source: [Boeing 2022 10-K](data/pdfs/BOEING_2022_10K.pdf)).
 
 Additionally, the backlog of orders as of December 31, 2022, indicates strong demand from their commercial airplane sector as well, with a backlog of $329.8 billion specifically for commercial airplanes, which underscores the significance of airline customers to Boeing's operations (source: [Boeing 2022 10-K](data/pdfs/BOEING_2022_10K.pdf)).","The model answer correctly identifies Boeing's primary customers and provides relevant details, but it does not specify that the US government accounted for 40% of Boeing's total revenues in FY2022, which is a key fact from the expected answer."
-financebench_id_00464,correct,True,5,5,5,3,BOEING_2022_10K,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company operates in both the commercial aviation and defense sectors, both of which have been historically affected by economic cycles. For instance, demand for commercial aircraft tends to fluctuate based on global economic conditions, travel demand, and government spending on defense. 
+financebench_id_00464,correct,True,5,5,5,3,BOEING_2022_10K,Is Boeing's business subject to cyclicality?,"Yes, Boeing's business is subject to cyclicality due to its exposure to the airline industry which is a cyclical industry.","Yes, Boeing's business is subject to cyclicality. The company operates in both the commercial aviation and defense sectors, both of which have been historically affected by economic cycles. For instance, demand for commercial aircraft tends to fluctuate based on global economic conditions, travel demand, and government spending on defense.
 
-The documents highlight that domestic and international travel, which directly impacts the demand for new aircraft, is recovering from the effects of the COVID-19 pandemic but remains sensitive to various factors, including geopolitical events and government restrictions (Source: BOEING_2022_10K.pdf). Additionally, prices and availability of financing for Boeing's products can also be influenced by broader economic conditions and cycles in the airline industry (Source: BOEING_2018_10K.pdf). 
+The documents highlight that domestic and international travel, which directly impacts the demand for new aircraft, is recovering from the effects of the COVID-19 pandemic but remains sensitive to various factors, including geopolitical events and government restrictions (Source: BOEING_2022_10K.pdf). Additionally, prices and availability of financing for Boeing's products can also be influenced by broader economic conditions and cycles in the airline industry (Source: BOEING_2018_10K.pdf).
 
-Moreover, changes in U.S. government defense spending, which forms a significant part of Boeing's revenue, are difficult to predict and may be influenced by shifts in political environments and priorities, adding another layer of cyclicality to its business (Source: BOEING_2022_10K.pdf). 
+Moreover, changes in U.S. government defense spending, which forms a significant part of Boeing's revenue, are difficult to predict and may be influenced by shifts in political environments and priorities, adding another layer of cyclicality to its business (Source: BOEING_2022_10K.pdf).
 
 Overall, Boeing faces cyclical challenges that impact its operations and financial performance, both in commercial plans and defense sectors.","The model answer accurately conveys that Boeing's business is subject to cyclicality, providing detailed explanations and examples that align with the expected answer."
 financebench_id_00494,correct,True,5,5,5,5,BOEING_2022_10K,What production rate changes is Boeing forecasting for FY2023?,"Boeing forecasts an increase in the production rates for the 737, 777X and 787 aircrafts in 2023.","For FY2023, Boeing is forecasting the following production rate changes:
@@ -719,17 +719,17 @@ Here are the provided figures from the income statements:
 
 Now, we calculate the operating income % margin for each year:
 
-1. **2019**: 
+1. **2019**:
    \[
    \text{Operating Income % Margin} = \left( \frac{1,306}{11,503} \right) \times 100 \approx 11.4\%
    \]
 
-2. **2020**: 
+2. **2020**:
    \[
    \text{Operating Income % Margin} = \left( \frac{509}{11,303} \right) \times 100 \approx 4.5\%
    \]
 
-3. **2021**: 
+3. **2021**:
    \[
    \text{Operating Income % Margin} = \left( \frac{2,112}{14,082} \right) \times 100 \approx 15.0\%
    \]
@@ -741,12 +741,12 @@ Next, we calculate the average of these margins:
 \]
 
 Thus, the FY2019 - FY2021 3-year average unadjusted operating income % margin for Corning is approximately **10.3%**.","The model answer correctly calculates the FY2019 - FY2021 3-year average unadjusted operating income % margin for Corning as 10.3%, matching the expected answer."
-financebench_id_01346,correct,True,4,5,5,5,CORNING_2022_10K,How much has the effective tax rate of Corning changed between FY2021 and FY2022?,The effective tax rate of Corning has changed from 20% in FY2021 to 23% in FY 2022.,"The effective tax rate for Corning changed from 20.2% in FY2021 to 22.9% in FY2022. This represents an increase of 2.7 percentage points between the two fiscal years. 
+financebench_id_01346,correct,True,4,5,5,5,CORNING_2022_10K,How much has the effective tax rate of Corning changed between FY2021 and FY2022?,The effective tax rate of Corning has changed from 20% in FY2021 to 23% in FY 2022.,"The effective tax rate for Corning changed from 20.2% in FY2021 to 22.9% in FY2022. This represents an increase of 2.7 percentage points between the two fiscal years.
 
 For reference, in FY2021, the effective tax rate of 20.2% differed from the U.S. statutory rate of 21% due to various factors including net benefits from tax credits and share-based compensation payments, along with net provisions due to foreign earnings. In FY2022, the effective tax rate of 22.9% similarly differed from the statutory rate due to adjustments related to tax reserves, foreign earnings, and valuation allowances, among others (Corning 2022 10-K).","The model answer provides the correct effective tax rates for both fiscal years and accurately describes the change, but it includes additional details that slightly deviate from the expected answer."
 financebench_id_00005,correct,True,5,2,5,2,CORNING_2022_10K,"Does Corning have positive working capital based on FY2022 data? If working capital is not a useful or relevant metric for this company, then please state that and explain why.",Yes. Corning had a positive working capital amount of $831 million by FY 2022 close. This answer considers only operating current assets and current liabilities that were clearly shown in the balance sheet.,"Based on the fiscal year 2022 data for Corning, the company's working capital can be calculated as follows:
 
-1. **Current Assets (2022)**: 
+1. **Current Assets (2022)**:
    - Cash and cash equivalents: $1,671 million
    - Trade accounts receivable: $1,721 million
    - Inventories: $2,904 million
@@ -820,7 +820,7 @@ financebench_id_01107,correct,True,5,5,5,5,CVSHEALTH_2022_10K,"Has CVS Health re
 
 These legal matters continue to evolve, and CVS Health is actively defending itself in various proceedings, which could have material effects on its financial condition and business operations (source: CVS Health 2022 10-K report).","The model answer accurately conveys the same information as the expected answer, detailing CVS Health's ongoing legal battles, including opioid litigation, ERISA class actions, securities litigation, government investigations, and prescription processing litigation, along with relevant financial implications."
 financebench_id_01244,correct,True,5,5,5,5,CVSHEALTH_2022_10K,Has CVS Health paid dividends to common shareholders in Q2 of FY2022?,"Yes, CVS paid a $ 0.55 dividend per share every quarter in FY2022","Yes, CVS Health paid dividends to common shareholders in Q2 of FY2022. The quarterly cash dividend declared by the Board during that year was $0.55 per share, which was consistent with its dividend payments of $0.55 for the entire year 2022 (Source: CVS Health 2022 10-K).","The model answer accurately confirms that CVS Health paid a $0.55 dividend per share in Q2 of FY2022, matching the expected answer in all key facts."
-financebench_id_00839,correct,True,5,5,5,5,FOOTLOCKER_2022_8K_dated_2022-08-19,Does Foot Locker's new CEO have previous CEO experience in a similar company to Footlocker?,Yes. She was previous CEO of Ulta Beauty which means she had to manage a large retail company that has brick and mortar + online business. So yes she was a CEO in a similar company to Foot Locker before this.,"Yes, Foot Locker's new CEO, Mary N. Dillon, has previous CEO experience in a similar retail sector. Before joining Foot Locker, she served as the CEO of Ulta Beauty, Inc., where she led the company to become a leading beauty destination and a successful omni-channel retailer. During her tenure at Ulta, she was responsible for significant revenue growth and increased market capitalization (source: FOOTLOCKER_2022_8K). 
+financebench_id_00839,correct,True,5,5,5,5,FOOTLOCKER_2022_8K_dated_2022-08-19,Does Foot Locker's new CEO have previous CEO experience in a similar company to Footlocker?,Yes. She was previous CEO of Ulta Beauty which means she had to manage a large retail company that has brick and mortar + online business. So yes she was a CEO in a similar company to Foot Locker before this.,"Yes, Foot Locker's new CEO, Mary N. Dillon, has previous CEO experience in a similar retail sector. Before joining Foot Locker, she served as the CEO of Ulta Beauty, Inc., where she led the company to become a leading beauty destination and a successful omni-channel retailer. During her tenure at Ulta, she was responsible for significant revenue growth and increased market capitalization (source: FOOTLOCKER_2022_8K).
 
 Additionally, Dillon held the position of President and CEO of U.S. Cellular prior to her time at Ulta, further supporting her background in leading consumer-driven businesses in retail environments (source: FOOTLOCKER_2022_8K).","The model answer accurately conveys that Foot Locker's new CEO has previous CEO experience at Ulta Beauty, a similar retail company, and provides additional relevant context about her leadership roles."
 financebench_id_00822,correct,True,5,5,5,4,FOOTLOCKER_2022_8K_dated-2022-05-20,Were there any board member nominees who had substantially more votes against joining than the other nominees?,"Yes, his name is Richard A. Johnson","From the retrieved documents, it appears that there were nominees who received a significant number of votes against joining. For instance, during Foot Locker's annual meeting held on May 18, 2022, Richard A. Johnson received 16,105,005 votes against his nomination, which is notably higher compared to other nominees. The next highest votes against were for Alan D. Feldman, who received 5,184,437 votes against his nomination (source: Foot Locker 2022 8K filing).
@@ -833,21 +833,21 @@ financebench_id_04103,hallucination,True,1,2,5,4,GENERALMILLS_2019_10K,What is t
 From the provided documents, we can find the following relevant financial data for FY2019:
 
 1. **FY2019 COGS:** $11,108.4 million (derived from revenues and gross margin)
-2. **Net Sales (Revenue) for FY2019:** $16,865.2 million 
-3. **Average Inventory between FY2018 and FY2019:** 
-   - FY2018 Inventory: $2,490.5 million 
-   - FY2019 Inventory: $2,507.0 million 
-   - Average Inventory = (2490.5 + 2507.0) / 2 = $2,498.75 million 
+2. **Net Sales (Revenue) for FY2019:** $16,865.2 million
+3. **Average Inventory between FY2018 and FY2019:**
+   - FY2018 Inventory: $2,490.5 million
+   - FY2019 Inventory: $2,507.0 million
+   - Average Inventory = (2490.5 + 2507.0) / 2 = $2,498.75 million
 
-4. **Average Accounts Receivable (AR):** 
-   - FY2018 AR: $1,575.4 million 
-   - FY2019 AR: $1,721.5 million 
-   - Average AR = (1575.4 + 1721.5) / 2 = $1,648.45 million 
+4. **Average Accounts Receivable (AR):**
+   - FY2018 AR: $1,575.4 million
+   - FY2019 AR: $1,721.5 million
+   - Average AR = (1575.4 + 1721.5) / 2 = $1,648.45 million
 
 5. **Average Accounts Payable (AP):**
-   - FY2018 AP: $2,064.1 million 
-   - FY2019 AP: $2,357.2 million 
-   - Average AP = (2064.1 + 2357.2) / 2 = $2,210.65 million 
+   - FY2018 AP: $2,064.1 million
+   - FY2019 AP: $2,357.2 million
+   - Average AP = (2064.1 + 2357.2) / 2 = $2,210.65 million
 
 ### Step 2: Calculating DIO, DSO, and DPO
 
@@ -890,7 +890,7 @@ The working capital ratio is defined as total current assets divided by total cu
 \]
 
 Thus, General Mills's FY2020 working capital ratio is **0.68** (rounded to two decimal places).","The model answer correctly calculates General Mills's FY2020 working capital ratio as 0.68, matching the expected answer and providing the necessary figures and calculations."
-financebench_id_04854,correct,True,4,5,5,5,GENERALMILLS_2020_10K,"According to the information provided in the statement of cash flows, what is the FY2020 free cash flow (FCF) for General Mills? FCF here is defined as: (cash from operations - capex). Answer in USD millions.",$3215.00,"To calculate the Free Cash Flow (FCF) for General Mills in FY2020, we use the formula: 
+financebench_id_04854,correct,True,4,5,5,5,GENERALMILLS_2020_10K,"According to the information provided in the statement of cash flows, what is the FY2020 free cash flow (FCF) for General Mills? FCF here is defined as: (cash from operations - capex). Answer in USD millions.",$3215.00,"To calculate the Free Cash Flow (FCF) for General Mills in FY2020, we use the formula:
 
 **FCF = Cash from Operations - Capex**
 
@@ -988,17 +988,17 @@ Using these numbers:
 \text{Per Share Payout} = \frac{\text{Total Assets}}{\text{Total Shares}} = \frac{3,700,000,000,000}{3,070,000,000} \approx 1,205,226.69
 \]
 
-This calculation indicates that if JPM were to liquidate all its assets and distribute the proceeds entirely to shareholders (ignoring liabilities and other factors for simplicity), each share would fetch approximately $1,205,226.69. 
+This calculation indicates that if JPM were to liquidate all its assets and distribute the proceeds entirely to shareholders (ignoring liabilities and other factors for simplicity), each share would fetch approximately $1,205,226.69.
 
 However, this is a theoretical scenario and doesn't account for the reality of outstanding debts, liabilities, and other financial considerations in a bankruptcy situation. In practice, the payout would likely be much smaller.",The model answer provides an incorrect calculation and does not arrive at the expected payout of $66.56 per share.
 financebench_id_00206,correct,True,5,5,2,2,JPMORGAN_2022_10K,"Are JPM's gross margins historically consistent (not fluctuating more than roughly 2% each year)? If gross margins are not a relevant metric for a company like this, then please state that and explain why.","Since JPM is a financial institution, gross margin is not a relevant metric.","JPMorgan Chase's gross margins are not typically analyzed as a primary financial metric due to the nature of its business. As a financial services firm, JPMorgan primarily focuses on net interest income, noninterest income, and other key performance indicators rather than gross margins which are more relevant for companies in manufacturing or product-based industries.
 
 Gross margin is defined as sales revenue minus the cost of goods sold (COGS), all divided by sales revenue. This measurement is useful in sectors where goods are sold, allowing companies to understand how efficiently they produce and sell their products. However, for a financial institution like JPMorgan Chase, the primary sources of revenue come from interest income, fees for services, and trading activities, which do not fit the gross margin definition.
 
-Instead, metrics like net interest income, total net revenue, and return on equity (ROE) are more pertinent and commonly used to evaluate its financial performance. For instance, JPMorgan's total net revenue for the second quarter of 2023 was $41.3 billion, reflecting significant increases in both interest income and noninterest revenue compared to the previous year (up 34%) (Source: [10-Q for 2023Q2](data%5Cpdfs%5CJPMORGAN_2023Q2_10Q.pdf)). 
+Instead, metrics like net interest income, total net revenue, and return on equity (ROE) are more pertinent and commonly used to evaluate its financial performance. For instance, JPMorgan's total net revenue for the second quarter of 2023 was $41.3 billion, reflecting significant increases in both interest income and noninterest revenue compared to the previous year (up 34%) (Source: [10-Q for 2023Q2](data%5Cpdfs%5CJPMORGAN_2023Q2_10Q.pdf)).
 
 Thus, while JPMorgan's revenues and expenses are subject to fluctuations, focusing on gross margins as a consistent metric is not appropriate for analyzing its historical financial performance.","The model answer accurately explains that gross margin is not a relevant metric for JPMorgan Chase due to its nature as a financial institution, aligning with the expected answer."
-financebench_id_00394,numerical_error,True,1,5,1,3,JPMORGAN_2022Q2_10Q,"In 2022 Q2, which of JPM's business segments had the highest net income?",Corporate & Investment Bank. Its net income was $3725 million.,"In the second quarter of 2022, JPMorgan Chase reported a total net income of $8.649 billion. The business segments and their respective net income contributions were not detailed in the retrieved documents. Therefore, I cannot specify which segment had the highest net income in that quarter. 
+financebench_id_00394,numerical_error,True,1,5,1,3,JPMORGAN_2022Q2_10Q,"In 2022 Q2, which of JPM's business segments had the highest net income?",Corporate & Investment Bank. Its net income was $3725 million.,"In the second quarter of 2022, JPMorgan Chase reported a total net income of $8.649 billion. The business segments and their respective net income contributions were not detailed in the retrieved documents. Therefore, I cannot specify which segment had the highest net income in that quarter.
 
 If you need more detailed financial insights about individual segments, that specific information may not be included in the current documents.","The model answer does not provide the correct information about which business segment had the highest net income, nor does it mention the specific net income figure for that segment."
 financebench_id_02049,generation_error,True,1,4,1,5,JPMORGAN_2023Q2_10Q,"Looking at VaR, did the risk that JPM faced in the second fiscal quarter of 2023 decrease compared to the same period in the prior year?",Yes. It decreased.,"To evaluate whether the risk that JPMorgan Chase faced in the second fiscal quarter of 2023 decreased compared to the same period in the prior year, we need to compare the value-at-risk (VaR) figures for each quarter.
@@ -1020,6 +1020,6 @@ financebench_id_10499,wrong_doc,False,1,1,1,1,KRAFTHEINZ_2019_10K,What is Kraft 
    - **Ending Inventory FY2019**: Information is not available in the provided documents.
    - Without the ending inventory figures for FY2018 and FY2019, we cannot calculate the average inventory.
 
-Since both the COGS and inventory values required for the calculation are not available in the documents retrieved, I cannot provide the inventory turnover ratio for Kraft Heinz's FY2019. 
+Since both the COGS and inventory values required for the calculation are not available in the documents retrieved, I cannot provide the inventory turnover ratio for Kraft Heinz's FY2019.
 
 If you need further assistance or have more specific documents that mention these details, please let me know!","The model answer does not provide the inventory turnover ratio and states that the necessary information is unavailable, which is contrary to the expected answer."

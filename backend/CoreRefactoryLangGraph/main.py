@@ -2,16 +2,18 @@ from graph import app
 
 
 def run(query: str) -> dict:
-    result = app.invoke({
-        "query": query,
-        "filter_token": "",
-        "company_filter": "",
-        "context": "",
-        "sources": [],
-        "grade": "",
-        "answer": "",
-        "retry_count": 0,
-    })
+    result = app.invoke(
+        {
+            "query": query,
+            "filter_token": "",
+            "company_filter": "",
+            "context": "",
+            "sources": [],
+            "grade": "",
+            "answer": "",
+            "retry_count": 0,
+        }
+    )
     return {
         "answer": result["answer"],
         "sources": result["sources"],

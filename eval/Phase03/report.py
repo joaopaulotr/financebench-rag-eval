@@ -6,12 +6,12 @@ from pathlib import Path
 K = 6
 JUDGE_THRESHOLD = 4
 
-RESULTS_P2   = "eval/Phase02/results_100.csv"
-JUDGE_P2     = "eval/Phase02/results_with_judge.csv"
-RESULTS_P3   = "eval/Phase03/results_phase3.csv"
-JUDGE_P3     = "eval/Phase03/results_phase3_with_judge.csv"
-LABELS_CSV   = "eval/Phase02/human_labels_30.csv"
-OUT_MD       = "docs/phase03_report.md"
+RESULTS_P2 = "eval/Phase02/results_100.csv"
+JUDGE_P2 = "eval/Phase02/results_with_judge.csv"
+RESULTS_P3 = "eval/Phase03/results_phase3.csv"
+JUDGE_P3 = "eval/Phase03/results_phase3_with_judge.csv"
+LABELS_CSV = "eval/Phase02/human_labels_30.csv"
+OUT_MD = "docs/phase03_report.md"
 
 
 def load(path):
@@ -26,7 +26,9 @@ def tier1(results):
         sources = json.loads(row.get("retrieved_sources", "[]"))
         hit = gt in sources
         recalls.append(1.0 if hit else 0.0)
-        precisions.append(sum(s == gt for s in sources) / len(sources) if sources else 0.0)
+        precisions.append(
+            sum(s == gt for s in sources) / len(sources) if sources else 0.0
+        )
         rr = 0.0
         for rank, s in enumerate(sources, 1):
             if s == gt:
@@ -77,10 +79,14 @@ def calibrate(judge_correct, labels):
         if fid not in judge_correct:
             continue
         jc = judge_correct[fid]
-        if human == 1 and jc == 1:    tp += 1
-        elif human == 0 and jc == 0:  tn += 1
-        elif human == 1 and jc == 0:  fn += 1
-        else:                          fp += 1
+        if human == 1 and jc == 1:
+            tp += 1
+        elif human == 0 and jc == 0:
+            tn += 1
+        elif human == 1 and jc == 0:
+            fn += 1
+        else:
+            fp += 1
     tpr = tp / (tp + fn) if (tp + fn) > 0 else 0.0
     tnr = tn / (tn + fp) if (tn + fp) > 0 else 0.0
     return tpr, tnr
@@ -116,9 +122,9 @@ print(SEP)
 print(f"  {'Metric':<20} {'Phase02':>10} {'Phase03':>10} {'Delta':>10}")
 print(f"  {'-'*50}")
 for label, v2, v3 in [
-    (f"Recall@{K}",    t1_p2["recall"],    t1_p3["recall"]),
+    (f"Recall@{K}", t1_p2["recall"], t1_p3["recall"]),
     (f"Precision@{K}", t1_p2["precision"], t1_p3["precision"]),
-    ("MRR",            t1_p2["mrr"],       t1_p3["mrr"]),
+    ("MRR", t1_p2["mrr"], t1_p3["mrr"]),
 ]:
     d = v3 - v2
     sign = "+" if d >= 0 else ""
@@ -138,9 +144,9 @@ if t2_p2:
     print(f"  {'-'*50}")
     rows_t2 = [
         ("C|Q Context Relevance", t2_p2["cq"], t2_p3["cq"] if t2_p3 else None),
-        ("A|C Faithfulness",      t2_p2["ac"], t2_p3["ac"] if t2_p3 else None),
-        ("A|Q Answer Relevance",  t2_p2["aq"], t2_p3["aq"] if t2_p3 else None),
-        ("A|GT Correctness",      t2_p2["gt"], t2_p3["gt"] if t2_p3 else None),
+        ("A|C Faithfulness", t2_p2["ac"], t2_p3["ac"] if t2_p3 else None),
+        ("A|Q Answer Relevance", t2_p2["aq"], t2_p3["aq"] if t2_p3 else None),
+        ("A|GT Correctness", t2_p2["gt"], t2_p3["gt"] if t2_p3 else None),
     ]
     for label, v2, v3 in rows_t2:
         if v3 is not None:

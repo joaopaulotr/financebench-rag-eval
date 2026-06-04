@@ -27,10 +27,14 @@ def build_graph():
     graph.add_edge("retrieve", "rerank")
     graph.add_edge("rerank", "grade_documents")
 
-    graph.add_conditional_edges("grade_documents", should_retry, {
-        "generate": "generate",
-        "retry_retrieve": "relax_filter",
-    })
+    graph.add_conditional_edges(
+        "grade_documents",
+        should_retry,
+        {
+            "generate": "generate",
+            "retry_retrieve": "relax_filter",
+        },
+    )
     graph.add_edge("relax_filter", "retrieve")
     graph.add_edge("generate", END)
 
@@ -39,4 +43,4 @@ def build_graph():
 
 app = build_graph()
 
-#app.get_graph().draw_mermaid_png(output_file_path="flowv3.png")
+# app.get_graph().draw_mermaid_png(output_file_path="flowv3.png")

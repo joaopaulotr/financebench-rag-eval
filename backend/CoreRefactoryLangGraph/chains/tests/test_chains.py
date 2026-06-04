@@ -38,7 +38,9 @@ def test_grade_relevant() -> None:
     docs = vectorstore.as_retriever(search_kwargs={"k": 3}).invoke(question)
     context = "\n\n".join(d.page_content for d in docs)
 
-    result: DocumentGrade = grade_chain.invoke({"question": question, "context": context})
+    result: DocumentGrade = grade_chain.invoke(
+        {"question": question, "context": context}
+    )
     assert result.grade == "RELEVANT"
 
 
@@ -46,7 +48,9 @@ def test_grade_irrelevant() -> None:
     question = "How to make pizza at home?"
     context = "The capital expenditure for 3M in FY2018 was $1,577 million as shown in the cash flow statement."
 
-    result: DocumentGrade = grade_chain.invoke({"question": question, "context": context})
+    result: DocumentGrade = grade_chain.invoke(
+        {"question": question, "context": context}
+    )
     assert result.grade == "IRRELEVANT"
 
 

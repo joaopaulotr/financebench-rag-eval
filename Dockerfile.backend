@@ -1,0 +1,26 @@
+# FastAPI + LangGraph CRAG pipeline. Build context = repo root.
+FROM python:3.11-slim
+
+# uv for fast, locked dependency installs
+RUN pip install --no-cache-dir uv
+
+WORKDIR /app
+
+# Install deps first (cached layer) — only main deps, skip dev (black/pytest/isort)
+COPY pyproject.toml uv.lock ./
+RUN uv sync --frozen --no-dev
+
+# Put the project venv on PATH so we can call uvicorn directly
+ENV PATH="/app/.venv/bin:$PATH" \
+    PYTHONUNBUFFERED=1
+
+COPY backend ./backend
+
+# Relative imports (from graph import app) require this as the working dir
+WORKDIR /app/backend/CoreRefactoryLangGraph
+
+RUN chmod +x ./entrypoint.sh
+
+EXPOSE 8000
+# entrypoint waits for Qdrant, then execs uvicorn
+CMD ["./entrypoint.sh"]

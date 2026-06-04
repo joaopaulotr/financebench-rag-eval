@@ -1,5 +1,6 @@
 """Re-judge Phase03b results using the v2 stricter A|GT prompt.
 Keeps C|Q, A|C, A|Q from original run — only replaces gt_score/gt_reason."""
+
 import csv
 import sys
 import time
@@ -14,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[0]))
 
 from judge_v2 import judge_answer_correctness_v2
 
-CSV_IN  = "eval/Phase03/results_phase3b_with_judge.csv"
+CSV_IN = "eval/Phase03/results_phase3b_with_judge.csv"
 CSV_OUT = "eval/Phase03/results_phase3b_with_judge_v2.csv"
 CHECKPOINT_EVERY = 10
 
@@ -39,11 +40,13 @@ for i, row in enumerate(rows):
         row.get("model_answer", ""),
     )
 
-    results.append({
-        **row,
-        "gt_score_v2":  gt["score"],
-        "gt_reason_v2": gt["reasoning"],
-    })
+    results.append(
+        {
+            **row,
+            "gt_score_v2": gt["score"],
+            "gt_reason_v2": gt["reasoning"],
+        }
+    )
 
     old = row.get("gt_score", "?")
     new = gt["score"]

@@ -30,11 +30,13 @@ for i, row in enumerate(rows):
     answer = result["answer"]
     sources = [Path(s).stem for s in result["context_docs"]]
 
-    results.append({
-        **row,
-        "model_answer": answer,
-        "retrieved_sources": json.dumps(sources),
-    })
+    results.append(
+        {
+            **row,
+            "model_answer": answer,
+            "retrieved_sources": json.dumps(sources),
+        }
+    )
 
     print(f"  sources: {sources}")
     print(f"  answer:  {answer[:100]}")
@@ -52,4 +54,6 @@ with open(CSV_OUT, "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(results)
 
-print(f"\nDone. {len(results)} results -> {CSV_OUT} ({time.time() - t_start:.0f}s total)")
+print(
+    f"\nDone. {len(results)} results -> {CSV_OUT} ({time.time() - t_start:.0f}s total)"
+)

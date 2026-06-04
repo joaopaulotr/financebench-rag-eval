@@ -1,0 +1,119 @@
+financebench_id,question,expected_answer,model_answer,human_correct
+financebench_id_00476,Which debt securities are registered to trade on a national securities exchange under American Express' name as of 2022?,There are none,"The American Express 2022 10-K report does not explicitly list the debt securities registered to trade on a national securities exchange. It reference sections that discuss long-term debt and asset securitization, but does not specify trading registrations on an exchange for the securities mentioned (e.g., Fixed Rate Senior Notes, Floating Rate Senior Notes, etc.). Therefore, the specific detail about which debt securities are registered to trade on a national securities exchange is not provided in the document. This information might be accessible in other filings or documents, such as specific prospectuses or securities registration statements.
+
+Source: American Express 2022 10-K Report.",0
+financebench_id_04103,What is the FY2019 cash conversion cycle (CCC) for General Mills? CCC is defined as: DIO + DSO - DPO. DIO is defined as: 365 * (average inventory between FY2018 and FY2019) / (FY2019 COGS). DSO is defined as: 365 * (average accounts receivable between FY2018 and FY2019) / (FY2019 Revenue). DPO is defined as: 365 * (average accounts payable between FY2018 and FY2019) / (FY2019 COGS + change in inventory between FY2018 and FY2019). Round your answer to two decimal places. Address the question by using the line items and information shown within the income statement and the balance sheet.,-3.7,"Unfortunately, the provided documents do not contain specific information or data required to calculate the FY2019 cash conversion cycle (CCC) for General Mills. The necessary line items from the income statement and balance sheet, such as inventories, accounts receivable, accounts payable, COGS, and revenues for FY2018 and FY2019, are not available. Therefore, I cannot compute the CCC for that period based on the provided context.",0
+financebench_id_01935,What was the key agenda of the AMCOR's 8k filing dated 1st July 2022?,"Amcor Finance (USA), Inc. and Amcor Flexibles North America, Inc., entered into supplemental indentures relating to Guaranteed Senior Notes due 2026 and 2028. This involved the substitution of the Substitute Issuer (Amcor Flexibles North America) for the Former Issuer (Amcor Finance) and the assumption of covenants under the indentures. (In essence a novation agreement)","The key agenda of AMCOR's 8-K filing dated July 1, 2022, concerned the First and Second Supplemental Indentures, which were dated as of June 30, 2022. These indentures involved Amcor Finance (USA), Inc., Amcor Flexibles North America, Inc., and Deutsche Bank Trust Company Americas. (Source: AMCOR_2022_8K_dated-2022-07-01.pdf)",0
+financebench_id_00941,Which debt securities are registered to trade on a national securities exchange under 3M's name as of Q2 of 2023?,"Following debt securities registered under 3M's name are listed to trade on the New York Stock Exchange:
+-1.500% Notes due 2026 (Trading Symbol: MMM26)
+-1.750% Notes due 2030 (Trading Symbol: MMM30)
+-1.500% Notes due 2031 (Trading Symbol: MMM31)","As of Q2 2023, the debt securities registered to trade on a national securities exchange under 3M's name include:
+
+- 1.500% Notes due 2026 (MMM26) traded on the New York Stock Exchange.
+- 1.750% Notes due 2030 (MMM30) traded on the New York Stock Exchange.
+- 1.500% Notes due 2031 (MMM31) traded on the New York Stock Exchange.
+
+These details are mentioned in the context of securities registered pursuant to Section 12(b) of the Act in the 10-Q report. (Source: data\pdfs\3M_2023Q2_10Q.pdf)",1
+financebench_id_00517,Are there any product categories / service categories that represent more than 20% of Boeing's revenue for FY2022?,"Yes. Boeing has product and service categories that represent more than 20% of Boeing's revenue for FY2022. These categories are Commercial Airplanes which comprises 39% of total revenue, Defence which comprises 35% of total revenue and Services which comprises 26% of total revenue.","Yes, there are product categories that represent more than 20% of Boeing's revenue for FY2022. Specifically, revenues from the U.S. government, including foreign military sales through the U.S. government, represented 40% of Boeing's consolidated revenues in 2022 (source: BOEING 2022 10K).",1
+financebench_id_06655,What is Amazon's FY2017 days payable outstanding (DPO)? DPO is defined as: 365 * (average accounts payable between FY2016 and FY2017) / (FY2017 COGS + change in inventory between FY2016 and FY2017). Round your answer to two decimal places. Address the question by using the line items and information shown within the balance sheet and the P&L statement.,93.86,"The context provided does not contain enough specific financial data such as the exact figures for accounts payable, cost of goods sold (COGS), or inventory changes needed to calculate Amazon's FY2017 days payable outstanding (DPO). Without this detailed information, I am unable to compute the DPO for Amazon in FY2017 accurately.
+
+For such a calculation, you would generally need to access the complete financial statements, specifically the balance sheet for accounts payable and inventory figures, and the income statement for COGS, none of which are detailed in the context provided.",0
+financebench_id_10130,"Based on the information provided primarily in the balance sheet and the statement of income, what is FY2020 days payable outstanding (DPO) for Corning? DPO is defined as: 365 * (average accounts payable between FY2019 and FY2020) / (FY2020 COGS + change in inventory between FY2019 and FY2020). Round your answer to two decimal places.",63.86,"To calculate the FY2020 Days Payable Outstanding (DPO) for Corning, we need the following components:
+
+1. **Average Accounts Payable**: We need accounts payable figures for FY2019 and FY2020 to calculate the average. Unfortunately, the documents do not provide specific figures for accounts payable directly.
+
+2. **COGS (Cost of Goods Sold) for FY2020**: The document does not provide the COGS figure directly either.
+
+3. **Change in Inventory from FY2019 to FY2020**: Inventory for 2020 is $2,438 million and for 2019 is $2,320 million. The change in inventory is $118 million.
+
+Therefore, without the specific figures for accounts payable and COGS, I cannot calculate the Days Payable Outstanding (DPO) for FY2020. However, the document mentions that Days Payable Outstanding was 44 days for 2020.
+
+If you require further financial details or specific figures like the accounts payable or COGS, those would be necessary from other parts of the financial statements not provided in the current context.",0
+financebench_id_08135,What is Amazon's year-over-year change in revenue from FY2016 to FY2017 (in units of percents and round to one decimal place)? Calculate what was asked by utilizing the line items clearly shown in the statement of income.,30.8%,"To calculate Amazon's year-over-year change in revenue from FY2016 to FY2017, we first take note of the total net sales for both years provided in the document:
+
+- Total net sales for 2016: $135,987 million
+- Total net sales for 2017: $177,866 million
+
+The year-over-year percentage change in revenue is calculated using the following formula:
+
+\[
+\text{Percentage Change} = \left( \frac{\text{Revenue in 2017} - \text{Revenue in 2016}}{\text{Revenue in 2016}} \right) \times 100
+\]
+
+Plugging in the values:
+
+\[
+\text{Percentage Change} = \left( \frac{177,866 - 135,987}{135,987} \right) \times 100
+\]
+
+\[
+\text{Percentage Change} = \left( \frac{41,879}{135,987} \right) \times 100 \approx 30.8\%
+\]
+
+Thus, Amazon's year-over-year change in revenue from FY2016 to FY2017 is approximately 30.8%.
+
+(Source: Amazon 2017 10-K, page 38 and consolidated statements section)",1
+financebench_id_06272,What is Coca Cola's FY2022 dividend payout ratio (using total cash dividends paid and net income attributable to shareholders)? Round answer to two decimal places. Answer the question asked by assuming you only have access to information clearly displayed in the cash flow statement and the income statement.,0.8,"To calculate Coca-Cola's FY2022 dividend payout ratio, we need the total cash dividends paid in 2022 and the net income attributable to shareholders.
+
+From the context:
+
+- The total cash dividends paid in 2022 is not directly provided in the snippet, but it would ideally be in the section summarizing financing activities or dividend declarations.
+- The net income attributable to shareholders for 2022 is $9,571 million from the consolidated net income data.
+
+Unfortunately, without the specific amount of dividends paid in 2022 from the documents provided, it's not possible to calculate the dividend payout ratio. To find that, you would typically need a section in the financial documents explicitly stating ""dividends paid"" for the financial year 2022.
+
+Based on the context given, I can't calculate the dividend payout ratio for FY2022 accurately.",0
+financebench_id_00585,How does Boeing's effective tax rate in FY2022 compare to FY2021?,"Effective tax rate in FY2022 was 0.62%, compared to  -14.76% in FY2021.","Boeing's effective tax rate in FY2022 was -0.6%, while in FY2021 it was 14.7% (source: Boeing 2022 10K). This indicates a significant decrease in the effective tax rate from FY2021 to FY2022.",0
+financebench_id_01319,What is the quantity of restructuring costs directly outlined in AES Corporation's income statements for FY2022? If restructuring costs are not explicitly outlined then state 0.,0,"Based on the provided context, the retrieved documents do not contain any specific mention of restructuring costs directly outlined in AES Corporation's income statements for FY2022. Therefore, the quantity of restructuring costs is 0.",1
+financebench_id_00206,"Are JPM's gross margins historically consistent (not fluctuating more than roughly 2% each year)? If gross margins are not a relevant metric for a company like this, then please state that and explain why.","Since JPM is a financial institution, gross margin is not a relevant metric.","I don't know. The provided context does not contain information specific to the historical consistency of JPMorgan's gross margins. Additionally, gross margins are generally not the primary focus for financial institutions like JPMorgan Chase. For banks, metrics such as net interest margin, return on assets, or return on equity are typically more relevant since they reflect the bank's profitability from its core activities of lending and borrowing, rather than sales of goods.",1
+financebench_id_10499,What is Kraft Heinz's FY2019 inventory turnover ratio? Inventory turnover ratio is defined as: (FY2019 COGS) / (average inventory between FY2018 and FY2019). Round your answer to two decimal places. Please base your judgments on the information provided primarily in the balance sheet and the P&L statement.,6.25,"I don't have the specific numbers for the FY2019 COGS or the inventories needed to calculate the inventory turnover ratio for Kraft Heinz. Therefore, I am unable to compute the inventory turnover ratio based on the provided context.",0
+financebench_id_08286,"By drawing conclusions from the information stated only in the income statement, what is Amazon's FY2019 net income attributable to shareholders (in USD millions)?",$11588.00,"Amazon's net income attributable to shareholders for the fiscal year 2019 was $11,588 million (or USD 11.588 billion) as stated in the consolidated statement of operations for 2019.
+
+Source: data\pdfs\AMAZON_2019_10K.pdf",1
+financebench_id_00499,Is 3M a capital-intensive business based on FY2022 data?,"No, the company is managing its CAPEX and Fixed Assets pretty efficiently, which is evident from below key metrics:
+CAPEX/Revenue Ratio: 5.1%
+Fixed assets/Total Assets: 20%
+Return on Assets= 12.4%","Based on the FY2022 data from 3M's 10-K, 3M can be considered a capital-intensive business. The company invested approximately $1.749 billion in capital expenditures for property, plant, and equipment in 2022, which are necessary investments to boost growth across diverse markets and enhance manufacturing efficiency [Source: data\pdfs\3M_2022_10K.pdf].",0
+financebench_id_01865,"If we exclude the impact of M&A, which segment has dragged down 3M's overall growth in 2022?",The consumer segment shrunk by 0.9% organically.,"The segment that dragged down 3M's overall growth in 2022, when excluding the impact of M&A, was the Consumer Business segment. It experienced a sales decline of 3.9% in U.S. dollars with an organic sales decrease of 0.9%, attributed to softening trends in the consumer retail business as consumers pulled back on discretionary spending and retailers reduced their inventories (Source: 3M 2022 10-K).",1
+financebench_id_01981,Was American Express able to retain card members during 2022?,Yes,"Yes, American Express was able to retain card members during 2022. The document indicates that net card fees increased by 17 percent year-over-year, which was driven in part by high Card Member retention, demonstrating the impact of investments made in their premium value propositions (Source: AMERICANEXPRESS 2022 10K).",1
+financebench_id_03471,"By drawing conclusions from the information stated only in the statement of financial position, what is General Mills's FY2020 working capital ratio? Define working capital ratio as total current assets divided by total current liabilities. Round your answer to two decimal places.",0.68,"I don't know. The provided context does not include specific figures for General Mills's total current assets and total current liabilities for FY2020, which are necessary to calculate the working capital ratio.",0
+financebench_id_01148,What industry does AMCOR primarily operate in?,Amcor is a global leader in packaging production for various use cases.,"AMCOR primarily operates in the packaging industry, specifically in developing and producing packaging solutions for food, beverage, pharmaceutical, medical, home and personal-care, and other consumer goods. They have a focus on both flexible and rigid packaging, specialty cartons, and closures (Sources: data\pdfs\AMCOR_2023Q4_EARNINGS.pdf; data\pdfs\AMCOR_2023_10K.pdf).",1
+financebench_id_00720,"What drove gross margin change as of the FY2022 for American Express? If gross margin is not a useful metric for a company like this, then please state that and explain why.",Performance is not measured through gross margin,"Gross margin is not a particularly useful metric for a financial services company like American Express. This is because American Express does not primarily generate revenue through the sale of goods, which is what gross margin typically measures. Instead, American Express is a globally integrated payments company that generates its largest revenue from discount revenue. This revenue comes from the fees merchants pay to accept American Express cards. Other significant sources of revenue include fees for fraud prevention services, customer loyalty programs, and various payment and financing products, which do not align well with the traditional gross margin concept used in manufacturing or retail businesses.
+
+In such companies, gross margin would encompass the cost of goods sold subtracted from sales revenues, reflecting efficiency in production or acquisition. For American Express, focusing on metrics such as discount revenue, network volume growth, operating expenses, and card member rewards would provide a clearer picture of financial performance and operational efficiency.
+
+(Sources: American Express 2022 10-K)",1
+financebench_id_01244,Has CVS Health paid dividends to common shareholders in Q2 of FY2022?,"Yes, CVS paid a $ 0.55 dividend per share every quarter in FY2022","Yes, CVS Health paid dividends to common shareholders in Q2 of FY2022. The quarterly cash dividend in 2022 was $0.55 per share, consistent each quarter of the year. (Source: CVSHEALTH 2022 10K, page 90)",1
+financebench_id_10285,"We need to calculate a financial metric by using information only provided within the balance sheet. Please answer the following question: what is Boeing's year end FY2018 net property, plant, and equipment (in USD millions)?",$12645.00,"Boeing's net property, plant, and equipment at the end of FY2018 was $12,645 million (USD).
+
+Source: Boeing 2018 10-K, Consolidated Statements of Financial Position.",1
+financebench_id_04854,"According to the information provided in the statement of cash flows, what is the FY2020 free cash flow (FCF) for General Mills? FCF here is defined as: (cash from operations - capex). Answer in USD millions.",$3215.00,"The FY2020 free cash flow (FCF) for General Mills is $3,215.4 million USD. This is calculated as the net cash provided by operating activities ($3,676.2 million) minus the purchases of land, buildings, and equipment (capex) ($460.8 million).
+
+Source: GENERALMILLS_2020_10K.pdf",1
+financebench_id_00005,"Does Corning have positive working capital based on FY2022 data? If working capital is not a useful or relevant metric for this company, then please state that and explain why.",Yes. Corning had a positive working capital amount of $831 million by FY 2022 close. This answer considers only operating current assets and current liabilities that were clearly shown in the balance sheet.,"Corning had positive working capital for the fiscal year 2022. According to the provided data, Corning's working capital as of December 31, 2022, was $2,278 million (source: CORNING 2022 10K). This indicates that the company had more current assets than current liabilities at the end of 2022, showing its ability to cover short-term obligations with its short-term assets.",1
+financebench_id_01028,What are the geographies that American Express primarily operates in as of 2022?,"United States, EMEA, APAC, and LACC","As of 2022, American Express primarily operates in the following geographic regions:
+
+1. **United States**
+2. **EMEA** (Europe, the Middle East, and Africa)
+3. **APAC** (Asia Pacific, Australia, and New Zealand)
+4. **LACC** (Latin America, Canada, and the Caribbean)
+
+These regions are where American Express reports its revenue and operations, indicating its primary areas of business activity.
+
+(Source: AMERICAN EXPRESS 2022 10-K, Geographic Operations section)",1
+financebench_id_01936,What is the nature & purpose of AMCOR's restructuring liability as oF Q2 of FY2023 close?,87% of the total restructuring liability is related Employee liabilities.,"As of the close of Q2 of FY2023, AMCOR's restructuring liability was related primarily to the Russia-Ukraine conflict. The restructuring plan involved employee costs, fixed asset related costs, and other costs, with the liability balance amounting to $93 million as of December 31, 2022. These restructuring activities were part of addressing the conflict's impact on business operations, with most of the liabilities expected to be settled within the next twelve months (Source: AMCOR 2023Q2 10Q).",0
+financebench_id_00494,What production rate changes is Boeing forecasting for FY2023?,"Boeing forecasts an increase in the production rates for the 737, 777X and 787 aircrafts in 2023.","For FY2023, Boeing is forecasting production rate changes as follows:
+
+1. The 787 program is currently producing at low rates, but Boeing expects to gradually increase to 5 aircraft per month in 2023.
+2. Production of the 777X is currently paused and is expected to resume in 2023.
+3. The 737 program is currently stabilizing production at 31 aircraft per month, with plans to gradually increase production rates based on market demand and supply chain capacity.
+
+(Source: Boeing 2022 10-K)",1
+financebench_id_01488,"Which business segment of JnJ will be treated as a discontinued operation from August 30, 2023 onward?","The Consumer Health business segment will be treated as a discontinued operation from August 30, 2023 onward.","From August 30, 2023, Johnson & Johnson will treat its Consumer Health business, now known as Kenvue Inc., as a discontinued operation. (Source: JOHNSON JOHNSON 2023 8K dated-2023-08-30)",1
+financebench_id_00070,"Does American Water Works have positive working capital based on FY2022 data? If working capital is not a useful or relevant metric for this company, then please state that and explain why.","No, American Water Works had negative working capital of -$1561M in FY 2022.","The provided context from American Water Works Company's 2022 10-K does not directly state whether the company has positive working capital for FY2022. However, it notes that the company's current liabilities may exceed current assets due to factors such as debt maturities within one year and the use of short-term debt as a funding source. This implies that the company might not have positive working capital, as their current liabilities could be greater than their current assets.
+
+Working capital, calculated as current assets minus current liabilities, is often used to assess a company's short-term financial health. However, for utility companies like American Water Works, this metric may not always be a precise indicator of financial health because these companies often operate with negative working capital. They rely on steady cash flows from operations and access to capital markets to meet liabilities rather than maintaining significant current assets. Hence, the presence of negative or low working capital does not necessarily indicate financial distress for such a company.",0
+financebench_id_01964,What was the largest liability in American Express's Balance Sheet in 2022?,Customer deposits,"The largest liability in American Express's Balance Sheet in 2022 was ""Total interest-bearing liabilities,"" which amounted to $137,368 million.
+
+Sources:
+- American Express 2022 10K Report: data\pdfs\AMERICANEXPRESS_2022_10K.pdf",0

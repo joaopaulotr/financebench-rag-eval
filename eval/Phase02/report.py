@@ -65,10 +65,14 @@ for fid, human in labels.items():
     if fid not in judge_correct:
         continue
     jc = judge_correct[fid]
-    if human == 1 and jc == 1:   tp += 1
-    elif human == 0 and jc == 0: tn += 1
-    elif human == 1 and jc == 0: fn += 1
-    else:                         fp += 1
+    if human == 1 and jc == 1:
+        tp += 1
+    elif human == 0 and jc == 0:
+        tn += 1
+    elif human == 1 and jc == 0:
+        fn += 1
+    else:
+        fp += 1
 
 tpr = tp / (tp + fn) if (tp + fn) > 0 else 0.0
 tnr = tn / (tn + fp) if (tn + fp) > 0 else 0.0
@@ -90,14 +94,16 @@ for row in results:
 
     if not retrieval_ok or answer_ok == 0:
         j = judge.get(fid, {})
-        failures.append({
-            "id": fid,
-            "question": row["question"][:80],
-            "doc": gt,
-            "retrieval_ok": retrieval_ok,
-            "aq_score": j.get("aq_score", "?"),
-            "human": answer_ok,
-        })
+        failures.append(
+            {
+                "id": fid,
+                "question": row["question"][:80],
+                "doc": gt,
+                "retrieval_ok": retrieval_ok,
+                "aq_score": j.get("aq_score", "?"),
+                "human": answer_ok,
+            }
+        )
 
 # ── Print ─────────────────────────────────────────────────────────────────────
 SEP = "─" * 60
@@ -109,7 +115,9 @@ print(f"{'═'*60}")
 print(f"\n{'Tier 1 — Retrieval':^60}")
 print(SEP)
 print(f"  Queries evaluated : {n}")
-print(f"  Recall@{K}          : {sum(recalls)/n:.3f}  ({int(sum(recalls))}/{n} correct doc retrieved)")
+print(
+    f"  Recall@{K}          : {sum(recalls)/n:.3f}  ({int(sum(recalls))}/{n} correct doc retrieved)"
+)
 print(f"  Precision@{K}       : {sum(precisions)/n:.3f}  (avg correct chunks / k)")
 print(f"  MRR               : {sum(mrrs)/n:.3f}  (avg reciprocal rank)")
 
@@ -119,7 +127,9 @@ print(f"  Context Relevance  C|Q : {sum(cq_scores)/len(cq_scores):.2f}")
 print(f"  Answer Faithfulness A|C : {sum(ac_scores)/len(ac_scores):.2f}")
 print(f"  Answer Relevance   A|Q : {sum(aq_scores)/len(aq_scores):.2f}")
 print(f"  Answer Correctness  A|GT: {sum(gt_scores)/len(gt_scores):.2f}")
-print(f"  Judge 'correct' (GT>={JUDGE_THRESHOLD}): {sum(1 for v in gt_scores if v >= JUDGE_THRESHOLD)}/{len(gt_scores)}")
+print(
+    f"  Judge 'correct' (GT>={JUDGE_THRESHOLD}): {sum(1 for v in gt_scores if v >= JUDGE_THRESHOLD)}/{len(gt_scores)}"
+)
 
 print(f"\n{'Judge Calibration (30 human labels)':^60}")
 print(SEP)
@@ -163,7 +173,8 @@ avg_aq = sum(aq_scores) / len(aq_scores)
 avg_gt = sum(gt_scores) / len(gt_scores)
 judge_correct_count = sum(1 for v in gt_scores if v >= JUDGE_THRESHOLD)
 
-md = f"""# Baseline Report — Phase 02
+md = (
+    f"""# Baseline Report — Phase 02
 
 **Date:** 2026-05-19
 **Pipeline:** GPT-4o-mini + text-embedding-3-small + Qdrant (k=6, no filtering)
@@ -185,10 +196,9 @@ md = f"""# Baseline Report — Phase 02
 
 | Document | Misses |
 |----------|--------|
-""" + "\n".join(
-    f"| {doc} | {count} |"
-    for doc, count in miss_counts.most_common(10)
-) + f"""
+"""
+    + "\n".join(f"| {doc} | {count} |" for doc, count in miss_counts.most_common(10))
+    + f"""
 
 **Pattern:** Johnson & Johnson (multiple doc types) + Adobe account for most retrieval failures.
 
@@ -239,6 +249,7 @@ Judge classified {judge_correct_count}/100 answers as correct (A|GT >= {JUDGE_TH
 | Numerical errors | Hybrid retrieval dense + BM25 | MEDIUM |
 | Agent noise | Cap tool calls + sub-query routing | MEDIUM |
 """
+)
 
 OUT = "docs/baseline_report.md"
 Path(OUT).parent.mkdir(exist_ok=True)

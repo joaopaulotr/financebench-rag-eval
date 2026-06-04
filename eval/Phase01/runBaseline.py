@@ -20,10 +20,15 @@ vectorstore = QdrantVectorStore.from_existing_collection(
 
 retriever = vectorstore.as_retriever(search_kwargs={"k": 6})
 
-prompt_template = ChatPromptTemplate.from_messages([
-    ("system", "You are a helpful assistant for answering questions about financial documents. Use the following context to answer the question. If you don't know the answer, say you don't know.\n\nContext:\n{context}"),
-    ("human", "{question}"),
-])
+prompt_template = ChatPromptTemplate.from_messages(
+    [
+        (
+            "system",
+            "You are a helpful assistant for answering questions about financial documents. Use the following context to answer the question. If you don't know the answer, say you don't know.\n\nContext:\n{context}",
+        ),
+        ("human", "{question}"),
+    ]
+)
 
 
 def format_docs(docs):
@@ -31,9 +36,10 @@ def format_docs(docs):
 
 
 chain = (
-    RunnablePassthrough.assign(
-        context=itemgetter("question") | retriever | format_docs
-    ) | prompt_template | llm | StrOutputParser()
+    RunnablePassthrough.assign(context=itemgetter("question") | retriever | format_docs)
+    | prompt_template
+    | llm
+    | StrOutputParser()
 )
 
 rows = []
