@@ -13,7 +13,14 @@
       "Read(//c/Users/joaop/.claude/projects/c--Users-joaop-OneDrive-Desktop-financebench-rag-eval/memory/**)",
       "Bash(.venv\\\\Scripts\\\\pip show *)",
       "PowerShell(& \"c:\\\\Users\\\\joaop\\\\OneDrive\\\\Desktop\\\\financebench-rag-eval\\\\.venv\\\\Scripts\\\\pip.exe\" show sentence-transformers 2>&1)",
-      "Bash(uv pip *)"
+      "Bash(uv pip *)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\joaop\\\\OneDrive\\\\Desktop\\\\financebench-rag-eval\\\\data\" -Recurse | Where-Object { $_.Extension -match \"\\\\.\\(htm|html|pdf\\)$\" } | Group-Object Extension | Select-Object Name, Count)",
+      "PowerShell(Get-ChildItem \"c:\\\\Users\\\\joaop\\\\OneDrive\\\\Desktop\\\\financebench-rag-eval\\\\data\" -Recurse | Where-Object { $_.Extension -eq \".htm\" } | Select-Object Name, DirectoryName)",
+      "Bash(python)",
+      "Bash(python add_jj_docs.py)",
+      "Bash(uv add *)",
+      "Bash(python check_coverage.py)",
+      "Bash(xargs sed -i 's/from tools import/from clients import/g')"
     ]
   }
 }

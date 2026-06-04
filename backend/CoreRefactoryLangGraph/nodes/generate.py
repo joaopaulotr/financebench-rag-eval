@@ -1,21 +1,10 @@
 from langsmith import traceable
 
-from clients import model
-from prompts import ANALYST_SYSTEM_PROMPT
+from chains.generation import final_answer_chain
 from state import RAGState
 
 
 @traceable(name="Final Answer Generation")
 def generate(state: RAGState) -> dict:
-    response = model.invoke([
-        {"role": "system", "content": ANALYST_SYSTEM_PROMPT},
-        {
-            "role": "user",
-            "content": (
-                f"Answer the following financial question based ONLY on the provided context.\n\n"
-                f"Question: {state['query']}\n\n"
-                f"Context:\n{state['context']}"
-            ),
-        },
-    ])
-    return {"answer": response.content}
+    answer = final_answer_chain.invoke({"query": state["query"], "context": state["context"]})
+    return {"answer": answer}
