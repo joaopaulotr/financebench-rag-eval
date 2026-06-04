@@ -171,45 +171,6 @@ Measured from LangSmith traces over the 100-query eval run (GPT-4o generation).
 
 ---
 
-## Roadmap
-
-- [x] **Phase 1** — Functional baseline (weeks 1–3)
-  - [x] Dataset: FinanceBench, 84 PDFs, 27,462 chunks in Qdrant
-  - [x] Fixed chunking (512 tokens, overlap 50)
-  - [x] Dense retrieval (text-embedding-3-small) + GPT-4o-mini
-  - [x] Initial eval: 20 queries, cross-company retrieval identified as primary failure
-- [x] **Phase 2** — Eval infrastructure (weeks 4–6)
-  - [x] 100-query eval set with ground truth
-  - [x] Tier 1: Recall@6, Precision@6, MRR
-  - [x] Tier 2: LLM-as-Judge (C|Q, A|C, A|Q, A|GT)
-  - [x] Judge calibrated against 30 human labels (TPR/TNR reported)
-  - [x] Baseline: Recall@6=0.830, 53/100 correct (judge), ~47/100 (human)
-- [x] **Phase 3** — Error analysis + iteration (weeks 7–9)
-  - [x] Failure mode classification (wrong_doc, retrieval_miss, hallucination, etc.)
-  - [x] Fix 1: Hybrid retrieval — dense + BM25 (FastEmbedSparse), RRF fusion
-  - [x] Fix 2: Metadata filtering — LLM extracts company+year → Qdrant pre-filter
-  - [x] Corpus audit: 5 missing PDFs found and ingested (EDGAR HTM fallback)
-  - [x] Phase 03b: Recall@6=0.940, 6 retrieval misses remaining
-  - [x] Judge v2: strict numerical tolerance, TNR 0.75 → 0.94
-  - [x] Human recalibration: real accuracy ~47/100 vs 63/100 nominal
-- [ ] **Phase 4** — CRAG pipeline + contextual retrieval (weeks 10–12)
-  - [x] CRAG pipeline: query_analysis → retrieve → rerank → grade → relax_filter → generate
-  - [x] Reranker: BAAI/bge-reranker-base (CrossEncoder) replacing ms-marco (wrong domain)
-  - [x] Contextual retrieval prefix: `Company: X | Document: Y | Year: Z` prepended to every chunk
-  - [x] FinanceBench_v2 collection: 84 docs, 27k+ chunks, full corpus coverage
-  - [x] HTM support in ingestion (J&J and KraftHeinz filings from SEC EDGAR)
-  - [x] Codebase refactored: nodes/, chains/, prompts/, state.py, graph.py
-  - [x] **4.1** Eval completo pipeline novo — 100 queries, compare Phase03b vs Phase04
-  - [ ] **4.2** Dense vs hybrid — desliga BM25, roda 100 queries, decide qual manter
-  - [x] **4.3** Recalibra judge — 30 human labels, TPR=0.82, TNR=0.92, accuracy ~57%
-  - [x] **4.4** Eval final comparativo — tabela: Baseline → Phase03 → Phase03b → Phase04
-  - [x] **4.5** Custo por query — $0.017/query, ~$1.74 total, 40.7s latência média, ~6,900 tokens/query
-  - [ ] **4.6** Demo — Streamlit ou HF Spaces
-  - [ ] **4.7** README final — diagrama arquitetura, resultados, como reproduzir
-  - [ ] **4.8** Post 3 + LinkedIn — "From X% to Y% Accuracy on FinanceBench"
-
----
-
 ## Getting Started
 
 ### Prerequisites
@@ -293,22 +254,6 @@ uv run python ingestion.py       # connects to localhost:6333
 ```bash
 cd frontend && npm install && npm run dev   # http://localhost:5173 → API at :8000
 ```
-
----
-
-## Deploy (Railway)
-
-Railway runs one container per service (no `docker-compose`), so deploy three services in the same project:
-
-| Service | Source | Notes |
-|---------|--------|-------|
-| `qdrant` | Docker image `qdrant/qdrant` | Attach a volume at `/qdrant/storage` to persist the collection |
-| `api` | `Dockerfile.backend` | Env: `OPENAI_API_KEY`, `QDRANT_URL=http://<qdrant-private-host>:6333`. Attach a volume at `/root/.cache` for model weights |
-| `web` | `frontend/Dockerfile` | Build-time env `VITE_API_URL=https://<api-public-url>` — baked into the bundle, so set it **before** the build |
-
-Steps: create the project → add the three services → set env vars (use Railway private networking for `QDRANT_URL`) → run `ingestion.py` once against the deployed Qdrant to populate `FinanceBench_v2`.
-
-> **Note:** `VITE_API_URL` is read in the browser, so it must be the API's **public** URL, not the private one.
 
 ---
 
