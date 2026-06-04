@@ -31,3 +31,17 @@ dependencies = [
     "sentence-transformers>=5.5.1",
     "uvicorn[standard]>=0.49.0",
 ]
+
+[tool.mypy]
+# eval/ holds throwaway research scripts; same module names across phases
+# (e.g. createBaseline.py) collide under mypy's import resolution.
+exclude = ['^eval/']
+# Third-party libs without type stubs (requests, langchain, qdrant, etc.)
+# shouldn't fail type checking of our own code.
+ignore_missing_imports = true
+
+[dependency-groups]
+dev = [
+    "mypy>=2.1.0",
+    "types-requests>=2.33.0.20260513",
+]

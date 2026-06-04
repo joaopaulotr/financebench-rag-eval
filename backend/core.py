@@ -5,7 +5,7 @@ from langchain.chat_models import init_chat_model
 from langchain.agents import create_agent
 from langchain_core.messages import ToolMessage
 from langchain_core.tools import tool
-from langchain_qdrant import QdrantVectorStore, FastEmbedSparse
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from langchain_openai import OpenAIEmbeddings
 from langsmith import traceable
 from qdrant_client.models import Filter, FieldCondition, MatchText
@@ -20,7 +20,7 @@ vectorstore = QdrantVectorStore.from_existing_collection(
     sparse_embedding=sparse_embeddings,
     url="http://localhost:6333",
     collection_name="FinanceBench",
-    retrieval_mode="hybrid",
+    retrieval_mode=RetrievalMode.HYBRID,
 )
 
 model = init_chat_model("gpt-4o-mini", model_provider="openai")
@@ -49,7 +49,7 @@ def retrieve_context(query: str):
         ]
     )
 
-    filter_token = response_filter.content.strip().upper()
+    filter_token = str(response_filter.content).strip().upper()
 
     search_kwargs: dict = {"k": 6}
     if filter_token != "NONE":
@@ -106,7 +106,7 @@ def run_llm(query: str, system_prompt: Optional[str] = None) -> Dict[str, Any]:
             if msg.artifact and isinstance(msg.artifact, dict):
                 context_docs.extend(msg.artifact.get("sources", []))
             if msg.content:
-                context_text_parts.append(msg.content)
+                context_text_parts.append(str(msg.content))
 
     context_docs = list(set(context_docs))
     context_text = "\n\n---\n\n".join(context_text_parts)

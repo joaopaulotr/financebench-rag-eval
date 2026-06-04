@@ -9,7 +9,7 @@ from langchain_community.document_loaders import (
     BSHTMLLoader,
 )
 from langchain_openai import OpenAIEmbeddings
-from langchain_qdrant import QdrantVectorStore, FastEmbedSparse
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from langchain_text_splitters import TokenTextSplitter
 from qdrant_client import QdrantClient
 from qdrant_client.models import Distance, VectorParams, SparseVectorParams
@@ -25,7 +25,7 @@ logging.basicConfig(
 pdf_loader = DirectoryLoader(
     "data/pdfs",
     glob="*.pdf",
-    loader_cls=PyMuPDFLoader,
+    loader_cls=PyMuPDFLoader,  # type: ignore[arg-type]  # valid loader; DirectoryLoader's type hint is narrower than runtime
     silent_errors=False,
     show_progress=True,
 )
@@ -137,7 +137,7 @@ if __name__ == "__main__":
             sparse_embedding=sparse_embeddings,
             url="http://localhost:6333",
             collection_name=collection_name,
-            retrieval_mode="hybrid",
+            retrieval_mode=RetrievalMode.HYBRID,
         )
     else:
         try:
@@ -160,7 +160,7 @@ if __name__ == "__main__":
                 collection_name=collection_name,
                 embedding=embeddings,
                 sparse_embedding=sparse_embeddings,
-                retrieval_mode="hybrid",
+                retrieval_mode=RetrievalMode.HYBRID,
             )
 
             batches = [
@@ -204,7 +204,7 @@ if __name__ == "__main__":
             with_vectors=False,
         )
         for point in result[0]:
-            src = point.payload.get("metadata", {}).get("source", "")
+            src = (point.payload or {}).get("metadata", {}).get("source", "")
             filename = (
                 src.replace("\\", "/")
                 .split("/")[-1]

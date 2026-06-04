@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 from langchain.chat_models import init_chat_model
 from langchain_openai import OpenAIEmbeddings
-from langchain_qdrant import QdrantVectorStore, FastEmbedSparse
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from qdrant_client import QdrantClient
 
 from sentence_transformers import CrossEncoder
@@ -25,7 +25,7 @@ vectorstore = QdrantVectorStore(
     collection_name="FinanceBench_v2",
     embedding=embeddings,
     sparse_embedding=sparse_embeddings,
-    retrieval_mode="hybrid",
+    retrieval_mode=RetrievalMode.HYBRID,
 )
 
 reranker = CrossEncoder("BAAI/bge-reranker-base")
