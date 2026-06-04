@@ -1,14 +1,13 @@
 from langsmith import traceable
 
-from clients import model
-from prompts import QUERY_FILTER_SYSTEM
+from chains.query_analysis import query_filter_chain
 from state import RAGState
 
 
 @traceable(name="Query Analysis")
 def query_analysis(state: RAGState) -> dict:
-    response = model.invoke([
-        {"role": "system", "content": QUERY_FILTER_SYSTEM},
-        {"role": "user", "content": f"Query: '{state['query']}'. Extract company and year for document filtering."},
-    ])
-    return {"filter_token": response.content.strip().upper()}
+    result = query_filter_chain.invoke({"query": state["query"]})
+    return {
+        "filter_token": result.filter_token.strip().upper(),
+        "company_filter": result.company_filter.strip().upper(),
+    }

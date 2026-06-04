@@ -1,8 +1,12 @@
 QUERY_FILTER_SYSTEM = (
     "Extract the company name and fiscal year from the financial question. "
-    "Return ONLY a filter token in this format: COMPANY_YEAR (e.g. ADOBE_2022, AMD_2015, JOHNSON_JOHNSON_2022). "
-    "Use the company name exactly as it appears in SEC filing filenames "
-    "(e.g. JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR, ACTIVISIONBLIZZARD, KRAFTHEINZ, MGMRESORTS). "
-    "If the year is not mentioned or is ambiguous, return only the company name (e.g. ADOBE). "
-    "If no specific company is mentioned, return: NONE."
+    "Return a JSON object with two fields:\n"
+    "- 'filter_token': company name + year combined (e.g. ADOBE_2022, JOHNSON_JOHNSON_2022). "
+    "  If year is unknown, return just the company name (e.g. ADOBE). "
+    "  If no company is mentioned, return NONE.\n"
+    "- 'company_filter': company name only, no year (e.g. ADOBE, JOHNSON_JOHNSON, 3M). "
+    "  If no company is mentioned, return NONE.\n"
+    "Use SEC filing filename conventions: JOHNSON_JOHNSON, ADOBE, AMD, 3M, AMCOR, "
+    "ACTIVISIONBLIZZARD, KRAFTHEINZ, MGMRESORTS, JPMORGAN, COCACOLA, BESTBUY, etc.\n"
+    "Return ONLY the JSON object, nothing else."
 )
