@@ -75,17 +75,29 @@ interface ExamplePrompt {
 // no file/image attachments; this UI only sends text to the LangGraph backend).
 const EXAMPLE_PROMPTS: ExamplePrompt[] = [
     {
-        label: "3M FY2018 capex",
+        label: "Amazon FY2019 net income",
         query:
-            "What is the FY2018 capital expenditure amount (in USD millions) for 3M? Rely on the cash flow statement.",
+            "By drawing conclusions from the information stated only in the income statement, what is Amazon's FY2019 net income attributable to shareholders (in USD millions)?",
     },
     {
-        label: "Adobe FY2022 revenue",
-        query: "What was Adobe's total revenue in FY2022 (in USD millions)?",
+        label: "Boeing FY2018 net PP&E",
+        query:
+            "We need to calculate a financial metric by using information only provided within the balance sheet. Please answer the following question: what is Boeing's year end FY2018 net property, plant, and equipment (in USD millions)?",
     },
     {
-        label: "Amazon FY2021 operating margin",
-        query: "What was Amazon's operating margin in FY2021?",
+        label: "General Mills FY2020 FCF",
+        query:
+            "According to the information provided in the statement of cash flows, what is the FY2020 free cash flow (FCF) for General Mills? FCF here is defined as: (cash from operations - capex). Answer in USD millions.",
+    },
+    {
+        label: "J&J discontinued op",
+        query:
+            "Which business segment of JnJ will be treated as a discontinued operation from August 30, 2023 onward?",
+    },
+    {
+        label: "Amex geographies 2022",
+        query:
+            "What are the geographies that American Express primarily operates in as of 2022?",
     },
 ];
 
