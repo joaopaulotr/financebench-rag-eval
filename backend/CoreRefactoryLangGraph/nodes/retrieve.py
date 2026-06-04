@@ -1,7 +1,7 @@
 from langsmith import traceable
 from qdrant_client.models import Filter, FieldCondition, MatchText
 
-from tools import vectorstore
+from clients import vectorstore
 from state import RAGState
 
 

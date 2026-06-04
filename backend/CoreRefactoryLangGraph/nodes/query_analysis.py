@@ -1,6 +1,6 @@
 from langsmith import traceable
 
-from tools import model
+from clients import model
 from prompts import QUERY_FILTER_SYSTEM
 from state import RAGState
 

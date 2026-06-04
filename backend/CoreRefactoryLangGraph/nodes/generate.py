@@ -1,6 +1,6 @@
 from langsmith import traceable
 
-from tools import model
+from clients import model
 from prompts import ANALYST_SYSTEM_PROMPT
 from state import RAGState
 
