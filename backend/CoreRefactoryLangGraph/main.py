@@ -5,6 +5,7 @@ def run(query: str) -> dict:
     result = app.invoke({
         "query": query,
         "filter_token": "",
+        "company_filter": "",
         "context": "",
         "sources": [],
         "grade": "",
