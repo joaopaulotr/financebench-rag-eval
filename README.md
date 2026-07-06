@@ -10,6 +10,8 @@ A production-grade Retrieval-Augmented Generation system evaluated against the [
 
 ---
 
+> 📹 **Video walkthrough:** [De 10% a 57% de accuracy em RAG financeiro](https://youtube.com/watch?v=ThLRF6dKujw)
+
 ## Why financial domain
 
 - Public dataset with ground truth — objective, measurable progress
